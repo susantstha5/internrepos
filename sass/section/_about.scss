@@ -1,0 +1,212 @@
+//aboutme-section
+.about-section{
+  background: url("/images/Vector\ 2.png") no-repeat center center;
+  background-size: 100% 100%;
+  padding-bottom:170px ;
+  // min-height: 100vh;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  h2{
+    color:white;
+    padding-top: 40px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+  }
+  .about-container{
+    min-height:300px;
+    background-color: white;
+    margin:150px 100px 20px 100px; 
+    padding:30px;
+    border-radius: 50px;
+    @include space-btw;
+    align-items: center;
+    position: relative;
+    .about-list{
+      text-align: center;
+      padding-inline: 60px ;
+      // width: 220px;
+      i{
+        @include text-lineargradient;
+        font-size: 40px;
+      }
+      .percentage{
+        color:$primary-color;
+        font-weight: 600;
+        font-size: 30px;
+      }
+      .about-title{
+        color:#5F6073;
+        font-weight: 500;
+        font-size: 20px;
+      }
+    }
+    &::before{
+      content: '';
+      background: url('/images/dots.png') no-repeat right;
+      background-size: cover;
+      width:80px;
+      height: 60px;
+      position: absolute;
+      top:-90px;
+      left:-100px;
+      z-index: 1;
+    }
+    &::after{
+      content: '';
+      background: url('/images/dots.png') no-repeat;
+      background-size: contain;
+      width:200px;
+      height: 80px;
+      position: absolute;
+      bottom: -120px;
+      right: -150px;
+      z-index: 1;
+    }
+    .absolute-card{
+      background:$linear-gradient ;
+      border-radius: 50px;
+      z-index: 2;
+      @include center;
+      width:220px;
+      height:300px;
+      padding: 20px;
+      position: relative;
+      margin-top: -170px;
+      .color-design{
+        position: absolute;
+        top:0px;
+        background: #F9D423;
+        border-radius: 50px 50px 0 0;
+        width: 100%;
+        height: 90px;
+        z-index: 2; 
+        &::after {
+          content: "";
+          position: absolute;
+          top:25px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 100%;
+          height: 80px;
+          background-color: #4E6AFF;
+          clip-path: path('M 0 42 Q 110 85 220 41 L 220 14 C 216 -1 207 1 199 6 Q 110 60 18 5 C 10 0 3 1 1 12 Z');
+          z-index: 4;
+        }
+        &::before{
+          content: "";
+          position: absolute;
+          top:70%;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 100%;
+          height: 50px;
+          border-radius: 0 0 50% 50%;
+          background-color: #F92323;;
+          z-index: -1;
+        }
+      }
+      .card-content{
+        margin:10px;
+        text-align: center;
+        .card-percentage{
+          color: white;
+          font-weight: 600;
+          font-size: 30px;
+        } 
+        .card-title{
+          color:white;
+          font-weight: 500;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .about-section {
+    .about-container {
+      height: 220px;
+      margin: 90px 50px 10px 50px;
+      .about-list {
+        padding-inline: 30px;
+        width:300px;
+      }
+      .absolute-card {
+        width: 180px;
+        height: 240px;
+        .color-design{
+          top:0px;
+          width: 100%;
+          height: 60px;
+        }
+        .color-design::after {
+          content: "";
+          height:60px ;
+          top:5px;
+          clip-path: path('M 0 34 Q 97 72 180 43 L 179 34 C 174 19 165 21 149 27 Q 98 43 23 15 C 7 14 6 19 2 26 Z');
+        }
+        .color-design::before{
+          top:40px;
+          left: 50%;
+          width: 100%;
+          height: 50px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:500px) {
+  .about-section{
+    height: auto;
+    h2{
+      font-size: 24px;
+    }
+    .about-container{
+      min-height:150px;
+      margin:90px 20px 20px 20px; 
+      padding:20px;
+      .about-list{
+        padding-inline: 10px ;
+        i{
+          font-size: 30px;
+        }
+        .percentage{
+          font-size: 20px;
+        }
+        .about-title{
+          font-size: 10px;
+        }
+      }
+      .absolute-card{
+        max-width:105px;
+        max-height:150px;
+        border-radius:19px;
+        margin-top: -120px;
+        .color-design{
+          border-radius: 19px 19px 0 0;
+          height: 20px;
+        }
+        .color-design::after {
+          top:2px;
+          height: 40px;
+          clip-path: path('M 0 20 Q 55 40 105 20 L 105 15 C 102 7 98 7 87 10 Q 58 21 13 6 C 5 3 2 6 1 11 Z');
+          z-index: 4;
+        }
+        .color-design::before{
+          top:20px;
+          height: 20px;
+        }
+        .card-content{
+          .card-percentage{
+            font-size: 20px;
+          } 
+          .card-title{
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}

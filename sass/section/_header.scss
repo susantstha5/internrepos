@@ -1,0 +1,72 @@
+nav{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 20px 60px 10px 60px;
+  .header {
+  background-color: $primary-color;
+  width: 100%;
+  height: 60px;
+  padding: 0px 50px;
+  @include space-btw;
+  align-items: center;
+  border-radius: 15px;
+}
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width:250px;
+  img {
+    width: 27px;
+    height: 27px;
+    border-radius: 70%;
+    object-fit: cover;
+    background: $linear-gradient;
+  }
+  span {
+    color: white;
+  }
+}
+.links ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  li a {
+    color: white;
+    &:hover{
+      text-shadow: 2px 2px 5px white;
+    }
+  }
+}
+.contact{
+  width:250px;
+  display: flex;
+  justify-content: end;
+  .contact-btn {
+    background-color: #7579ff;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 8.65px;
+    &:hover{
+      background: #9250F7;
+    }
+  }
+}
+.sidebar-icon{
+  color: white;
+  font-size: 24px;
+  display: none;
+}
+@media screen and (max-width:900px) {
+  nav{
+    padding: 20px 30px 10px 30px;
+    .links, .contact-btn{
+      display:none;
+    }
+    .sidebar-icon{
+      display: block;
+    }
+  }
+}

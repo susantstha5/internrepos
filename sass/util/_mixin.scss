@@ -1,0 +1,15 @@
+@mixin center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin space-btw {
+  display: flex;
+  justify-content: space-between;
+}
+@mixin text-lineargradient{
+    background: $linear-gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
