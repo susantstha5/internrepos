@@ -1,0 +1,81 @@
+//for circles
+@import './utils/circles';
+
+//for horizontal line
+@import './utils/hr-line';
+
+//css for bannersection circle pattern
+@import './components/top-circle';
+
+//css for skills section circle pattern
+@import './components/skills-circle';
+
+//css for aboutme section circle pattern
+@import './components/aboutme-circle';
+
+//css for navbar
+@import './components/navbar';
+
+
+//css for banner
+@import './section/banner';
+
+//css for skills section
+@import './section/skills';
+
+//css for skills progress bar
+@import './components/progress-bar';
+
+//for about me section
+@import './section/aboutme';
+
+//for portfolio section
+@import './section/portfolio';
+
+//for footer
+@import './components/footer';
+
+
+
+// for slick slider
+// @import '../node_modules/slick-carousel/slick/slick';
+// @import '../node_modules/slick-carousel/slick/slick-theme';
+
+//for font
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Regular.ttf") format('truetype');
+}
+
+
+body{
+    font-family: 'Poppins';
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    max-width:1350px;
+    width:100%;
+    min-height:500px;
+    margin:0px 70px;
+    overflow: hidden;
+    position: relative;
+    z-index:9;
+    @media screen and (max-width: 770px) {
+        margin:0px 50px;
+    }
+    @media screen and (max-width: 431px) {
+        margin:0px;
+        
+    }
+    
+}
+.about{
+    max-width:1450px;
+    margin:0px;
+    margin-top: 80px;
+    @media screen and (max-width: 770px) {
+        margin-top:30px;
+    }
+}

@@ -1,0 +1,15 @@
+// sass/utils/_circles.scss
+
+@mixin circle-shape {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+@mixin circle-pattern {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); // 5 columns
+  grid-template-rows: repeat(2, 1fr);    // 2 rows
+  gap: 10px;
+  width: max-content;
+}

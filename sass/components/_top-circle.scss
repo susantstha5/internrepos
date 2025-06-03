@@ -1,0 +1,32 @@
+.top-content {
+    position: relative;
+    .circle-box {
+        @include circle-pattern;
+
+        .circle {
+        @include circle-shape;
+        width: 30px;
+        height: 30px;
+        background-color: #EDEEFF;
+        }
+    }
+    .left{
+        position: absolute;
+        z-index:0;
+        top: 480px;
+        left:-9%;
+        
+    }
+    .right{
+        position: absolute;
+        z-index:0;
+        top: 90px;
+        right:-6%;
+    }
+    @media screen and (max-width: 770px) {
+        .circle-box {
+            display: none;
+        }
+        
+    }
+}

@@ -1,0 +1,113 @@
+.navbar{
+    width:90%;
+    height:60px;
+    color:white;
+    background-color: #1B1C37;
+    border-radius: 14.42px;
+    margin: 0px 55px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size:15px;
+    align-items: center;
+    position: sticky;
+    top: 50px;
+    z-index: 10;
+    .menu-bar{
+        display:none;
+    }
+    ul{
+        text-decoration: none;
+        list-style-type: none;
+    }
+    .nav-name{
+        display:flex;
+        gap:20px;
+        align-items: center;
+    }
+    figure{
+        align-items: center;
+        margin:0px;
+    }
+    span{
+        cursor: pointer;
+    }
+    .nav-items{
+        display:flex;
+        gap:20px;
+    }
+    .nav-items span:hover{
+        text-decoration: underline;
+        text-decoration-color:#7579FF;    
+        text-decoration-thickness: 4px;
+        text-underline-offset: 95%; 
+    }
+    button{
+        background-color:#7579FF;
+        width: 100%;
+        height: 40px;
+        border-radius: 8.65px;
+        border: none;
+        color: white;
+        cursor: pointer;
+        &:hover{
+            scale: 1.1;
+        }
+    }
+    a{
+        text-decoration: none;
+        color:white;
+    }
+    @media screen and (max-width: 770px) {
+        height:55px;
+        margin: 0px 10px;
+        padding: 0px 10px;
+        font-size: 12px;
+        top: 40px;
+        .nav-list{
+            gap:10px;
+        }
+        .nav-name{
+            gap:7px;
+        }
+        .nav-items{
+            gap:15px;
+        }
+        button{
+            height: 30px;
+            border-radius: 5.65px;
+            font-size: 12px;
+        }
+    } 
+    @media screen and (max-width: 431px){
+        height:40px;
+        border-radius: 8px;
+        font-size:12px;
+        top: 40px;
+        .menu-bar{
+            display:block;
+            i{
+                font-size: 19px;
+                font-weight: bold;
+                color:white;
+            }
+            button{
+                padding: 0px;
+            }
+        }
+        button{
+            background-color:transparent;
+            height: 40px;
+            border-radius:0px;
+        }
+        figure{
+            margin-top:5px;
+        }
+        .nav-items{
+            display:none;
+        }
+        .contact{
+            display:none;
+        }
+    }
+}

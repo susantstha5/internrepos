@@ -1,0 +1,82 @@
+.circle-box {
+        @include circle-pattern;
+        .circle {
+            @include circle-shape;
+            background-color:#EDEEFF;
+        }
+    }
+    .top{
+        position: absolute;
+        z-index: 9;
+        top: 1700px;
+        left:-60px;
+        .circle {
+            width:20px;
+            height:20px;
+        }
+    }
+    .bottom{
+        position: absolute;
+        z-index: 9;
+        top: 2300px;
+        right:-10px;
+        .circle {
+            width:25px;
+            height:25px;
+        }
+    }
+    @media screen and (max-width: 770px) {
+        .circle-box {
+            @include circle-pattern;
+            .circle {
+                @include circle-shape;
+                background-color:#EDEEFF;
+            }
+        }
+        .top{
+            gap:5px;
+            .circle {
+                width:15px;
+                height:15px;
+            }
+            top: 2000px;
+        }
+        .bottom{
+            top: 2300px;
+            right:-60px;
+            gap:7px;
+            .circle {
+                width:15px;
+                height:15px;
+            }
+        }
+        
+    }
+    @media screen and (max-width: 430px) {
+        .circle-box {
+            @include circle-pattern;
+            .circle {
+                @include circle-shape;
+                background-color:#EDEEFF;
+            }
+        }
+        .top{
+            gap:3px;
+            top: 1550px;
+            left:-10px;
+            .circle {
+                width:5px;
+                height:5px;
+            }
+        }
+        .bottom{
+            top: 1725px;
+            right:-10px;
+            gap:4px;
+            .circle {
+                width:8px;
+                height:8px;
+            }
+        }
+        
+    }

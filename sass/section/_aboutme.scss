@@ -1,0 +1,160 @@
+.aboutme{
+    background-color: #1B1C37;
+    min-height: 1200px;
+    width: 100%;
+    clip-path: path("M1440,0 L1440,900 C1080,1173 360,621 0,900 L0,0 Z");
+    padding:0px;
+    margin: auto;
+    position: relative;
+    z-index: 0;
+    .about{
+        color:white;
+        text-align: center;
+        font-size: 54px;
+        font-weight: 600;
+        padding-top: 50px;
+        // margin-bottom: 0;
+    }
+    .contents{
+        width:950px;
+        min-height:260px;
+        background-color: white;
+        border-radius: 60px;
+        margin: auto;
+        margin-top: 270px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        img{
+            width:100px;
+            height:100px;
+            margin: 10px auto;
+        }
+        .icon-content{
+            display:flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .percentage{
+            font-size: 44px;
+            color: black;
+            font-weight:900;
+        }
+        p{
+            font-size: 30px;
+            margin:0px;
+            color:#5F6073;
+            font-weight:600;
+        }
+        .colombian{
+            width: 300px;
+            height: 370px;
+            background:linear-gradient(to right,#B224EF, #7579FF);
+            border-radius: 80px 80px 60px 60px;
+            margin-top:-170px;
+            text-align: center;
+            span{
+                color:white;
+                font-weight: 1000px;
+            }
+            p{
+                color:white;
+            }
+            img{
+                width:100%;
+                height:200px;
+                margin: 0px;
+            }
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        min-height: 600px;
+        width: 100%;
+        // margin-right: -5px;
+        clip-path: path("M768,0 L768,500 C576,600 192,400 0,500 L0,0 Z");
+        .about{
+            font-size: 50px;
+            padding-top: 30px;
+        }
+        .contents{
+            width:550px;
+            min-height:160px;
+            border-radius: 40px;
+            margin-top: 120px;
+            padding:0px 30px 0px 30px;
+            .icon-content{
+                img{
+                    width:50px;
+                    height:50px;
+                }
+            }
+            img{
+                width:50px;
+                height:50px;
+            }
+            .percentage{
+                font-size: 15px;
+                text-align: center;
+            }
+            p{
+                font-size: 20px;
+            }
+            .colombian{
+                width: 150px;
+                height: 203px;
+                border-radius: 60px 60px 40px 40px;
+                margin-top:-80px ;
+                left:225px;
+                img{
+                    width:100%;
+                    height:105px;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 430px) {
+        width: 430px;
+        min-height: 300px;
+        clip-path: path("M430,0 L430,250 C330,350 100,200 0,280 L0,0 Z");
+        .about{
+            font-size: 25px;
+            padding-top:15px;
+        }
+        .contents{
+            width:250px;
+            min-height:90px;
+            border-radius: 18px;
+            margin-top: 70px;
+            padding:0px 30px 0px 30px;
+            .icon-content{
+                img{
+                    width:25px;
+                    height:25px;
+
+                }
+            }
+            img{
+                width:50px;
+                height:50px;
+            }
+            .percentage{
+                font-size: 12px;
+            }
+            p{
+                font-size: 10px;
+            }
+            .colombian{
+                width: 90px;
+                height: 110px;
+                border-radius: 28px 28px 20px 20px;
+                margin-top:-40px ;
+                img{
+                    width:100%;
+                    height:55px;
+                }
+            }
+        }
+       
+    }
+}

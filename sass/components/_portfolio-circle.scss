@@ -1,0 +1,18 @@
+
+  // Circle Background Pattern
+  .circle-box {
+    @include circle-pattern;
+    position: absolute;
+    top: 160px;
+    left: -120px;
+    z-index: 1;
+    gap: 15px;
+    padding: 20px;
+
+    .circle {
+      @include circle-shape;
+      width: 35px;
+      height: 35px;
+      background-color: #EDEEFF;
+    }
+  }

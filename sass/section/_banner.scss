@@ -1,0 +1,106 @@
+.banner{
+    margin-top:7%; 
+    display: flex;
+    flex-direction: row;
+    h2{
+        width: 80%;
+        font-size: 86px;
+        margin: 0px;
+    }
+    p{
+        width: 80%;
+        margin:5% 0px;
+    }
+    .banner-content{
+        width:55%;
+        height:100%;
+    }
+    .banner-button{
+        width:100%;
+        min-height:175px;
+        position: relative;
+    }
+    button{
+        background:linear-gradient(to right,#B224EF, #7579FF);
+        min-width: 200px;
+        height: 56px;
+        border-radius: 8.65px;
+        border: none;
+        color: white;
+        cursor: pointer;
+        padding: 0px;
+        font-size: 18px;
+    }
+    .arrow {
+        position: absolute;
+        top:0%;
+        left: 40%;
+    }
+    .arrow img{
+        width:187px;
+        height:187px;
+        transform: rotate(5deg)
+    }
+     figure{
+        margin: 0px;
+        width:45%;
+    }
+    img{
+        width: 100%;
+        min-height:90%;
+        margin: 0px;
+
+    }
+    @media screen and (max-width: 768px) {
+        width:100%;
+        margin-top:15%;
+        .banner-content{
+            width:80%;
+        }
+        figure{
+            display: none;
+        }
+        h2{
+            width:80%;
+            font-size: 66px;
+        }
+        .arrow {
+            top:-5%;
+            left: 35%;
+        }
+    }
+    @media screen and (max-width: 432px) { 
+        width:100%;
+        margin-top:20%;
+        display: flex;
+        flex-direction: row;
+        margin:10% 30px 0px 30px;
+        .banner-content{
+            width:80%;
+        }
+        .banner-button{
+            min-height:100px;
+        }
+        h2{
+            width:90%;
+            font-size: 50px;
+        }
+        p{
+            font-size: 10px;
+        }
+        button{
+            min-width: 100px;
+            height:45px;
+            border-radius: 8.65px;
+            font-size: 11px;
+        }
+        .arrow {
+            top:-3%;
+            left: 30%;
+        }
+        .arrow img{
+            width:100px;
+            height:100px;
+        } 
+    }
+}
