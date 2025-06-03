@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="scss/main.css">
+
+    <!-- slickcss -->
+    <link rel="stylesheet" type="text/css"href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script type="module" src="index.js"></script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="navigation container">
+            <div class="logo">
+                <img src="assets/img/Morado.png" alt="">
+                Christian Munoz
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="">Blog</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="hamburger__full-burger"></span>
+                <span class="hamburger__half-burger"></span>
+            </div>
+            <a href="#" class="btn btn-primary">Contact me</a>
+            
+        </nav>
+    </header>
+
+
+
+     <!-- HERO SECTION -->
+    <section class="hero container">
+        <div class="hero__text">
+            <img class="hero__svg" src="assets/img/Highlight_05.svg" alt="Intro Design">
+            <h1>Hi, I am <br>Cristian 🎨</h1>
+            <p>I am a UI/UX Designer, I like to make interfaces simple and aesthetically pleasing for users; The idea is not to create an interface for creating it, it is that users prefer you because your product is easy to use.</p>
+            <div class="hero__cta">
+                <a href="#" class="btn btn-secondary">Contact Me <i class="fa fa-arrow-circle-o-right"></i></a>
+                <img class="hero__arrow" src="assets/img/Arrow_01.svg" alt="Arrow Pointing Contact Button">
+            </div>
+        </div>
+        <div class="hero__image">
+            <img src="assets/img/Allura UI Windows.png" alt="working at computer">
+        </div>
+        
+    </section>
+
+
+
+    <!-- SKILL SECTION -->
+    <section class="skills-section container">
+        <img src="assets/img/Highlight_10.svg" alt="">
+        <h2 class="section-titles">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill">
+                <div class="circle c90" data-percent="90"><span>90%</span></div>
+                <p>Figma/Adobe XD</p>
+            </div>
+            <div class="skill">
+                <div class="circle c80" data-percent="90"><span>80%</span></div>
+                <p>UI Design</p>
+            </div>
+            <div class="skill">
+                <div class="circle c80" data-percent="90"><span>80%</span></div>
+                <p>Information Architecture</p>
+            </div>
+            <div class="skill">
+                <div class="circle c70" data-percent="90"><span>70%</span></div>
+                <p>UX Design</p>
+            </div>
+            <div class="skill">
+                <div class="circle c70" data-percent="90"><span>70%</span></div>
+                <p>Prototyping</p>
+            </div>
+            <div class="skill">
+                <div class="circle c70" data-percent="90"><span>70%</span></div>
+                <p>Box Model</p>
+            </div>
+            <div class="skill">
+                <div class="circle c70" data-percent="90"><span>70%</span></div>
+                <p>Business Model Canvas</p>
+            </div>
+            <div class="skill">
+                <div class="circle c70" data-percent="90"><span>70%</span></div>
+                <p>Design Systems</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section class="about">
+        <h2 class="about__title">About Me</h2>
+        <img class="about__cta" src="assets/img/Highlight_04.svg" alt="">
+        <div class="about__stats">
+            <div class="about__stat">
+                <div class="about__icon-wrapper abour__icon-wrapper--purple">
+                    <img class="about__icon" src="assets/img/Icono.png" alt="">
+                </div>
+                <div class="about__percentage">100%</div>
+                <div class="about__label">Responsibility</div>
+            </div>
+
+            <div class="about__stat about__stat--center">
+                <div class="about__icon-wrapper about__icon-wrapper--flag">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffd700" fill-opacity="1" d="M0,64L120,96C240,128,480,192,720,192C960,192,1200,128,1320,96L1440,64L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg> -->
+                    <div class="about__percentage about__percentage--flag">100%</div>
+                    <div class="about__label about__label--flag">Columbian</div>
+                </div>
+                
+            </div>
+
+            <div class="about__stat">
+                <div class="about__icon-wrapper about__icon-wrapper--purple">
+                    <img class="about__icon" src="assets/img/Icono (1).png" alt="">
+                </div>
+                <div class="about__percentage">100%</div>
+                <div class="about__label">Punctuality</div>
+            </div>
+        </div>
+    </section>
+        
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="portfolio-section">
+        <h2 class="section-title">Portfolio</h2>
+        <img class="section-underline" src="assets/img/Underline_06.svg" alt="underline portfolio">
+            <div class="card-grid card-grid--center portfolio-slider">
+                <section class="card">
+                    <div class="card-img">
+                        <div class="card-imgs pv delete">
+                            <img src="assets/img/8bacf70e4864f7c86880a877e6dfba5f7b3ac184.png" alt="">
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="flex">
+                            <div class="project-title">Eventos Premium</div>
+                        </div>
+                        <span class="lighter">Elegante - Serio - Estatus</span>
+                    </div>
+                </section>
+
+
+                <section class="card">
+                    <div class="card-img">
+                        <div class="card-imgs pv delete">
+                            <img src="assets/img/MacBook Pro 14_ - 1 3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="flex">
+                            <div class="project-title">Mi Portal U</div>
+                        </div>
+                        <span class="lighter">
+                            Amigable - Dashboard - Simple
+                        </span>
+                    </div>
+                </section>
+
+
+                <section class="card">
+                    <div class="card-img">
+                        <div class="card-imgs pv delete">
+                            <img src="assets/img/8bacf70e4864f7c86880a877e6dfba5f7b3ac184.png" alt="">
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="flex">
+                            <div class="project-title">A&C App</div>
+                        </div>
+                        <span class="lighter">
+                            Elegante - Serio - Estatus
+                        </span>
+                    </div>
+                </section>
+            </div>
+    </section>
+
+
+
+    <!-- FOOTER -->
+     <footer class="footer">
+        <div class="footer__content container">
+            <ul class="footer__socials">
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+            <p class="footer__text">
+            Cristian David Muñoz Camayo © 2022 @tianmunooz
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- hamburger button -->
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+
+    <!-- Slick JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+</body>
+</html>
