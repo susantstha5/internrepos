@@ -1,0 +1,65 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixin";
+@import "../components/button";
+.navbar {
+    @include flexProperty(space-between, row, center);
+    background: $bg-black;
+    // max-width: 95%;
+    border-radius: 12px;
+    height: 70px;
+    margin: 40px;
+    padding: 0px 20px;
+    .profile_name {
+        color: white;
+        gap: 6px;
+        @include flexProperty(center, row, center);
+        img {
+            width: 25px;
+            height: 25px;
+            border-radius: 100%;
+        }
+        h5 {
+            font-weight: 400;
+            font-size: 17px;
+        }
+    }
+    .page_links {
+        @include flexProperty(center, row, center);
+        gap: 30px;
+        .home {
+            font-weight: 500;
+            position: relative;
+        }
+        .home::after {
+            content: "";
+            height: 4px;
+            position: absolute;
+            background-color: #757aff;
+            border-radius: 10px;
+            width: 100%;
+            top: 150%;
+            left: 0;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 400;
+        }
+    }
+    .menu_icon {
+        display: none;
+        color: white;
+    }
+}
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0px 40px;
+        .page_links {
+            display: none;
+        }
+        .menu_icon {
+            display: inline;
+        }
+    }
+}

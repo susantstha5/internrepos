@@ -1,0 +1,16 @@
+@import "../abstracts/mixin";
+@import "../abstracts/variables";
+.footer {
+    background-color: #ebecff;
+    padding: 40px;
+    @include flexProperty(center, column, center);
+    gap: 20px;
+    color: hsla(237, 10%, 41%, 1);
+    .media_icons {
+        @include flexProperty(center, row, center);
+        gap: 40px;
+    }
+    p {
+        font-size: 20px;
+    }
+}

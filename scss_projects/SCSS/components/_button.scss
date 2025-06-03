@@ -1,0 +1,17 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixin";
+.cta_button {
+    @include buttonColor($blue);
+    padding: 5px 20px;
+}
+
+.cta_hero {
+    @include buttonColor($gradient);
+    padding: 10px 20px;
+}
+@media screen and (max-width:768px) {
+    .cta_button{
+        display: none;
+    }
+    
+}

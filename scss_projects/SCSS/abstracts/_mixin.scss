@@ -1,0 +1,15 @@
+@mixin flexProperty($params, $direction, $align) {
+    display: flex;
+    justify-content: $params;
+    align-items: $align;
+    flex-direction: $direction;
+}
+@mixin buttonColor($param1) {
+    background: $param1;
+    color: white;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    font-size: 17px;
+}
