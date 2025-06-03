@@ -1,0 +1,29 @@
+//vendors
+@import 'vendors/slicks.css';
+
+//Layout
+@import 'layout/navigation';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/portfolio';
+@import 'layout/grid';
+
+
+//Abstracts
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+//Base
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/base';
+
+//components
+@import 'components/buttons';
+@import 'components/card';
+@import 'components/slider';
+
+//Pages
+@import 'pages/home';
+@import 'pages/about';
+

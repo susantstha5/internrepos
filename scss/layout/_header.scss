@@ -1,0 +1,25 @@
+.header {
+    background-color: #1B1C37;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin: 2rem 5%;
+    border-radius: 24px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 820px) {
+    .header {
+        padding: 1rem 1.5rem;
+        margin: 1rem 3%;
+        border-radius: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 0.5rem 1rem;
+        margin: 1rem 3%;
+        border-radius: 16px;
+    }
+}
