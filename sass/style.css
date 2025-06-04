@@ -117,11 +117,48 @@ nav .header {
   }
 }
 .skill-section {
+  position: relative;
+}
+.skill-section .dots-left {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: -20px;
+  top: 65px;
+  z-index: -1;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.skill-section .shadow-left {
+  width: 300px;
+  position: absolute;
+  left: -120px;
+  top: 190px;
+  z-index: -1;
+}
+.skill-section .dots-right {
+  position: absolute;
+  right: -60px;
+  top: 50%;
+  z-index: -1;
+}
+.skill-section .shadow-right {
+  position: absolute;
+  right: -150px;
+  top: 10px;
+  z-index: -1;
+}
+.skill-section .dots-bottom {
+  margin-left: -50px;
+  z-index: -1;
+}
+
+.skill-container {
   padding: 50px 60px 20px 60px;
   overflow-x: hidden;
   position: relative;
 }
-.skill-section h2 {
+.skill-container h2 {
   margin-top: 25px;
   font-size: 40px;
   font-weight: 500;
@@ -133,7 +170,7 @@ nav .header {
   width: -moz-fit-content;
   width: fit-content;
 }
-.skill-section h2::after {
+.skill-container h2::after {
   content: "";
   background: url("../../images/Highlight_10.png") no-repeat;
   background-size: contain;
@@ -145,24 +182,10 @@ nav .header {
   transform: rotate(20deg);
   z-index: 2;
 }
-.skill-section hr {
+.skill-container hr {
   margin-bottom: 30px;
   background-color: #EDEEFF;
   opacity: 0.5;
-}
-.skill-section::before {
-  content: "";
-  background: url("/images/dots.png") no-repeat;
-  background-size: contain;
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  top: 85px;
-  left: -10px;
-}
-.skill-section .dots img {
-  margin-left: -100px;
-  z-index: -1;
 }
 
 .skill-content {
@@ -170,17 +193,6 @@ nav .header {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 40px;
   position: relative;
-}
-.skill-content::after {
-  content: "";
-  background: url(/images/dots.png) no-repeat;
-  background-size: cover;
-  width: 120px;
-  height: 100px;
-  position: absolute;
-  bottom: 40%;
-  right: -70px;
-  z-index: -1;
 }
 
 .skill-list {
@@ -362,6 +374,30 @@ nav .header {
   }
 }
 .about-section {
+  position: relative;
+}
+.about-section .dots-left {
+  position: absolute;
+  left: -20px;
+  top: 150px;
+  width: 80px;
+  height: 80px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: 1;
+}
+.about-section .dots-right {
+  position: absolute;
+  bottom: 60px;
+  width: 120px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  right: 10px;
+  z-index: 1;
+}
+
+.about-container {
   background: url("/images/Vector 2.png") no-repeat center center;
   background-size: 100% 100%;
   padding-bottom: 170px;
@@ -369,14 +405,14 @@ nav .header {
   position: relative;
   overflow: hidden;
 }
-.about-section h2 {
+.about-container h2 {
   color: white;
   padding-top: 40px;
   text-align: center;
   font-weight: 500;
   font-size: 40px;
 }
-.about-section .about-container {
+.about-container .about-content {
   min-height: 300px;
   background-color: white;
   margin: 150px 100px 20px 100px;
@@ -387,50 +423,28 @@ nav .header {
   align-items: center;
   position: relative;
 }
-.about-section .about-container .about-list {
+.about-container .about-content .about-list {
   text-align: center;
   padding-inline: 60px;
 }
-.about-section .about-container .about-list i {
+.about-container .about-content .about-list i {
   background: linear-gradient(to right, #b224ef, #7579ff);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-size: 40px;
 }
-.about-section .about-container .about-list .percentage {
+.about-container .about-content .about-list .percentage {
   color: #1B1C37;
   font-weight: 600;
   font-size: 30px;
 }
-.about-section .about-container .about-list .about-title {
+.about-container .about-content .about-list .about-title {
   color: #5F6073;
   font-weight: 500;
   font-size: 20px;
 }
-.about-section .about-container::before {
-  content: "";
-  background: url("/images/dots.png") no-repeat right;
-  background-size: cover;
-  width: 80px;
-  height: 60px;
-  position: absolute;
-  top: -90px;
-  left: -100px;
-  z-index: 1;
-}
-.about-section .about-container::after {
-  content: "";
-  background: url("/images/dots.png") no-repeat;
-  background-size: contain;
-  width: 200px;
-  height: 80px;
-  position: absolute;
-  bottom: -120px;
-  right: -150px;
-  z-index: 1;
-}
-.about-section .about-container .absolute-card {
+.about-container .about-content .absolute-card {
   background: linear-gradient(to right, #b224ef, #7579ff);
   border-radius: 50px;
   z-index: 2;
@@ -443,7 +457,7 @@ nav .header {
   position: relative;
   margin-top: -170px;
 }
-.about-section .about-container .absolute-card .color-design {
+.about-container .about-content .absolute-card .color-design {
   position: absolute;
   top: 0px;
   background: #F9D423;
@@ -452,7 +466,7 @@ nav .header {
   height: 90px;
   z-index: 2;
 }
-.about-section .about-container .absolute-card .color-design::after {
+.about-container .about-content .absolute-card .color-design::after {
   content: "";
   position: absolute;
   top: 25px;
@@ -465,7 +479,7 @@ nav .header {
           clip-path: path("M 0 42 Q 110 85 220 41 L 220 14 C 216 -1 207 1 199 6 Q 110 60 18 5 C 10 0 3 1 1 12 Z");
   z-index: 4;
 }
-.about-section .about-container .absolute-card .color-design::before {
+.about-container .about-content .absolute-card .color-design::before {
   content: "";
   position: absolute;
   top: 70%;
@@ -477,16 +491,16 @@ nav .header {
   background-color: #F92323;
   z-index: -1;
 }
-.about-section .about-container .absolute-card .card-content {
+.about-container .about-content .absolute-card .card-content {
   margin: 10px;
   text-align: center;
 }
-.about-section .about-container .absolute-card .card-content .card-percentage {
+.about-container .about-content .absolute-card .card-content .card-percentage {
   color: white;
   font-weight: 600;
   font-size: 30px;
 }
-.about-section .about-container .absolute-card .card-content .card-title {
+.about-container .about-content .absolute-card .card-content .card-title {
   color: white;
   font-weight: 500;
   font-size: 20px;
@@ -577,9 +591,36 @@ nav .header {
   }
 }
 .portfolio-section {
+  position: relative;
+}
+.portfolio-section .dots-left {
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  bottom: 40px;
+  left: 0px;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
+}
+.portfolio-section .shadow-left {
+  position: absolute;
+  left: 120px;
+  top: -10px;
+  z-index: -1;
+}
+.portfolio-section .shadow-right {
+  position: absolute;
+  top: -70px;
+  right: -80px;
+  z-index: -1;
+}
+.portfolio-section .portfolio-container {
   overflow-x: hidden;
 }
-.portfolio-section h2 {
+.portfolio-section .portfolio-container h2 {
   font-size: 40px;
   font-weight: 500;
   background: linear-gradient(to right, #b224ef, #7579ff);
@@ -591,7 +632,7 @@ nav .header {
   padding: 70px 60px 30px;
   position: relative;
 }
-.portfolio-section h2::after {
+.portfolio-section .portfolio-container h2::after {
   content: "";
   background: url("../../images/Group.png");
   background-size: contain;
@@ -603,7 +644,7 @@ nav .header {
   height: 100px;
   z-index: 2;
 }
-.portfolio-section hr {
+.portfolio-section .portfolio-container hr {
   margin-inline: 60px;
 }
 
@@ -664,17 +705,6 @@ nav .header {
 .card-list .card .card-img, .card-list .card .card-content:hover {
   cursor: pointer;
 }
-.card-list::after {
-  content: "";
-  background: url(/images/dots.png) no-repeat right;
-  background-size: contain;
-  width: 200px;
-  height: 100px;
-  position: absolute;
-  bottom: 30px;
-  right: 90%;
-  z-index: -1;
-}
 
 @media screen and (max-width: 500px) {
   .portfolio-section h2 {
@@ -694,6 +724,30 @@ nav .header {
 }
 .footer {
   margin-top: 50px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50px 50px 0px 0px;
+}
+.footer .dots-left {
+  position: absolute;
+  bottom: -30px;
+  width: 60px;
+  height: 60px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: 1;
+}
+.footer .dots-right {
+  position: absolute;
+  top: 10px;
+  right: -10px;
+  width: 50px;
+  height: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: 1;
+}
+.footer .footer-container {
   background: #EDEEFF;
   border-radius: 50px 50px 0px 0px;
   min-height: 100px;
@@ -704,7 +758,7 @@ nav .header {
   position: relative;
   overflow: hidden;
 }
-.footer i {
+.footer .footer-container i {
   font-size: 28px;
   padding: 15px;
   background: linear-gradient(to right, #b224ef, #7579ff);
@@ -712,35 +766,13 @@ nav .header {
   -webkit-background-clip: text;
   color: transparent;
 }
-.footer i:hover {
+.footer .footer-container i:hover {
   cursor: pointer;
 }
-.footer .footer-content {
+.footer .footer-container .footer-content {
   color: #5F6073;
   font-size: 12px;
   padding-bottom: 10px;
-}
-.footer::before {
-  content: "";
-  background: url(/images/black\ dot.png) no-repeat right;
-  background-size: contain;
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  top: 65px;
-  left: 0px;
-  z-index: 1;
-}
-.footer::after {
-  content: "";
-  background: url(/images/black\ dot.png) no-repeat;
-  background-size: contain;
-  width: 50px;
-  height: 40px;
-  position: absolute;
-  bottom: 40px;
-  right: -10px;
-  z-index: 1;
 }
 
 @media screen and (max-width: 500px) {
@@ -783,7 +815,9 @@ button {
   cursor: pointer;
 }
 
-h2, p, ul {
+h2,
+p,
+ul {
   padding: 0;
   margin: 0;
 }
@@ -802,26 +836,48 @@ li {
 }
 
 .home-section {
+  position: relative;
+}
+.home-section .dots-left {
+  position: absolute;
+  bottom: 45px;
+  left: -40px;
+  width: 100px;
+  height: 100px;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
+}
+.home-section .shadow-left {
+  position: absolute;
+  top: 0px;
+  left: -100px;
+  width: 300px;
+  z-index: -1;
+}
+.home-section .home-container {
   display: flex;
   justify-content: space-between;
   padding: 0px 60px 0px 60px;
   gap: 70px;
 }
-.home-section .content {
+.home-section .home-container .content {
   flex: 1;
 }
-.home-section .content h2 {
+.home-section .home-container .content h2 {
   margin-top: 100px;
   font-size: 80px;
   font-weight: 500;
   line-height: 1.2;
   color: #1B1C37;
 }
-.home-section .content p {
+.home-section .home-container .content p {
   margin-top: 30px;
   font-size: 14px;
 }
-.home-section .content .contact-btn-link {
+.home-section .home-container .content .contact-btn-link {
   background: linear-gradient(to right, #b224ef, #7579ff);
   padding: 14px 40px 14px 40px;
   color: white;
@@ -830,24 +886,13 @@ li {
   margin: 20px 0 30px 0;
   position: relative;
 }
-.home-section .content .contact-btn-link i {
+.home-section .home-container .content .contact-btn-link i {
   padding-left: 10px;
 }
-.home-section .content .contact-btn-link:hover {
-  background: #9250F7;
+.home-section .home-container .content .contact-btn-link:hover {
+  background: #9250f7;
 }
-.home-section .content .contact-btn-link::before {
-  content: "";
-  position: absolute;
-  top: -25px;
-  left: -120px;
-  width: 120px;
-  height: 100px;
-  background: url(/images/dots.png) no-repeat;
-  background-size: cover;
-  z-index: -1;
-}
-.home-section .content .contact-btn-link::after {
+.home-section .home-container .content .contact-btn-link::after {
   content: "";
   background: url("../images/Arrow_01.png");
   background-size: cover;
@@ -859,26 +904,34 @@ li {
   height: 120px;
   z-index: 2;
 }
-.home-section .content-img {
+.home-section .home-container .content-img {
   flex: 1;
   position: relative;
 }
-.home-section .content-img img {
+.home-section .home-container .content-img img {
   max-width: 100%;
   height: auto;
   padding: 20px 0px 20px 0px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.home-section .content-img::after {
-  content: "";
+.home-section .dots-right {
   position: absolute;
-  bottom: 80%;
-  right: -60px;
-  width: 120px;
+  top: 30px;
+  right: 0px;
+  width: 100px;
   height: 100px;
-  background: url(/images/dots.png) no-repeat;
-  background-size: cover;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
+}
+.home-section .shadow-right {
+  position: absolute;
+  top: -120px;
+  right: 5px;
+  width: 150px;
   z-index: -1;
 }
 

@@ -1,5 +1,26 @@
 //aboutme-section
 .about-section{
+  position: relative;
+  .dots-left{
+    position: absolute;
+    left:-20px;
+    top:150px;
+    width:80px;
+    height: 80px;
+    object-fit: contain;
+    z-index: 1;
+  }
+  .dots-right{
+    position: absolute;
+    bottom: 60px;
+    width:120px;
+    height: 100px;
+    object-fit: contain;
+    right:10px;
+    z-index: 1;
+  }
+}
+.about-container{
   background: url("/images/Vector\ 2.png") no-repeat center center;
   background-size: 100% 100%;
   padding-bottom:170px ;
@@ -14,7 +35,7 @@
     font-weight: 500;
     font-size: 40px;
   }
-  .about-container{
+  .about-content{
     min-height:300px;
     background-color: white;
     margin:150px 100px 20px 100px; 
@@ -42,28 +63,28 @@
         font-size: 20px;
       }
     }
-    &::before{
-      content: '';
-      background: url('/images/dots.png') no-repeat right;
-      background-size: cover;
-      width:80px;
-      height: 60px;
-      position: absolute;
-      top:-90px;
-      left:-100px;
-      z-index: 1;
-    }
-    &::after{
-      content: '';
-      background: url('/images/dots.png') no-repeat;
-      background-size: contain;
-      width:200px;
-      height: 80px;
-      position: absolute;
-      bottom: -120px;
-      right: -150px;
-      z-index: 1;
-    }
+    // &::before{
+    //   content: '';
+    //   background: url('/images/dots.png') no-repeat right;
+    //   background-size: cover;
+    //   width:80px;
+    //   height: 60px;
+    //   position: absolute;
+    //   top:-90px;
+    //   left:-100px;
+    //   z-index: 1;
+    // }
+    // &::after{
+    //   content: '';
+    //   background: url('/images/dots.png') no-repeat;
+    //   background-size: contain;
+    //   width:200px;
+    //   height: 80px;
+    //   position: absolute;
+    //   bottom: -120px;
+    //   right: -150px;
+    //   z-index: 1;
+    // }
     .absolute-card{
       background:$linear-gradient ;
       border-radius: 50px;

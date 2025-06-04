@@ -1,5 +1,40 @@
 //skill-page
-.skill-section {
+.skill-section{
+    position: relative;
+    .dots-left{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        left: -20px;
+        top:65px;
+        z-index: -1;
+        object-fit: contain;
+    }
+    .shadow-left{
+        width: 300px;
+        position: absolute;
+        left: -120px;
+        top:190px;
+        z-index: -1;
+    }
+    .dots-right{
+        position: absolute;
+        right:-60px;
+        top:50%;
+        z-index: -1;
+    }
+    .shadow-right{
+        position: absolute;
+        right:-150px;
+        top:10px;
+        z-index: -1;
+    }
+    .dots-bottom{
+        margin-left: -50px;
+        z-index: -1;
+    }
+}
+.skill-container{
    padding:50px 60px 20px 60px;
    overflow-x: hidden;
    position: relative;
@@ -28,37 +63,33 @@
      background-color: #EDEEFF;
      opacity: 0.5;
   }
-  &::before{
-    content: '';
-    background: url('/images/dots.png') no-repeat;
-    background-size: contain;
-    width: 70px;
-    height: 70px;
-    position: absolute;
-    top:85px;
-    left:-10px;
-  }
-  .dots img{
-    margin-left: -100px;
-    z-index: -1;
-  }
+//   &::before{
+//     content: '';
+//     background: url('/images/dots.png') no-repeat;
+//     background-size: contain;
+//     width: 70px;
+//     height: 70px;
+//     position: absolute;
+//     top:85px;
+//     left:-10px;
+//   }
 }
 .skill-content{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap:40px;
     position: relative;
-    &::after{
-        content: '';
-        background: url(/images/dots.png) no-repeat ;
-        background-size:cover ;
-        width: 120px;
-        height: 100px;
-        position: absolute;
-        bottom: 40%;
-        right: -70px;
-        z-index: -1;
-    }
+    // &::after{
+    //     content: '';
+    //     background: url(/images/dots.png) no-repeat ;
+    //     background-size:cover ;
+    //     width: 120px;
+    //     height: 100px;
+    //     position: absolute;
+    //     bottom: 40%;
+    //     right: -70px;
+    //     z-index: -1;
+    // }
 }
 .skill-list{
     width:160px;
