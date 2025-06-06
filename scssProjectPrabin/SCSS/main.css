@@ -27,6 +27,21 @@
   font-weight: 500;
   font-size: 17px;
   padding: 10px 20px;
+  position: relative;
+}
+
+.cta_hero::after {
+  content: "";
+  background-image: url("../../../scssProjectPrabin/assets/Arrow_01.svg");
+  position: absolute;
+  z-index: 2;
+  left: 100%;
+  top: 0px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
 }
 
 @media screen and (max-width: 768px) {
@@ -89,6 +104,9 @@
   font-size: 17px;
   font-weight: 400;
 }
+.navbar .page_links a:hover {
+  color: #757aff;
+}
 .navbar .menu_icon {
   display: none;
   color: white;
@@ -125,6 +143,21 @@
   font-weight: 500;
   font-size: 17px;
   padding: 10px 20px;
+  position: relative;
+}
+
+.cta_hero::after {
+  content: "";
+  background-image: url("../../../scssProjectPrabin/assets/Arrow_01.svg");
+  position: absolute;
+  z-index: 2;
+  left: 100%;
+  top: 0px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
 }
 
 @media screen and (max-width: 768px) {
@@ -168,8 +201,8 @@
   content: "";
   background-image: url("../assets/Highlight_05.svg");
   position: absolute;
-  top: 0;
-  right: 0;
+  bottom: 90%;
+  right: 40%;
   height: 60px;
   width: 60px;
   background-size: cover;
@@ -205,8 +238,28 @@
   .hero_section .hero_details p {
     max-width: 100%;
   }
+  .hero_section .hero_details::after {
+    right: 0px;
+  }
   .hero_section .hero_image {
     display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .hero_section .hero_details {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+  }
+  .hero_section .hero_details h1 {
+    font-size: 70px;
+  }
+  .hero_section .hero_details p {
+    max-width: 100%;
+  }
+  .hero_section .hero_details::after {
+    right: 30%;
   }
 }
 .circle {
@@ -247,12 +300,26 @@
   margin: 40px;
   flex-direction: column;
 }
-.skills_section h3 {
-  font-size: 50px;
+.skills_section .skill_heading {
+  font-size: 60px;
   background: linear-gradient(to right, #b225ef, #757aff 10%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+}
+.skills_section .skill_heading::before {
+  content: "hello";
+  background-image: url("../../../scssProjectPrabin/assets/Highlight_10.svg");
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  bottom: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .skills_section .skill_box {
   display: grid;
@@ -267,15 +334,16 @@
 
 .about-me {
   text-align: center;
-  background: #1b1c37;
+  background-image: url("../../../scssProjectPrabin/assets/vectorSVG.svg");
   background-size: cover;
-  background-position: top;
+  background-position: bottom;
   background-repeat: no-repeat;
   color: white;
   padding: 40px 0px;
-  gap: 120px;
+  gap: 150px;
+  min-height: 800px;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
   flex-direction: column;
 }
@@ -292,9 +360,10 @@
   flex-wrap: wrap;
   padding: 2rem;
   border-radius: 2rem;
+  position: relative;
   background-color: white;
 }
-.about-me .info-box {
+.about-me .badge-container .info-box {
   border-radius: 1.5rem;
   width: 150px;
   display: flex;
@@ -304,7 +373,7 @@
   text-align: center;
   color: #0e0f2b;
 }
-.about-me .info-box .icon {
+.about-me .badge-container .info-box .icon {
   font-size: 64px;
   background: linear-gradient(to right, #b225ef, #757aff 60%);
   -webkit-background-clip: text;
@@ -312,22 +381,22 @@
   background-clip: text;
   margin-bottom: 0.5rem;
 }
-.about-me .info-box h3 {
+.about-me .badge-container .info-box h3 {
   font-weight: 800;
   font-size: 45px;
   font-weight: 700;
 }
-.about-me .info-box p {
+.about-me .badge-container .info-box p {
   font-weight: 500;
   font-size: 26px;
   color: hsl(237, 10%, 41%);
 }
-.about-me .flag_container {
+.about-me .badge-container .flag_container {
   height: 200px;
   width: 200px;
   position: relative;
 }
-.about-me .flag_container .badge {
+.about-me .badge-container .flag_container .badge {
   background: linear-gradient(to right, #b225ef, #757aff 60%);
   border-radius: 1.5rem;
   position: absolute;
@@ -338,23 +407,37 @@
   bottom: 70px;
   height: 260px;
 }
-.about-me .flag_container .badge .flag-svg {
+.about-me .badge-container .flag_container .badge .flag-svg {
   width: 100%;
   height: 120px;
   background-color: #fcd116;
 }
-.about-me .flag_container .badge .flag-svg svg {
+.about-me .badge-container .flag_container .badge .flag-svg svg {
   width: 100%;
   height: 100%;
   display: block;
 }
-.about-me .flag_container .badge .text h3 {
+.about-me .badge-container .flag_container .badge .text h3 {
   font-size: 45px;
   font-weight: 800;
 }
-.about-me .flag_container .badge .text p {
+.about-me .badge-container .flag_container .badge .text p {
   font-weight: 600;
   font-size: 26px;
+}
+
+.badge-container::after {
+  content: " ";
+  background-image: url("../../../scssProjectPrabin/assets/Highlight_04.png");
+  position: absolute;
+  z-index: 2;
+  left: 95%;
+  width: 120px;
+  height: 120px;
+  bottom: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 560px) {
@@ -378,13 +461,26 @@
   justify-content: space-evenly;
 }
 .blog_container .portfolio_container .portfolio_title {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 600;
   color: linear-gradient(to right, #b225ef, #757aff 10%);
   background: linear-gradient(to right, #b225ef, #757aff 10%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  position: relative;
+}
+.blog_container .portfolio_container .portfolio_title::before {
+  content: "hello";
+  z-index: 2;
+  color: black;
+  left: 70px;
+  background-image: url("../../../scssProjectPrabin/assets/Group.svg");
+  position: absolute;
+  top: 50%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .blog_container .portfolio_container .project_container {
   width: 100%;
@@ -392,7 +488,7 @@
   overflow: hidden;
 }
 .blog_container .portfolio_container .project_container .projectCardWithImage {
-  height: 320px;
+  height: 310px;
 }
 .blog_container .portfolio_container .project_container .projectCardWithImage .project_card {
   height: 200px;

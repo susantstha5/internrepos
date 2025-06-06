@@ -5,12 +5,27 @@
     // padding-top: 40px;
     margin: 40px;
     flex-direction: column;
-    h3 {
-        font-size: 50px;
+    .skill_heading {
+        font-size: 60px;
         background: $gradientText;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
+        width: fit-content;
+        position: relative;
+
+    }
+    .skill_heading::before {
+        content: "hello";
+        background-image: url("../../../scssProjectPrabin/assets/Highlight_10.svg");
+        position: absolute;
+        z-index: 2;
+        left:50%;
+        // top: 0px;
+        bottom: 50%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     .skill_box {
         display: grid;

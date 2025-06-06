@@ -30,8 +30,9 @@
         content: "";
         background-image: url("../assets/Highlight_05.svg");
         position: absolute;
-        top: 0;
-        right: 0;
+        // top: 0;
+        bottom: 90%;
+        right: 40%;
         height: 60px;
         width: 60px;
         background-size: cover;
@@ -61,8 +62,31 @@
                 max-width: 100%;
             }
         }
+        .hero_details::after{
+            right: 0px;
+        }
         .hero_image {
             display: none;
         }
+    }
+}
+@media screen and (max-width: 1024px) {
+    .hero_section {
+        .hero_details {
+            // max-width: 100%;
+            @include flexProperty(center, column, start);
+            h1 {
+                font-size: 70px;
+            }
+            p {
+                max-width: 100%;
+            }
+        }
+        .hero_details::after{
+            right: 30%;
+        }
+        // .hero_image {
+        //     display: none;
+        // }
     }
 }

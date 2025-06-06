@@ -8,10 +8,23 @@
 .cta_hero {
     @include buttonColor($gradient);
     padding: 10px 20px;
+    position: relative;
 }
-@media screen and (max-width:768px) {
-    .cta_button{
+.cta_hero::after {
+    content: "";
+    background-image: url("../../../scssProjectPrabin/assets/Arrow_01.svg");
+    position: absolute;
+    z-index: 2;
+    left: 100%;
+    top:0px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+}
+@media screen and (max-width: 768px) {
+    .cta_button {
         display: none;
     }
-    
 }

@@ -11,20 +11,33 @@
         flex-direction: column;
         justify-content: space-evenly;
         .portfolio_title {
-            font-size: 50px;
+            font-size: 60px;
             font-weight: 600;
             color: $gradientText;
             background: $gradientText;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            position: relative;
+        }
+        .portfolio_title::before{
+            content: "hello";
+            z-index: 2;
+            color: black;
+            left:70px;
+            background-image: url("../../../scssProjectPrabin/assets/Group.svg");
+            position: absolute;
+            top: 50%;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
         }
         .project_container {
             width: 100%;
             margin-top: 200px;
             overflow: hidden;
             .projectCardWithImage {
-                height: 320px;
+                height: 310px;
                 .project_card {
                     height: 200px;
                     width: 430px;
