@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Website</title>
+
+    <!-- bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <!-- css link -->
+    <link rel="stylesheet" href="postBoot.css" />
+    <!-- remix icon  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="profile_container">
+      <!-- hero section -->
+      <section
+        class="hero_container position-relative w-100 d-flex justify-content-between"
+      >
+        <!-- navbar -->
+        <nav
+          class="navbar position-absolute justify-content-between py-0 align-items-center w-100"
+        >
+          <span
+            class="name_shortForm text-primary bg-primary-emphasis px-3 fs-5 fw-400 py-1 rounded-pill"
+            >A.F</span
+          >
+          <div class="nav_links d-flex gap-4 align-items-center text-uppercase">
+            <a href="#">ABOUT</a>
+            <a href="#">SERVICES</a>
+            <a href="#">WORKS</a>
+            <a href="#">CONTACT</a>
+          </div>
+        </nav>
+        <div class="hero_content d-flex flex-column justify-content-around">
+          <div class="hero_description position-relative d-flex flex-column">
+            <h1 class="">
+              Hello, I’m Albert, a UI/UX
+              <span class="text_bg text-primary position-relative"
+                >Designer.</span
+              >
+            </h1>
+            <p class="lh-2 fs-6 fw-200 opacity-75">
+              Product Designer, UI/UX Designer, and developer based in Brazil.
+              Over the past 17 years, as an art director and designer, I’ve
+              worked with big companies and up-and-coming startups.
+            </p>
+            <div class="cta_buttons d-flex gap-3">
+              <button
+                type="button"
+                class="btn btn-primary fs-6 fw-semibold py-2 text-uppercase"
+              >
+                HIRE ME
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-primary fs-6 fw-semibold py-2 text-uppercase text-decoration-none"
+              >
+                VIEW WORK
+              </button>
+            </div>
+          </div>
+          <div class="contact_info">
+            <h5 class="fs-6 fw-400">Follow me on</h5>
+            <div class="social_media d-flex gap-2 fs-5">
+              <button><i class="ri-dribbble-line"></i></button>
+              <button><i class="ri-behance-line"></i></button>
+              <button><i class="ri-facebook-fill"></i></button>
+              <button><i class="ri-twitter-x-line"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="image_container position-absolute start-50 bottom-0">
+          <img
+            class="object-fit-contain"
+            src="./assets/heroImage/Image.png"
+            alt=""
+          />
+        </div>
+        <div
+          class="dot_container bg-secondary justify-content-center align-items-center d-flex"
+        >
+          <img
+            class="object-fit-contain"
+            src="./assets//heroImage/Dot.svg"
+            alt="dot"
+          />
+        </div>
+      </section>
+
+      <!-- about section -->
+      <section
+        class="about_container position-relative d-flex justify-content-start align-items-center gap-xxl-5"
+      >
+        <img
+          class="position-absolute start-0 top-0 w-25"
+          src="./assets/aboutImage/BG.svg"
+          alt="pie"
+        />
+        <div class="profile_image position-relative z-2">
+          <img class="" src="./assets//aboutImage/profiles.png" alt="profile" />
+        </div>
+        <div class="about_content d-flex flex-column gap-2">
+          <h2>
+            Product Designer, UI/UX Designer, and Developer based in Brazil.
+          </h2>
+          <p class="lh-2 fs-6 fw-200 opacity-75">
+            Morbi quam velit, euismod in imperdiet vitae, elementum et elit.
+            Nunc finibus, felis sit amet sollicitudin sollicitudin, nisi magna
+            feugiat enim, in maximus urna enim ac tortor. Nunc in volutpat
+            ipsum, molestie commodo odio. Quisque auctor nisi mi. Aenean
+            venenatis sapien et interdum interdum.
+          </p>
+          <div class="achievements d-flex gap-xl-5">
+            <div
+              class="experience d-flex align-items-center justify-content-center gap-md-3"
+            >
+              <span class="">17+</span>
+              <h5 class="fs-6">
+                Years of <br />
+                Experience
+              </h5>
+            </div>
+            <div
+              class="d-flex align-items-center justify-content-center gap-md-3"
+            >
+              <span>325+</span>
+              <h5 class="fs-6">
+                Completed <br />
+                Projects
+              </h5>
+            </div>
+          </div>
+          <button class="bg-primary border-0 px-4 py-2 fs-6 rounded-1">
+            SAY HI <i class="ri-arrow-right-long-line fs-5"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- services section -->
+      <section
+        class="service_container d-flex flex-column gap-lg-5 align-items-center"
+      >
+        <h2 class="heading position-relative py-3">My Service</h2>
+        <div class="services d-flex gap-5 justify-content-between">
+          <div class="service d-flex flex-column gap-lg-5 p-3">
+            <div class="logo_service">
+              <i class="ri-stack-line fs-3"></i>
+            </div>
+            <div class="service_content">
+              <h5>
+                UI/UX <br />
+                Design
+              </h5>
+              <hr class="w-25 border-3" />
+              <a
+                class="service_cta d-flex align-items-center gap-1 text-decoration-none justify-content-start"
+              >
+                <span class="link_cta fs-6 fw-bold">DISCUSS NOW </span>
+                <span><i class="ri-arrow-right-long-line fs-3"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="service d-flex flex-column gap-lg-5 p-3">
+            <div class="logo_service">
+              <i class="ri-box-3-line fs-3"></i>
+            </div>
+            <div class="service_content">
+              <h5>
+                Product <br />
+                Design
+              </h5>
+              <hr class="w-25 border-3" />
+              <a
+                class="service_cta d-flex align-items-center gap-1 text-decoration-none justify-content-start"
+              >
+                <span class="link_cta fs-6 fw-bold">DISCUSS NOW </span>
+                <span><i class="ri-arrow-right-long-line fs-3"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="service d-flex flex-column gap-lg-5 p-3">
+            <div class="logo_service">
+              <i class="ri-rectangle-line fs-3"></i>
+            </div>
+            <div class="service_content">
+              <h5>
+                Branding <br />
+                Design
+              </h5>
+              <hr class="w-25 border-3" />
+              <a
+                class="service_cta d-flex align-items-center gap-1 text-decoration-none justify-content-start"
+              >
+                <span class="link_cta fs-6 fw-bold">DISCUSS NOW </span>
+                <span><i class="ri-arrow-right-long-line fs-3"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="service d-flex flex-column gap-lg-5 p-3">
+            <div class="logo_service">
+              <i class="ri-code-line fs-3"></i>
+            </div>
+            <div class="service_content">
+              <h5>
+                Front End <br />
+                Development
+              </h5>
+              <hr class="w-25 border-3" />
+              <a
+                class="service_cta d-flex align-items-center gap-1 text-decoration-none justify-content-start"
+              >
+                <span class="link_cta fs-6 fw-bold">DISCUSS NOW </span>
+                <span><i class="ri-arrow-right-long-line fs-3"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- work section -->
+      <section class="work_container bg-secondary d-grid gap-4">
+        <h2 class="heading position-relative py-3 w-100 text-center">
+          My Selected Work
+        </h2>
+        <div class="works">
+          <div class="work_content d-flex flex-column gap-1 bg-white rounded-1">
+            <div class="work_image">
+              <img
+                class="img-fluid"
+                src="./assets/workImage/Images.png"
+                alt="images"
+              />
+            </div>
+            <div
+              class="work_description d-flex flex-column gap-2 py-3 justify-content-lg-start px-3"
+            >
+              <h5>Eduguard - E-learning Website</h5>
+              <a
+                class="work_cta d-flex align-items-center gap-1 text-decoration-none justify-content-start"
+                href="#"
+              >
+                <span class="link_cta fw-bold">VIEW PROJECT</span>
+                <span
+                  ><i class="ri-arrow-right-long-line fs-6 fw-bold"></i
+                ></span>
+              </a>
+            </div>
+          </div>
+          <div class="work_content d-flex flex-column gap-1 bg-white rounded-1">
+            <div class="w-100">
+              <img
+                class="img-fluid"
+                src="./assets/workImage/images1.png"
+                alt="images"
+              />
+            </div>
+            <div
+              class="work_description d-flex flex-column gap-2 py-3 justify-content-lg-start px-3"
+            >
+              <h5>Eduguard - E-learning Website</h5>
+              <a
+                class="work_cta d-flex align-items-center gap-1 text-decoration-none justify-content-start"
+                href="#"
+              >
+                <span class="link_cta fw-bold">VIEW PROJECT</span>
+                <span
+                  ><i class="ri-arrow-right-long-line fs-6 fw-bold"></i
+                ></span>
+              </a>
+            </div>
+          </div>
+          <div class="work_content d-flex flex-column gap-1 bg-white rounded-1">
+            <div class="w-100">
+              <img
+                class="img-fluid"
+                src="./assets/workImage/Images2.png"
+                alt="images"
+              />
+            </div>
+            <div
+              class="work_description d-flex flex-column gap-2 py-3 justify-content-lg-start px-3"
+            >
+              <h5>Huma Marketing Agency</h5>
+              <a
+                class="work_cta d-flex align-items-center gap-1 text-decoration-none justify-content-start"
+                href="#"
+              >
+                <span class="link_cta fw-bold">VIEW PROJECT</span>
+                <span
+                  ><i class="ri-arrow-right-long-line fs-6 fw-bold"></i
+                ></span>
+              </a>
+            </div>
+          </div>
+          <div class="work_content d-flex flex-column gap-1 bg-white rounded-1">
+            <div class="w-100">
+              <img
+                class="img-fluid"
+                src="./assets/workImage/Image3.png"
+                alt="images"
+              />
+            </div>
+            <div
+              class="work_description d-flex flex-column gap-2 py-3 justify-content-lg-start px-3"
+            >
+              <h5>Beeryblog Blog Website</h5>
+              <a
+                class="work_cta d-flex align-items-center gap-1 text-decoration-none justify-content-start"
+                href="#"
+              >
+                <span class="link_cta fw-bold">VIEW PROJECT</span>
+                <span
+                  ><i class="ri-arrow-right-long-line fs-6 fw-bold"></i
+                ></span>
+              </a>
+            </div>
+          </div>
+          <div class="work_content d-flex flex-column gap-1 bg-white rounded-1">
+            <div class="w-100">
+              <img
+                class="img-fluid"
+                src="./assets/workImage/Images4.png"
+                alt="images"
+              />
+            </div>
+            <div
+              class="work_description d-flex flex-column gap-2 py-3 justify-content-lg-start px-3"
+            >
+              <h5>Educare Elearning website</h5>
+              <a
+                class="work_cta d-flex align-items-center gap-1 text-decoration-none justify-content-start"
+                href="#"
+              >
+                <span class="link_cta fw-bold">VIEW PROJECT</span>
+                <span
+                  ><i class="ri-arrow-right-long-line fs-6 fw-bold"></i
+                ></span>
+              </a>
+            </div>
+          </div>
+          <div class="work_content d-flex flex-column gap-1 bg-white rounded-1">
+            <div class="w-100">
+              <img
+                class="img-fluid"
+                src="./assets/workImage/Images5.png"
+                alt="images"
+              />
+            </div>
+            <div
+              class="work_description d-flex flex-column gap-2 py-3 justify-content-lg-start px-3"
+            >
+              <h5>Blogy Blog Website</h5>
+              <a
+                class="work_cta d-flex align-items-center gap-1 text-decoration-none justify-content-start"
+                href="#"
+              >
+                <span class="link_cta fw-bold">VIEW PROJECT</span>
+                <span
+                  ><i class="ri-arrow-right-long-line fs-6 fw-bold"></i
+                ></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- company logos -->
+      <section class="companyLogos_container d-flex w-100 align-items-center">
+        <div class="logo_details w-25">
+          <p class="fs-3 fw-medium">
+            I Worked with
+            <span class="text-primary position-relative">289+</span> Companies
+            all over the World.
+          </p>
+        </div>
+        <div
+          class="scroll_wrapper d-flex w-75 align-items-center gap-3 justify-content-end"
+        >
+          <button class="scroll" id="scrollLeft">
+            <i class="ri-arrow-left-long-line fw-bold"></i>
+          </button>
+          <div
+            class="scroll_container overflow-x-auto d-flex gap-3"
+            id="scrollContainer"
+          >
+            <div class="img_container">
+              <img src="./assets/companyLogos/Group1.png" alt="photos" />
+            </div>
+            <div class="img_container">
+              <img src="./assets/companyLogos/Group2.png" alt="photos" />
+            </div>
+            <div class="img_container">
+              <img src="./assets/companyLogos/Group3.png" alt="photos" />
+            </div>
+            <div class="img_container">
+              <img src="./assets/companyLogos/Group4.png" alt="photos" />
+            </div>
+            <div class="img_container">
+              <img src="./assets/companyLogos/Group3.png" alt="photos" />
+            </div>
+            <div class="img_container">
+              <img src="./assets/companyLogos/Group1.png" alt="photos" />
+            </div>
+            <div class="img_container">
+              <img src="./assets/companyLogos/Group2.png" alt="photos" />
+            </div>
+            <div class="img_container">
+              <img src="./assets/companyLogos/Group1.png" alt="photos" />
+            </div>
+          </div>
+          <button class="scroll" id="scrollRight">
+            <i class="ri-arrow-right-long-line fs-6 fw-bold"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- banner section -->
+      <section class="banner_container">
+        <div
+          class="banner d-flex justify-content-around align-items-center flex-column gap-4 py-5 rounded-1"
+        >
+          <p class="text-white fs-3 text-center">
+            Got a Project in Mind? Let's Make <br />
+            Something Awesome Together.
+          </p>
+          <button class="bg-primary border-0 px-4 py-2 fs-6 rounded-1">
+            HIRE ME <i class="ri-arrow-right-long-line fs-5"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- testimonial section -->
+      <section class="testimonial_container d-flex flex-column gap-4">
+        <h2 class="heading position-relative py-3 w-100 text-center">
+          Client Testimonial
+        </h2>
+        <div class="testimonial_wrapper d-flex gap-4">
+          <div class="clients d-flex flex-column">
+            <div class="client d-flex p-3 gap-2" data-id="client1">
+              <div>
+                <img
+                  src="./assets/testimonialImage/sundar.png"
+                  alt="sundar_pichhai"
+                />
+              </div>
+              <div
+                class="client_details w-100 d-flex flex-column justify-content-center"
+              >
+                <h5 class="fs-6 p-0 m-0">Sundar Pichai</h5>
+                <span class=""
+                  >CEO & Founder of
+                  <strong class="text-primary fw-normal">Google</strong></span
+                >
+              </div>
+            </div>
+            <div class="client d-flex p-3 gap-2 w-100" data-id="client2">
+              <div>
+                <img
+                  src="./assets/testimonialImage/santanu.png"
+                  alt="santanu"
+                />
+              </div>
+              <div
+                class="client_details d-flex flex-column justify-content-center"
+              >
+                <h5 class="fs-6 p-0 m-0">Shantanu Narayen</h5>
+                <span class=""
+                  >CEO of
+                  <strong class="text-primary fw-normal">Adobe</strong></span
+                >
+              </div>
+            </div>
+            <div class="client d-flex p-3 gap-2 w-100" data-id="client3">
+              <div>
+                <img src="./assets/testimonialImage/noah.png" alt="noah" />
+              </div>
+              <div
+                class="client_details d-flex flex-column justify-content-center"
+              >
+                <h5 class="fs-6 p-0 m-0">Noah Levin</h5>
+                <span class=""
+                  >Director of Design,
+                  <strong class="text-primary fw-normal">Figma</strong></span
+                >
+              </div>
+            </div>
+            <div class="client d-flex p-3 gap-2 w-100" data-id="client4">
+              <div>
+                <img
+                  src="./assets/testimonialImage/stewart.png"
+                  alt="stewart"
+                />
+              </div>
+              <div
+                class="client_details d-flex flex-column justify-content-center"
+              >
+                <h5 class="fs-6 p-0 m-0">Stewart Butterfield</h5>
+                <span class=""
+                  >CEO & Founder of
+                  <strong class="text-primary fw-normal">Slack</strong></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="testimonial_content position-relative w-75 rounded-1 d-flex flex-column justify-content-center px-5 py-4 gap-3"
+          >
+            <div class="rating">
+              <i class="ri-star-fill text-warning fs-5"></i>
+              <span class="fs-6 fw-medium"
+                ><small id="rate"></small> <small>Star Rating</small></span
+              >
+            </div>
+            <p class="testimonial fs-3 m-0 fw-normal" id="testimonial_review">
+              <!-- “If you're looking for someone who will challenge your UX/UI
+              thinking and really cut to the core of what's important for users,
+              then Jesse is your man. On top of that, he brings a level of
+              enthusiasm to the craft that's energizing for everyone who works
+              with him.” -->
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- blog section -->
+      <section class="blog_container d-flex flex-column gap-4">
+        <h2 class="heading position-relative py-3 w-100 text-center">
+          Blog & News
+        </h2>
+        <div class="blog_wrapper d-flex gap-4">
+          <div
+            class="blog_content d-flex flex-column gap-1 bg-white rounded-1 p-3"
+          >
+            <div class="w-100">
+              <img
+                class="img-fluid"
+                src="./assets/blogImage/blog.png"
+                alt="blog"
+              />
+            </div>
+            <div
+              class="blog_decription d-flex flex-column gap-2 py-3 justify-content-lg-start"
+            >
+              <div class="date_content d-flex gap-2">
+                <small class="date">24 May, 2021</small
+                ><small
+                  class="dot d-flex align-items-center justify-content-center"
+                  ><i class="ri-circle-fill"></i></small
+                ><small class="">9 min read</small>
+              </div>
+              <h5 class="">
+                23 Essential Skills for Successful Web Designers in 2021.
+              </h5>
+              <a
+                class="blog_cta d-flex align-items-center gap-1 text-decoration-none justify-content-start"
+                href="#"
+              >
+                <span class="link_cta fw-medium">Read More</span>
+                <span
+                  ><i class="ri-arrow-right-long-line fs-6 fw-medium"></i
+                ></span>
+              </a>
+            </div>
+          </div>
+          <div
+            class="blog_content d-flex flex-column gap-1 bg-white rounded-1 p-3"
+          >
+            <div class="w-100">
+              <img
+                class="img-fluid"
+                src="./assets/blogImage/blog.png"
+                alt="blog"
+              />
+            </div>
+            <div
+              class="blog_decription d-flex flex-column gap-2 py-3 justify-content-lg-start"
+            >
+              <div class="date_content d-flex gap-2">
+                <small class="date">24 May, 2021</small
+                ><small
+                  class="dot d-flex align-items-center justify-content-center"
+                  ><i class="ri-circle-fill"></i></small
+                ><small class="">9 min read</small>
+              </div>
+              <h5 class="">10 Best Wireframe Tools for Designers in 2021.</h5>
+              <a
+                class="blog_cta d-flex align-items-center gap-1 text-decoration-none justify-content-start"
+                href="#"
+              >
+                <span class="link_cta fw-medium">Read More</span>
+                <span
+                  ><i class="ri-arrow-right-long-line fs-6 fw-medium"></i
+                ></span>
+              </a>
+            </div>
+          </div>
+          <div class="small_blog d-flex flex-column justify-content-between">
+            <div
+              class="smallBlog_content p-3 d-flex flex-column gap-2 py-3 justify-content-lg-start"
+            >
+              <h5 class="w-75">
+                10 Best Wireframe Tools for Designers in 2021.
+              </h5>
+              <a
+                class="blog_cta d-flex align-items-center gap-1 text-decoration-none justify-content-start"
+                href="#"
+              >
+                <span class="link_cta fw-medium">Read More</span>
+                <span
+                  ><i class="ri-arrow-right-long-line fs-6 fw-medium"></i
+                ></span>
+              </a>
+            </div>
+            <div
+              class="smallBlog_content p-3 d-flex flex-column gap-2 py-3 justify-content-lg-start"
+            >
+              <h5 class="w-75">
+                20 Cool Fonts for Web and Graphic Design. (free + paid)
+              </h5>
+              <a
+                class="blog_cta d-flex align-items-center gap-1 text-decoration-none justify-content-start"
+                href="#"
+              >
+                <span class="link_cta fw-medium">Read More</span>
+                <span
+                  ><i class="ri-arrow-right-long-line fs-6 fw-medium"></i
+                ></span>
+              </a>
+            </div>
+            <div
+              class="smallBlog_content p-3 d-flex flex-column gap-2 py-3 justify-content-lg-start"
+            >
+              <h5 class="w-75">
+                8 Things You Need to Create a Restaurant Website.
+              </h5>
+              <a
+                class="blog_cta d-flex align-items-center gap-1 text-decoration-none justify-content-start"
+                href="#"
+              >
+                <span class="link_cta fw-medium">Read More</span>
+                <span
+                  ><i class="ri-arrow-right-long-line fs-6 fw-medium"></i
+                ></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact section -->
+      <section
+        class="contact_container position-relative d-flex justify-content-between"
+      >
+        <img
+          src="./assets/contactSection/contactShape.png"
+          class="position-absolute top-0 start-0 w-25 z-0"
+          alt="shapes"
+        />
+        <div
+          class="form_wrapper bg-white position-relative z-2 p-4 d-flex flex-column gap-4 rounded-2"
+        >
+          <h3 class="fs-3">Let Me Know here.</h3>
+          <form action="#" class="d-flex flex-column gap-3">
+            <div class="w-100 d-flex gap-3">
+              <input
+                type="text"
+                placeholder="Full name"
+                name="username"
+                class="p-2 w-50"
+              />
+              <input
+                type="email"
+                placeholder="Email address"
+                name="email"
+                class="p-2 w-50"
+              />
+            </div>
+            <input
+              type="text"
+              placeholder="Subjects"
+              name="subject"
+              class="p-2 w-100"
+            />
+            <textarea
+              name="Message"
+              placeholder="Message"
+              class="w-100 p-2"
+              rows="5"
+              id="message"
+            ></textarea>
+            <div class="py-3">
+              <button
+                class="bg-primary border-0 px-4 py-2 fs-6 rounded-1 text-uppercase fw-medium"
+              >
+                SEND MESSAGE <i class="ri-telegram-2-line fs-5 fw-light"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+        <div
+          class="contact_wrapper bg-white position-relative p-4 d-flex flex-column justify-content-between rounded-2"
+        >
+          <h3 class="fs-3">Let Me Know here.</h3>
+          <div class="contact_details d-flex flex-column gap-4">
+            <div class="contact d-flex gap-2 align-items-center">
+              <div
+                class="contact_logo bg-primary-emphasis d-flex align-items-center justify-content-center text-primary fs-4"
+              >
+                <i class="ri-map-pin-line"></i>
+              </div>
+              <div class="contact_method d-flex align-items-center">
+                <h6 class="p-0 m-0 fw-normal">
+                  House #5, Street Number #98, <br />
+                  brasilia- 70000-000, Brazil.
+                </h6>
+              </div>
+            </div>
+            <div class="contact d-flex gap-2 align-items-center">
+              <div
+                class="contact_logo bg-primary-emphasis d-flex align-items-center justify-content-center text-primary fs-4"
+              >
+                <i class="ri-mail-line"></i>
+              </div>
+              <div class="contact_method d-flex align-items-center">
+                <h6 class="p-0 m-0 fw-normal">
+                  albert.design@gmail.com <br />
+                  albert.flores@gmail.com
+                </h6>
+              </div>
+            </div>
+            <div class="contact d-flex gap-2 align-items-center">
+              <div
+                class="contact_logo bg-primary-emphasis d-flex align-items-center justify-content-center text-primary fs-4"
+              >
+                <i class="ri-phone-line"></i>
+              </div>
+              <div class="contact_method d-flex align-items-center">
+                <h6 class="p-0 m-0 fw-normal">
+                  +55 955 258 2699 <br />
+                  +55 955 100 9449
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="social_media media_rounded d-flex gap-2 fs-5 py-2">
+            <button><i class="ri-dribbble-line"></i></button>
+            <button><i class="ri-behance-line"></i></button>
+            <button><i class="ri-facebook-fill"></i></button>
+            <button><i class="ri-twitter-x-line"></i></button>
+            <button><i class="ri-instagram-line"></i></button>
+            <button><i class="ri-youtube-line"></i></button>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer section -->
+      <footer
+        class="footer d-flex align-items-center justify-content-center py-4"
+      >
+        <p class="m-0">
+          © 2021 — Albert Flores. design & develop by
+          <strong class="text-primary">Prabin Karki</strong>
+        </p>
+      </footer>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"
+  ></script>
+  <script src="script.js"></script>
+</html>
