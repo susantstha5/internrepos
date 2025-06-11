@@ -22,7 +22,7 @@
 
 .hero {
     background-color: #f5f7fa;
-    padding: 120px 0 0px;
+    padding: 130px 0 0px;
     position: relative;
     min-height: 100 vh;
 }
@@ -43,16 +43,23 @@
     color: #684FFF;
 }
 
-.hero-img {
-    max-width: 100%;
+.hero-img-custom {
+    width: 150%;
+    max-width: none;
+    height: auto;
 }
 
+.hero-img {
+    position: relative;
+    flex: 0 0 45%;
+    right: 100px;
+}
 
 .hero-img .dot-pattern {
     position: absolute;
-    right: 350px;
-    top: 340px;
-    width: 50px;
+    right: -150px;
+    top: 300px;
+    width: 70px;
     height: 100%;
     z-index: 3;
     background: url('../images/Dot.png') no-repeat;
