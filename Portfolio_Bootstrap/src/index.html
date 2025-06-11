@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio using Bootstrap</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <!-- Bootstrap CDN  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"rel="stylesheet"/>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
+    <!-- Local CSS -->
     <link rel="stylesheet" href="../src/assets/css/main.css" />
+
+    <!-- Font Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- navbar -->
@@ -51,8 +56,8 @@
               worked with big companies and up-and-coming startups.
             </p>
             <div class="mt-4">
-              <a href="#hire" class="btn btn-purple me-2">Hire Me</a>
-              <a href="#view-work" class="btn btn-outline-secondary"
+              <a href="#hire" class="btn btn-purple me-2 px-5 py-3">Hire Me</a>
+              <a href="#view-work" class="btn btn-outline-primary px-5 py-3"
                 >View Work</a
               >
             </div>
@@ -149,5 +154,35 @@
         </div>
       </div>
     </section>
+
+
+    <!-- About me section -->
+    <section class="section about-section" id="about-me">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5 about-img position-relative">
+            <img src="../src/assets/images/About.png" alt="About Image-Albert">
+            <div class="dot-pattern"></div>
+          </div>
+          <div class="col-md-7 ps-md-5">
+            <h2 class="section-title">Product Designer, UI/UX Designer and Developer based in Brazil.</h2>
+            <p class="mt-4 section-subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis repellendus deleniti odit accusantium, illum similique dicta soluta officiis dolores exercitationem quia ex adipisci suscipit nesciunt blanditiis. Distinctio modi obcaecati rem dignissimos. In possimus recusandae culpa iure reprehenderit corporis fuga harum!</p>
+            <div class="stats d-flex gap-5 mt-4">
+              <div class="stat-item d-flex gap-3 align-items-center">
+                <span class="stat-number">17+</span>
+                <span class="stat-label">Years of<br>Experience</span>
+              </div>
+
+              <div class="stat-item d-flex gap-3 align-items-center">
+                <span class="stat-number">325+</span>
+                <span class="stat-label">Completed<br>Projects</span>
+              </div>
+            </div>
+            <a href="#contact" class="btn btn-purple mt-4">Say Hi <img src="../src/assets/icons/Arrow - Right 1.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </body>
 </html>

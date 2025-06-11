@@ -1,3 +1,7 @@
+* {
+    font-family: 'Inter';
+}
+
 .navbar-brand {
     background: rgba(104, 79, 255, 0.1);
     color: rgba(104, 79, 255, 1);
@@ -56,17 +60,28 @@
 }
 
 .btn-purple {
-    background-color: #684FFF;
-    color: white;
-    padding: 10px 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  background-color: #684FFF;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
 }
+
 .btn-purple:hover {
     background-color: #5a2e9d;
     color: white;
 }
 
 .btn-outline-purple {
-    border: 1px solid rgba(223, 227, 235, 1);
+    border: 1px solid rgb(231, 231, 233);
     width: 48px;
     height: 48px;
     margin: 4px;
@@ -80,6 +95,62 @@
    fill: #ffffff;
 }
 
+.social-icons {
+    position: absolute;
+    bottom: 20px;
+}
+
 .social-icons a svg {
     fill: black;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 400;
+    color: #333;
+    margin-right: 120px;
+    margin-bottom: 40px;
+}
+
+.section-subtitle {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    color: rgba(115, 125, 140, 1);
+}
+
+.about-section {
+    border-radius: 10px;
+    padding: 40px;
+    position: relative;
+}
+
+.about-img img {
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.about-img .dot-pattern {
+    position: absolute;
+    right: 350px;
+    top: 340px;
+    width: 50px;
+    height: 100%;
+    z-index: 3;
+    background: url('../images/Dot.png') no-repeat;
+    background-size: contain;
+}
+
+.stat-number {
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: rgba(104, 79, 255, 1);
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 1.125rem;
+    color: #2c2c2c;
+    margin-top: 0.25rem;
+    line-height: 1.4;
 }
