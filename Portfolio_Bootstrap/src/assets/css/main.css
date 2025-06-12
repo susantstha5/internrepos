@@ -2,6 +2,7 @@
     font-family: 'Inter';
 }
 
+/* Navbar */
 .navbar-brand {
     background: rgba(104, 79, 255, 0.1);
     color: rgba(104, 79, 255, 1);
@@ -11,6 +12,8 @@
     font-size: 1rem;
 }
 
+
+/* Hero Container */
 .hero {
     background-color: #f5f7fa;
     padding: 120px 0 0;
@@ -55,6 +58,7 @@
     background-size: contain;
 }
 
+/* Button CSS */
 .btn-purple {
   display: inline-flex;
   align-items: center;
@@ -91,6 +95,8 @@
    fill: #ffffff;
 }
 
+
+/* Hero Container Social Buttons */
 .social-icons {
     position: absolute;
     bottom: 20px;
@@ -100,6 +106,7 @@
     fill: black;
 }
 
+/* About Section */
 .section-title {
     font-size: 3rem;
     font-weight: 400;
@@ -178,16 +185,20 @@
     line-height: 1.4;
 }
 
+/* Service Section */
+.section {
+    margin-top: 130px;
+}
 
-.service-section-title {
+.All-section-title {
     font-size: 2.5rem;
     font-weight: 600;
     color: #2c3e50;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     position: relative;
 }
 
-.service-section-title::after {
+.All-section-title::after {
     content: '';
     position: absolute;
     bottom: -15px;
@@ -202,7 +213,6 @@
     background: rgba(223, 227, 235, 0.4);
     border-radius: 6px;
     padding: 20px 30px;
-    /* margin-left: 20PX; */
     height: 100%;
     border: none;
     transition: all 0.3s ease;
@@ -262,7 +272,6 @@
     color: #64748b;
     font-weight: 500;
     text-decoration: none;
-    margin-top: 15px;
 }
 
 .service-arrow i{
@@ -287,6 +296,77 @@
 }
 
 .service-card:hover .service-arrow .arrow-text {
+    opacity: 1;
+    max-width: 120px;
+    margin-right: 8px;
+}
+
+
+/* Work Section */
+#works {
+    background: rgba(223, 227, 235, 0.4);
+    height: 1200px;
+}
+
+.work-section {
+    position: relative;
+    top: 80px;
+}
+
+.card-work {
+    border-radius: 6px;
+    height: 100%;
+    border: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    top: 80px;
+}
+
+.card-work::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    transition: transform 0.3s ease;
+}
+
+.card-work:hover {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 20px 48px 0px rgba(10, 25, 49, 0.09);
+}
+
+.card-work-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.work-card-body {
+    padding: 12px;
+}
+
+.work-card-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #2c3e50;
+}
+
+.work-card-link {
+    color: #6f42c1;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.card-work:hover .service-arrow {
+    color: rgba(104, 79, 255, 1);
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+.card-work:hover .service-arrow .arrow-text {
+    text-transform: uppercase;
     opacity: 1;
     max-width: 120px;
     margin-right: 8px;
