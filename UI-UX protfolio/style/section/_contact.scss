@@ -28,17 +28,17 @@
         min-height: 500px;
     }
 } 
-.followLinks{
-        a{
-            width: 20px;
-            height: 20px;
-            padding:20px;
-        }
-        a:hover{
-            background-color: $primary-color;
-            color: white;
-        }
+.contactLinks{
+    a{
+        width: 20px;
+        height: 20px;
+        padding:20px;
     }
+    a:hover{
+        background-color: $primary-color;
+        color: white;
+    }
+}
 .contactList{
     .location, .mail, .phone{
         .bgSvg{
@@ -66,6 +66,40 @@
         }
     }
     .contactForm, .contactInfo{
-        padding: 10px !important;
+        padding: 15px !important;
+        h3{
+            font-size: 20px;  
+        }
+    }
+    .contactContainer{
+        form{
+            h3{
+                font-size: 20px;
+            }
+            input, textarea{
+                font-size: 12px;
+            }
+            textarea{
+                height:100px;
+            }
+            button{
+                font-size: 12px;
+            }
+        }
+    }
+    .contactLinks{
+        a{
+            padding:15px;
+        }
+    }
+    .contactList{
+        .location, .mail, .phone{
+            .bgSvg{
+                padding: 5px;
+            }
+        }
+    }
+    .contactDetail{
+        font-size: 12px;
     }
 }

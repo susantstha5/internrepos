@@ -86,13 +86,17 @@ nav {
         position: relative;
     }
     .homeFooter{
-        // margin-top: 50px;
+        margin-top: 100px !important;
         .fa-brands{
             min-width: 30px;
         }
     }
 }
 .followLinks{
+    a{
+        width: 48px;
+        height: 48px;
+    }
     a:hover{
         background-color: $primary-color;
     }
@@ -132,6 +136,9 @@ nav {
             display: none;
         }
     }
+    .dotCol{
+        display: none;
+    }
 }
 
 
@@ -153,6 +160,9 @@ nav {
     }
     .dotCol{
         display: none;
+    }
+    .footer{
+        font-size: 10px;
     }
 }
 

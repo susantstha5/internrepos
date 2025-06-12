@@ -75,3 +75,11 @@
         
     }
 }
+@media screen and (max-width: 500px){
+    .about{
+        padding: 20px 10px!important;
+        .aboutContent{
+            padding:10px 0px !important;
+        }
+    }
+}

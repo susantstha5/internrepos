@@ -3,9 +3,9 @@
 }
 .workCard{
     .card{
-        min-height:380px !important;
+        min-height:380px ;
         .card-body .card-title{
-            font-size: 16px;
+            font-size: 20px !important;
         }
         .card-body .card-link svg{
             width: 28px;
@@ -17,14 +17,7 @@
     }
     
 }
-.tab-pane{
-    i{
-        font-size: 50px;
-        color: rgba(223, 227, 235, 0.3);
-        position: absolute;
-        top:20px;
-    }
-}
+
 .viewLink{
     display: none;
     font-size: 14px;
@@ -33,9 +26,12 @@
     display: block;
 }
 @media screen and (max-width:900px){
-    .workard{
-        .card-title{
-            font-size: 18px;
+    .workCard{
+        .card{
+            min-height:290px ;
+            .card-title{
+                font-size: 18px;
+            }
         }
     }
 }

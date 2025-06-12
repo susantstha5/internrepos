@@ -68,6 +68,14 @@
     font-size: 20px;
   }
 }
+@media screen and (max-width: 500px) {
+  .about {
+    padding: 20px 10px !important;
+  }
+  .about .aboutContent {
+    padding: 10px 0px !important;
+  }
+}
 @font-face {
   font-family: "inter";
   src: url("../../fonts/static/Inter_18pt-Regular.ttf") format("truetype");
@@ -143,10 +151,10 @@
 }
 
 .workCard .card {
-  min-height: 380px !important;
+  min-height: 380px;
 }
 .workCard .card .card-body .card-title {
-  font-size: 16px;
+  font-size: 20px !important;
 }
 .workCard .card .card-body .card-link svg {
   width: 28px;
@@ -154,13 +162,6 @@
 }
 .workCard .card:hover {
   box-shadow: 0px 20px 48px rgba(10, 25, 49, 0.1);
-}
-
-.tab-pane i {
-  font-size: 50px;
-  color: rgba(223, 227, 235, 0.3);
-  position: absolute;
-  top: 20px;
 }
 
 .viewLink {
@@ -173,7 +174,10 @@
 }
 
 @media screen and (max-width: 900px) {
-  .workard .card-title {
+  .workCard .card {
+    min-height: 290px;
+  }
+  .workCard .card .card-title {
     font-size: 18px;
   }
 }
@@ -195,7 +199,10 @@
   box-shadow: 0px 20px 48px 0px rgba(10, 25, 49, 0.1) !important;
 }
 
-@media screen and (max-width: 5000px) {
+@media screen and (max-width: 500px) {
+  .company .compay-description {
+    font-size: 18px;
+  }
   .company .companyLogo .logo {
     width: 100px;
     min-height: 100px;
@@ -218,6 +225,11 @@
   font-size: 32px;
 }
 
+@media screen and (max-width: 500px) {
+  .banner .bannerContent {
+    font-size: 20px;
+  }
+}
 .clientList {
   width: 280px !important;
 }
@@ -245,6 +257,7 @@
 .review {
   background-color: rgba(223, 227, 235, 0.3);
   padding: 10px 20px 20px 50px;
+  margin-left: 20px;
 }
 .review .rating i, .review .rating .rate {
   font-size: 12px;
@@ -253,8 +266,36 @@
   font-size: 20px;
 }
 
-.tab-pane::after {
-  content: "";
+.tab-pane {
+  position: relative;
+}
+.tab-pane .client1-arrow {
+  font-size: 50px;
+  color: rgba(223, 227, 235, 0.3);
+  position: absolute;
+  top: 15px;
+  left: 0px;
+}
+.tab-pane .client2-arrow {
+  font-size: 50px;
+  color: rgba(223, 227, 235, 0.3);
+  position: absolute;
+  top: 100px;
+  left: 0px;
+}
+.tab-pane .client3-arrow {
+  font-size: 50px;
+  color: rgba(223, 227, 235, 0.3);
+  position: absolute;
+  top: 185px;
+  left: 0px;
+}
+.tab-pane .client4-arrow {
+  font-size: 50px;
+  color: rgba(223, 227, 235, 0.3);
+  position: absolute;
+  top: 270px;
+  left: 0px;
 }
 
 @media screen and (max-width: 900px) {
@@ -366,12 +407,12 @@
   min-height: 500px;
 }
 
-.followLinks a {
+.contactLinks a {
   width: 20px;
   height: 20px;
   padding: 20px;
 }
-.followLinks a:hover {
+.contactLinks a:hover {
   background-color: #684FFF;
   color: white;
 }
@@ -393,7 +434,31 @@
     display: none;
   }
   .contactForm, .contactInfo {
-    padding: 10px !important;
+    padding: 15px !important;
+  }
+  .contactForm h3, .contactInfo h3 {
+    font-size: 20px;
+  }
+  .contactContainer form h3 {
+    font-size: 20px;
+  }
+  .contactContainer form input, .contactContainer form textarea {
+    font-size: 12px;
+  }
+  .contactContainer form textarea {
+    height: 100px;
+  }
+  .contactContainer form button {
+    font-size: 12px;
+  }
+  .contactLinks a {
+    padding: 15px;
+  }
+  .contactList .location .bgSvg, .contactList .mail .bgSvg, .contactList .phone .bgSvg {
+    padding: 5px;
+  }
+  .contactDetail {
+    font-size: 12px;
   }
 }
 .text-primary {
@@ -482,10 +547,17 @@ nav .menuBar {
   width: 460px;
   position: relative;
 }
+.home .homeFooter {
+  margin-top: 100px !important;
+}
 .home .homeFooter .fa-brands {
   min-width: 30px;
 }
 
+.followLinks a {
+  width: 48px;
+  height: 48px;
+}
 .followLinks a:hover {
   background-color: #684FFF;
 }
@@ -518,6 +590,9 @@ nav .menuBar {
   .home .profileImg {
     display: none;
   }
+  .dotCol {
+    display: none;
+  }
 }
 @media screen and (max-width: 500px) {
   h2 {
@@ -537,5 +612,8 @@ nav .menuBar {
   }
   .dotCol {
     display: none;
+  }
+  .footer {
+    font-size: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
