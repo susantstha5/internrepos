@@ -31,7 +31,7 @@
       >
         <!-- navbar -->
         <nav
-          class="navbar position-absolute justify-content-between py-0 align-items-center w-100"
+          class="navbar position-absolute justify-content-between d-flex py-0 top-0 align-items-center w-100"
         >
           <span
             class="name_shortForm text-primary bg-primary-emphasis px-3 fs-5 fw-400 py-1 rounded-pill"
@@ -44,7 +44,9 @@
             <a href="#">CONTACT</a>
           </div>
         </nav>
-        <div class="hero_content d-flex flex-column justify-content-around">
+        <div
+          class="hero_content pb-4 gap-3 d-flex flex-column justify-content-around"
+        >
           <div class="hero_description position-relative d-flex flex-column">
             <h1 class="">
               Hello, I’m Albert, a UI/UX
@@ -82,15 +84,11 @@
             </div>
           </div>
         </div>
-        <div class="image_container position-absolute start-50 bottom-0">
-          <img
-            class="object-fit-contain"
-            src="./assets/heroImage/Image.png"
-            alt=""
-          />
+        <div class="image_container bottom-0">
+          <img class="" src="./assets/heroImage/Image.png" alt="" />
         </div>
         <div
-          class="dot_container bg-secondary justify-content-center align-items-center d-flex"
+          class="dot_container bg-secondary justify-content-center align-items-center"
         >
           <img
             class="object-fit-contain"
@@ -102,7 +100,7 @@
 
       <!-- about section -->
       <section
-        class="about_container position-relative d-flex justify-content-start align-items-center gap-xxl-5"
+        class="about_container position-relative d-flex justify-content-between align-items-center gap-5"
       >
         <img
           class="position-absolute start-0 top-0 w-25"
@@ -123,7 +121,7 @@
             ipsum, molestie commodo odio. Quisque auctor nisi mi. Aenean
             venenatis sapien et interdum interdum.
           </p>
-          <div class="achievements d-flex gap-xl-5">
+          <div class="achievements d-flex gap-5">
             <div
               class="experience d-flex align-items-center justify-content-center gap-md-3"
             >
@@ -151,11 +149,11 @@
 
       <!-- services section -->
       <section
-        class="service_container d-flex flex-column gap-lg-5 align-items-center"
+        class="service_container d-flex flex-column gap-5 align-items-center"
       >
         <h2 class="heading position-relative py-3">My Service</h2>
-        <div class="services d-flex gap-5 justify-content-between">
-          <div class="service d-flex flex-column gap-lg-5 p-3">
+        <div class="services d-flex flex-wrap">
+          <div class="service d-flex flex-column gap-5 p-3">
             <div class="logo_service">
               <i class="ri-stack-line fs-3"></i>
             </div>
@@ -173,7 +171,7 @@
               </a>
             </div>
           </div>
-          <div class="service d-flex flex-column gap-lg-5 p-3">
+          <div class="service d-flex flex-column gap-5 p-3">
             <div class="logo_service">
               <i class="ri-box-3-line fs-3"></i>
             </div>
@@ -191,7 +189,7 @@
               </a>
             </div>
           </div>
-          <div class="service d-flex flex-column gap-lg-5 p-3">
+          <div class="service d-flex flex-column gap-5 p-3">
             <div class="logo_service">
               <i class="ri-rectangle-line fs-3"></i>
             </div>
@@ -209,7 +207,7 @@
               </a>
             </div>
           </div>
-          <div class="service d-flex flex-column gap-lg-5 p-3">
+          <div class="service d-flex flex-column gap-5 p-3">
             <div class="logo_service">
               <i class="ri-code-line fs-3"></i>
             </div>
@@ -379,7 +377,7 @@
 
       <!-- company logos -->
       <section class="companyLogos_container d-flex w-100 align-items-center">
-        <div class="logo_details w-25">
+        <div class="logo_details">
           <p class="fs-3 fw-medium">
             I Worked with
             <span class="text-primary position-relative">289+</span> Companies
@@ -387,7 +385,7 @@
           </p>
         </div>
         <div
-          class="scroll_wrapper d-flex w-75 align-items-center gap-3 justify-content-end"
+          class="scroll_wrapper d-flex align-items-center gap-3 justify-content-end"
         >
           <button class="scroll" id="scrollLeft">
             <i class="ri-arrow-left-long-line fw-bold"></i>
@@ -432,7 +430,7 @@
         <div
           class="banner d-flex justify-content-around align-items-center flex-column gap-4 py-5 rounded-1"
         >
-          <p class="text-white fs-3 text-center">
+          <p class="text-white text-center">
             Got a Project in Mind? Let's Make <br />
             Something Awesome Together.
           </p>
@@ -449,7 +447,7 @@
         </h2>
         <div class="testimonial_wrapper d-flex gap-4">
           <div class="clients d-flex flex-column">
-            <div class="client d-flex p-3 gap-2" data-id="client1">
+            <div class="client d-flex p-3 gap-2 w-100" data-id="client1">
               <div>
                 <img
                   src="./assets/testimonialImage/sundar.png"
@@ -516,7 +514,7 @@
             </div>
           </div>
           <div
-            class="testimonial_content position-relative w-75 rounded-1 d-flex flex-column justify-content-center px-5 py-4 gap-3"
+            class="testimonial_content position-relative rounded-1 d-flex flex-column justify-content-center px-5 py-4 gap-3"
           >
             <div class="rating">
               <i class="ri-star-fill text-warning fs-5"></i>
@@ -540,9 +538,9 @@
         <h2 class="heading position-relative py-3 w-100 text-center">
           Blog & News
         </h2>
-        <div class="blog_wrapper d-flex gap-4">
+        <div class="blog_wrapper d-flex gap-4 flex-wrap">
           <div
-            class="blog_content d-flex flex-column gap-1 bg-white rounded-1 p-3"
+            class="blog_content d-flex flex-column gap-2 bg-white rounded-1 p-3"
           >
             <div class="w-100">
               <img
@@ -552,7 +550,7 @@
               />
             </div>
             <div
-              class="blog_decription d-flex flex-column gap-2 py-3 justify-content-lg-start"
+              class="blog_decription d-flex flex-column py-3 justify-content-lg-start"
             >
               <div class="date_content d-flex gap-2">
                 <small class="date">24 May, 2021</small
@@ -586,7 +584,7 @@
               />
             </div>
             <div
-              class="blog_decription d-flex flex-column gap-2 py-3 justify-content-lg-start"
+              class="blog_decription d-flex flex-column py-3 justify-content-lg-start"
             >
               <div class="date_content d-flex gap-2">
                 <small class="date">24 May, 2021</small
@@ -595,7 +593,9 @@
                   ><i class="ri-circle-fill"></i></small
                 ><small class="">9 min read</small>
               </div>
-              <h5 class="">10 Best Wireframe Tools for Designers in 2021.</h5>
+              <h5 class="">
+                10 Best Wireframe Tools for successfull web designers in 2021.
+              </h5>
               <a
                 class="blog_cta d-flex align-items-center gap-1 text-decoration-none justify-content-start"
                 href="#"
@@ -611,9 +611,7 @@
             <div
               class="smallBlog_content p-3 d-flex flex-column gap-2 py-3 justify-content-lg-start"
             >
-              <h5 class="w-75">
-                10 Best Wireframe Tools for Designers in 2021.
-              </h5>
+              <h5 class="">10 Best Wireframe Tools for Designers in 2021.</h5>
               <a
                 class="blog_cta d-flex align-items-center gap-1 text-decoration-none justify-content-start"
                 href="#"
@@ -627,7 +625,7 @@
             <div
               class="smallBlog_content p-3 d-flex flex-column gap-2 py-3 justify-content-lg-start"
             >
-              <h5 class="w-75">
+              <h5 class="">
                 20 Cool Fonts for Web and Graphic Design. (free + paid)
               </h5>
               <a
@@ -643,7 +641,7 @@
             <div
               class="smallBlog_content p-3 d-flex flex-column gap-2 py-3 justify-content-lg-start"
             >
-              <h5 class="w-75">
+              <h5 class="">
                 8 Things You Need to Create a Restaurant Website.
               </h5>
               <a
@@ -662,7 +660,7 @@
 
       <!-- contact section -->
       <section
-        class="contact_container position-relative d-flex justify-content-between"
+        class="contact_container position-relative gap-4 d-flex justify-content-between"
       >
         <img
           src="./assets/contactSection/contactShape.png"
@@ -770,7 +768,7 @@
       <footer
         class="footer d-flex align-items-center justify-content-center py-4"
       >
-        <p class="m-0">
+        <p class="w-75 m-0 text-center">
           © 2021 — Albert Flores. design & develop by
           <strong class="text-primary">Prabin Karki</strong>
         </p>
