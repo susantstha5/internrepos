@@ -1,0 +1,41 @@
+.work{
+    padding-block: 50px;
+}
+.workCard{
+    .card{
+        min-height:380px !important;
+        .card-body .card-title{
+            font-size: 16px;
+        }
+        .card-body .card-link svg{
+            width: 28px;
+            height: 20px;
+        }
+        &:hover{
+            box-shadow: 0px 20px 48px rgba(10, 25, 49, 0.1);
+        }
+    }
+    
+}
+.tab-pane{
+    i{
+        font-size: 50px;
+        color: rgba(223, 227, 235, 0.3);
+        position: absolute;
+        top:20px;
+    }
+}
+.viewLink{
+    display: none;
+    font-size: 14px;
+}
+.card:hover .viewLink{
+    display: block;
+}
+@media screen and (max-width:900px){
+    .workard{
+        .card-title{
+            font-size: 18px;
+        }
+    }
+}

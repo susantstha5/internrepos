@@ -1,0 +1,158 @@
+@import "./section/about.scss";
+@import "./utils/topography";
+@import "./utils/colors";
+@import "./section/service";
+@import "./section/work";
+@import "./section/company";
+@import "./section/banner";
+@import "./section/clientTest";
+@import "./section/blog";
+@import "./section/contact";
+
+.text-primary{
+    color:$primary-color !important;
+}
+.text-secondary{
+    color: #0A1931 !important; //gray-900 
+}
+.text-tertiary{
+    color: #737D8C !important; //gray-500
+}
+.bg-primary{
+    background-color: #DFE3EB !important;
+}
+.btn-primary{
+    background-color: $primary-color !important ;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+.btn-primary:hover{
+    background: $secondary !important;
+}
+.btn-outline-primary{
+    color: black;
+    border-radius: 5px;
+    border: 1px solid #DFE3EB;
+}
+a{
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "inter", sans-serif;
+    box-sizing: border-box;
+}
+
+.bg-color{
+    background: linear-gradient(to right, white 65%, #DFE3EB 35%);
+}
+.container{
+    padding-inline: 50px !important;
+}
+h2{
+    font-size: 40px;
+}
+nav {
+  .menuBar{
+    display: none;
+  }
+}
+.link-list li a{
+    color: $dark-gray;
+}
+
+
+.home{
+    min-height: 600px;
+    z-index: 2;
+    .homeContent{
+        margin-top: 90px;
+        position: relative;
+        .intro-text{
+            font-size: 70px;
+            max-width: 730px;
+            .highlight{
+                background: linear-gradient(to bottom, white 60%, rgb(104, 79, 255, 0.15) 40%);
+            }
+        }
+        .intro-description{
+            max-width: 500px;
+        }
+    }
+    .profileImg{
+        width: 460px;
+        position: relative;
+    }
+    .homeFooter{
+        // margin-top: 50px;
+        .fa-brands{
+            min-width: 30px;
+        }
+    }
+}
+.followLinks{
+    a:hover{
+        background-color: $primary-color;
+    }
+    a:hover i{
+        color: white;
+    }
+}
+.dotCol{
+    position: absolute;
+    top:250px;
+    right:200px;
+    z-index: 1;
+}
+
+//footer css
+.footer{
+    font-size: 14px;
+}
+
+@media screen and (max-width: 900px){
+    nav{
+        .links{
+            display: none;
+        }
+        .menuBar{
+            display: block;
+            font-size: 20px;
+        }
+    }
+    .home{
+        .homeContent{
+            .intro-text .highlight{
+                background: none;
+            }
+        }
+        .profileImg{
+            display: none;
+        }
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    h2{
+        font-size: 24px;
+    }
+    .bg-color{
+        background: none;
+    }
+    .home{
+        min-height: 500px;
+        .homeContent{
+            margin-top: 30px;
+            .intro-text{
+                font-size: 30px;
+            }
+        }
+    }
+    .dotCol{
+        display: none;
+    }
+}
+

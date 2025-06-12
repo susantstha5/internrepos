@@ -1,0 +1,11 @@
+.banner{
+    background: url("/images/Shapes.png") no-repeat;
+    background-size: cover;
+    background-color: $dark-gray;
+    width: 100%;
+    border-radius: 8px;
+    .bannerContent{
+        padding-inline: 50px;
+        font-size: 32px;
+    }
+}

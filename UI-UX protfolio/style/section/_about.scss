@@ -1,0 +1,77 @@
+.aboutContainer{
+    background:linear-gradient(to bottom, #DFE3EB, #ffffff);
+    position: relative;
+    overflow: hidden;
+    .bgCircle{
+        position: absolute;
+        top:-50px;
+        left:0;
+        z-index: 1;
+    }
+    .dot{
+        position: absolute;
+        z-index: 2;
+        top:150px;
+        left:30px;
+    }
+}
+.about {
+    position: relative;
+    z-index: 3;
+    img{
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover;
+        box-shadow:20px 20px  white;
+        // position: relative;
+        // z-index: 3;
+    }
+    .aboutContent{
+        .about-text{
+            font-size: 40px;
+        }
+        .about-description{
+            font-size: 14px;
+        }
+    }
+    hr{
+        margin-top: 50px;
+    }
+    .hibutton {
+        border-radius: 4px;
+        svg {
+            width:30px;
+        }
+    }
+}
+.experienceProject{
+    gap:40px;
+    .experience , .project{
+        max-width:206px;
+        .years{
+            font-size: 50px;
+        }
+    }
+}
+@media screen and (max-width: 900px){
+    .about{
+        .aboutContent{
+            .about-text{
+                font-size: 20px;
+            }
+            .about-description{
+                font-size: 12px;
+            }
+        }
+    }
+    .experienceProject{
+        gap:10px;
+        .experience, .project{
+            .years{
+                font-size: 20px;
+            }
+        }
+        
+    }
+}
