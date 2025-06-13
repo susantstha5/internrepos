@@ -1,0 +1,50 @@
+//css for navbar
+@import './component/nav';
+
+//css for hero section
+@import './component/heroinfo';
+
+//css for about section
+@import './component/about';
+
+//css for myservice section
+@import './component/myservice';
+
+//css for my selected work section
+@import './component/work';
+
+//css for slider section
+@import './component/slider';
+
+//css for testimonial section
+@import './component/testimonial';
+
+//css for  blog and newssection
+@import './component/blog';
+
+//css for  contact section
+@import './component/contact';
+
+//for font
+@font-face {
+    font-family: "Inter";
+    src: url("../font/Inter_28pt-regular.ttf") format('truetype');
+}
+
+// *{
+//     outline: 1px solid red;
+// }
+
+body{
+    font-family: "Inter", sans-serif;
+}
+.herocontainer{
+    // width: 1920px;
+    
+    .hero-section{
+        background: linear-gradient(to right, #ffffff 63%, #f4f6fb 37%);
+        height: 100vh;
+        padding:0px 200px 0px 200px;
+        overflow: hidden;
+    }
+}

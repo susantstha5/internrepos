@@ -1,0 +1,37 @@
+.slider{
+    padding:5px 200px 20px 200px;
+    .slider-content{
+        width:300px;
+         .number {
+            font-size: 32px;
+            font-weight: 400;
+            position: relative;
+            z-index: 1;
+            color: #684FFF;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 55%;
+                left: 0;
+                width: 100%; // or adjust for partial highlight
+                height: 35%;
+                background-color: #e6e0f8;
+                z-index: -1;
+                border-radius: 4px;
+            }
+        }
+    }
+    .slider-image{
+        div{
+            width: 150px;
+            height: 110px;
+            background-color:#DFE3EB66 ;
+            border-radius: 10px;
+            &:hover{
+                background-color:white ;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                scale: 1.1;
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+.testimonial{
+    padding:5px 200px 20px 200px;
+    .hireme{
+        background-color: #0A1931;
+        max-width:1320px;
+        max-height:312px;
+        p{
+            font-size: 32px;
+            padding:50px 200px 10px 200px;
+            color:white;
+        }
+        .hiremebutton{
+            width:150px;
+            height:50px;
+            background-color: #684FFF;
+            color:white;
+            border-radius: 5px;
+            border:none;
+            padding: 0px auto;
+            &:hover{
+                box-shadow: 0px 0px 10px 0px #684FFF;
+            }
+        }
+    }
+    .client-testimonial{
+        h4{
+            font-size: 40px;
+            font-weight: 400;
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                left: 46%;
+                bottom: -10px;
+                width: 80px;
+                height: 3px;
+                background-color: #684FFF; 
+                border-radius: 2px;
+            }
+        }
+        .client{
+            .client-content{
+               .ceo{
+                    color: #737D8C;
+                    span{
+                        color: #684FFF;
+                    }
+                } 
+                &:hover{
+                    background-color:#DFE3EB66 ;
+                    scale: 1.1;
+                    
+                }
+            }
+        }
+        .rating{
+            position: relative;
+            background-color:#DFE3EB66 ;
+            .quotation{
+                position: absolute;
+                top: 10px;
+                left: 80%;
+            }
+            .top-rating{
+                 img{
+                    width:25px;
+                    height:25px;
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
+            p{
+                font-size: 30px;
+            }
+        }
+    }
+}

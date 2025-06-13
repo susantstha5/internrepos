@@ -1,0 +1,34 @@
+.navsection{
+    // height:95px;
+    padding:24px 0px;
+    position: sticky;
+
+    ul{
+        list-style-type:none;
+        li{
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 14px;
+            a{
+                text-decoration: none;
+                color:#0A1931;
+                &:hover{
+                    color: #684FFF;
+                    text-decoration: underline;
+                    text-decoration-color:#684FFF;    
+                    text-decoration-thickness: 2px;
+                    text-underline-offset: 55%; 
+                }
+            }
+        }
+    }
+    button{
+        font-size: 14px;
+        font-weight: 500;
+        &:hover{
+            color:#684FFF;
+            background-color: #F5EFFF;
+        }
+    }
+}
+   
