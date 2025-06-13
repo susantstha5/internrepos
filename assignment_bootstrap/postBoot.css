@@ -151,6 +151,9 @@ body {
 .about_content h2 {
   font-size: 48px;
 }
+.achievements{
+  gap: 30px;
+}
 .about_content .achievements div span {
   font-size: 56px;
   color: #674dff;
@@ -165,12 +168,17 @@ body {
 /* service section */
 
 .services {
-  justify-content: space-between;
+ display: grid;
+   grid-template-columns: repeat(
+    auto-fit,
+    minmax(280px, 1fr)
+  ); /* 3 equal columns */
+  gap: 30px;
   width: 100%;
-  gap: 20px;
+  justify-content: space-around;
 }
 .service {
-  width: 280px;
+  width: 100%;
   background-color: #e0e4eb;
   border-radius: 4px;
 }
@@ -490,10 +498,17 @@ body {
     margin: 0px;
   }
   .services {
-    justify-content: space-around;
+     display: grid;
+   grid-template-columns: repeat(
+    auto-fit,
+    minmax(280px, 1fr)
+  ); /* 3 equal columns */
+  gap: 30px;
+  width: 100%;
+  justify-content: space-around;
   }
   .service {
-    width: 250px;
+    width: 100%;
   }
   .smallBlog_content h5 {
     width: 95%;
@@ -552,8 +567,18 @@ body {
   .service_container {
     padding: 40px;
   }
+  .serivces{
+     display: grid;
+   grid-template-columns: repeat(
+    auto-fit,
+    minmax(280px, 1fr)
+  ); /* 3 equal columns */
+  gap: 30px;
+  width: 100%;
+  justify-content: space-around;
+  }
   .service {
-    width: 240px;
+    width: 100%;
   }
   .work_container {
     padding: 40px;
@@ -615,15 +640,36 @@ body {
   }
   .image_container img {
     object-fit: cover;
-    margin-left: 15%;
+    margin-left: 10%;
     margin-top: 10%;
   }
   .about_content h2 {
     font-size: 26px;
   }
-  .service {
-    width: 200px;
+  .profile_image::before{
+    background-size: contain;
+    background-position: top right;
+    height: 30%;
+    width: 30%;
+
   }
+  .achievements{
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+   .services{
+     display: grid;
+   grid-template-columns: repeat(
+    auto-fit,
+    minmax(280px, 1fr)
+  ); /* 3 equal columns */
+  gap: 30px;
+  width: 100%;
+  justify-content: space-around;
+   }
+   .service{
+    width: 100%;
+   }
   .service_content h5 {
     font-size: 24px;
   }
@@ -639,7 +685,7 @@ body {
   }
   .blog_content,
   .small_blog {
-    max-width: 75%; /* Full width on mobile */
+    max-width: 95%; /* Full width on mobile */
   }
   .blog_container {
     padding: 40px 40px; /* Reduce padding for smaller screens */
