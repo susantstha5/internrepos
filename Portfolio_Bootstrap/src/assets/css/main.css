@@ -29,7 +29,7 @@
 .hero-text p {
     font-size: 1.25rem;
     font-weight: 400;
-    color:rgba(115, 125, 140, 1);
+    color: rgba(115, 125, 140, 1);
 }
 
 .hero-text span {
@@ -60,19 +60,19 @@
 
 /* Button CSS */
 .btn-purple {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.25rem;
-  background-color: #684FFF;
-  color: white;
-  font-weight: 600;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
+    background-color: #684FFF;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
 }
 
 .btn-purple:hover {
@@ -87,12 +87,12 @@
     margin: 4px;
 }
 
-.btn-outline-purple:hover{
+.btn-outline-purple:hover {
     background-color: #684FFF;
 }
 
-.btn-outline-purple:hover svg{
-   fill: #ffffff;
+.btn-outline-purple:hover svg {
+    fill: #ffffff;
 }
 
 
@@ -186,10 +186,6 @@
 }
 
 /* Service Section */
-.section {
-    margin-top: 130px;
-}
-
 .All-section-title {
     font-size: 2.5rem;
     font-weight: 600;
@@ -242,7 +238,7 @@
     font-size: 2rem;
 }
 
-.service-card:hover .service-icon i{
+.service-card:hover .service-icon i {
     color: rgba(104, 79, 255, 1)
 }
 
@@ -274,7 +270,7 @@
     text-decoration: none;
 }
 
-.service-arrow i{
+.service-arrow i {
     font-size: 2rem;
     margin-left: 8px;
     transition: transform 0.3s ease;
@@ -305,7 +301,7 @@
 /* Work Section */
 #works {
     background: rgba(223, 227, 235, 0.4);
-    height: 1200px;
+    height: 1100px;
 }
 
 .work-section {
@@ -370,4 +366,120 @@
     opacity: 1;
     max-width: 120px;
     margin-right: 8px;
+}
+
+
+/* Company Section  */
+
+
+
+/* Testimonial-Section */
+.testimonial-section {
+    padding: 3rem 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.All-section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.testimonial-wrapper {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.testimonial-list {
+    flex: 0 0 clamp(250px, 25vw, 300px);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.testimonial-item {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-height: 100px;
+}
+
+.testimonial-item:hover {
+    background: rgba(223, 227, 235, 0.3);
+
+}
+
+.testimonial-item.active {
+    background: rgba(223, 227, 235, 0.4);
+    font-weight: 600;
+}
+
+.testimonial-input {
+    display: none;
+}
+
+.testimonial-content {
+    flex: 1;
+    padding: 1.5rem;
+    background: rgba(223, 227, 235, 0.3);
+    border-radius: 0.375rem;
+    min-height: 300px;
+}
+
+.testimonial-text {
+    display: none;
+    font-size: 2rem;
+}
+
+#testimonial-sundar:checked~.testimonial-content #text-sundar,
+#testimonial-shantanu:checked~.testimonial-content #text-shantanu,
+#testimonial-noah:checked~.testimonial-content #text-noah,
+#testimonial-stewart:checked~.testimonial-content #text-stewart {
+    display: block;
+}
+
+.testimonial-item img {
+    width: 48px;
+    height: 48px;
+    margin-right: 0.75rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimonial-list span span {
+    color: #8b5cf6;
+}
+
+.star-rating {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.star-rating span {
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+.star-rating i {
+    color:rgba(255, 135, 24, 1);
+    font-size: 1.5rem;
+}
+
+.apostrophe-icon {
+    width: 95px;
+    height: 75px;
+    position: relative;
+    left: 490px;
 }
