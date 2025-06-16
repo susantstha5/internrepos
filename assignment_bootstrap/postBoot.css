@@ -7,6 +7,9 @@ body {
   padding: 0px;
   font-family: "Inter", sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 /* changed predefined bootstrap properties  */
 .text-primary {
   color: #674dff !important;
@@ -127,7 +130,7 @@ body {
 .profile_image::before {
   content: "";
   height: 100%;
-  width: 100%;
+  width: 30%;
   background-position: top right;
   background-repeat: no-repeat;
   background-image: url("./assets/aboutImage/dot2.svg");
@@ -460,6 +463,7 @@ body {
   height: 10%;
   width: 20%;
   left: 90%;
+  top: 0;
   content: "";
   background-size: contain;
   background-repeat: no-repeat;

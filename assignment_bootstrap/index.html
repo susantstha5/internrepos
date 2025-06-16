@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile Website</title>
+    <!-- 
+    jquery link -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- bootstrap link -->
     <link
@@ -38,10 +41,10 @@
             >A.F</span
           >
           <div class="nav_links d-flex gap-4 align-items-center text-uppercase">
-            <a href="#">ABOUT</a>
-            <a href="#">SERVICES</a>
-            <a href="#">WORKS</a>
-            <a href="#">CONTACT</a>
+            <a href="#about">ABOUT</a>
+            <a href="#services">SERVICES</a>
+            <a href="#works">WORKS</a>
+            <a href="#contact">CONTACT</a>
           </div>
         </nav>
         <div
@@ -100,7 +103,7 @@
 
       <!-- about section -->
       <section
-        class="about_container position-relative d-flex justify-content-between align-items-center gap-5"
+        class="about_container position-relative d-flex justify-content-between align-items-center gap-5" id="about"
       >
         <img
           class="position-absolute start-0 top-0 w-25"
@@ -147,7 +150,7 @@
 
       <!-- services section -->
       <section
-        class="service_container d-flex flex-column gap-5 align-items-center"
+        class="service_container d-flex flex-column gap-5 align-items-center" id="services"
       >
         <h2 class="heading position-relative py-3">My Service</h2>
         <div class="services">
@@ -227,7 +230,7 @@
       </section>
 
       <!-- work section -->
-      <section class="work_container bg-secondary d-grid gap-4">
+      <section class="work_container bg-secondary d-grid gap-4" id="works">
         <h2 class="heading position-relative py-3 w-100 text-center">
           My Selected Work
         </h2>
@@ -518,11 +521,6 @@
               >
             </div>
             <p class="testimonial fs-3 m-0 fw-normal" id="testimonial_review">
-              <!-- “If you're looking for someone who will challenge your UX/UI
-              thinking and really cut to the core of what's important for users,
-              then Jesse is your man. On top of that, he brings a level of
-              enthusiasm to the craft that's energizing for everyone who works
-              with him.” -->
             </p>
           </div>
         </div>
@@ -655,7 +653,7 @@
 
       <!-- contact section -->
       <section
-        class="contact_container position-relative gap-4 d-flex justify-content-between"
+        class="contact_container position-relative gap-4 d-flex justify-content-between" id="contact"
       >
         <img
           src="./assets/contactSection/contactShape.png"
@@ -673,12 +671,14 @@
                 placeholder="Full name"
                 name="username"
                 class="p-2 w-50"
+                required
               />
               <input
                 type="email"
                 placeholder="Email address"
                 name="email"
                 class="p-2 w-50"
+                required
               />
             </div>
             <input
@@ -686,6 +686,7 @@
               placeholder="Subjects"
               name="subject"
               class="p-2 w-100"
+              required
             />
             <textarea
               name="Message"
@@ -693,6 +694,7 @@
               class="w-100 p-2"
               rows="5"
               id="message"
+              required
             ></textarea>
             <div class="py-3">
               <button
@@ -704,7 +706,7 @@
           </form>
         </div>
         <div
-          class="contact_wrapper bg-white position-relative p-4 d-flex flex-column justify-content-between rounded-2"
+          class="contact_wrapper bg-white position-relative p-4 d-flex flex-column justify-content-center gap-4 rounded-2"
         >
           <h3 class="fs-3">Let Me Know here.</h3>
           <div class="contact_details d-flex flex-column gap-4">
