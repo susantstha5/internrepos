@@ -56,6 +56,9 @@ body {
   font-size: 14px;
   font-weight: 500;
 }
+.nav_links a:hover {
+  color: #674dff;
+}
 .hero_container {
   min-height: 700px;
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);
@@ -77,7 +80,7 @@ body {
   padding-left: 100px;
 }
 .hero_description h1 {
-  font-size: 80px;
+  font-size: clamp(36px, 5vw, 80px);
 }
 .text_bg::after {
   content: "Designer.";
@@ -149,9 +152,9 @@ body {
   max-width: 460px;
 }
 .about_content h2 {
-  font-size: 48px;
+  font-size: clamp(24px, 5vw, 48px);
 }
-.achievements{
+.achievements {
   gap: 30px;
 }
 .about_content .achievements div span {
@@ -168,8 +171,8 @@ body {
 /* service section */
 
 .services {
- display: grid;
-   grid-template-columns: repeat(
+  display: grid;
+  grid-template-columns: repeat(
     auto-fit,
     minmax(280px, 1fr)
   ); /* 3 equal columns */
@@ -197,7 +200,7 @@ body {
   cursor: pointer;
 }
 .service_content h5 {
-  font-size: 32px;
+  font-size: clamp(14px, 5vw, 32px);
 }
 .heading {
   width: fit-content;
@@ -205,6 +208,7 @@ body {
   font-size: 40px;
   align-items: center;
   justify-content: center;
+  font-size: clamp(28px, 5vw, 40px);
 }
 .heading::after {
   width: 80px;
@@ -331,12 +335,18 @@ body {
 .testimonial_container {
   padding: 80px 100px;
 }
+.clients {
+  flex-direction: column;
+}
 .client {
   width: fit-content;
 }
 .client.active {
   background-color: #f6f7f9;
   cursor: pointer;
+}
+.client_details {
+  display: flex;
 }
 .client .client_details span {
   font-size: 14px;
@@ -347,6 +357,7 @@ body {
 .testimonial_content {
   background-color: #f6f7f9;
   width: 75%;
+  padding: 24px 48px;
 }
 .testimonial_content::after {
   position: absolute;
@@ -480,14 +491,8 @@ body {
   .image_container img {
     max-height: 420px;
   }
-  .hero_description h1 {
-    font-size: 50px;
-  }
   .profile_image img {
     max-width: 300px;
-  }
-  .about_content h2 {
-    font-size: 30px;
   }
   .about_content .achievements div span {
     font-size: 40px;
@@ -498,14 +503,14 @@ body {
     margin: 0px;
   }
   .services {
-     display: grid;
-   grid-template-columns: repeat(
-    auto-fit,
-    minmax(280px, 1fr)
-  ); /* 3 equal columns */
-  gap: 30px;
-  width: 100%;
-  justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(280px, 1fr)
+    ); /* 3 equal columns */
+    gap: 30px;
+    width: 100%;
+    justify-content: space-around;
   }
   .service {
     width: 100%;
@@ -567,18 +572,17 @@ body {
   .service_container {
     padding: 40px;
   }
-  .serivces{
-     display: grid;
-   grid-template-columns: repeat(
-    auto-fit,
-    minmax(280px, 1fr)
-  ); /* 3 equal columns */
-  gap: 30px;
-  width: 100%;
-  justify-content: space-around;
+  .serivces {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(280px, 280px)
+    ); /* 3 equal columns */
+    gap: 30px;
+    justify-content: space-around;
   }
-  .service {
-    width: 100%;
+  .service_content .link_cta {
+    font-size: 16px;
   }
   .work_container {
     padding: 40px;
@@ -601,6 +605,7 @@ body {
   }
   .testimonial_content {
     width: 100%;
+    padding: 18px 42px;
   }
   .blog_content {
     max-width: 60%; /* Two in a row */
@@ -612,9 +617,6 @@ body {
     max-width: 60%;
     flex-direction: column;
     gap: 1rem;
-  }
-  .heading {
-    font-size: 32px;
   }
   .contact_container {
     flex-direction: column;
@@ -629,9 +631,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .hero_content .hero_description h1 {
-    font-size: 36px;
-  }
   .navbar .nav_links a {
     font-size: 12px;
   }
@@ -639,40 +638,28 @@ body {
     overflow: hidden;
   }
   .image_container img {
-    object-fit: cover;
+    object-fit: contain;
     margin-left: 10%;
     margin-top: 10%;
   }
-  .about_content h2 {
-    font-size: 26px;
-  }
-  .profile_image::before{
+  .profile_image::before {
     background-size: contain;
     background-position: top right;
     height: 30%;
     width: 30%;
-
   }
-  .achievements{
+  .achievements {
     flex-wrap: wrap;
     gap: 15px;
   }
-   .services{
-     display: grid;
-   grid-template-columns: repeat(
-    auto-fit,
-    minmax(280px, 1fr)
-  ); /* 3 equal columns */
-  gap: 30px;
-  width: 100%;
-  justify-content: space-around;
-   }
-   .service{
+  .services {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr)); /* 3 equal columns */
+    gap: 20px;
     width: 100%;
-   }
-  .service_content h5 {
-    font-size: 24px;
+    justify-content: space-around;
   }
+
   .works {
     display: grid;
     grid-template-columns: repeat(
@@ -683,9 +670,27 @@ body {
     justify-content: space-around;
     gap: 30px;
   }
+  .service_cta .link_cta {
+    font-size: 12px;
+  }
+  .testimonial_wrapper .clients {
+    flex-direction: row;
+    overflow-x: auto;
+    justify-content: space-between;
+  }
+  .testimonial_content {
+    padding: 14px;
+  }
+  .client {
+    justify-content: center;
+    border-radius: 8px;
+  }
+  .client .client_details {
+    display: none;
+  }
   .blog_content,
   .small_blog {
-    max-width: 95%; /* Full width on mobile */
+    max-width: 90%; /* Full width on mobile */
   }
   .blog_container {
     padding: 40px 40px; /* Reduce padding for smaller screens */
