@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'inter';
+    font-weight: 400;
+    src: url('../../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf') format("truetype");
+}
+
+.text-primary{
+    color: $primary !important;
+}

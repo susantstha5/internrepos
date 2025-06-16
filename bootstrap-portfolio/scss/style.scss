@@ -1,0 +1,164 @@
+@import "./utils/constant";
+@import "./components/button";
+@import "./utils/typography";
+body{
+  font-family: 'inter';
+}
+.btn {
+  &-primary {
+    background-color: $primary;
+    &:hover{
+      background-color: $gray;
+      color: $primary !important;
+    }
+  }
+  &-secondary{
+    background-color: $gray;
+    border: 2px solid rgba(223, 227, 235, 1);
+    &:hover{
+      background-color: $primary;
+      .icon{
+        color: white !important;
+      }
+    }
+  }
+  &-outline{
+    &-primary{
+      border: 1px solid $primary;
+      &:hover{
+        background-color: $primary;
+        color: white!important;
+      }
+    }
+  }
+  .btn-text {
+    display: inline-block;
+    
+    transform: translateX(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  &:hover {
+    cursor: pointer;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.bottom-line {
+  width: 100px;
+  height: 3px;
+  border-radius: 4px;
+  background: $primary;
+}
+.border-line {
+  max-width: 60px;
+  height: 3px;
+  border-radius: 4px;
+  background: $primary;
+  opacity: 50%;
+}
+.card:hover {
+  cursor: pointer;
+  .fi {
+    color: $primary;
+  }
+  span {
+    display: block;
+    // transition: all 3s linear;
+  }
+}
+a {
+  text-decoration: none;
+  .icon {
+    color: $primary;
+  }
+  span {
+      display: none;
+      color: $primary !important;
+    }
+}
+.bg-blue {
+  background-color: rgba(10, 25, 49, 1);
+}
+.highlighted-text {
+  color: $primary;
+}
+
+.profile-image {
+  max-width: 70px;
+  height: 70px;
+  // overflow: hidden;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+}
+.fi-ss-star {
+  color: red;
+}
+.rating {
+  .fi {
+    color: rgba(255, 135, 24, 1);
+  }
+}
+#hero{
+  .dot{
+    transform: rotate(90deg);
+  }
+}
+#blog {
+  figure {
+    max-width: 100%;
+    height: 260px;
+    // overflow: hidden;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      overflow: hidden;
+    }
+  }
+  .side-content {
+    .row:hover {
+      .card {
+        background: white !important;
+      }
+    }
+  }
+}
+.btn-link {
+  text-decoration: none;
+}
+// input::-webkit-input-placeholder {
+//         opacity: 50%;
+// }
+#contact-us {
+  .contact-info {
+    .icon {
+      max-height: 80px;
+      max-width: 80px;
+      clip-path: circle();
+      background-color: rgba(104, 79, 255, 0.1);
+    }
+    .social-icons {
+      .icon:hover {
+        background-color: $primary;
+        .fi {
+          color: white !important;
+        }
+      }
+    }
+  }
+}
+//testimonials section
+#testimonials{
+  
+  .comment{
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
