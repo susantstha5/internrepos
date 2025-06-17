@@ -56,6 +56,7 @@ $(document).ready(function () {
     $reviewBox.html($reviews);
     $rating.html($rate);
     $(this).addClass("active");
+    $(this).css({})
   });
   $(window).on("load", function () {
     $clients[0].click();

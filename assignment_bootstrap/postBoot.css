@@ -7,7 +7,7 @@ body {
   padding: 0px;
   font-family: "Inter", sans-serif;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 /* changed predefined bootstrap properties  */
@@ -49,17 +49,21 @@ html{
 
 /* hero section */
 .navbar {
-  height: 70px;
   padding: 0px 100px;
+  position: absolute;
 }
-
-.navbar .nav_links a {
+.navbar-nav {
+  width: fit-content;
+  justify-self: end;
+}
+.navbar-nav a {
   color: black;
   text-decoration: none;
   font-size: 14px;
+  text-align: center;
   font-weight: 500;
 }
-.nav_links a:hover {
+.navbar-nav a:hover {
   color: #674dff;
 }
 .hero_container {
@@ -70,6 +74,7 @@ html{
   position: absolute;
   left: 50%;
   width: 40%;
+  padding-top: 30px;
 }
 .image_container img {
   max-width: 100%;
@@ -86,12 +91,12 @@ html{
   font-size: clamp(36px, 5vw, 80px);
 }
 .text_bg::after {
-  content: "Designer.";
-  color: rgba(0, 0, 0, 0);
+  content: "";
   background-color: #674dff1a;
   position: absolute;
   z-index: 2;
   height: 30%;
+  width: 100%;
   left: 0;
   bottom: 10px;
 }
@@ -187,6 +192,7 @@ html{
   width: 100%;
   background-color: #e0e4eb;
   border-radius: 4px;
+  transition: all 0.4s ease-in-out;
 }
 
 .service:hover .logo_service,
@@ -236,18 +242,25 @@ html{
   background-color: white;
   box-shadow: 0px 0px 100px 10px rgba(0, 0, 0, 0.1);
 }
+.work_cta .link_cta,
 .service .service_cta .link_cta,
-.work_content .work_cta .link_cta,
 .blog_cta .link_cta {
-  display: none;
+  opacity: 0;
+  transition: all 0.5s ease;
+  /* max-width: 0; */
+  max-width: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-right: 0px;
 }
-.service:hover .service_cta .link_cta,
-.work_content:hover .work_cta .link_cta,
-.blog_content:hover .blog_cta .link_cta {
-  display: inline;
-  transition: linear 0.3s ease;
+.work_content:hover .link_cta,
+.service:hover .link_cta,
+.blog_content:hover .link_cta,
+.smallBlog_content:hover .link_cta {
+  opacity: 1;
+  max-width: 120px;
+  margin-right: 8px;
 }
-
 /* work section */
 .works {
   display: grid;
@@ -260,6 +273,7 @@ html{
 }
 .work_content {
   height: fit-content;
+  transition: all 0.4s ease-in-out;
 }
 .work_content .work_description .work_cta .link_cta {
   font-size: 14px;
@@ -301,6 +315,7 @@ html{
   justify-content: center;
   align-items: center;
   border-radius: 4px;
+  transition: all 0.4s ease-in-out;
 }
 .img_container:hover {
   background-color: white;
@@ -343,10 +358,23 @@ html{
 }
 .client {
   width: fit-content;
+  position: relative;
 }
 .client.active {
   background-color: #f6f7f9;
   cursor: pointer;
+  border-radius: 8px;
+}
+.client.active::after {
+  content: "";
+  position: absolute;
+  background: url(./assets/Polygon\ 6.svg);
+  height: 30%;
+  width: 30%;
+  left: 98%;
+  top: 10%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .client_details {
   display: flex;
@@ -357,11 +385,15 @@ html{
 .client:hover {
   cursor: pointer;
 }
+.testimonial_wrapper {
+  gap: 20px;
+}
 .testimonial_content {
   background-color: #f6f7f9;
   width: 75%;
   padding: 24px 48px;
 }
+
 .testimonial_content::after {
   position: absolute;
   z-index: 1;
@@ -380,11 +412,12 @@ html{
 .blog_container {
   padding: 80px 100px;
   background: linear-gradient(to bottom, rgba(224, 228, 235, 0.5), #ffffff);
-  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
 }
 .blog_content {
   max-width: 32%;
   height: fit-content;
+  transition: all 0.4s ease-in-out;
 }
 .blog_content div img {
   object-fit: cover;
@@ -417,10 +450,10 @@ html{
 .smallBlog_content h5 {
   width: 75%;
 }
-.smallBlog_content:hover .link_cta {
-  display: inline;
+.smallBlog_content {
+  transition: all 0.4s ease-in-out;
 }
-.smallBlog_content:hover:hover {
+.smallBlog_content:hover {
   background-color: white;
   box-shadow: 0px 0px 100px 10px rgba(0, 0, 0, 0.1);
 }
@@ -541,31 +574,32 @@ html{
     flex-direction: column-reverse;
   }
   .navbar {
-    padding: 0px 40px;
+    padding: 0px 20px;
     z-index: 2;
   }
   .hero_content {
     max-width: 100%;
-    padding: 20px 40px;
+    padding: 20px 20px;
   }
   .image_container {
     position: relative;
     max-height: 450px;
-    left: 0%;
-    padding: 0px;
     width: 100%;
+    left: 0;
+    justify-content: center;
+    display: flex;
     background: linear-gradient(to right, #ffffff 30%, #e0e4eb 100%);
   }
   .image_container img {
     object-fit: cover;
-    margin-left: 15%;
+    object-position: center;
   }
   .dot_container {
     display: none;
   }
   .about_container {
     flex-direction: column;
-    padding: 40px;
+    padding: 20px;
   }
   .profile_image::before {
     background-size: 60%;
@@ -574,7 +608,7 @@ html{
     gap: 6px;
   }
   .service_container {
-    padding: 40px;
+    padding: 20px;
   }
   .serivces {
     display: grid;
@@ -589,11 +623,11 @@ html{
     font-size: 16px;
   }
   .work_container {
-    padding: 40px;
+    padding: 20px;
   }
   .companyLogos_container {
     flex-direction: column;
-    padding: 40px;
+    padding: 20px;
   }
   .scroll_wrapper {
     width: 90%;
@@ -602,14 +636,40 @@ html{
   .blog_container,
   .banner_container,
   .contact_container {
-    padding: 40px;
+    padding: 20px 20px 60px 20px;
   }
   .testimonial_wrapper {
     flex-direction: column;
+    gap: 0px;
+  }
+  .testimonial_wrapper .clients {
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 34px 0px;
+    justify-content: space-between;
   }
   .testimonial_content {
     width: 100%;
-    padding: 18px 42px;
+  }
+  .client .client_details {
+    display: none;
+  }
+  .client {
+    justify-content: center;
+    border-radius: 8px;
+  }
+  .client.active::after {
+    content: "";
+    position: absolute;
+    background: url(./assets/Polygon\ 6.svg);
+    /* height: 10%; */
+    width: 20%;
+    left: 40%;
+    top: 96%;
+    z-index: 1;
+    transform: rotate(90deg);
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   .blog_content {
     max-width: 60%; /* Two in a row */
@@ -638,14 +698,6 @@ html{
   .navbar .nav_links a {
     font-size: 12px;
   }
-  .image_container {
-    overflow: hidden;
-  }
-  .image_container img {
-    object-fit: contain;
-    margin-left: 10%;
-    margin-top: 10%;
-  }
   .profile_image::before {
     background-size: contain;
     background-position: top right;
@@ -663,12 +715,11 @@ html{
     width: 100%;
     justify-content: space-around;
   }
-
   .works {
     display: grid;
     grid-template-columns: repeat(
       auto-fit,
-      minmax(300px, 380px)
+      minmax(150px, 380px)
     ); /* 3 equal columns */
     /* spacing between columns */
     justify-content: space-around;
@@ -677,27 +728,17 @@ html{
   .service_cta .link_cta {
     font-size: 12px;
   }
-  .testimonial_wrapper .clients {
-    flex-direction: row;
-    overflow-x: auto;
-    justify-content: space-between;
-  }
+
   .testimonial_content {
     padding: 14px;
   }
-  .client {
-    justify-content: center;
-    border-radius: 8px;
-  }
-  .client .client_details {
-    display: none;
-  }
+
   .blog_content,
   .small_blog {
     max-width: 90%; /* Full width on mobile */
   }
   .blog_container {
-    padding: 40px 40px; /* Reduce padding for smaller screens */
+    padding: 20px 20px; /* Reduce padding for smaller screens */
   }
   .smallBlog_content h5 {
     width: 100%;

@@ -34,19 +34,43 @@
       >
         <!-- navbar -->
         <nav
-          class="navbar position-absolute justify-content-between d-flex py-0 top-0 align-items-center w-100"
+          class="navbar navbar-expand-lg  top-0 w-100 py-2"
         >
-          <span
-            class="name_shortForm text-primary bg-primary-emphasis px-3 fs-5 fw-400 py-1 rounded-pill"
-            >A.F</span
-          >
-          <div class="nav_links d-flex gap-4 align-items-center text-uppercase">
-            <a href="#about">ABOUT</a>
-            <a href="#services">SERVICES</a>
-            <a href="#works">WORKS</a>
-            <a href="#contact">CONTACT</a>
+          <div class="container-fluid justify-content-between px-0">
+            <!-- Brand / Short Form -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+              <span
+                class="name_shortForm text-primary bg-primary-emphasis px-3 fs-5 fw-400 py-1 rounded-pill"
+              >
+                A.F
+              </span>
+            </a>
+
+            <!-- Toggler Button -->
+            <button
+              class="navbar-toggler border-none"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible Nav Links -->
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNav"
+            >
+              <div class="navbar-nav text-uppercase my-3 gap-lg-4 gap-2">
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#services">Services</a>
+                <a class="nav-link" href="#works">Works</a>
+                <a class="nav-link" href="#contact">Contact</a>
+              </div>
+            </div>
           </div>
         </nav>
+
         <div
           class="hero_content pb-4 gap-3 d-flex flex-column justify-content-around"
         >
@@ -103,7 +127,8 @@
 
       <!-- about section -->
       <section
-        class="about_container position-relative d-flex justify-content-between align-items-center gap-5" id="about"
+        class="about_container position-relative d-flex justify-content-between align-items-center gap-5"
+        id="about"
       >
         <img
           class="position-absolute start-0 top-0 w-25"
@@ -150,7 +175,8 @@
 
       <!-- services section -->
       <section
-        class="service_container d-flex flex-column gap-5 align-items-center" id="services"
+        class="service_container d-flex flex-column gap-5 align-items-center"
+        id="services"
       >
         <h2 class="heading position-relative py-3">My Service</h2>
         <div class="services">
@@ -447,7 +473,7 @@
           Client Testimonial
         </h2>
         <div
-          class="testimonial_wrapper d-flex gap-4"
+          class="testimonial_wrapper d-flex"
           aria-label="client testimonial"
         >
           <div class="clients d-flex">
@@ -520,8 +546,10 @@
                 ><small id="rate"></small> <small>Star Rating</small></span
               >
             </div>
-            <p class="testimonial fs-3 m-0 fw-normal" id="testimonial_review">
-            </p>
+            <p
+              class="testimonial fs-3 m-0 fw-normal"
+              id="testimonial_review"
+            ></p>
           </div>
         </div>
       </section>
@@ -653,7 +681,8 @@
 
       <!-- contact section -->
       <section
-        class="contact_container position-relative gap-4 d-flex justify-content-between" id="contact"
+        class="contact_container position-relative gap-4 d-flex justify-content-between"
+        id="contact"
       >
         <img
           src="./assets/contactSection/contactShape.png"
