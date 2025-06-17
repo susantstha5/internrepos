@@ -29,7 +29,7 @@
   box-shadow: 20px 20px white;
 }
 .about .aboutContent .about-text {
-  font-size: 40px;
+  font-size: 36px;
 }
 .about .aboutContent .about-description {
   font-size: 14px;
@@ -103,20 +103,33 @@
 .serviceCard .card {
   background-color: rgba(223, 227, 235, 0.4);
   min-height: 300px;
+  cursor: pointer;
+}
+.serviceCard .card-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 .serviceCard .card:hover {
   background-color: white;
   box-shadow: 0px 20px 48px 0px rgba(10, 25, 49, 0.3);
 }
 .serviceCard .card:hover .card-body svg path {
-  stroke: #684FFF;
+  stroke: #684fff;
+}
+.serviceCard .discuss {
+  font-size: 14px;
+  max-width: 0;
+  transition: all 0.2s linear;
+  overflow-x: hidden;
+  white-space: nowrap;
 }
 .serviceCard .card:hover .discuss {
-  display: block;
+  max-width: 300px;
 }
 
 .cardContent .card-title {
-  font-size: 28px;
+  font-size: 26px;
 }
 .cardContent hr {
   width: 64px;
@@ -128,10 +141,6 @@
 }
 .cardContent .card-link svg {
   width: 30px;
-}
-
-.discuss {
-  display: none;
 }
 
 @media screen and (max-width: 900px) {
@@ -152,25 +161,33 @@
 
 .workCard .card {
   min-height: 380px;
+  cursor: pointer;
 }
 .workCard .card .card-body .card-title {
   font-size: 20px !important;
+}
+.workCard .card .card-body .card-link {
+  display: flex;
+  align-items: center;
 }
 .workCard .card .card-body .card-link svg {
   width: 28px;
   height: 20px;
 }
-.workCard .card:hover {
+.workCard .card .card-body:hover {
   box-shadow: 0px 20px 48px rgba(10, 25, 49, 0.1);
 }
 
 .viewLink {
-  display: none;
   font-size: 14px;
+  max-width: 0px;
+  overflow-x: hidden;
+  white-space: nowrap;
+  transition: all 0.2s linear;
 }
 
 .card:hover .viewLink {
-  display: block;
+  max-width: 300px;
 }
 
 @media screen and (max-width: 900px) {
@@ -333,28 +350,40 @@
   }
 }
 .blogContainer {
-  background: linear-gradient(to bottom, #DFE3EB, #ffffff);
+  background: linear-gradient(to bottom, #dfe3eb, #ffffff);
 }
 .blogContainer .card {
-  min-height: 360px;
+  min-height: 410px;
+  height: 100%;
+}
+.blogContainer .card .card-body {
+  display: flex;
+  flex-direction: column;
 }
 .blogContainer .card .card-body .card-text {
   font-size: 12px;
 }
 .blogContainer .card .card-body .card-title {
-  font-size: 18px;
+  font-size: 20px;
+}
+.blogContainer .card .card-body .card-link {
+  font-size: 14px;
+  margin-top: auto;
+}
+.blogContainer .card .card-body .card-link svg {
+  width: 28px;
 }
 .blogContainer .card:hover {
   box-shadow: 0px 20px 48px 0px rgba(10, 25, 49, 0.1);
 }
 
-.cardList .card-body .card-title {
-  font-size: 16px;
+.cardList .card-title {
+  font-size: 20px;
 }
-.cardList .card-body .card-link {
+.cardList .card-link {
   font-size: 14px;
 }
-.cardList .card-body .card-link svg {
+.cardList .card-link svg {
   width: 28px;
 }
 
@@ -363,15 +392,19 @@
 }
 
 .cardList:hover .readLink {
-  display: block;
+  max-width: 300px;
 }
 
 .readLink {
-  display: none;
+  font-size: 14px;
+  max-width: 0px;
+  overflow-x: hidden;
+  white-space: nowrap;
+  transition: all 0.2s linear;
 }
 
 .card:hover .readLink {
-  display: block;
+  max-width: 300px;
 }
 
 @media screen and (max-width: 900px) {
@@ -481,15 +514,15 @@
 }
 
 .text-secondary {
-  color: #0A1931 !important;
+  color: #0a1931 !important;
 }
 
 .text-tertiary {
-  color: #737D8C !important;
+  color: #737d8c !important;
 }
 
 .bg-primary {
-  background-color: #DFE3EB !important;
+  background-color: #dfe3eb !important;
 }
 
 .btn-primary {
@@ -506,7 +539,7 @@
 .btn-outline-primary {
   color: black;
   border-radius: 5px;
-  border: 1px solid #DFE3EB;
+  border: 1px solid #dfe3eb;
 }
 
 a {
@@ -521,7 +554,7 @@ body {
 }
 
 .bg-color {
-  background: linear-gradient(to right, white 65%, #DFE3EB 35%);
+  background: linear-gradient(to right, white 65%, #dfe3eb 35%);
 }
 
 .container {
@@ -530,6 +563,19 @@ body {
 
 h2 {
   font-size: 40px;
+  padding: 10px;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 3px;
+  background-color: #684FFF;
 }
 
 nav .menuBar {
@@ -551,6 +597,11 @@ nav .menuBar .navIcon {
 
 .link-list li a {
   color: #0A1931;
+}
+
+.link-list .nav-link:focus,
+.link-list .nav-link:hover {
+  color: #684FFF;
 }
 
 .home {
@@ -580,6 +631,10 @@ nav .menuBar .navIcon {
 }
 .home .homeFooter .fa-brands {
   min-width: 30px;
+}
+.home .viewBtn:hover {
+  background-color: #5033FF;
+  color: white;
 }
 
 .followLinks a {

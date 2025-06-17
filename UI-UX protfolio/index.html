@@ -6,6 +6,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="./style/style.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> -->
     <title>Document</title>
 </head>
 <body>
@@ -71,11 +73,11 @@
     </div>
 
     <!-- about section -->
-    <section class="aboutContainer" id="about">
+    <section class="aboutContainer " id="about">
         <img src="./svg/circlebg.svg" class="bgCircle" alt="bg circle"/>
         <img src="./images/Dot.png" class="dot"/>
         <div class="container">
-            <div class="about p-5">
+            <div class="about my-5">
                 <div class="row g-3">
                     <div class="col-md-6">
                         <img src="./images/AboutProfile.png" alt="profile"/>
@@ -93,7 +95,7 @@
                                         Years of Experience
                                     </div>
                                 </div>
-                                <div class="project d-flex  align-items-center">
+                                <div class="project d-flex  gap-3 justify-content-center align-items-center">
                                     <span class="years text-primary">
                                         325+
                                     </span>
@@ -101,8 +103,16 @@
                                         Completed Projects
                                     </div>
                                 </div>
-                                </div>
                             <div>
+                            <button class="btn-primary px-3 py-2 d-flex gap-2 align-items-center" type="button">
+                                <div>SAY HI</div>
+                                <div>
+                                    <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M33 12.03H3" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M27.95 4.80005L34 12.0288L27.95 19.2588" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -113,11 +123,12 @@
     <!-- services section -->
     <section class="service my-5  " id="service">
         <div class="container">
-            <h2 class="text-center fw-normal">My Service</h2>
+            <h2 class="text-center mb-5 fw-normal">My Service</h2>
             <div class="serviceCard mt-4">
                 <div class="row g-3">
                     <div class="col-md-3 col-sm-6 col-6">
-                        <div class="card border-0 p-2">
+                        <a href="#" class="text-secondary">
+                            <div class="card border-0 p-2">
                             <div class="card-body d-flex flex-column justify-content-between">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M20 3.33325L3.33334 11.6666L20 19.9999L36.6667 11.6666L20 3.33325Z" stroke="black" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -126,8 +137,8 @@
                                 </svg> 
                                 <div class="cardContent">
                                     <h5 class="card-title fw-normal">UI/UX Design</h5><hr>
-                                    <a href="#" class="card-link d-flex gap-3">
-                                        <div class="discuss text-capitalize"> Discuss Now</div>
+                                    <a href="#" class="card-link ">
+                                        <div class="discuss text-capitalize text-primary"> Discuss Now</div>
                                         <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M33 12.03H3" stroke="#0A1931" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                             <path d="M27.95 4.80005L34 12.0288L27.95 19.2588" stroke="#0A1931" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -136,38 +147,21 @@
                                 </div>
                             </div>
                         </div>
+                        </a>
                     </div>
                     <div class="col-md-3 col-sm-6 col-6">
-                        <div class="card border-0 p-2">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M35 26.6666V13.3333C34.9994 12.7487 34.8451 12.1746 34.5526 11.6685C34.26 11.1624 33.8396 10.7422 33.3333 10.4499L21.6667 3.78325C21.1599 3.49069 20.5851 3.33667 20 3.33667C19.4149 3.33667 18.8401 3.49069 18.3333 3.78325L6.66667 10.4499C6.16044 10.7422 5.73997 11.1624 5.44744 11.6685C5.1549 12.1746 5.0006 12.7487 5 13.3333V26.6666C5.0006 27.2511 5.1549 27.8252 5.44744 28.3313C5.73997 28.8374 6.16044 29.2576 6.66667 29.5499L18.3333 36.2166C18.8401 36.5091 19.4149 36.6632 20 36.6632C20.5851 36.6632 21.1599 36.5091 21.6667 36.2166L33.3333 29.5499C33.8396 29.2576 34.26 28.8374 34.5526 28.3313C34.8451 27.8252 34.9994 27.2511 35 26.6666Z" stroke="black" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M5.45001 11.6001L20 20.0168L34.55 11.6001" stroke="black" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M20 36.8V20" stroke="black" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                <div class="cardContent">
-                                    <h5 class="card-title fw-normal">Product Design</h5><hr>
-                                    <a href="#" class="card-link d-flex gap-3">
-                                        <div class="discuss text-capitalize"> Discuss Now</div>
-                                        <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M33 12.03H3" stroke="#0A1931" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M27.95 4.80005L34 12.0288L27.95 19.2588" stroke="#0A1931" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-6">
+                        <a href="#" class="text-secondary">
                             <div class="card border-0 p-2">
                                 <div class="card-body d-flex flex-column justify-content-between">
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M20 5V35M20 5H31.6667C32.5507 5 33.3986 5.35119 34.0237 5.97631C34.6488 6.60143 35 7.44928 35 8.33333V31.6667C35 32.5507 34.6488 33.3986 34.0237 34.0237C33.3986 34.6488 32.5507 35 31.6667 35H20V5ZM20 5H8.33333C7.44928 5 6.60143 5.35119 5.97631 5.97631C5.35119 6.60143 5 7.44928 5 8.33333V31.6667C5 32.5507 5.35119 33.3986 5.97631 34.0237C6.60143 34.6488 7.44928 35 8.33333 35H20V5Z" stroke="black" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M35 26.6666V13.3333C34.9994 12.7487 34.8451 12.1746 34.5526 11.6685C34.26 11.1624 33.8396 10.7422 33.3333 10.4499L21.6667 3.78325C21.1599 3.49069 20.5851 3.33667 20 3.33667C19.4149 3.33667 18.8401 3.49069 18.3333 3.78325L6.66667 10.4499C6.16044 10.7422 5.73997 11.1624 5.44744 11.6685C5.1549 12.1746 5.0006 12.7487 5 13.3333V26.6666C5.0006 27.2511 5.1549 27.8252 5.44744 28.3313C5.73997 28.8374 6.16044 29.2576 6.66667 29.5499L18.3333 36.2166C18.8401 36.5091 19.4149 36.6632 20 36.6632C20.5851 36.6632 21.1599 36.5091 21.6667 36.2166L33.3333 29.5499C33.8396 29.2576 34.26 28.8374 34.5526 28.3313C34.8451 27.8252 34.9994 27.2511 35 26.6666Z" stroke="black" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M5.45001 11.6001L20 20.0168L34.55 11.6001" stroke="black" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M20 36.8V20" stroke="black" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                                     <div class="cardContent">
-                                        <h5 class="card-title fw-normal">Branding Design</h5><hr>
+                                        <h5 class="card-title fw-normal">Product Design</h5><hr>
                                         <a href="#" class="card-link d-flex gap-3">
-                                            <div class="discuss text-capitalize"> Discuss Now</div>
+                                            <div class="discuss text-capitalize text-primary"> Discuss Now</div>
                                             <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M33 12.03H3" stroke="#0A1931" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                                 <path d="M27.95 4.80005L34 12.0288L27.95 19.2588" stroke="#0A1931" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -176,8 +170,31 @@
                                     </div>
                                 </div>
                             </div>
+                        </a>
                     </div>
                     <div class="col-md-3 col-sm-6 col-6">
+                        <a href="#" class="text-secondary">
+                            <div class="card border-0 p-2">
+                                <div class="card-body d-flex flex-column justify-content-between">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20 5V35M20 5H31.6667C32.5507 5 33.3986 5.35119 34.0237 5.97631C34.6488 6.60143 35 7.44928 35 8.33333V31.6667C35 32.5507 34.6488 33.3986 34.0237 34.0237C33.3986 34.6488 32.5507 35 31.6667 35H20V5ZM20 5H8.33333C7.44928 5 6.60143 5.35119 5.97631 5.97631C5.35119 6.60143 5 7.44928 5 8.33333V31.6667C5 32.5507 5.35119 33.3986 5.97631 34.0237C6.60143 34.6488 7.44928 35 8.33333 35H20V5Z" stroke="black" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <div class="cardContent">
+                                        <h5 class="card-title fw-normal">Branding Design</h5><hr>
+                                        <a href="#" class="card-link d-flex gap-3">
+                                            <div class="discuss text-capitalize text-primary"> Discuss Now</div>
+                                            <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M33 12.03H3" stroke="#0A1931" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M27.95 4.80005L34 12.0288L27.95 19.2588" stroke="#0A1931" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <a href="#" class="text-secondary">
                             <div class="card border-0 p-2">
                                 <div class="card-body d-flex flex-column justify-content-between">
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -187,7 +204,7 @@
                                     <div class="cardContent">
                                         <h5 class="card-title fw-normal">Front End Development</h5><hr>
                                         <a href="#" class="card-link d-flex gap-3">
-                                            <div class="discuss text-capitalize"> Discuss Now</div>
+                                            <div class="discuss text-capitalize text-primary"> Discuss Now</div>
                                             <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M33 12.03H3" stroke="#0A1931" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                                 <path d="M27.95 4.80005L34 12.0288L27.95 19.2588" stroke="#0A1931" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -196,6 +213,7 @@
                                     </div>
                                 </div>
                             </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -205,98 +223,110 @@
     <!-- works section -->
     <section class="work bg-primary" id="work">
         <div class="container">
-            <h2 class="text-center fw-normal mb-4 p-2">My Selected Work</h2>
+            <h2 class="text-center fw-normal mb-5">My Selected Work</h2>
             <div class="workCard">
                 <div class="row g-3">
                     <div class="col-md-4">
-                        <div class="card border-0 bg-white">
-                            <img src="./images/workcard1.png" class="cardImg card-img-top" alt="1st card img">
-                            <div class="card-body">
-                                <h5 class="card-title fs-6">Eduguard - E-learning Website</h5>
-                                <a href="#" class="card-link d-flex gap-2" >
-                                    <div class="viewLink text-primary">View Project</div>
-                                    <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M33 12.03H3" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M27.95 4.80005L34 12.0288L27.95 19.2588" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
+                        <a href="#" class="text-secondary">
+                            <div class="card border-0 bg-white">
+                                <img src="./images/workcard1.png" class="cardImg card-img-top" alt="1st card img">
+                                <div class="card-body">
+                                    <h5 class="card-title fs-6">Eduguard - E-learning Website</h5>
+                                    <a href="#" class="card-link d-flex gap-2" >
+                                        <div class="viewLink text-primary">View Project</div>
+                                        <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M33 12.03H3" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M27.95 4.80005L34 12.0288L27.95 19.2588" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-4">
-                        <div class="card border-0 bg-white">
-                            <img src="./images/workcard2.png" class="cardImg card-img-top" alt="2nd card img">
-                            <div class="card-body">
-                                <h5 class="card-title">Eduguard - E-learning Website</h5>
-                                <a href="#" class="card-link d-flex gap-2" >
-                                    <div class="viewLink text-primary">View Project</div>
-                                    <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M33 12.03H3" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M27.95 4.80005L34 12.0288L27.95 19.2588" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
+                        <a href="#" class="text-secondary">
+                            <div class="card border-0 bg-white">
+                                <img src="./images/workcard2.png" class="cardImg card-img-top" alt="2nd card img">
+                                <div class="card-body">
+                                    <h5 class="card-title">Eduguard - E-learning Website</h5>
+                                    <a href="#" class="card-link d-flex gap-2" >
+                                        <div class="viewLink text-primary">View Project</div>
+                                        <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M33 12.03H3" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M27.95 4.80005L34 12.0288L27.95 19.2588" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-4">
-                        <div class="card border-0 bg-white">
-                            <img src="./images/workcard3.png" class="cardImg card-img-top" alt="3rd card img">
-                            <div class="card-body">
-                                <h5 class="card-title">Huma Marketing Agency</h5>
-                                <a href="#" class="card-link d-flex gap-2" >
-                                    <div class="viewLink text-primary">View Project</div>
-                                    <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M33 12.03H3" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M27.95 4.80005L34 12.0288L27.95 19.2588" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
+                        <a href="#" class="text-secondary">
+                            <div class="card border-0 bg-white">
+                                <img src="./images/workcard3.png" class="cardImg card-img-top" alt="3rd card img">
+                                <div class="card-body">
+                                    <h5 class="card-title">Huma Marketing Agency</h5>
+                                    <a href="#" class="card-link d-flex gap-2" >
+                                        <div class="viewLink text-primary">View Project</div>
+                                        <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M33 12.03H3" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M27.95 4.80005L34 12.0288L27.95 19.2588" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-4">
-                        <div class="card border-0 bg-white">
-                            <img src="./images/workcard4.png" class="cardImg card-img-top" alt="4th card img">
-                            <div class="card-body">
-                                <h5 class="card-title">Beeryblog Blog Website</h5>
-                                <a href="#" class="card-link d-flex gap-2" >
-                                    <div class="viewLink text-primary">View Project</div>
-                                    <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M33 12.03H3" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M27.95 4.80005L34 12.0288L27.95 19.2588" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
+                        <a href="#" class="text-secondary">
+                            <div class="card border-0 bg-white">
+                                <img src="./images/workcard4.png" class="cardImg card-img-top" alt="4th card img">
+                                <div class="card-body">
+                                    <h5 class="card-title">Beeryblog Blog Website</h5>
+                                    <a href="#" class="card-link d-flex gap-2" >
+                                        <div class="viewLink text-primary">View Project</div>
+                                        <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M33 12.03H3" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M27.95 4.80005L34 12.0288L27.95 19.2588" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-4">
-                        <div class="card border-0 bg-white">
-                            <img src="./images/workcard5.png" class="cardImg card-img-top" alt="5th card img">
-                            <div class="card-body">
-                                <h5 class="card-title">Educare Elearning website</h5>
-                                <a href="#" class="card-link d-flex gap-2" >
-                                    <div class="viewLink text-primary">View Project</div>
-                                    <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M33 12.03H3" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M27.95 4.80005L34 12.0288L27.95 19.2588" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
+                        <a href="#" class="text-secondary">
+                            <div class="card border-0 bg-white">
+                                <img src="./images/workcard5.png" class="cardImg card-img-top" alt="5th card img">
+                                <div class="card-body">
+                                    <h5 class="card-title">Educare Elearning website</h5>
+                                    <a href="#" class="card-link d-flex gap-2" >
+                                        <div class="viewLink text-primary">View Project</div>
+                                        <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M33 12.03H3" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M27.95 4.80005L34 12.0288L27.95 19.2588" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-4">
-                        <div class="card border-0 bg-white">
-                            <img src="./images/workcard6.png" class="cardImg card-img-top" alt="6th card img">
-                            <div class="card-body">
-                                <h5 class="card-title">Blogy Blog Website</h5>
-                                <a href="#" class="card-link d-flex gap-2" >
-                                    <div class="viewLink text-primary">View Project</div>
-                                    <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M33 12.03H3" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M27.95 4.80005L34 12.0288L27.95 19.2588" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
+                        <a href="#" class="text-secondary">
+                            <div class="card border-0 bg-white">
+                                <img src="./images/workcard6.png" class="cardImg card-img-top" alt="6th card img">
+                                <div class="card-body">
+                                    <h5 class="card-title">Blogy Blog Website</h5>
+                                    <a href="#" class="card-link d-flex gap-2" >
+                                        <div class="viewLink text-primary">View Project</div>
+                                        <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M33 12.03H3" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M27.95 4.80005L34 12.0288L27.95 19.2588" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>    
                 </div>
             </div>
@@ -328,11 +358,14 @@
                 </svg>
             </div>
         </div>
+        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="js/slider.js"></script> -->
     </section>
 
     <!-- banner section -->
     <div class="container ">
-        <section class="banner mb-5 py-5 d-flex flex-column justify-content-center align-items-center">
+        <section class="banner my-5 py-5 d-flex flex-column justify-content-center align-items-center">
             <div class="bannerContent text-white py-3 fw-normal text-center">
                 Got a Project in Mind? Let's Make Something Awesome Together.
             </div>
@@ -347,7 +380,7 @@
     </div>
 
     <!-- client testimonial section -->
-    <section class="clientTestimonial">
+    <section class="clientTestimonial py-5">
         <div class="container">
             <h2 class="text-center fw-normal">Client Testimonial</h2>
             <div class="clientDetail d-flex align-items-start my-5">
@@ -466,7 +499,7 @@
                 </div>
                 
             </div>
-            <div class="clientDetailMobile  my-5">
+            <div class="clientDetailMobile  py-5">
                 <div class=" nav  nav-pills" id="v-pills-tab" role="tablist" aria-orientation="horizontal">
                     <div class="clientList nav-link active" data-bs-toggle="pill" data-bs-target="#v-pills-client2-1" role="tab" aria-controls="v-pills-client1" aria-selected="true">
                         <div class="clientProfile d-flex gap-2 p-2">
@@ -565,41 +598,70 @@
             <h2 class="text-center fw-normal mb-5">Blog & News</h2>
             <div class="row g-4">
                 <div class="col-md-4 col-sm-6">
-                    <div class="card bg-white p-3 border-0">
-                        <img src="./images/blogcard1.png" class="card-img-top rounded-0" alt="blog card 1">
-                        <div class="card-body px-0 py-3">
-                            <p class="card-text text-tertiary mb-2">24 May, 2021 . 9 min read</p>
-                            <h5 class="card-title fw-normal">23 Essential Skills for Successful Web Designers in 2021.</h5>
-                            <a href="#" class="card-link d-flex gap-2">
-                                <div class="readLink text-primary">Read More</div>
-                                <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M33 12.03H3" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M27.95 4.80005L34 12.0288L27.95 19.2588" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
+                    <a href="#" class="text-secondary">
+                        <div class="card bg-white p-3 border-0">
+                            <img src="./images/blogcard1.png" class="card-img-top rounded-0" alt="blog card 1">
+                            <div class="card-body px-0 py-3">
+                                <p class="card-text text-tertiary mb-2">24 May, 2021 . 9 min read</p>
+                                <h5 class="card-title fw-normal">23 Essential Skills for Successful Web Designers in 2021.</h5>
+                                <a href="#" class="card-link d-flex gap-1">
+                                    <div class="readLink text-primary">Read More</div>
+                                    <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M33 12.03H3" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M27.95 4.80005L34 12.0288L27.95 19.2588" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <div class="card bg-white p-3 border-0">
-                        <img src="./images/blogcard1.png" class="card-img-top rounded-0" alt="blog card 1">
-                        <div class="card-body px-0 py-3">
-                            <p class="card-text text-tertiary mb-2">24 May, 2021 . 9 min read</p>
-                            <h5 class="card-title fw-normal">10 Best Wireframe Tools for Designers in 2021.</h5>
-                            <a href="#" class="card-link d-flex gap-2">
-                                <div class="readLink text-primary">Read More</div>
-                                <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M33 12.03H3" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M27.95 4.80005L34 12.0288L27.95 19.2588" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
+                    <a href="#" class="text-secondary">
+                        <div class="card bg-white p-3 border-0">
+                            <img src="./images/blogcard1.png" class="card-img-top rounded-0" alt="blog card 1">
+                            <div class="card-body px-0 py-3">
+                                <p class="card-text text-tertiary mb-2">24 May, 2021 . 9 min read</p>
+                                <h5 class="card-title fw-normal">10 Best Wireframe Tools for Designers in 2021.</h5>
+                                <a href="#" class="card-link d-flex gap-2">
+                                    <div class="readLink text-primary">Read More</div>
+                                    <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M33 12.03H3" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M27.95 4.80005L34 12.0288L27.95 19.2588" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-md-4 col-sm-12">
                     <div class="border-0 rounded-0">
                         <div class="card-body cardList p-3">
-                            <h5 class="card-title fw-normal fw-normal lh-base pt-2">10 Best Design Feedback and Annotation tools for Designers.</h5>
+                           <a href="#" class="text-secondary">
+                                <h5 class="card-title fw-normal fw-normal lh-base pt-2">10 Best Design Feedback and Annotation tools for Designers.</h5>
+                                <a href="#" class="card-link d-flex gap-2 mt-3">
+                                    <div class="readLink text-primary fw-medium">Read More</div>
+                                    <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M33 12.03H3" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M27.95 4.80005L34 12.0288L27.95 19.2588" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                           </a>
+                        </div>
+                        <div class="card-body cardList p-3">
+                            <a href="#" class="text-secondary">
+                                <h5 class="card-title fw-normal fw-normal lh-base ">20 Cool Fonts for Web and Graphic Design. (free + paid)</h5>
+                                <a href="#" class="card-link d-flex gap-2 mt-3">
+                                    <div class="readLink text-primary fw-medium">Read More</div>
+                                    <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M33 12.03H3" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M27.95 4.80005L34 12.0288L27.95 19.2588" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </a>
+                        </div>
+                        <div class="card-body cardList p-3">
+                            <a href="#" class="text-secondary">
+                                <h5 class="card-title fw-normal fw-normal lh-base ">8 Things You Need to Create a Restaurant Website.</h5>
                             <a href="#" class="card-link d-flex gap-2 mt-3">
                                 <div class="readLink text-primary fw-medium">Read More</div>
                                 <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -607,25 +669,6 @@
                                         <path d="M27.95 4.80005L34 12.0288L27.95 19.2588" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </a>
-                        </div>
-                        <div class="card-body cardList p-3">
-                            <h5 class="card-title fw-normal fw-normal lh-base ">20 Cool Fonts for Web and Graphic Design. (free + paid)</h5>
-                            <a href="#" class="card-link d-flex gap-2 mt-3">
-                                <div class="readLink text-primary fw-medium">Read More</div>
-                                <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M33 12.03H3" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M27.95 4.80005L34 12.0288L27.95 19.2588" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="card-body cardList p-3">
-                            <h5 class="card-title fw-normal fw-normal lh-base ">8 Things You Need to Create a Restaurant Website.</h5>
-                            <a href="#" class="card-link d-flex gap-2 mt-3">
-                                <div class="readLink text-primary fw-medium">Read More</div>
-                                <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M33 12.03H3" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M27.95 4.80005L34 12.0288L27.95 19.2588" stroke="#684FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
                             </a>
                         </div>
                     </div>
@@ -720,5 +763,6 @@
       </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    
 </body>
 </html>

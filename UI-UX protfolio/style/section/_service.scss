@@ -2,54 +2,71 @@
 //     font-size: 40px;
 // }
 .serviceCard {
-    .card{
-        background-color: rgba(223, 227, 235, 0.4);
-        // border-radius: 6px !important;
-        min-height: 300px;
-    } 
-    .card:hover{
-        background-color: white;
-        box-shadow: 0px 20px 48px 0px rgba(10, 25, 49, 0.3) ; 
-    }
-    .card:hover .card-body svg path{
-        stroke: #684FFF;
-    }
-    .card:hover .discuss{
-        display: block;
-    }
+  .card {
+    background-color: rgba(223, 227, 235, 0.4);
+    // border-radius: 6px !important;
+    min-height: 300px;
+    cursor: pointer;
+  }
+  .card-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    // background: red;
+    // width: max-content;
+    // transition: all 0.2s linear;
+  }
+  .card:hover {
+    background-color: white;
+    box-shadow: 0px 20px 48px 0px rgba(10, 25, 49, 0.3);
+  }
+  .card:hover .card-body svg path {
+    stroke: #684fff;
+  }
+  .discuss {
+    font-size: 14px;
+    // opacity: 0;
+    max-width: 0;
+    transition: all 0.2s linear;
+    overflow-x: hidden;
+    white-space: nowrap;
+  }
+  .card:hover .discuss {
+    // opacity: 1;
+    max-width: 300px;
+    // overflow-x: auto;
+  }
 }
-.cardContent{
-    .card-title{
-        font-size: 28px;
+.cardContent {
+  .card-title {
+    font-size: 26px;
+  }
+  hr {
+    width: 64px;
+    border-color: $primary-color;
+    opacity: 30%;
+  }
+  .card-link {
+    font-size: 12px;
+    svg {
+      width: 30px;
     }
-    hr{
-        width: 64px;
-        border-color: $primary-color;
-        opacity: 30%;
-    }
-    .card-link{
-        font-size: 12px;
-        svg{
-            width: 30px;
-        }
-    }
+  }
 }
-.discuss{
-    display: none;
-}
-@media screen and ( max-width:900px){
-    .serviceCard .card{
-        min-height: 200px;
-        .card-body{
-            svg{
-                width:20px;
-                height: 20px;
-            }
-            .cardContent .card-title{
-                font-size: 20px;;
-            }
-        }
+
+@media screen and (max-width: 900px) {
+  .serviceCard .card {
+    min-height: 200px;
+    .card-body {
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+      .cardContent .card-title {
+        font-size: 20px;
+      }
     }
+  }
 }
 // @media screen and (max-width:500px){
 

@@ -9,177 +9,200 @@
 @import "./section/blog";
 @import "./section/contact";
 
-.text-primary{
-    color:$primary-color !important;
+.text-primary {
+  color: $primary-color !important;
 }
-.text-secondary{
-    color: #0A1931 !important; //gray-900 
+.text-secondary {
+  color: #0a1931 !important; //gray-900
 }
-.text-tertiary{
-    color: #737D8C !important; //gray-500
+.text-tertiary {
+  color: #737d8c !important; //gray-500
 }
-.bg-primary{
-    background-color: #DFE3EB !important;
+.bg-primary {
+  background-color: #dfe3eb !important;
 }
-.btn-primary{
-    background-color: $primary-color !important ;
-    color: white;
-    border-radius: 5px;
-    border: none;
+.btn-primary {
+  background-color: $primary-color !important ;
+  color: white;
+  border-radius: 5px;
+  border: none;
 }
-.btn-primary:hover{
-    background: $secondary !important;
+.btn-primary:hover {
+  background: $secondary !important;
 }
-.btn-outline-primary{
-    color: black;
-    border-radius: 5px;
-    border: 1px solid #DFE3EB;
+.btn-outline-primary {
+  color: black;
+  border-radius: 5px;
+  border: 1px solid #dfe3eb;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-body{
-    margin: 0;
-    padding: 0;
-    font-family: "inter", sans-serif;
-    box-sizing: border-box;
-    //  overflow: hidden;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "inter", sans-serif;
+  box-sizing: border-box;
+  //  overflow: hidden;
 }
 
-.bg-color{
-    background: linear-gradient(to right, white 65%, #DFE3EB 35%);
+.bg-color {
+  background: linear-gradient(to right, white 65%, #dfe3eb 35%);
 }
-.container{
-    padding-inline: 50px !important;
+.container {
+  padding-inline: 50px !important;
 }
-h2{
-    font-size: 40px;
+h2 {
+  font-size: 40px;
+  padding: 10px;
+  position: relative;
+}
+h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 3px;
+  background-color: $primary-color;
+  // border-radius: 2px;
 }
 nav {
-    .menuBar{
-        display: none;
-        .navIcon{
-            background: none !important;
-        }
+  .menuBar {
+    display: none;
+    .navIcon {
+      background: none !important;
     }
+  }
 }
-.sideBar{
-    // width: fit-content !important;
-    box-shadow: 5px 15px 5px rgba(223, 227, 235,0.3) !important;
-    min-width:100px ;
-    li{
-        width: fit-content;
-        padding:5px;
-    }
+.sideBar {
+  // width: fit-content !important;
+  box-shadow: 5px 15px 5px rgba(223, 227, 235, 0.3) !important;
+  min-width: 100px;
+  li {
+    width: fit-content;
+    padding: 5px;
+  }
 }
-.link-list li a{
-    color: $dark-gray;
+.link-list li a {
+  color: $dark-gray;
 }
-
-
-.home{
-    min-height: 600px;
-    z-index: 2;
-    .homeContent{
-        margin-top: 90px;
-        position: relative;
-        .intro-text{
-            font-size: 70px;
-            max-width: 730px;
-            .highlight{
-                background: linear-gradient(to bottom, white 60%, rgb(104, 79, 255, 0.15) 40%);
-            }
-        }
-        .intro-description{
-            max-width: 500px;
-        }
-    }
-    .profileImg{
-        width: 460px;
-        position: relative;
-    }
-    .homeFooter{
-        margin-top: 100px !important;
-        .fa-brands{
-            min-width: 30px;
-        }
-    }
+.link-list {
+  .nav-link:focus,
+  .nav-link:hover {
+    color: $primary-color;
+  }
 }
-.followLinks{
-    a{
-        width: 48px;
-        height: 48px;
+.home {
+  min-height: 600px;
+  z-index: 2;
+  .homeContent {
+    margin-top: 90px;
+    position: relative;
+    .intro-text {
+      font-size: 70px;
+      max-width: 730px;
+      .highlight {
+        background: linear-gradient(
+          to bottom,
+          white 60%,
+          rgb(104, 79, 255, 0.15) 40%
+        );
+      }
     }
-    a:hover{
-        background-color: $primary-color;
+    .intro-description {
+      max-width: 500px;
     }
-    a:hover i{
-        color: white;
+  }
+  .profileImg {
+    width: 460px;
+    position: relative;
+  }
+  .homeFooter {
+    margin-top: 100px !important;
+    .fa-brands {
+      min-width: 30px;
     }
+  }
+  .viewBtn:hover {
+    background-color: $secondary;
+    color: white;
+  }
 }
-.dotCol{
-    position: absolute;
-    top:250px;
-    right:200px;
-    z-index: 1;
+.followLinks {
+  a {
+    width: 48px;
+    height: 48px;
+  }
+  a:hover {
+    background-color: $primary-color;
+  }
+  a:hover i {
+    color: white;
+  }
+}
+.dotCol {
+  position: absolute;
+  top: 250px;
+  right: 200px;
+  z-index: 1;
 }
 
 //footer css
-.footer{
-    font-size: 14px;
+.footer {
+  font-size: 14px;
 }
 
-@media screen and (max-width: 900px){
-    nav{
-        .links{
-            display: none;
-        }
-        .menuBar{
-            display: block;
-            font-size: 20px;
-        }
+@media screen and (max-width: 900px) {
+  nav {
+    .links {
+      display: none;
     }
-    .home{
-        .homeContent{
-            .intro-text .highlight{
-                background: none;
-            }
-        }
-        .profileImg{
-            display: none;
-        }
+    .menuBar {
+      display: block;
+      font-size: 20px;
     }
-    .dotCol{
-        display: none;
-    }
-    .sidebar{
-        background-color: #f2f3f5;
-        // box-shadow: 10px 10px 10px #f2f3f5 !important;
-    }
-}
-
-
-@media screen and (max-width: 500px){
-    h2{
-        font-size: 24px;
-    }
-    .bg-color{
+  }
+  .home {
+    .homeContent {
+      .intro-text .highlight {
         background: none;
+      }
     }
-    .home{
-        min-height: 500px;
-        .homeContent{
-            margin-top: 30px;
-            .intro-text{
-                font-size: 30px;
-            }
-        }
+    .profileImg {
+      display: none;
     }
-    .dotCol{
-        display: none;
-    }
-    .footer{
-        font-size: 10px;
-    }
+  }
+  .dotCol {
+    display: none;
+  }
+  .sidebar {
+    background-color: #f2f3f5;
+    // box-shadow: 10px 10px 10px #f2f3f5 !important;
+  }
 }
 
+@media screen and (max-width: 500px) {
+  h2 {
+    font-size: 24px;
+  }
+  .bg-color {
+    background: none;
+  }
+  .home {
+    min-height: 500px;
+    .homeContent {
+      margin-top: 30px;
+      .intro-text {
+        font-size: 30px;
+      }
+    }
+  }
+  .dotCol {
+    display: none;
+  }
+  .footer {
+    font-size: 10px;
+  }
+}
