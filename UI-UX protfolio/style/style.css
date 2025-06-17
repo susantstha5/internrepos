@@ -45,7 +45,7 @@
 }
 
 .experienceProject {
-  gap: 40px;
+  gap: 20px;
 }
 .experienceProject .experience, .experienceProject .project {
   max-width: 206px;
@@ -230,9 +230,6 @@
     font-size: 20px;
   }
 }
-.clientList {
-  width: 280px !important;
-}
 .clientList .clientProfile img {
   width: 52px;
   height: 52px;
@@ -254,10 +251,28 @@
   background-color: #DFE3EB !important;
 }
 
+.clientDetail .nav-pills .nav-link {
+  position: relative;
+}
+.clientDetail .nav-pills .nav-link::after {
+  content: "";
+  border: 15px solid transparent;
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  transform: translateY(-50%);
+  border-left-color: #DFE3EB;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+.clientDetail .nav-pills .nav-link.active::after {
+  opacity: 1;
+}
+
 .review {
   background-color: rgba(223, 227, 235, 0.3);
-  padding: 10px 20px 20px 50px;
-  margin-left: 20px;
+  padding: 20px;
+  height: 100% !important;
 }
 .review .rating i, .review .rating .rate {
   font-size: 12px;
@@ -266,39 +281,39 @@
   font-size: 20px;
 }
 
+.tab-content {
+  height: 100%;
+}
+
+.clientDetailMobile {
+  display: none;
+}
+.clientDetailMobile .clientList {
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  padding: 5px;
+}
+.clientDetailMobile .clientList .clientProfile img {
+  width: 42px;
+  height: 42px;
+}
+.clientDetailMobile .nav-pills .nav-link.active, .clientDetailMobile .nav-pills .show > .nav-link {
+  background: none !important;
+}
+.clientDetailMobile .nav-pills .nav-link.active .clientProfile img, .clientDetailMobile .nav-pills .show > .nav-link .clientProfile img {
+  width: 42px;
+  height: 42px;
+  box-shadow: 5px 5px 5px 0px #DFE3EB;
+}
+
 .tab-pane {
-  position: relative;
-}
-.tab-pane .client1-arrow {
-  font-size: 50px;
-  color: rgba(223, 227, 235, 0.3);
-  position: absolute;
-  top: 15px;
-  left: 0px;
-}
-.tab-pane .client2-arrow {
-  font-size: 50px;
-  color: rgba(223, 227, 235, 0.3);
-  position: absolute;
-  top: 100px;
-  left: 0px;
-}
-.tab-pane .client3-arrow {
-  font-size: 50px;
-  color: rgba(223, 227, 235, 0.3);
-  position: absolute;
-  top: 185px;
-  left: 0px;
-}
-.tab-pane .client4-arrow {
-  font-size: 50px;
-  color: rgba(223, 227, 235, 0.3);
-  position: absolute;
-  top: 270px;
-  left: 0px;
+  height: 100%;
 }
 
 @media screen and (max-width: 900px) {
+  .clientList .profileContent {
+    max-width: 78px;
+  }
   .rating {
     padding-bottom: 10px;
   }
@@ -310,11 +325,11 @@
   }
 }
 @media screen and (max-width: 500px) {
-  .clientDetail {
-    justify-content: center;
+  .clientTestimonial .clientDetail {
+    display: none !important;
   }
-  .tab-content {
-    display: none;
+  .clientDetailMobile {
+    display: block;
   }
 }
 .blogContainer {
@@ -520,6 +535,19 @@ h2 {
 nav .menuBar {
   display: none;
 }
+nav .menuBar .navIcon {
+  background: none !important;
+}
+
+.sideBar {
+  box-shadow: 5px 15px 5px rgba(223, 227, 235, 0.3) !important;
+  min-width: 100px;
+}
+.sideBar li {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px;
+}
 
 .link-list li a {
   color: #0A1931;
@@ -592,6 +620,9 @@ nav .menuBar {
   }
   .dotCol {
     display: none;
+  }
+  .sidebar {
+    background-color: #f2f3f5;
   }
 }
 @media screen and (max-width: 500px) {

@@ -1,5 +1,5 @@
 .clientList{
-    width: 280px !important;
+    // width: 280px !important;
     .clientProfile img{
         width: 52px;
         height: 52px;
@@ -17,11 +17,32 @@
     border-radius: 0;
     background-color: #DFE3EB !important; 
 }
+.clientDetail{
+    .nav-pills .nav-link{
+        position:relative;
+        &::after{
+            content:'';
+            border:15px solid transparent;
+            position:absolute;
+            top:50%;
+            right:-30px;
+            transform: translateY(-50%);
+            border-left-color: #DFE3EB;
+            opacity: 0;
+            transition: all .2s linear;
+        }
+        &.active{
+            &::after{
+                opacity: 1;
+            }
+        }
+    }
+}
 .review{
     // background: url(/images/BG.png);
     background-color:rgba(223, 227, 235, 0.3) ;
-    padding: 10px 20px 20px 50px;
-    margin-left:20px ;
+    padding: 20px;
+    height: 100% !important;
     .rating{
         i, .rate{
             font-size: 12px;
@@ -31,43 +52,46 @@
         font-size: 20px;
     }
 }
-
-// .tab-content{
-//     margin-top: auto;
-// }
-.tab-pane{
-    position: relative;
-    .client1-arrow{
-        font-size: 50px;
-        color: rgba(223, 227, 235, 0.3);
-        position: absolute;
-        top:15px;
-        left: 0px;
-    }
-    .client2-arrow{
-        font-size: 50px;
-        color: rgba(223, 227, 235, 0.3);
-        position: absolute;
-        top:100px;
-        left:0px;
-    }
-    .client3-arrow{
-        font-size: 50px;
-        color: rgba(223, 227, 235, 0.3);
-        position: absolute;
-        top:185px;
-        left:0px;
-    }
-    .client4-arrow{
-        font-size: 50px;
-        color: rgba(223, 227, 235, 0.3);
-        position: absolute;
-        top:270px;
-        left:0px;
-    }
+.tab-content{
+    height: 100%;
 }
 
+.clientDetailMobile{
+    display: none;
+    .clientList{
+        width: fit-content !important;
+        padding:5px;
+        .clientProfile{
+            // padding: 0px !important;
+            img{
+                width: 42px;
+                height: 42px;
+            }
+        }
+    }
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+        // background-color: #DFE3EB !important; 
+        // box-shadow: 5px 10px 10px 5px #DFE3EB;
+        background: none !important;
+        .clientProfile{
+            // padding: 0px !important;
+            img{
+                width: 42px;
+                height: 42px;
+                box-shadow: 5px 5px 5px 0px #DFE3EB;
+            }
+        }
+    }
+}
+.tab-pane{
+    height: 100%;
+}
 @media screen and (max-width:900px){
+    .clientList{
+        .profileContent{
+            max-width: calc(130px - 52px);
+        }
+    }
     .rating{
         padding-bottom: 10px;
         .quote{
@@ -79,10 +103,12 @@
     }
 }
 @media screen and (max-width:500px){
-    .clientDetail{
-        justify-content: center;
+    .clientTestimonial{
+        .clientDetail{
+            display: none !important;
+        }
     }
-    .tab-content{
-        display: none;
+    .clientDetailMobile{
+        display: block;
     }
 }

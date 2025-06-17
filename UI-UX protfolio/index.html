@@ -19,7 +19,17 @@
                         <span>A.F</span>
                     </div>
                     <div class="menuBar">
-                        <i class="fa-solid fa-bars text-secondary "></i>
+                         <div class="dropdown">
+                            <button class="btn btn-secondary navIcon border-0  " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-bars text-secondary "></i>
+                            </button>
+                            <ul class="dropdown-menu p-2 sideBar">
+                                <li class="nav-item"><a class="dropdown-item" aria-current="page" href="#about">ABOUT</a></li>
+                                <li class="nav-item"><a class="dropdown-item " aria-current="page" href="#service">SERVICES</a></li>
+                                <li class="nav-item"><a class="dropdown-item" aria-current="page" href="#work">WORKS</a></li>
+                                <li class="nav-item"><a class="dropdown-item" aria-current="page" href="#contact">CONTACT</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="links">
                         <ul class="nav link-list d-flex gap-4 list-unstyled m-0 fw-medium ">
@@ -83,7 +93,7 @@
                                         Years of Experience
                                     </div>
                                 </div>
-                                <div class="project d-flex gap-3 justify-content-center align-items-center">
+                                <div class="project d-flex  align-items-center">
                                     <span class="years text-primary">
                                         325+
                                     </span>
@@ -106,7 +116,7 @@
             <h2 class="text-center fw-normal">My Service</h2>
             <div class="serviceCard mt-4">
                 <div class="row g-3">
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6 col-6">
                         <div class="card border-0 p-2">
                             <div class="card-body d-flex flex-column justify-content-between">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -127,7 +137,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6 col-6">
                         <div class="card border-0 p-2">
                             <div class="card-body d-flex flex-column justify-content-between">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -148,7 +158,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6 col-6">
                             <div class="card border-0 p-2">
                                 <div class="card-body d-flex flex-column justify-content-between">
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -167,7 +177,7 @@
                                 </div>
                             </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6 col-6">
                             <div class="card border-0 p-2">
                                 <div class="card-body d-flex flex-column justify-content-between">
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -341,54 +351,152 @@
         <div class="container">
             <h2 class="text-center fw-normal">Client Testimonial</h2>
             <div class="clientDetail d-flex align-items-start my-5">
-                <div class=" nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <button class="clientList nav-link active" data-bs-toggle="pill" data-bs-target="#v-pills-client1" type="button" role="tab" aria-controls="v-pills-client1" aria-selected="true">
-                        <div class="clientProfile d-flex gap-4 p-2">
+                <div class="row g-2">
+                    <div class="col-md-4 col-sm-6">
+                        <div class=" nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="horizontal">
+                            <div class="clientList nav-link active" data-bs-toggle="pill" data-bs-target="#v-pills-client1" role="tab" aria-controls="v-pills-client1" aria-selected="true">
+                                <div class="clientProfile d-flex gap-3">
+                                    <img src="./images/clientProfile1.png" alt="profile1"/>
+                                    <div class="profileContent text-start">
+                                        <div class="clientName text-secondary">Sundar Pichai</div>
+                                        <div class="clientWork text-tertiary">CEO & Founder of <span class="text-primary">Google</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clientList nav-link" data-bs-toggle="pill" data-bs-target="#v-pills-client2" role="tab" aria-controls="v-pills-client2" aria-selected="true">
+                                <div class="clientProfile d-flex gap-3 ">
+                                    <img src="./images/clientprofile2.png" alt="profile2"/>
+                                     <div class="profileContent text-start">
+                                        <div class="clientName text-secondary">Shantanu Narayen</div>
+                                        <div class="clientWork text-tertiary">CEO of <span class="text-primary">Adobe </span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clientList nav-link" data-bs-toggle="pill" data-bs-target="#v-pills-client3" role="tab" aria-controls="v-pills-client3" aria-selected="false">
+                                <div class="clientProfile d-flex gap-3">
+                                    <img src="./images/clientProfile3.png" alt="profile3"/>
+                                    <div class="profileContent text-start">
+                                        <div class="clientName text-secondary">Noah Levin</div>
+                                        <div class="clientWork text-tertiary">Director of Design, <span class="text-primary">Figma </span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clientList nav-link" data-bs-toggle="pill" data-bs-target="#v-pills-client4"  role="tab" aria-controls="v-pills-client4" aria-selected="false">
+                                <div class="clientProfile d-flex gap-3">
+                                    <img src="./images/clientProfile4.png" alt="profile4"/>
+                                    <div class="profileContent text-start">
+                                        <div class="clientName text-secondary">Stewart Butterfield</div>
+                                        <div class="clientWork text-tertiary">CEO & Founder of <span class="text-primary">Slack </span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-6">
+                        <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-client1" role="tabpanel" aria-labelledby="v-pills-client1-tab" tabindex="0">
+                            <div class="review">
+                                <div class="rating d-flex justify-content-between align-items-center gap-1">
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <div class="rate">5.0 Star Rating</div>
+                                    </div>
+                                    <img src="./images/Quote.png" class="quote" src="quote"/>
+                                </div>
+                                <div class="reviewDescription fw-normal">
+                                    “If you're looking for someone who will challenge your UX/UI thinking and really cut to 
+                                    the core of what's important for users, then Jesse is your man. On top of that, he brings 
+                                    a level of enthusiasm to the craft that's energizing for everyone who works with him.”
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-client2" role="tabpanel" aria-labelledby="v-pills-client2-tab" tabindex="0">
+                            <div class="review">
+                                <div class="rating d-flex justify-content-between align-items-center gap-1">
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <div class="rate">4.6 Star Rating</div>
+                                    </div>
+                                    <img src="./images/Quote.png" class="quote" src="quote"/>
+                                </div>
+                                <div class="reviewDescription fw-normal">
+                                    "If you're looking for a company that continually challenges the boundaries of UX/UI 
+                                    design and truly centers on what matters most to users, then Adobe is the name to trust. 
+                                    Beyond that, Adobe brings a passion for creativity and innovation that inspires and 
+                                    energizes everyone who uses its tools."
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-client3" role="tabpanel" aria-labelledby="v-pills-client3-tab" tabindex="0">
+                            <div class="review">
+                                <div class="rating d-flex justify-content-between align-items-center gap-1">
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <div class="rate">5.0 Star Rating</div>
+                                    </div>
+                                    <img src="./images/Quote.png" class="quote" src="quote"/>
+                                </div>
+                                <div class="reviewDescription fw-normal">
+                                    "If you’re after a platform that pushes your design thinking and keeps you focused on what
+                                    truly matters to users, Figma is a game-changer. Its collaborative energy and intuitive 
+                                    interface make the design process not just efficient, but genuinely exciting for everyone 
+                                    involved."
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-client4" role="tabpanel" aria-labelledby="v-pills-client4-tab" tabindex="0">
+                            <div class="review">
+                                <div class="rating d-flex justify-content-between align-items-center gap-1">
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <div class="rate">5.0 Star Rating</div>
+                                    </div>
+                                    <img src="./images/Quote.png" class="quote" src="quote"/>
+                                </div>
+                                <div class="reviewDescription fw-normal">
+                                    "If you need a place that sharpens your problem-solving skills and keeps you grounded in 
+                                    real-world developer challenges, Stack is indispensable. It's more than just answers—it's 
+                                    a thriving community where knowledge is shared, refined, and constantly evolving to support
+                                    developers at every level."
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="clientDetailMobile  my-5">
+                <div class=" nav  nav-pills" id="v-pills-tab" role="tablist" aria-orientation="horizontal">
+                    <div class="clientList nav-link active" data-bs-toggle="pill" data-bs-target="#v-pills-client2-1" role="tab" aria-controls="v-pills-client1" aria-selected="true">
+                        <div class="clientProfile d-flex gap-2 p-2">
                             <img src="./images/clientProfile1.png" alt="profile1"/>
-                            <div class="profileContent text-start">
-                                <div class="clientName text-secondary">Sundar Pichai</div>
-                                <div class="clientWork text-tertiary">CEO & Founder of <span class="text-primary">Google</span></div>
-                            </div>
                         </div>
-                    </button>
-                    <button class="clientList nav-link " data-bs-toggle="pill" data-bs-target="#v-pills-client2" type="button" role="tab" aria-controls="v-pills-client2" aria-selected="false">
-                        <div class="clientProfile d-flex gap-4 p-2">
+                    </div>
+                    <div class="clientList nav-link " data-bs-toggle="pill" data-bs-target="#v-pills-client2-2" role="tab" aria-controls="v-pills-client2" aria-selected="false">
+                        <div class="clientProfile d-flex gap-2 p-2">
                             <img src="./images/clientprofile2.png" alt="profile2"/>
-                            <div class="profileContent text-start">
-                                <div class="clientName text-secondary">Shantanu Narayen</div>
-                                <div class="clientWork text-tertiary">CEO of <span class="text-primary">Adobe </span></div>
-                            </div>
                         </div>
-                    </button>
-                    <button class="clientList nav-link" data-bs-toggle="pill" data-bs-target="#v-pills-client3" type="button" role="tab" aria-controls="v-pills-client3" aria-selected="false">
-                        <div class="clientProfile d-flex gap-4 p-2">
+                    </div>
+                    <div class="clientList nav-link" data-bs-toggle="pill" data-bs-target="#v-pills-client2-3" role="tab" aria-controls="v-pills-client3" aria-selected="false">
+                        <div class="clientProfile d-flex gap-2 p-2">
                             <img src="./images/clientProfile3.png" alt="profile3"/>
-                            <div class="profileContent text-start">
-                                <div class="clientName text-secondary">Noah Levin</div>
-                                <div class="clientWork text-tertiary">Director of Design, <span class="text-primary">Figma </span></div>
-                            </div>
                         </div>
-                    </button>
-                    <button class="clientList nav-link" data-bs-toggle="pill" data-bs-target="#v-pills-client4" type="button" role="tab" aria-controls="v-pills-client4" aria-selected="false">
-                        <div class="clientProfile d-flex gap-4 p-2">
+                    </div>
+                    <div class="clientList nav-link" data-bs-toggle="pill" data-bs-target="#v-pills-client2-4"  role="tab" aria-controls="v-pills-client4" aria-selected="false">
+                        <div class="clientProfile d-flex gap-2 p-2">
                             <img src="./images/clientProfile4.png" alt="profile4"/>
-                            <div class="profileContent text-start">
-                                <div class="clientName text-secondary">Stewart Butterfield</div>
-                                <div class="clientWork text-tertiary">CEO & Founder of <span class="text-primary">Slack </span></div>
-                            </div>
                         </div>
-                    </button>
+                    </div>
                 </div>
                 <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="v-pills-client1" role="tabpanel" aria-labelledby="v-pills-client1-tab" tabindex="0">
-                        <i class="fa-solid fa-caret-left client1-arrow"></i>
+                    <div class="tab-pane fade show active" id="v-pills-client2-1" role="tabpanel" aria-labelledby="v-pills-client-tab" tabindex="0">
                         <div class="review">
                             <div class="rating d-flex justify-content-between align-items-center gap-1">
                                 <div class="d-flex gap-2 align-items-center">
                                     <i class="fa-solid fa-star text-warning"></i>
                                     <div class="rate">5.0 Star Rating</div>
                                 </div>
-                                <img src="./images/Quote.png" class="quote" src="quote"/>
                             </div>
                             <div class="reviewDescription fw-normal">
                                 “If you're looking for someone who will challenge your UX/UI thinking and really cut to 
@@ -397,15 +505,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="v-pills-client2" role="tabpanel" aria-labelledby="v-pills-client2-tab" tabindex="0">
-                        <i class="fa-solid fa-caret-left client2-arrow"></i>
+                    <div class="tab-pane fade" id="v-pills-client2-2" role="tabpanel" aria-labelledby="v-pills-client2-tab" tabindex="0">
                         <div class="review">
                             <div class="rating d-flex justify-content-between align-items-center gap-1">
                                 <div class="d-flex gap-2 align-items-center">
                                     <i class="fa-solid fa-star text-warning"></i>
                                     <div class="rate">4.6 Star Rating</div>
                                 </div>
-                                <img src="./images/Quote.png" class="quote" src="quote"/>
                             </div>
                             <div class="reviewDescription fw-normal">
                                 "If you're looking for a company that continually challenges the boundaries of UX/UI 
@@ -415,15 +521,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="v-pills-client3" role="tabpanel" aria-labelledby="v-pills-client3-tab" tabindex="0">
-                        <i class="fa-solid fa-caret-left client3-arrow"></i>
+                    <div class="tab-pane fade" id="v-pills-client2-3" role="tabpanel" aria-labelledby="v-pills-client3-tab" tabindex="0">
                         <div class="review">
                             <div class="rating d-flex justify-content-between align-items-center gap-1">
                                 <div class="d-flex gap-2 align-items-center">
                                     <i class="fa-solid fa-star text-warning"></i>
                                     <div class="rate">5.0 Star Rating</div>
                                 </div>
-                                <img src="./images/Quote.png" class="quote" src="quote"/>
                             </div>
                             <div class="reviewDescription fw-normal">
                                 "If you’re after a platform that pushes your design thinking and keeps you focused on what
@@ -433,15 +537,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="v-pills-client4" role="tabpanel" aria-labelledby="v-pills-client4-tab" tabindex="0">
-                        <i class="fa-solid fa-caret-left client4-arrow"></i>
+                    <div class="tab-pane fade" id="v-pills-client2-4" role="tabpanel" aria-labelledby="v-pills-client4-tab" tabindex="0">
                         <div class="review">
                             <div class="rating d-flex justify-content-between align-items-center gap-1">
                                 <div class="d-flex gap-2 align-items-center">
                                     <i class="fa-solid fa-star text-warning"></i>
                                     <div class="rate">5.0 Star Rating</div>
                                 </div>
-                                <img src="./images/Quote.png" class="quote" src="quote"/>
                             </div>
                             <div class="reviewDescription fw-normal">
                                 "If you need a place that sharpens your problem-solving skills and keeps you grounded in 

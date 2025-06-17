@@ -43,6 +43,7 @@ body{
     padding: 0;
     font-family: "inter", sans-serif;
     box-sizing: border-box;
+    //  overflow: hidden;
 }
 
 .bg-color{
@@ -55,9 +56,21 @@ h2{
     font-size: 40px;
 }
 nav {
-  .menuBar{
-    display: none;
-  }
+    .menuBar{
+        display: none;
+        .navIcon{
+            background: none !important;
+        }
+    }
+}
+.sideBar{
+    // width: fit-content !important;
+    box-shadow: 5px 15px 5px rgba(223, 227, 235,0.3) !important;
+    min-width:100px ;
+    li{
+        width: fit-content;
+        padding:5px;
+    }
 }
 .link-list li a{
     color: $dark-gray;
@@ -138,6 +151,10 @@ nav {
     }
     .dotCol{
         display: none;
+    }
+    .sidebar{
+        background-color: #f2f3f5;
+        // box-shadow: 10px 10px 10px #f2f3f5 !important;
     }
 }
 
