@@ -14,6 +14,8 @@
     />
     <!-- css link here -->
     <link rel="stylesheet" href="style.css" />
+    <!-- AOS libary link here -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- icon link here  -->
     <link
       rel="stylesheet"
@@ -70,8 +72,8 @@
     </div>
   </div>
 
-  <div class="image_container position-absolute start-50 bottom-0">
-    <img class="object-fit-contain" src="./images/headerimg/Image.svg" alt="" />
+  <div class="image_container  position-absolute start-50 bottom-0" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="100">
+    <img class="object-fit-contain " src="./images/headerimg/Image.svg" alt="" />
   </div>
 
   <div class="d-flex dot_container align-items-center justify-content-center bg-secondary">
@@ -83,8 +85,8 @@
       <!-- about section from here-->
       <section class="align-items-center justify-content-start about_container d-flex gap-5 position-relative">
   <img class="top-0 start-0 position-absolute w-25" src="./images/aboutimg/BG.svg" alt="ovalshape" />
-  <div class="z-2 profile_image position-relative">
-    <img class="" src="./images/aboutimg/Image.svg" alt="profile" />
+  <div class="z-2 profile_image position-relative" data-aos="fade-right" data-aos-delay="100"data-aos-duration="2000">
+    <img class="  " src="./images/aboutimg/Image.svg" alt="profile" />
   </div>
   <div class="gap-2 flex-column d-flex about_content">
     <h2>
@@ -122,8 +124,8 @@
 <!-- services section from here -->
 <section class="align-items-center flex-column d-flex gap-lg-5 service_container">
   <h2 class="py-3 heading position-relative">My Service</h2>
-  <div class="services justify-content-between d-flex gap-5">
-    <div class="gap-lg-5 service flex-column p-3 d-flex">
+  <div class="services justify-content-between d-flex gap-5" >
+    <div class="gap-lg-5 service flex-column p-3 d-flex" data-aos="flip-right" data-aos-duration="2000">
       <div class="logo_service">
         <i class="fs-3 ri-stack-line"></i>
       </div>
@@ -139,11 +141,11 @@
         </a>
       </div>
     </div>
-    <div class="gap-lg-5 d-flex p-3 flex-column service">
+    <div class="gap-lg-5 d-flex p-3 flex-column service" data-aos="flip-right" data-aos-duration="2000">
       <div class="logo_service">
         <i class="ri-box-3-line fs-3"></i>
       </div>
-      <div class="service_content">
+      <div class="service_content" >
         <h5>
           Product <br />
           Design
@@ -155,7 +157,7 @@
         </a>
       </div>
     </div>
-    <div class="flex-column gap-lg-5 d-flex service p-3">
+    <div class="flex-column gap-lg-5 d-flex service p-3" data-aos="flip-right" data-aos-duration="2000">
       <div class="logo_service">
         <i class="fs-3 ri-rectangle-line"></i>
       </div>
@@ -171,7 +173,7 @@
         </a>
       </div>
     </div>
-    <div class="service p-3 gap-lg-5 d-flex flex-column">
+    <div class="service p-3 gap-lg-5 d-flex flex-column" data-aos="flip-right" data-aos-duration="2000">
       <div class="logo_service">
         <i class="fs-3 ri-code-line"></i>
       </div>
@@ -197,7 +199,7 @@
     My Selected Work
   </h2>
   <div class="works">
-    <div class="gap-1 bg-white flex-column work_content d-flex rounded-1">
+    <div class="gap-1 bg-white flex-column work_content d-flex rounded-1" data-aos="zoom-in-up" data-aos-duration="2000">
       <div class="work_image">
         <img class="img-fluid" src="./images/worksectionimg/Images.png" alt="images" />
       </div>
@@ -209,7 +211,7 @@
         </a>
       </div>
     </div>
-    <div class="rounded-1 bg-white gap-1 d-flex flex-column work_content">
+    <div class="rounded-1 bg-white gap-1 d-flex flex-column work_content" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="2000">
       <div class="w-100">
         <img class="img-fluid" src="./images/worksectionimg/Images (1).png" alt="images" />
       </div>
@@ -221,7 +223,7 @@
         </a>
       </div>
     </div>
-    <div class="bg-white flex-column gap-1 d-flex rounded-1 work_content">
+    <div class="bg-white flex-column gap-1 d-flex rounded-1 work_content"data-aos="zoom-in-up"data-aos-delay="100" data-aos-duration="2000">
       <div class="w-100">
         <img class="img-fluid" src="./images/worksectionimg/Images (2).png" alt="images" />
       </div>
@@ -233,7 +235,7 @@
         </a>
       </div>
     </div>
-    <div class="rounded-1 gap-1 flex-column bg-white work_content d-flex">
+    <div class="rounded-1 gap-1 flex-column bg-white work_content d-flex"data-aos="zoom-in-up"data-aos-delay="100" data-aos-duration="2000">
       <div class="w-100">
         <img class="img-fluid" src="./images/worksectionimg/Images (3).png" alt="images" />
       </div>
@@ -245,7 +247,7 @@
         </a>
       </div>
     </div>
-    <div class="bg-white d-flex gap-1 rounded-1 flex-column work_content">
+    <div class="bg-white d-flex gap-1 rounded-1 flex-column work_content"data-aos="zoom-in-up"data-aos-delay="100" data-aos-duration="2000">
       <div class="w-100">
         <img class="img-fluid" src="./images/worksectionimg/Images (4).png" alt="images" />
       </div>
@@ -257,7 +259,7 @@
         </a>
       </div>
     </div>
-    <div class="work_content rounded-1 flex-column bg-white gap-1 d-flex">
+    <div class="work_content rounded-1 flex-column bg-white gap-1 d-flex"data-aos="zoom-in-up"data-aos-delay="100" data-aos-duration="2000">
       <div class="w-100">
         <img class="img-fluid" src="./images/worksectionimg/Images (5).png" alt="images" />
       </div>
@@ -314,9 +316,7 @@
 
       <!-- banner section from here-->
       <section class="banner_container">
-        <div
-          class="banner d-flex justify-content-around align-items-center flex-column gap-4 py-5 rounded-1"
-        >
+        <div class="banner d-flex justify-content-around align-items-center flex-column gap-4 py-5 rounded-1" data-aos="zoom-in-down" data-aos-duration="2000">
           <p class="text-white fs-3 text-center">
             Got a Project in Mind? Let's Make <br />
             Something Awesome Together.
@@ -333,7 +333,7 @@
           Client Testimonial
         </h2>
         <div class="testimonial_wrapper d-flex gap-4">
-          <div class="clients d-flex flex-column">
+          <div class="clients d-flex flex-column" data-aos="slide-right" data-aos-delay="100" data-aos-duration="2000">
             <div class="client d-flex p-3 gap-2" data-id="client1">
               <div>
                 <img
@@ -400,9 +400,7 @@
               </div>
             </div>
           </div>
-          <div
-            class="testimonial_content position-relative w-75 rounded-1 d-flex flex-column justify-content-center px-5 py-4 gap-3"
-          >
+          <div class="testimonial_content position-relative w-75 rounded-1 d-flex flex-column justify-content-center px-5 py-4 gap-3" data-aos="slide-left" data-aos-delay="100" data-aos-duration="2000">
             <div class="rating">
               <i class="ri-star-fill text-warning fs-5"></i>
               <span class="fs-6 fw-medium"
@@ -425,7 +423,8 @@
         <h2 class="heading position-relative py-3 w-100 text-center">
           Blog & News
         </h2>
-        <div class="blog_wrapper d-flex gap-4">
+        <div class="blog_wrapper d-flex gap-4"  data-aos="fade-up" data-aos-delay="100"
+     data-aos-duration="2000">
           <div
             class="blog_content d-flex flex-column gap-1 bg-white rounded-1 p-3"
           >
@@ -554,9 +553,7 @@
           class="position-absolute top-0 start-0 w-25 z-0"
           alt="shapes"
         />
-        <div
-          class="form_wrapper bg-white position-relative z-2 p-4 d-flex flex-column gap-4 rounded-2"
-        >
+        <div class="form_wrapper bg-white position-relative z-2 p-4 d-flex flex-column gap-4 rounded-2" data-aos="slide-right" data-aos-delay="100" data-aos-duration="2000">
           <h3 class="fs-3">Let Me Know here.</h3>
           <form action="#" class="d-flex flex-column gap-3">
             <div class="w-100 d-flex gap-3">
@@ -595,9 +592,7 @@
             </div>
           </form>
         </div>
-        <div
-          class="contact_wrapper bg-white position-relative p-4 d-flex flex-column justify-content-between rounded-2"
-        >
+        <div class="contact_wrapper bg-white position-relative p-4 d-flex flex-column justify-content-between rounded-2" data-aos="slide-left" data-aos-delay="100" data-aos-duration="2000">
           <h3 class="fs-3">Let Me Know here.</h3>
           <div class="contact_details d-flex flex-column gap-4">
             <div class="contact d-flex gap-2 align-items-center">
@@ -667,5 +662,7 @@
     integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
     crossorigin="anonymous"
   ></script>
-   
+   <!-- AOS libary js link here -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./file.js"></script>
 </html>
