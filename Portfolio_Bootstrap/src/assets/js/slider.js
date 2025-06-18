@@ -1,24 +1,19 @@
-// $(document).ready(function(){
-//       $('.logo-carousel').slick({
-//         slidesToShow: 4,
-//         slidesToScroll: 1,
-//         infinite: true,
-//         arrows: true,
-//         autoplay: false,
-//         vertical: false, // Ensure horizontal sliding
-//         responsive: [
-//           {
-//             breakpoint: 768,
-//             settings: {
-//               slidesToShow: 3
-//             }
-//           },
-//           {
-//             breakpoint: 576,
-//             settings: {
-//               slidesToShow: 2
-//             }
-//           }
-//         ]
-//       });
-//     });
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+  const navbarCollapse = document.getElementById("navbarNav");
+    navLinks.forEach(link => {
+     link.addEventListener("click", function () {
+      const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+        toggle: false
+      });
+      bsCollapse.hide(); // closes the mobile menu
+    });
+  });
+});
+
+
+
+
+
+  
+
