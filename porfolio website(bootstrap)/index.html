@@ -24,6 +24,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- slick slider link here -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+         
   </head>
   <body>
     <div class="portfolio-container">
@@ -72,7 +76,7 @@
     </div>
   </div>
 
-  <div class="image_container  position-absolute start-50 bottom-0" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="100">
+  <div class="image_container  position-absolute start-50 bottom-0" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200">
     <img class="object-fit-contain " src="./images/headerimg/Image.svg" alt="" />
   </div>
 
@@ -125,7 +129,7 @@
 <section class="align-items-center flex-column d-flex gap-lg-5 service_container">
   <h2 class="py-3 heading position-relative">My Service</h2>
   <div class="services justify-content-between d-flex gap-5" >
-    <div class="gap-lg-5 service flex-column p-3 d-flex" data-aos="flip-right" data-aos-duration="2000">
+    <div class="gap-lg-5 service flex-column p-3 d-flex" data-aos="fade-up" data-aos-duration="2000">
       <div class="logo_service">
         <i class="fs-3 ri-stack-line"></i>
       </div>
@@ -141,7 +145,7 @@
         </a>
       </div>
     </div>
-    <div class="gap-lg-5 d-flex p-3 flex-column service" data-aos="flip-right" data-aos-duration="2000">
+    <div class="gap-lg-5 d-flex p-3 flex-column service" data-aos="fade-down" data-aos-duration="2000">
       <div class="logo_service">
         <i class="ri-box-3-line fs-3"></i>
       </div>
@@ -157,7 +161,7 @@
         </a>
       </div>
     </div>
-    <div class="flex-column gap-lg-5 d-flex service p-3" data-aos="flip-right" data-aos-duration="2000">
+    <div class="flex-column gap-lg-5 d-flex service p-3" data-aos="fade-up" data-aos-duration="2000">
       <div class="logo_service">
         <i class="fs-3 ri-rectangle-line"></i>
       </div>
@@ -173,7 +177,7 @@
         </a>
       </div>
     </div>
-    <div class="service p-3 gap-lg-5 d-flex flex-column" data-aos="flip-right" data-aos-duration="2000">
+    <div class="service p-3 gap-lg-5 d-flex flex-column" data-aos="fade-down" data-aos-duration="2000">
       <div class="logo_service">
         <i class="fs-3 ri-code-line"></i>
       </div>
@@ -284,32 +288,40 @@
     </p>
   </div>
   <div class="scroll_wrapper w-75 d-flex gap-3 justify-content-end align-items-center">
-    <button class="scroll" id="scrollLeft">
-      <i class="fw-bold ri-arrow-left-long-line"></i>
-    </button>
+     
     <div class="scroll_container overflow-x-auto d-flex gap-3" id="scrollContainer">
-      <div class="img_container">
+        
+        <div class="img_container">
+          <img src="./images/companylogoimg/Group 7.png" alt="photos" />
+        </div>
+       
+       
+        <div class="img_container">
+          <img src="./images/companylogoimg/Group 8.png" alt="photos" />
+        </div>
+       
+       
+        <div class="img_container">
+          <img src="./images/companylogoimg/adobe-44195.png" alt="photos" />
+        </div>
+       
+       
+        <div class="img_container">
+          <img src="./images/companylogoimg/sketch-1.png" alt="photos" />
+        </div>
+       
+       
+        <div class="img_container">
+      
         <img src="./images/companylogoimg/Group 7.png" alt="photos" />
-      </div>
-      <div class="img_container">
+       </div>
+       
+        <div class="img_container">
+      
         <img src="./images/companylogoimg/Group 8.png" alt="photos" />
-      </div>
-      <div class="img_container">
-        <img src="./images/companylogoimg/adobe-44195.png" alt="photos" />
-      </div>
-      <div class="img_container">
-        <img src="./images/companylogoimg/sketch-1.png" alt="photos" />
-      </div>
-      <div class="img_container">
-        <img src="./images/companylogoimg/Group 7.png" alt="photos" />
-      </div>
-      <div class="img_container">
-        <img src="./images/companylogoimg/Group 8.png" alt="photos" />
-      </div>
+       </div>
     </div>
-    <button class="scroll" id="scrollRight">
-      <i class="fw-bold fs-6 ri-arrow-right-long-line"></i>
-    </button>
+     
   </div>
 </section>
 
@@ -408,11 +420,7 @@
               >
             </div>
             <p class="testimonial fs-3 m-0 fw-normal" id="testimonial_review">
-              “If you're looking for someone who will challenge your UX/UI
-              thinking and really cut to the core of what's important for users,
-              then Jesse is your man. On top of that, he brings a level of
-              enthusiasm to the craft that's energizing for everyone who works
-              with him.”
+               
             </p>
           </div>
         </div>
@@ -664,5 +672,10 @@
   ></script>
    <!-- AOS libary js link here -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./file.js"></script>
+    
+    <!-- slick slider link here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js" integrity="sha512-BzvgYEoHXuphX+g7B/laemJGYFdrq4fTKEo+B3PurSxstMZtwu28FHkPKXu6dSBCzbUWqz/rMv755nUwhjQypw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+    <script src="./js_file/file.js"></script>
 </html>
