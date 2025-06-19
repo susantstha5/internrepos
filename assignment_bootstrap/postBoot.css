@@ -182,9 +182,9 @@ html {
   display: grid;
   grid-template-columns: repeat(
     auto-fit,
-    minmax(280px, 1fr)
+    minmax(280px, 280px)
   ); /* 3 equal columns */
-  gap: 30px;
+  gap: 20px;
   width: 100%;
   justify-content: space-around;
 }
@@ -357,7 +357,7 @@ html {
   flex-direction: column;
 }
 .client {
-  width: fit-content;
+  /* width: fit-content; */
   position: relative;
 }
 .client.active {
@@ -370,8 +370,8 @@ html {
   position: absolute;
   background: url(./assets/Polygon\ 6.svg);
   height: 30%;
-  width: 30%;
-  left: 98%;
+  width: 10%;
+  left: 95%;
   top: 10%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -387,10 +387,11 @@ html {
 }
 .testimonial_wrapper {
   gap: 20px;
+  justify-content: space-between;
 }
 .testimonial_content {
   background-color: #f6f7f9;
-  width: 75%;
+  max-width: 75%;
   padding: 24px 48px;
 }
 
@@ -481,7 +482,7 @@ html {
 }
 .contact_wrapper {
   width: 40%;
-  z-index: 2;
+  /* z-index: 100; */
 }
 .contact_method h6 {
   line-height: 28px;
@@ -504,13 +505,13 @@ html {
 .contact_wrapper::after {
   content: "";
   position: absolute;
-  z-index: -1;
+  z-index:1;
   background-image: url("./assets/contactSection/circle.png");
   height: 100px;
   width: 100px;
   left: 90%;
   top: 90%;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -552,6 +553,9 @@ html {
   .service {
     width: 100%;
   }
+  .testimonial_content{
+    max-width: 70%;
+  }
   .smallBlog_content h5 {
     width: 95%;
   }
@@ -575,6 +579,7 @@ html {
   }
   .navbar {
     padding: 0px 20px;
+    /* position: relative; */
     z-index: 2;
   }
   .hero_content {
@@ -646,16 +651,18 @@ html {
     flex-direction: row;
     overflow-x: auto;
     padding: 34px 0px;
-    justify-content: space-between;
+    width: 100%;
+    
   }
   .testimonial_content {
-    width: 100%;
+    max-width: 100%;
   }
   .client .client_details {
     display: none;
   }
   .client {
     justify-content: center;
+    
     border-radius: 8px;
   }
   .client.active::after {
@@ -665,7 +672,7 @@ html {
     /* height: 10%; */
     width: 20%;
     left: 40%;
-    top: 96%;
+    top: 92%;
     z-index: 1;
     transform: rotate(90deg);
     background-size: contain;

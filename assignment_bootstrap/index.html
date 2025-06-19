@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile Website</title>
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- 
     jquery link -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -25,6 +28,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <div class="profile_container">
@@ -33,9 +37,7 @@
         class="hero_container position-relative w-100 d-flex justify-content-between"
       >
         <!-- navbar -->
-        <nav
-          class="navbar navbar-expand-lg  top-0 w-100 py-2"
-        >
+        <nav data-aos="fade-down" class="navbar navbar-expand-lg top-0 w-100 py-2">
           <div class="container-fluid justify-content-between px-0">
             <!-- Brand / Short Form -->
             <a class="navbar-brand d-flex align-items-center" href="#">
@@ -126,7 +128,7 @@
       </section>
 
       <!-- about section -->
-      <section
+      <section data-aos="fade-up"
         class="about_container position-relative d-flex justify-content-between align-items-center gap-5"
         id="about"
       >
@@ -180,7 +182,10 @@
       >
         <h2 class="heading position-relative py-3">My Service</h2>
         <div class="services">
-          <div class="service d-flex flex-column gap-5 p-3">
+          <div
+            data-aos="fade-right"
+            class="service d-flex flex-column gap-5 p-3"
+          >
             <div class="logo_service">
               <i class="ri-stack-line fs-3"></i>
             </div>
@@ -198,7 +203,7 @@
               </a>
             </div>
           </div>
-          <div class="service d-flex flex-column gap-5 p-3">
+          <div data-aos="zoom-in" class="service d-flex flex-column gap-5 p-3">
             <div class="logo_service">
               <i class="ri-box-3-line fs-3"></i>
             </div>
@@ -216,7 +221,7 @@
               </a>
             </div>
           </div>
-          <div class="service d-flex flex-column gap-5 p-3">
+          <div data-aos="zoom-in" class="service d-flex flex-column gap-5 p-3">
             <div class="logo_service">
               <i class="ri-rectangle-line fs-3"></i>
             </div>
@@ -234,7 +239,10 @@
               </a>
             </div>
           </div>
-          <div class="service d-flex flex-column gap-5 p-3">
+          <div
+            data-aos="fade-left"
+            class="service d-flex flex-column gap-5 p-3"
+          >
             <div class="logo_service">
               <i class="ri-code-line fs-3"></i>
             </div>
@@ -261,7 +269,10 @@
           My Selected Work
         </h2>
         <div class="works">
-          <div class="work_content d-flex flex-column gap-1 bg-white rounded-1">
+          <div
+            data-aos="fade-down"
+            class="work_content d-flex flex-column gap-1 bg-white rounded-1"
+          >
             <div class="work_image">
               <img
                 class="img-fluid"
@@ -284,7 +295,10 @@
               </a>
             </div>
           </div>
-          <div class="work_content d-flex flex-column gap-1 bg-white rounded-1">
+          <div
+            data-aos="fade-down"
+            class="work_content d-flex flex-column gap-1 bg-white rounded-1"
+          >
             <div class="w-100">
               <img
                 class="img-fluid"
@@ -307,7 +321,10 @@
               </a>
             </div>
           </div>
-          <div class="work_content d-flex flex-column gap-1 bg-white rounded-1">
+          <div
+            data-aos="fade-down"
+            class="work_content d-flex flex-column gap-1 bg-white rounded-1"
+          >
             <div class="w-100">
               <img
                 class="img-fluid"
@@ -330,7 +347,10 @@
               </a>
             </div>
           </div>
-          <div class="work_content d-flex flex-column gap-1 bg-white rounded-1">
+          <div
+            data-aos="fade-up"
+            class="work_content d-flex flex-column gap-1 bg-white rounded-1"
+          >
             <div class="w-100">
               <img
                 class="img-fluid"
@@ -353,7 +373,10 @@
               </a>
             </div>
           </div>
-          <div class="work_content d-flex flex-column gap-1 bg-white rounded-1">
+          <div
+            data-aos="fade-up"
+            class="work_content d-flex flex-column gap-1 bg-white rounded-1"
+          >
             <div class="w-100">
               <img
                 class="img-fluid"
@@ -376,7 +399,10 @@
               </a>
             </div>
           </div>
-          <div class="work_content d-flex flex-column gap-1 bg-white rounded-1">
+          <div
+            data-aos="fade-up"
+            class="work_content d-flex flex-column gap-1 bg-white rounded-1"
+          >
             <div class="w-100">
               <img
                 class="img-fluid"
@@ -455,6 +481,7 @@
       <!-- banner section -->
       <section class="banner_container">
         <div
+          data-aos="zoom-in"
           class="banner d-flex justify-content-around align-items-center flex-column gap-4 py-5 rounded-1"
         >
           <p class="text-white text-center">
@@ -468,16 +495,13 @@
       </section>
 
       <!-- testimonial section -->
-      <section class="testimonial_container d-flex flex-column gap-4">
+      <section data-aos="fade-down" class="testimonial_container d-flex flex-column gap-4">
         <h2 class="heading position-relative py-3 w-100 text-center">
           Client Testimonial
         </h2>
-        <div
-          class="testimonial_wrapper d-flex"
-          aria-label="client testimonial"
-        >
+        <div class="testimonial_wrapper d-flex" aria-label="client testimonial">
           <div class="clients d-flex">
-            <div class="client d-flex p-3 gap-2 w-100" data-id="client1">
+            <div class="client d-flex p-3 yx-2 gap-2 w-100" data-id="client1">
               <div>
                 <img
                   src="./assets/testimonialImage/sundar.png"
@@ -538,7 +562,7 @@
             </div>
           </div>
           <div
-            class="testimonial_content position-relative rounded-1 d-flex flex-column justify-content-center gap-3"
+            class="testimonial_content position-relative rounded-2 d-flex flex-column justify-content-center gap-3"
           >
             <div class="rating">
               <i class="ri-star-fill text-warning fs-5"></i>
@@ -561,6 +585,7 @@
         </h2>
         <div class="blog_wrapper d-flex gap-4 flex-wrap">
           <div
+            data-aos="fade-right"
             class="blog_content d-flex flex-column gap-2 bg-white rounded-1 p-3"
           >
             <div class="w-100">
@@ -595,6 +620,7 @@
             </div>
           </div>
           <div
+            data-aos="fade-down"
             class="blog_content d-flex flex-column gap-1 bg-white rounded-1 p-3"
           >
             <div class="w-100">
@@ -630,6 +656,7 @@
           </div>
           <div class="small_blog d-flex flex-column justify-content-between">
             <div
+              data-aos="fade-left"
               class="smallBlog_content p-3 d-flex flex-column gap-2 py-3 justify-content-lg-start"
             >
               <h5 class="">10 Best Wireframe Tools for Designers in 2021.</h5>
@@ -644,8 +671,12 @@
               </a>
             </div>
             <div
-              class="smallBlog_content p-3 d-flex flex-column gap-2 py-3 justify-content-lg-start"
-            >
+              data-aos="zoom-in"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+            
+              class="smallBlog_content p-3 d-flex flex-column gap-2 py-3
+              justify-content-lg-start" >
               <h5 class="">
                 20 Cool Fonts for Web and Graphic Design. (free + paid)
               </h5>
@@ -660,6 +691,7 @@
               </a>
             </div>
             <div
+              data-aos="fade-left"
               class="smallBlog_content p-3 d-flex flex-column gap-2 py-3 justify-content-lg-start"
             >
               <h5 class="">
@@ -689,7 +721,7 @@
           class="position-absolute top-0 start-0 w-25 z-0"
           alt="shapes"
         />
-        <div
+        <div data-aos="zoom-in"
           class="form_wrapper bg-white position-relative z-2 p-4 d-flex flex-column gap-4 rounded-2"
         >
           <h3 class="fs-3">Let Me Know here.</h3>
@@ -734,7 +766,7 @@
             </div>
           </form>
         </div>
-        <div
+        <div data-aos="zoom-out"
           class="contact_wrapper bg-white position-relative p-4 d-flex flex-column justify-content-center gap-4 rounded-2"
         >
           <h3 class="fs-3">Let Me Know here.</h3>
