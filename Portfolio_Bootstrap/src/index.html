@@ -14,8 +14,8 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- Custom JS -->
-   <script src="./assets/js/slider.js"></script>
-   <script src="./assets/js/scroll.js"></script>
+  <script src="./assets/js/slider.js"></script>
+  <script src="./assets/js/scroll.js"></script>
 
   <!-- Local CSS -->
   <link rel="stylesheet" href="../src/assets/css/main.css" />
@@ -31,7 +31,7 @@
 <body>
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
+    <div class="container collapse" id="#navbarNav">
       <a href="#"
         class="navbar-brand brand-pill d-flex align-items-center justify-content-center rounded-pill px-3 py-2">
         A.F
@@ -196,84 +196,81 @@
 
   <!-- My-Service -->
   <section class="py-5">
-    <div class="container" data-aos="fade-in" data-aos-duration="800" data-aos-delay="400">
-      <div class="row">
-        <div class="col-12 text-center mb-5">
-          <h2 class="fs-1 fw-semibold text-dark position-relative d-inline-block service-heading">My Service</h2>
-        </div>
-      </div>
-
-      <div class="row g-4 justify-content-center grid-mobile">
-        <!-- Card 1 -->
-        <div class="col-lg-3 col-md-6 mobile-size" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
-          <a href="#" class="text-decoration-none text-reset d-block h-100">
-            <div class="card bg-light h-100 shadow-sm border-0 p-4 service-hover">
-              <div class="text-muted fs-2 mb-5 bg-light">
-                <i class="bi bi-stack"></i>
-              </div>
-              <h4 class="fs-4 fw-normal text-dark position-relative pb-3">UI/UX<br />Design</h4>
-              <div class="border-bottom border-3 border-purple w-25"></div>
-              <div class="d-inline-flex align-items-center mt-4 text-secondary service-arrow-link">
-                <span class="arrow-text">Discuss Now</span>
-                <i class="bi bi-arrow-right fs-4 ms-2"></i>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="col-lg-3 col-md-6 mobile-size" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="600">
-          <a href="#" class="text-decoration-none text-reset d-block h-100">
-            <div class="card bg-light h-100 shadow-sm border-0 p-4 service-hover">
-              <div class="text-muted fs-2 mb-5 bg-light">
-                <i class="bi bi-box"></i>
-              </div>
-              <h4 class="fs-4 fw-normal text-dark position-relative pb-3">Product<br />Design</h4>
-              <div class="border-bottom border-3 border-purple w-25"></div>
-              <div class="d-inline-flex align-items-center mt-4 text-secondary service-arrow-link">
-                <span class="arrow-text">Discuss Now</span>
-                <i class="bi bi-arrow-right fs-4 ms-2"></i>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="col-lg-3 col-md-6 mobile-size" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="800">
-          <a href="#" class="text-decoration-none text-reset d-block h-100">
-            <div class="card bg-light h-100 shadow-sm border-0 p-4 service-hover">
-              <div class="text-muted fs-2 mb-5 bg-light">
-                <i class="bi bi-square-half"></i>
-              </div>
-              <h4 class="fs-4 fw-normal text-dark position-relative pb-3">Branding<br />Design</h4>
-              <div class="border-bottom border-3 border-purple w-25"></div>
-              <div class="d-inline-flex align-items-center mt-4 text-secondary service-arrow-link">
-                <span class="arrow-text">Discuss Now</span>
-                <i class="bi bi-arrow-right fs-4 ms-2"></i>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="col-lg-3 col-md-6 mobile-size" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="1000">
-          <a href="#" class="text-decoration-none text-reset d-block h-100">
-            <div class="card bg-light h-100 shadow-sm border-0 p-4 service-hover">
-              <div class="text-muted fs-2 mb-5 bg-light">
-                <i class="bi bi-code-slash"></i>
-              </div>
-              <h4 class="fs-4 fw-normal text-dark position-relative pb-3">Web<br />Development</h4>
-              <div class="border-bottom border-3 border-purple w-25"></div>
-              <div class="d-inline-flex align-items-center mt-4 text-secondary service-arrow-link">
-                <span class="arrow-text">Discuss Now</span>
-                <i class="bi bi-arrow-right fs-4 ms-2"></i>
-              </div>
-            </div>
-          </a>
-        </div>
+  <div class="container" data-aos="fade-in" data-aos-duration="800" data-aos-delay="400">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <h2 class="fs-1 fw-semibold text-dark position-relative d-inline-block service-heading">My Service</h2>
       </div>
     </div>
-  </section>
+
+    <div class="row g-4 justify-content-center grid-mobile">
+      <!-- Card 1 -->
+      <div class="col-lg-3 col-md-6 mobile-size" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
+        <a href="#" class="text-decoration-none text-reset d-block h-100">
+          <div class="card bg-light h-100 shadow-sm border-0 p-4 service-hover">
+            <div class="icon-title-wrapper">
+              <i class="bi bi-stack fs-2 text-muted icon"></i>
+              <h4 class="fw-normal text-dark mb-0 title w-50 mt-5 service-header">UI/UX Design</h4>
+            </div>
+            <div class="d-inline-flex align-items-center mt-auto text-secondary service-arrow-link">
+              <span class="arrow-text">Discuss Now</span>
+              <i class="bi bi-arrow-right fs-5 ms-2"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-lg-3 col-md-6 mobile-size" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="600">
+        <a href="#" class="text-decoration-none text-reset d-block h-100">
+          <div class="card bg-light h-100 shadow-sm border-0 p-4 service-hover">
+            <div class="icon-title-wrapper">
+              <i class="bi bi-box fs-2 text-muted icon"></i>
+              <h4 class="fw-normal text-dark mb-0 title w-50 mt-5 service-header">Product Design</h4>
+            </div>
+            <div class="d-inline-flex align-items-center mt-auto text-secondary service-arrow-link">
+              <span class="arrow-text">Discuss Now</span>
+              <i class="bi bi-arrow-right fs-5 ms-2"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-lg-3 col-md-6 mobile-size" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="800">
+        <a href="#" class="text-decoration-none text-reset d-block h-100">
+          <div class="card bg-light h-100 shadow-sm border-0 p-4 service-hover">
+            <div class="icon-title-wrapper">
+              <i class="bi bi-square-half fs-2 text-muted icon"></i>
+              <h4 class="fw-normal text-dark mb-0 title w-50 mt-5 service-header">Brand Design</h4>
+            </div>
+            <div class="d-inline-flex align-items-center mt-auto text-secondary service-arrow-link">
+              <span class="arrow-text">Discuss Now</span>
+              <i class="bi bi-arrow-right fs-5 ms-2"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-lg-3 col-md-6 mobile-size" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="1000">
+        <a href="#" class="text-decoration-none text-reset d-block h-100">
+          <div class="card bg-light h-100 shadow-sm border-0 p-4 service-hover">
+            <div class="icon-title-wrapper">
+              <i class="bi bi-code-slash fs-2 text-muted icon"></i>
+              <h4 class="fw-normal text-dark mb-0 title w-50 mt-5 service-header">App Design</h4>
+            </div>
+            <div class="d-inline-flex align-items-center mt-auto text-secondary service-arrow-link">
+              <span class="arrow-text">Discuss Now</span>
+              <i class="bi bi-arrow-right fs-5 ms-2"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
   <!-- Works-Section  -->
@@ -285,7 +282,8 @@
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         <a href="" class="text-decoration-none h-100">
           <div class="col">
-            <div class="card h-100 shadow-sm border-0 service-hover" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400" data-aos-offset="10">
+            <div class="card h-100 shadow-sm border-0 service-hover" data-aos="fade-down" data-aos-duration="1000"
+              data-aos-delay="400" data-aos-offset="10">
               <img src="../src/assets/images/Images.png" alt="" class="card-img-top object-fit-cover" />
               <div class="card-body">
                 <h5 class="fs-4 fw-normal text-dark">Eduguard E-learning Website</h5>
@@ -300,7 +298,8 @@
 
         <a href="" class="text-decoration-none h-100">
           <div class="col">
-            <div class="card h-100 shadow-sm border-0 service-hover transition" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="600">
+            <div class="card h-100 shadow-sm border-0 service-hover transition" data-aos="fade-down"
+              data-aos-duration="1000" data-aos-delay="600">
               <img src="../src/assets/images/Images (1).png" alt="" class="card-img-top object-fit-cover" />
               <div class="card-body">
                 <h5 class="fs-4 fw-normal text-dark">Eduguard E-learning Website</h5>
@@ -318,7 +317,8 @@
 
         <a href="" class="text-decoration-none h-100">
           <div class="col">
-            <div class="card h-100 shadow-sm border-0 service-hover transition" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="800">
+            <div class="card h-100 shadow-sm border-0 service-hover transition" data-aos="fade-down"
+              data-aos-duration="1000" data-aos-delay="800">
               <img src="../src/assets/images/Images (2).png" alt="" class="card-img-top object-fit-cover" />
               <div class="card-body">
                 <h5 class="fs-4 fw-normal text-dark">Eduguard E-learning Website</h5>
@@ -336,7 +336,8 @@
 
         <a href="" class="text-decoration-none h-100">
           <div class="col">
-            <div class="card h-100 shadow-sm border-0 service-hover transition" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+            <div class="card h-100 shadow-sm border-0 service-hover transition" data-aos="fade-up"
+              data-aos-duration="1000" data-aos-delay="400">
               <img src="../src/assets/images/Images (3).png" alt="" class="card-img-top object-fit-cover" />
               <div class="card-body">
                 <h5 class="fs-4 fw-normal text-dark">Eduguard E-learning Website</h5>
@@ -354,7 +355,8 @@
 
         <a href="" class="text-decoration-none h-100">
           <div class="col">
-            <div class="card h-100 shadow-sm border-0 service-hover transition" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+            <div class="card h-100 shadow-sm border-0 service-hover transition" data-aos="fade-up"
+              data-aos-duration="1000" data-aos-delay="600">
               <img src="../src/assets/images/Images (4).png" alt="" class="card-img-top object-fit-cover" />
               <div class="card-body">
                 <h5 class="fs-4 fw-normal text-dark">Eduguard E-learning Website</h5>
@@ -370,7 +372,8 @@
         </a>
 
         <div class="col">
-          <div class="card h-100 shadow-sm border-0 service-hover" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+          <div class="card h-100 shadow-sm border-0 service-hover" data-aos="fade-up" data-aos-duration="1000"
+            data-aos-delay="800">
             <img src="../src/assets/images/Images (5).png" alt="" class="card-img-top object-fit-cover" />
             <div class="card-body">
               <h5 class="fs-4 fw-normal text-dark">Eduguard E-learning Website</h5>
@@ -399,7 +402,8 @@
         <div class="col-lg-9">
           <div class="d-flex align-items-center gap-3">
             <div class="overflow-hidden">
-              <div id="logoScroll" class="d-flex flex-nowrap overflow-auto gap-3 py-2" data-aos="slide-left" data-aos-duration="1000" data-aos-delay="800">
+              <div id="logoScroll" class="d-flex flex-nowrap overflow-auto gap-3 py-2" data-aos="slide-left"
+                data-aos-duration="1000" data-aos-delay="800">
                 <div class="shadow-sm rounded d-flex align-items-center justify-content-center px-4 ">
                   <i class="bi bi-youtube fs-2 text-danger company-scroll-logo"></i>
                   <span class="ms-2 fw-bold text-dark">Youtube</span>
@@ -473,7 +477,8 @@
           aria-label="Testimonial from Stewart Butterfield" />
 
         <!-- Testimonial List with Labels -->
-        <div class="testimonial-list" role="radiogroup" aria-label="Select a testimonial" data-aos="slide-right" data-aos-duration="1000" data-aos-delay="200">
+        <div class="testimonial-list" role="radiogroup" aria-label="Select a testimonial" data-aos="slide-right"
+          data-aos-duration="1000" data-aos-delay="200">
           <label for="testimonial-sundar" class="position-relative testimonial-item active">
             <img src="../src/assets/images/Image (1).png" alt="Sundar Pichai" />
             <span>Sundar Pichai<br /><small>CEO & Founder of <span>Google</span></small></span>
@@ -565,7 +570,8 @@
 
             <div class="col-12 col-md-6">
               <a href="" class="text-decoration-none text-reset d-block h-100">
-                <div class="card blogs-card-work service-hover transition p-4 border-0 h-100" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="800">
+                <div class="card blogs-card-work service-hover transition p-4 border-0 h-100" data-aos="fade-down"
+                  data-aos-duration="1000" data-aos-delay="800">
                   <img src="../src/assets/images/Image (5).png" class="card-img-top" />
                   <div class="card-body">
                     <p class="text-muted mb-2">
@@ -584,7 +590,8 @@
             <!-- Blog Card 2 -->
             <div class="col-12 col-md-6">
               <a href="" class="text-decoration-none text-reset d-block h-100">
-                <div class="card blogs-card-work service-hover transition p-4 border-0 h-100" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="800">
+                <div class="card blogs-card-work service-hover transition p-4 border-0 h-100" data-aos="fade-down"
+                  data-aos-duration="1000" data-aos-delay="800">
                   <img src="../src/assets/images/Image (5).png" class="card-img-top" />
                   <div class="card-body">
                     <p class="text-muted mb-2">
@@ -664,7 +671,8 @@
 
         <!-- Form Section -->
         <div class="col-lg-7 d-flex">
-          <div class="bg-white p-4 input-resize shadow-sm rounded w-100 d-flex flex-column z-2" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="800">
+          <div class="bg-white p-4 input-resize shadow-sm rounded w-100 d-flex flex-column z-2" data-aos="fade-in"
+            data-aos-duration="1000" data-aos-delay="800">
             <h2 class="mb-4">Let me know here.</h2>
             <form class="mt-auto">
               <div class="row">
