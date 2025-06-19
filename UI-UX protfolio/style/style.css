@@ -120,7 +120,7 @@
 .serviceCard .discuss {
   font-size: 14px;
   max-width: 0;
-  transition: all 0.2s linear;
+  transition: all 0.8s linear;
   overflow-x: hidden;
   white-space: nowrap;
 }
@@ -128,6 +128,9 @@
   max-width: 300px;
 }
 
+.cardContent {
+  margin-top: 50px;
+}
 .cardContent .card-title {
   font-size: 26px;
 }
@@ -154,13 +157,28 @@
   .serviceCard .card .card-body .cardContent .card-title {
     font-size: 20px;
   }
+  .card-link .discuss {
+    font-size: 12px;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    transition: none;
+    color: #0A1931 !important;
+  }
+  .card-link svg path {
+    stroke: #0A1931 !important;
+  }
+  .card:hover .discuss {
+    color: #684FFF !important;
+  }
+  .card:hover svg path {
+    stroke: #684FFF !important;
+  }
 }
 .work {
   padding-block: 50px;
 }
 
 .workCard .card {
-  min-height: 380px;
   cursor: pointer;
 }
 .workCard .card .card-body .card-title {
@@ -183,7 +201,7 @@
   max-width: 0px;
   overflow-x: hidden;
   white-space: nowrap;
-  transition: all 0.2s linear;
+  transition: all 0.8s linear;
 }
 
 .card:hover .viewLink {
@@ -196,6 +214,22 @@
   }
   .workCard .card .card-title {
     font-size: 18px;
+  }
+  .card-link .viewLink {
+    font-size: 12px;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    transition: none;
+    color: #0A1931 !important;
+  }
+  .card-link svg path {
+    stroke: #0A1931 !important;
+  }
+  .card:hover .viewLink {
+    color: #684FFF !important;
+  }
+  .card:hover svg path {
+    stroke: #684FFF !important;
   }
 }
 .company .compay-description {
@@ -247,6 +281,9 @@
     font-size: 20px;
   }
 }
+.clientList {
+  cursor: pointer;
+}
 .clientList .clientProfile img {
   width: 52px;
   height: 52px;
@@ -263,9 +300,10 @@
   font-size: 12px;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
   border-radius: 0;
-  background-color: #DFE3EB !important;
+  background-color: #dfe3eb !important;
 }
 
 .clientDetail .nav-pills .nav-link {
@@ -278,7 +316,7 @@
   top: 50%;
   right: -30px;
   transform: translateY(-50%);
-  border-left-color: #DFE3EB;
+  border-left-color: #dfe3eb;
   opacity: 0;
   transition: all 0.2s linear;
 }
@@ -291,7 +329,8 @@
   padding: 20px;
   height: 100% !important;
 }
-.review .rating i, .review .rating .rate {
+.review .rating i,
+.review .rating .rate {
   font-size: 12px;
 }
 .review .reviewDescription {
@@ -314,13 +353,15 @@
   width: 42px;
   height: 42px;
 }
-.clientDetailMobile .nav-pills .nav-link.active, .clientDetailMobile .nav-pills .show > .nav-link {
+.clientDetailMobile .nav-pills .nav-link.active,
+.clientDetailMobile .nav-pills .show > .nav-link {
   background: none !important;
 }
-.clientDetailMobile .nav-pills .nav-link.active .clientProfile img, .clientDetailMobile .nav-pills .show > .nav-link .clientProfile img {
+.clientDetailMobile .nav-pills .nav-link.active .clientProfile img,
+.clientDetailMobile .nav-pills .show > .nav-link .clientProfile img {
   width: 42px;
   height: 42px;
-  box-shadow: 5px 5px 5px 0px #DFE3EB;
+  box-shadow: 5px 5px 5px 0px #dfe3eb;
 }
 
 .tab-pane {
@@ -353,7 +394,6 @@
   background: linear-gradient(to bottom, #dfe3eb, #ffffff);
 }
 .blogContainer .card {
-  min-height: 410px;
   height: 100%;
 }
 .blogContainer .card .card-body {
@@ -400,7 +440,7 @@
   max-width: 0px;
   overflow-x: hidden;
   white-space: nowrap;
-  transition: all 0.2s linear;
+  transition: all 0.8s linear;
 }
 
 .card:hover .readLink {
@@ -414,16 +454,27 @@
   .blogContainer .card .card-body .card-title {
     font-size: 16px;
   }
-  .cardList {
-    padding-inline: 0px !important;
-    padding-bottom: 10px !important;
-    padding-top: 0px !important;
-  }
   .cardList .card-title {
     font-size: 14px;
   }
-  .cardList .card-link {
+  .card-link {
     margin-top: 5px !important;
+  }
+  .card-link .readLink {
+    font-size: 12px;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    transition: none;
+    color: #0A1931 !important;
+  }
+  .card-link svg path {
+    stroke: #0A1931 !important;
+  }
+  .card:hover .readLink {
+    color: #684FFF !important;
+  }
+  .card:hover svg path {
+    stroke: #684FFF !important;
   }
 }
 .contact {
@@ -440,7 +491,8 @@
 .contactContainer form h3 {
   font-size: 30px;
 }
-.contactContainer form input, .contactContainer form textarea {
+.contactContainer form input,
+.contactContainer form textarea {
   font-size: 14px;
 }
 .contactContainer form textarea {
@@ -450,9 +502,6 @@
   width: -moz-fit-content;
   width: fit-content;
   font-size: 14px;
-}
-.contactContainer .contactForm, .contactContainer .contactInfo {
-  min-height: 500px;
 }
 
 .contactLinks a {
@@ -465,14 +514,17 @@
   color: white;
 }
 
-.contactList .location .bgSvg, .contactList .mail .bgSvg, .contactList .phone .bgSvg {
-  background: #DFE3EB;
+.contactList .location .bgSvg,
+.contactList .mail .bgSvg,
+.contactList .phone .bgSvg {
+  background: #dfe3eb;
   padding: 18px;
   border-radius: 50%;
 }
 
 @media screen and (max-width: 900px) {
-  .contact .contactContainer .contactForm, .contact .contactContainer .contactInfo {
+  .contact .contactContainer .contactForm,
+  .contact .contactContainer .contactInfo {
     padding: 20px;
     min-height: 300px;
   }
@@ -481,16 +533,19 @@
   .contact .dot {
     display: none;
   }
-  .contactForm, .contactInfo {
+  .contactForm,
+  .contactInfo {
     padding: 15px !important;
   }
-  .contactForm h3, .contactInfo h3 {
+  .contactForm h3,
+  .contactInfo h3 {
     font-size: 20px;
   }
   .contactContainer form h3 {
     font-size: 20px;
   }
-  .contactContainer form input, .contactContainer form textarea {
+  .contactContainer form input,
+  .contactContainer form textarea {
     font-size: 12px;
   }
   .contactContainer form textarea {
@@ -502,7 +557,9 @@
   .contactLinks a {
     padding: 15px;
   }
-  .contactList .location .bgSvg, .contactList .mail .bgSvg, .contactList .phone .bgSvg {
+  .contactList .location .bgSvg,
+  .contactList .mail .bgSvg,
+  .contactList .phone .bgSvg {
     padding: 5px;
   }
   .contactDetail {
@@ -660,6 +717,9 @@ nav .menuBar .navIcon {
 }
 
 @media screen and (max-width: 900px) {
+  .container {
+    padding-inline: 20px !important;
+  }
   nav .links {
     display: none;
   }
@@ -686,6 +746,10 @@ nav .menuBar .navIcon {
   }
   .bg-color {
     background: none;
+  }
+  .menuBar ul li a:active {
+    background-color: #dfe3eb;
+    color: #0A1931;
   }
   .home {
     min-height: 500px;

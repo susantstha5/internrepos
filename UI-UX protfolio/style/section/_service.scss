@@ -27,7 +27,7 @@
     font-size: 14px;
     // opacity: 0;
     max-width: 0;
-    transition: all 0.2s linear;
+    transition: all 0.8s linear;
     overflow-x: hidden;
     white-space: nowrap;
   }
@@ -38,6 +38,7 @@
   }
 }
 .cardContent {
+  margin-top: 50px;
   .card-title {
     font-size: 26px;
   }
@@ -65,6 +66,25 @@
       .cardContent .card-title {
         font-size: 20px;
       }
+    }
+  }
+  .card-link {
+    .discuss {
+      font-size: 12px;
+      max-width: fit-content;
+      transition: none;
+      color: $dark-gray !important;
+    }
+    svg path {
+      stroke: $dark-gray !important;
+    }
+  }
+  .card:hover {
+    .discuss {
+      color: $primary-color !important;
+    }
+    svg path {
+      stroke: $primary-color !important;
     }
   }
 }

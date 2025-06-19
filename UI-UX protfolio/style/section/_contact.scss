@@ -1,105 +1,113 @@
-.contact{
-    background: url("/images/footerbg.png") no-repeat;
-    background-size: cover;
-    position: relative;
-    .dot{
-        position: absolute;
-        top:20px;
-        right:20px;
-    }
+.contact {
+  background: url("/images/footerbg.png") no-repeat;
+  background-size: cover;
+  position: relative;
+  .dot {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
 }
-.contactContainer{
-    form{
-        h3{
-            font-size: 30px;
-        }
-        input, textarea{
-            font-size: 14px;
-        }
-        textarea{
-            height:152px;
-        }
-        button{
-            width: fit-content;
-            font-size: 14px;
-        }
+.contactContainer {
+  form {
+    h3 {
+      font-size: 30px;
     }
-    .contactForm, .contactInfo{
-        min-height: 500px;
+    input,
+    textarea {
+      font-size: 14px;
     }
-} 
-.contactLinks{
-    a{
-        width: 20px;
-        height: 20px;
-        padding:20px;
+    textarea {
+      height: 152px;
     }
-    a:hover{
-        background-color: $primary-color;
-        color: white;
+    button {
+      width: fit-content;
+      font-size: 14px;
     }
+  }
+  // .contactForm, .contactInfo{
+  //     min-height: 500px;
+  // }
 }
-.contactList{
-    .location, .mail, .phone{
-        .bgSvg{
-            background: #DFE3EB;
-            padding: 18px;
-            border-radius: 50%;
-        }
+.contactLinks {
+  a {
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+  }
+  a:hover {
+    background-color: $primary-color;
+    color: white;
+  }
+}
+.contactList {
+  .location,
+  .mail,
+  .phone {
+    .bgSvg {
+      background: #dfe3eb;
+      padding: 18px;
+      border-radius: 50%;
     }
+  }
 }
 
-@media screen and (max-width:900px){
-    .contact{
-        .contactContainer{
-            .contactForm, .contactInfo{
-                padding: 20px;
-                min-height: 300px;
-            }
-        }
+@media screen and (max-width: 900px) {
+  .contact {
+    .contactContainer {
+      .contactForm,
+      .contactInfo {
+        padding: 20px;
+        min-height: 300px;
+      }
     }
+  }
 }
-@media screen and (max-width:500px){
-    .contact{
-        .dot{
-            display: none;
-        }
+@media screen and (max-width: 500px) {
+  .contact {
+    .dot {
+      display: none;
     }
-    .contactForm, .contactInfo{
-        padding: 15px !important;
-        h3{
-            font-size: 20px;  
-        }
+  }
+  .contactForm,
+  .contactInfo {
+    padding: 15px !important;
+    h3 {
+      font-size: 20px;
     }
-    .contactContainer{
-        form{
-            h3{
-                font-size: 20px;
-            }
-            input, textarea{
-                font-size: 12px;
-            }
-            textarea{
-                height:100px;
-            }
-            button{
-                font-size: 12px;
-            }
-        }
-    }
-    .contactLinks{
-        a{
-            padding:15px;
-        }
-    }
-    .contactList{
-        .location, .mail, .phone{
-            .bgSvg{
-                padding: 5px;
-            }
-        }
-    }
-    .contactDetail{
+  }
+  .contactContainer {
+    form {
+      h3 {
+        font-size: 20px;
+      }
+      input,
+      textarea {
         font-size: 12px;
+      }
+      textarea {
+        height: 100px;
+      }
+      button {
+        font-size: 12px;
+      }
     }
+  }
+  .contactLinks {
+    a {
+      padding: 15px;
+    }
+  }
+  .contactList {
+    .location,
+    .mail,
+    .phone {
+      .bgSvg {
+        padding: 5px;
+      }
+    }
+  }
+  .contactDetail {
+    font-size: 12px;
+  }
 }

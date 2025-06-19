@@ -155,6 +155,9 @@ nav {
 }
 
 @media screen and (max-width: 900px) {
+  .container {
+    padding-inline: 20px !important;
+  }
   nav {
     .links {
       display: none;
@@ -189,6 +192,12 @@ nav {
   }
   .bg-color {
     background: none;
+  }
+  .menuBar {
+    ul li a:active {
+      background-color: #dfe3eb;
+      color: $dark-gray;
+    }
   }
   .home {
     min-height: 500px;

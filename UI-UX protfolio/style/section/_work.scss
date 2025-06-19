@@ -3,7 +3,7 @@
 }
 .workCard {
   .card {
-    min-height: 380px;
+    // min-height: 380px;
     cursor: pointer;
     .card-body {
       .card-title {
@@ -29,7 +29,7 @@
   max-width: 0px;
   overflow-x: hidden;
   white-space: nowrap;
-  transition: all 0.2s linear;
+  transition: all 0.8s linear;
 }
 .card:hover .viewLink {
   max-width: 300px;
@@ -41,6 +41,26 @@
       .card-title {
         font-size: 18px;
       }
+    }
+  }
+  .card-link {
+    .viewLink {
+      font-size: 12px;
+      max-width: fit-content;
+      transition: none;
+      color: $dark-gray !important;
+      // overflow-x: hidden;
+    }
+    svg path {
+      stroke: $dark-gray !important;
+    }
+  }
+  .card:hover {
+    .viewLink {
+      color: $primary-color !important;
+    }
+    svg path {
+      stroke: $primary-color !important;
     }
   }
 }
