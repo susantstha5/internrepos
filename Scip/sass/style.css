@@ -1,0 +1,174 @@
+.navbar {
+  padding: 10px 60px;
+  background-color: rgba(185, 185, 185, 0.2);
+  color: white;
+  z-index: 999;
+}
+.navbar ul {
+  list-style: none;
+}
+.navbar li {
+  position: relative;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+.navbar a i {
+  transition: all 0.2s linear;
+}
+.navbar .nav-option .sign-in {
+  font-weight: 600;
+}
+.navbar .nav-option ul .level-1 {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  -webkit-backdrop-filter: blur(100px);
+          backdrop-filter: blur(100px);
+  background-color: rgba(185, 185, 185, 0.4);
+  border-radius: 10px;
+  min-width: 250px;
+}
+.navbar .nav-option ul .level-double-1 {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  -webkit-backdrop-filter: blur(59.5px);
+          backdrop-filter: blur(59.5px);
+  background-color: rgba(185, 185, 185, 0.4);
+  border-radius: 10px;
+  min-width: 500px;
+}
+.navbar li.hover-1:hover i {
+  transform: rotate(180deg);
+}
+.navbar li.hover-1:hover .level-1 {
+  display: block;
+}
+.navbar li.hover-double:hover i {
+  transform: rotate(180deg);
+}
+.navbar li.hover-double:hover .level-double-1 {
+  display: block;
+}
+
+.scroller {
+  padding: 10px 60px;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  background-color: rgba(245, 245, 245, 0.1);
+}
+.scroller .spotlight {
+  width: -moz-fit-content;
+  width: fit-content;
+  text-transform: uppercase;
+  border-radius: 20px;
+  background: linear-gradient(to right, #00FFD1, #00F1E3, #00D8FA);
+}
+.scroller p {
+  color: white;
+}
+.scroller .linear {
+  background: linear-gradient(to right, #00FFD1, #00F1E3, #00D8FA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.home .home-content h1 {
+  text-transform: uppercase;
+  background: linear-gradient(to right, #00FFD1, #00F1E3, #00D8FA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 64px;
+}
+.home .home-content p {
+  color: white;
+  font-size: 20px;
+}
+.home .scroll-down {
+  font-size: 20px;
+  color: white;
+}
+
+.intelligence {
+  background: url("../images/intelligence.png"), linear-gradient(to top, rgb(12, 12, 13), rgba(12, 12, 13, 0), rgb(12, 12, 13));
+  padding-bottom: 200px;
+}
+.intelligence h1 {
+  text-transform: uppercase;
+  background: linear-gradient(to right, #00FFD1, #00F1E3, #00D8FA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 64px;
+}
+.intelligence p {
+  color: white;
+  font-size: 20px;
+}
+.intelligence button {
+  background-color: white;
+  border-radius: 0px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 9px 19px 9px 19px;
+  margin: auto;
+  border: none;
+  border-radius: 30px;
+}
+.intelligence button p {
+  color: black;
+}
+.intelligence button .signup-arrow {
+  background-color: #42E26F;
+  border-radius: 50%;
+}
+
+.youtube {
+  background: url("../images/background2.png"), linear-gradient(to top, black, #393E46, rgb(12, 12, 13));
+  background-size: cover;
+}
+.youtube img {
+  margin-top: -150px;
+}
+.youtube p {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  max-width: 700px;
+}
+
+.proposition {
+  background: url("../images/bg3.png"), url("../images/bg4.png");
+}
+.proposition h1 {
+  text-transform: uppercase;
+  background: linear-gradient(to right, #00FFD1, #00F1E3, #00D8FA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 64px;
+}
+.proposition p {
+  color: white;
+  font-size: 20px;
+}
+
+.top-container {
+  background-image: url("../images/background1.png");
+  background-size: cover;
+}/*# sourceMappingURL=style.css.map */

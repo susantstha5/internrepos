@@ -1,0 +1,23 @@
+//css for navbar
+@import './component/nav';
+
+//css for scrolller
+@import './component/scroller';
+
+//css for scrolller
+@import './component/home';
+
+//css for scrolller
+@import './component/intelligence';
+
+//css for scrolller
+@import './component/youtube';
+
+//css for scrolller
+@import './component/proposition';
+
+
+.top-container{
+    background-image: url('../images/background1.png');
+    background-size: cover;
+}

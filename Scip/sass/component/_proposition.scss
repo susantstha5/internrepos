@@ -1,0 +1,16 @@
+.proposition{
+    background: url('../images/bg3.png'),url('../images/bg4.png');
+    h1{
+        text-transform: uppercase;
+        background: linear-gradient(to right, #00FFD1, #00F1E3,#00D8FA);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        width:fit-content;
+        font-size: 64px;
+    }
+    p{
+        color: white;
+        font-size:20px;
+    }
+}
