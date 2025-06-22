@@ -30,7 +30,10 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <nav
+      class="navbar navbar-expand-lg position-fixed w-100 bg-transparent p-0"
+    >
+      <div class="blur w-100 h-100 position-absolute"></div>
       <div class="container collapse" id="#navbarNav">
         <div class="nav-brand px-3">
           <img src="./SCIP logo - White 1.png" class="img-fluid" alt="logo" />
@@ -73,88 +76,154 @@
           </div>
           <div class="container p-0">
             <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto fw-400 d-flex">
+              <ul class="navbar-nav ms-auto fw-400 gap-3 d-flex">
                 <li class="nav-item">
                   <a href="#affiliates" class="nav-link text-white"
                     >Affiliates</a
                   >
                 </li>
-                <div class="dropdown">
-                  <button
-                    class="btn btn-secondary border-0 dropdown-toggle"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <span class="dropdown-name">Intelligence Tools</span>
+                <div class="dropdown dropdown-hover position-relative">
+                  <button class="btn btn-secondary border-0">
+                    <span class="dropdown-name">Intelligence Tools </span>
+                    <span class="arrow"
+                      ><i class="ri-arrow-down-s-line"></i
+                    ></span>
                   </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
+
+                  <ul
+                    class="dropdown-menu dropdown-one p-3"
+                    style="min-width: 500px"
+                  >
+                    <div class="row">
+                      <div class="col-6 gap-1 d-flex flex-column">
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Foundational Resources (CI Basics)</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >CI Technology & Tools</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Communicationa & Stakeholder Management
+                            Resources</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Future, Impact, Metrics & ROI</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Strategy & Analytics</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Collection & Resources</a
+                          >
+                        </li>
+                      </div>
+                      <div class="col-6 h-100 d-flex flex-column gap-2">
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Advanced Resources</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Benchmarks</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Ethics & Integrity</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Competitive Enablement</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Leadership & Careers Development Resources</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Templates</a>
+                        </li>
+                      </div>
+                    </div>
                   </ul>
                 </div>
+
                 <li class="nav-item">
                   <a href="#icoe" class="nav-link text-white">ICoE</a>
                 </li>
-                <div class="dropdown">
-                  <button
-                    class="btn btn-secondary border-0 dropdown-toggle"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+
+                <div class="dropdown dropdown-hover d-inline position-relative">
+                  <button class="btn btn-secondary border-0">
                     <span class="dropdown-name">IntelliCons</span>
+                    <span class="arrow"
+                      ><i class="ri-arrow-down-s-line"></i
+                    ></span>
                   </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
+
+                  <ul class="dropdown-menu p-2" style="min-width: 250px">
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#"
+                        >IntelliCon Barcelona 2024</a
+                      >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="#"
+                        >IntelliCon Singapore 2025</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >IntelliCon New Orleans 2025</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">SCIP Awards</a>
                     </li>
                   </ul>
                 </div>
-                <div class="dropdown">
-                  <button
-                    class="btn btn-secondary border-0 dropdown-toggle"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                <div class="dropdown dropdown-hover d-inline position-relative">
+                  <button class="btn btn-secondary border-0">
                     <span class="dropdown-name">Membership</span>
+                    <span class="arrow"
+                      ><i class="ri-arrow-down-s-line"></i
+                    ></span>
                   </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
+
+                  <ul class="dropdown-menu p-2" style="min-width: 250px">
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Get Involved</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="#">Team Membership</a>
                     </li>
                   </ul>
                 </div>
-                <div class="dropdown">
-                  <button
-                    class="btn btn-secondary border-0 dropdown-toggle"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                <div class="dropdown dropdown-hover d-inline position-relative">
+                  <button class="btn btn-secondary border-0">
                     <span class="dropdown-name">SMART Center</span>
+                    <span class="arrow"
+                      ><i class="ri-arrow-down-s-line"></i
+                    ></span>
                   </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
+
+                  <ul class="dropdown-menu p-2" style="min-width: 250px">
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Resources</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="#">Training</a>
                     </li>
                   </ul>
                 </div>
@@ -170,6 +239,434 @@
         </div>
       </div>
     </nav>
+    <section
+      class="hero_container d-flex flex-column gap-2 align-items-center overflow-hidden"
+    >
+      <div class="scroll_banner d-flex align-items-center gap-5">
+        <button class="text-black rounded-5 border-0 px-3 py-1">
+          SPOTLIGHT
+        </button>
+        <div>
+          <div
+            class="scrollable_banner h-100 overflow-scroll-container overflow-left-hidden"
+          >
+            <div
+              class="banner_content overflow-x-auto overflow-y-hidden py-3 d-flex gap-5 h-100"
+            >
+              <div class=""><i class="ri-gemini-fill"></i></div>
+              <div
+                class="d-flex text-nowrap align-items-center gap-2 flex-shrink-0"
+              >
+                <span class="banner_heading fw-bold text-nowrap"
+                  >IntelliCon Barcelona 2024</span
+                >
+                <p class="m-0 fw-light letter-spacing-md">
+                  Register now or elevate your brand with exclusive sponsorship
+                  opportunities!
+                </p>
+              </div>
+              <div><i class="ri-gemini-fill"></i></div>
+              <div class="d-flex text-nowrap align-items-center gap-2">
+                <span class="banner_heading fw-bold">Save The Date</span>
+                <p class="m-0 fw-light letter-spacing-md">
+                  IntelliCon New Orleans 2025 - April 28-30
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero_content w-100 d-flex flex-column align-items-center">
+        <div class="scip_image d-flex justify-content-center">
+          <img
+            src="./SCIP_log_white-removebg-preview 3.png"
+            class="img-fluid"
+            alt="photos"
+          />
+        </div>
+        <h1 class="heading text-center">
+          Strategic Consortium of <br />
+          Intelligence Professionals (SCIP)
+        </h1>
+        <p class="text-white text-center fw-light">
+          SCIP is the world’s largest Global Intelligence Association, a
+          non-profit community comprised of over 15,000 individuals in 102
+          countries, who actively contribute to our mission of promoting,
+          developing, and sharing knowledge and tools around data-driven
+          Competitive, Market, and Human Intelligence in Enterprise, Academia,
+          and Government applications. Our vast pool of accredited educational
+          and training resources, and extensive community engagement and
+          collaboration with Intelligence Thought Leadership, allows us to help
+          achieve positive behaviors and outcomes from driving intelligence as a
+          growth enabler for individuals and organizations alike.
+        </p>
+        <button
+          class="scroll_down border-0 bg-transparent text-white d-flex flex-column align-items-center pt-4 fw-light"
+        >
+          <span class="">Scroll</span>
+          <i class="ri-arrow-down-s-line"></i>
+        </button>
+      </div>
+      <button class="cta_btn position-fixed end-0 bottom-0 m-3 z-3">
+        Become a Member
+        <span><i class="ri-arrow-right-line"></i></span>
+      </button>
+    </section>
+    <section
+      class="content_container position-relative d-flex align-items-start justify-content-center"
+    >
+      <!-- <img src="./1118394_4k_Mystery_3840x2160 1.png" class="bg-image position-absolute w-100 h-100  start-0 top-0 img-fluid" alt="image"> -->
+      <div class="div-blur position-absolute h-100 w-100"></div>
+      <div
+        class="content_wrapper pt-4 mt-4 flex-column flex align-items-center z-2"
+      >
+        <h2 class="heading text-center">
+          Intelligence for the Betterment of People and Planet
+        </h2>
+        <p class="text-white text-center fw-light">
+          SCIP expands our global leadership in driving Intelligence towards
+          Sustainability and Social Responsibility causes, partnering with
+          organizations around the world to promote data-driven intelligence in
+          tackling major social and economic challenges. <br /><br />These
+          include the preservation of Earth’s fragile land/water ecosystems,
+          addressing social causes around education, health care, homelessness,
+          and promoting economic and social development by leveraging advanced
+          analytics, artificial intelligence, and collaborative innovation in
+          using Intelligence as growth enablers for public and private sector
+          advancement.
+        </p>
+        <div class="d-flex w-100 justify-content-center pt-2">
+          <button class="cta_btn">
+            Sign Up
+            <span><i class="ri-arrow-right-line"></i></span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section
+      class="video_container position-relative d-flex justify-content-center flex-wrap align-items-center z-2"
+    >
+      <div class="video_youtube position-absolute">
+        <iframe
+          width="600"
+          height="350"
+          src="https://www.youtube.com/embed/An9D7hBq9fU"
+          title="SCIP: EVOLUTION OF THE INTELLIGENCE ECOSYSTEM"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="video_content pt-5 w-100 d-flex justify-content-center">
+        <p class="text-white fw-normal text-center pt-4">
+          Learn more about this
+          <span class="fw-bold">"Intellignce EcoSystem" </span> environment here
+          and be a <br />part of our growing consortium
+        </p>
+      </div>
+    </section>
+    <section
+      class="card_container position-relative w-100 d-flex flex-column gap-5"
+    >
+      <img
+        src="./Value Proposition Bg.png"
+        class="card-bg position-absolute w-100 h-100 start-0 top-0"
+        alt="image"
+      />
+      <div class="heading_content d-flex pb-3 flex-column align-items-center">
+        <h2 class="heading text-center">SCIP’s Value Propositions</h2>
+        <p class="text-white text-center">
+          SCIP is focusing on global applications around of these core pillars
+          of value for our global community:
+        </p>
+      </div>
+      <div class="cards bg-transparent">
+        <div
+          class="card bg-transparent border-1 border-white px-4 py-5 d-flex flex-column align-items-center justify-content-center"
+        >
+          <h3 class="text-white fw-semibold">
+            Intelligence Code of Ethics Pioneer
+          </h3>
+          <p class="fw-light">
+            Establishment of behavioral set of rules around Intelligence
+            governance and usage
+          </p>
+        </div>
+        <div
+          class="card bg-transparent border-1 border-white px-4 py-5 d-flex flex-column align-items-center justify-content-center"
+        >
+          <h3 class="text-white fw-semibold">
+            Intelligence-driven Sustainability and Social Responsibility
+          </h3>
+          <p class="fw-light">
+            Spearheading Intelligence-driven initiatives towards betterment of
+            People and Planet
+          </p>
+        </div>
+        <div
+          class="card bg-transparent border-1 border-white px-4 py-5 d-flex flex-column align-items-center justify-content-center"
+        >
+          <h3 class="text-white fw-semibold">
+            Intelligence Partnerships and Alliance Hub
+          </h3>
+          <p class="fw-light">
+            Network of Intelligence partner organization spanning and knowledge
+          </p>
+        </div>
+        <div
+          class="card bg-transparent border-1 border-white px-4 py-5 d-flex flex-column align-items-center justify-content-center"
+        >
+          <h3 class="text-white fw-semibold">
+            Global Forums of Intelligence Operational Centers of Excellence
+          </h3>
+          <p class="fw-light">
+            Geographic areas of intelligence Communities that address global and
+            regional issues
+          </p>
+        </div>
+        <div
+          class="card bg-transparent border-1 border-white px-4 py-5 d-flex flex-column align-items-center justify-content-center"
+        >
+          <h3 class="text-white fw-semibold">
+            Community of Intelligence Through Leadership
+          </h3>
+          <p class="fw-light">
+            Prominent subject matter expert leaders form Enterprise, Academia
+            and Government institutions.
+          </p>
+        </div>
+        <div
+          class="card bg-transparent border-1 border-white px-4 py-5 d-flex flex-column align-items-center justify-content-center"
+        >
+          <h3 class="text-white fw-semibold">
+            World-class Training and Certification Programs
+          </h3>
+          <p class="fw-light">
+            Proven and award winning instruction from industry-best Solution
+            Proviiders
+          </p>
+        </div>
+        <div
+          class="card bg-transparent border-1 border-white px-4 py-5 d-flex flex-column align-items-center justify-content-center"
+        >
+          <h3 class="text-white fw-semibold">
+            Digital Transformation and Data-First Thought Leadership
+          </h3>
+          <p class="fw-light">
+            Strategic insight and expertise in digital data modernization
+            techniques for Strategy Development
+          </p>
+        </div>
+        <div
+          class="card bg-transparent border-1 border-white px-4 py-5 d-flex flex-column align-items-center justify-content-center"
+        >
+          <h3 class="text-white fw-semibold">
+            Global Repository of Intelligence Body-of-Knowledge
+          </h3>
+          <p class="fw-light">
+            Researched Library of best practices, methodologies, tools and
+            resource requirements
+          </p>
+        </div>
+        <div
+          class="card bg-transparent border-1 border-white px-4 py-5 d-flex flex-column align-items-center justify-content-center"
+        >
+          <h3 class="text-white fw-semibold">
+            Competitive Intelligence Leadership
+          </h3>
+          <p class="fw-light">
+            Understanding and utilizing those proven processes that yield best
+            ROI
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      class="event_container w-100 d-flex flex-column align-items-center gap-5"
+    >
+      <div class="event_heading w-100 d-flex align-items-center flex-column">
+        <h2 class="heading text-center">SCIP IntelliCon Events</h2>
+        <p class="text-white text-center">
+          Global venues where Intelligence Subject Matter Experts and Thought
+          Leaders come together to share <br />
+          experiences, promote education and training, and network with
+          individuals passionate about the role of data <br />
+          and intelligence in driving strategies towards growth and prosperity.
+        </p>
+      </div>
+      <div class="event_wrapper d-flex justify-content-between w-100 gap-5 p2">
+        <div class="event_image">
+          <img
+            src="./Intellicon Main OnHover.png"
+            class="img-fluid"
+            alt="img"
+          />
+        </div>
+        <div
+          class="event_details d-flex flex-column text-white justify-content-center gap-2"
+        >
+          <div class="event_date d-flex gap-2">
+            <i class="ri-calendar-2-line"></i>
+            <span>Dec 3-5, 2024</span>
+          </div>
+          <h3>
+            SCIP INTELLICON <br />
+            BARCELONA 2024
+          </h3>
+          <p>
+            “Data-Driven Intelligence in CI and the <br />
+            Intelligence EcoSystem”
+          </p>
+          <button class="cta_btn">
+            Learn More
+            <span><i class="ri-arrow-right-line"></i></span>
+          </button>
+        </div>
+      </div>
+      <div class="upcomingEvent_wrapper w-100 position-relative">
+        <img
+          src="./Union.png"
+          class="union-image position-absolute img-fluid"
+          alt=""
+        />
+        <h3 class="banner_heading pb-2">Upcoming Intellicons</h3>
+        <div class="upcoming_events">
+          <div class="event position-relative">
+            <img
+              src="./eventimg1.png"
+              class="position-absolute w-100 h-100 start-0 top-0"
+              alt="img"
+            />
+            <div class="event_content position-absolute">
+              <h5 class="text-white z-3">Intellicon New Orleans 2025</h5>
+              <div class="upcomingEvent_date">
+                <div class="event_date d-flex gap-2">
+                  <i class="ri-calendar-2-line"></i>
+                  <span>Dec 3-5, 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="event position-relative">
+            <img
+              src="./imgevent2.png"
+              class="position-absolute w-100 h-100 start-0 top-0"
+              alt="img"
+            />
+            <div class="event_content position-absolute">
+              <h5 class="text-white z-3">Intellicon Singapore 2025</h5>
+              <div class="upcomingEvent_date">
+                <div class="event_date d-flex gap-2">
+                  <i class="ri-calendar-2-line"></i>
+                  <span>Dec 3-5, 2026</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="event position-relative">
+            <img
+              src="./imgevent3.png"
+              class="position-absolute w-100 h-100 start-0 top-0"
+              alt="img"
+            />
+            <div class="event_content position-absolute">
+              <h5 class="text-white z-3">Intellicon Morocco- 2025</h5>
+              <div class="upcomingEvent_date">
+                <div class="event_date d-flex gap-2">
+                  <i class="ri-calendar-2-line"></i>
+                  <span>Dec 3-5, 2025</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="icoeMap_container">
+      <div class="scip_wrapper d-flex flex-row">
+        <div class="scip_logo z-3 d-flex align-items-start">
+          <img src="./image 53.png" class="w-100 img-fluid" alt="icoe" />
+        </div>
+        <h2 class="heading z-3">SCIP INTELLEGENCE CENTERS OF EXCELLENCE(ICoE)</h2>
+        <div class="icoe_content z-3">
+          <p class="text-white fw-light">
+            We are a collective Intelligence force dedicated to advancing
+            REGIONAL prosperity through the power of data, Intelligence, and
+            collaboration. Our ICoEs serve as an extension of the SCIP
+            community, focusing on tools, best practices, use cases, challenges
+            and opportunities within the Regional Intelligence landscape.
+          </p>
+          <button class="cta_btn">
+            Learn More
+            <span><i class="ri-arrow-right-line"></i></span>
+          </button>
+        </div>
+      </div>
+      <div class="map_wrapper">
+      </div>
+    </section>
+    <section class="affiliates position-relative d-flex flex-column gap-4">
+      <img class="position-absolute img-fluid top-0 z-0 h-100 z-1"  src="./Vector 6.png" alt="">
+      <div class="affiliate_heading w-100 text-center z-2">
+        <h2 class="heading w-100">SCIP Affiliates</h2>
+        <p class="text-white">SCIP Affiliates are Intelligence Partners who share the same passion around utilizing and promotion of data <br> and Intelligence throughout the globe.</p>
+      </div>
+      <div class="affiliateLogo_container z-2">
+        <div class="affiliate_logo  position-relative">
+          <img src="affiliate1.png" class="img-fluid" alt="logo1">
+          <p class="position-absolute">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet</p>
+        </div>
+         <div class="affiliate_logo position-relative">
+          <img src="affiliate2.png" class="img-fluid" alt="logo1">
+          <p class="position-absolute">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet</p>
+        </div>
+         <div class="affiliate_logo position-relative">
+          <img src="affiliate3.png" class="img-fluid" alt="logo1">
+          <p class="position-absolute">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet</p>
+        </div>
+         <div class="affiliate_logo position-relative">
+          <img src="affiliate4.png" class="img-fluid" alt="logo1">
+          <p class="position-absolute">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet</p>
+        </div>
+          <div class="affiliate_logo position-relative">
+          <img src="affiliate5.png" class="img-fluid" alt="logo1">
+          <p class="position-absolute">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet</p>
+        </div>
+          <div class="affiliate_logo position-relative">
+          <img src="affiliate6.png" class="img-fluid" alt="logo1">
+          <p class="position-absolute">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet</p>
+        </div>
+          <div class="affiliate_logo position-relative">
+          <img src="affiliate7.png" class="img-fluid" alt="logo1">
+          <p class="position-absolute">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet</p>
+        </div>
+          <div class="affiliate_logo position-relative">
+          <img src="affiliate8.png" class="img-fluid" alt="logo1">
+          <p class="position-absolute">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet</p>
+        </div>
+          <div class="affiliate_logo position-relative">
+          <img src="affiliate9.png" class="img-fluid" alt="logo1">
+          <p class="position-absolute">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet</p>
+        </div>
+            <div class="affiliate_logo position-relative">
+          <img src="affiliate10.png" class="img-fluid" alt="logo1">
+          <p class="position-absolute">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet</p>
+        </div>
+            <div class="affiliate_logo position-relative">
+          <img src="affiliate11.png" class="img-fluid" alt="logo1">
+          <p class="position-absolute">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet</p>
+        </div>
+            <div class="affiliate_logo position-relative">
+          <img src="affiliate12.png" class="img-fluid" alt="logo1">
+          <p class="position-absolute">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet</p>
+        </div>
+            <div class="affiliate_logo position-relative">
+          <img src="affiliate13.png" class="img-fluid" alt="logo1">
+          <p class="position-absolute">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet</p>
+        </div>
+      </div>
+    </section>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
