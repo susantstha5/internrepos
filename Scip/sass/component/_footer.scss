@@ -1,0 +1,40 @@
+footer{
+    background-color: #0C0C0D;
+    color:white;
+    .footer-content{
+        font-family: "Roboto";
+        font-size: 12px;
+        font-weight: 400;
+    
+    }
+    i{
+        color:white;
+       font-size: 20px;
+    }
+    a:hover{
+        i{
+            color:#42E26F;
+        }
+        .first{
+            path{
+                stroke-width: #42E26F;
+                // fill:#42E26F;
+            }
+        }
+        svg{
+            path{
+                fill:#42E26F;
+            }
+        }
+    }
+    h5{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    ul{
+        list-style: none;
+        li{
+            color:#F5F5F5CC;
+        }
+    }
+}

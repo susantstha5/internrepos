@@ -1,0 +1,100 @@
+.smart{
+   background: url('../images/speed.png'),linear-gradient(to top, rgba(12, 12, 13, 1),rgba(12, 12, 13, 2),rgba(12, 12, 13, 1));
+   color:white;
+    .topic{
+        padding:0px 200px;
+        h1{
+            text-transform: uppercase;
+            background: linear-gradient(to right, #00FFD1, #00F1E3,#00D8FA);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            width:fit-content;
+            font-size: 64px;
+            font-weight: 700;
+        }
+        .decription{
+            color: white;
+            font-size:20px;
+            font-weight: 400;
+        }
+        button{
+            background-color: white;
+            border-radius: 0px;
+            width: fit-content;
+            padding:9px 19px 9px 19px;
+            margin:auto;
+            border:none;
+            border-radius: 30px;
+            p{
+                color:black;
+            }
+            .signup-arrow{
+                background-color: #42E26F;
+                border-radius: 50%;
+                i {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .nav-link {
+        color: white;
+    }
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+        color: black;
+        background-color: #42E26F;
+    }
+    .nav{
+        background-color: #0C0C0D80;
+        // padding: 30px 60px 20px 20px;
+    }
+    .bars{
+        .tabs-bg{
+            margin:30px 100px 0px 100px;
+            background-color:rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(50px);
+            border: 1px solid #B9B9B9;
+            border-radius: 10px;
+            .tab-data{
+                padding-left:50px;
+                h4{
+                    font-size: 24px;
+                    font-weight: 600;
+                    background: linear-gradient(to right, #00FFD1, #00F1E3,#00D8FA);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    color: transparent;
+                }
+                button{
+                    background-color: white;
+                    border-radius: 0px;
+                    width: fit-content;
+                    padding:9px 19px 9px 19px;
+                    // margin:auto;
+                    border:none;
+                    border-radius: 25px;
+                    p{
+                        color:black;
+                    }
+                    .signup-arrow{
+                        background-color: #42E26F;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+    .tabs-top{
+        margin:auto;
+        background-color:rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(50px);
+        border: 1px solid #B9B9B9;
+        border-radius: 10px;
+        width: fit-content;
+        h3{
+            font-size: 28px;
+            font-weight: 600;
+        }
+    }
+}

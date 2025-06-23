@@ -1,0 +1,94 @@
+.tools{
+    background: url('../images/intelligence.png'),linear-gradient(to top, rgba(12, 12, 13, 1),rgba(12, 12, 13, 2),rgba(12, 12, 13, 1));
+    .top{
+        h1{
+            text-transform: uppercase;
+            background: linear-gradient(to right, #00FFD1, #00F1E3,#00D8FA);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            width:fit-content;
+            font-size: 64px;
+            font-weight: 700;
+        }
+        p{
+            color: white;
+            font-size:20px;
+            font-weight: 400;
+            padding:0 250px;
+        }
+        .cube{
+            margin-top: -100px;
+        }
+        button{
+            background-color: white;
+            border-radius: 0px;
+            width: fit-content;
+            padding:9px 19px 9px 19px;
+            margin:auto;
+            border:none;
+            border-radius: 30px;
+            p{
+                color:black;
+            }
+            .signup-arrow{
+                background-color: #42E26F;
+                border-radius: 50%;
+            }
+        }
+    }
+    .tools-container {
+        padding: 0px 150px;
+        color: white;
+        .box {
+            background-color: rgba(12, 12, 13, 0.5);
+            backdrop-filter: blur(50px);
+            border: 1px solid #B9B9B9;
+            border-radius: 10px;
+            padding: 20px;
+            .title {
+            font-size: 24px;
+            font-weight: 600;
+            }
+            .description {
+            font-size: 16px;
+            font-weight: 400;
+            }
+            .tool-button {
+                opacity:0;
+                height:0px;
+                background-color: white;
+                border-radius: 30px;
+                width: fit-content;
+                padding: 9px 19px;
+                margin: 20px auto 0;
+                border: none;
+                gap: 10px;
+                display: flex;
+                transition: all 0.3s linear;
+
+                p {
+                    color: black;
+                    margin: 0;
+                }
+
+                .signup-arrow {
+                    background-color: #42E26F;
+                    border-radius: 50%;
+
+                    i {
+                    font-size: 15px;
+                    }
+                }
+            }
+            &:hover {
+                background: linear-gradient(to bottom, #10151b, #245d75);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                .tool-button {
+                    opacity: 1;
+                    height:50px;
+                }
+            }
+        }
+    }
+}

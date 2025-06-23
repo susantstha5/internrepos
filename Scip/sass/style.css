@@ -232,6 +232,10 @@
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: all 0.3s linear;
+}
+.events img:hover {
+  scale: 1.05;
 }
 .events .date {
   color: white;
@@ -253,6 +257,7 @@
   background-color: #42E26F;
   border-radius: 50%;
 }
+
 .icoe {
   background: url("../images/intelligence.png"), linear-gradient(to top, rgb(12, 12, 13), rgb(12, 12, 13), rgb(12, 12, 13));
 }
@@ -357,6 +362,157 @@
   opacity: 1;
 }
 
+.speed {
+  background: url("../images/speed.png"), linear-gradient(to top, rgb(12, 12, 13), rgb(12, 12, 13), rgb(12, 12, 13));
+  color: white;
+}
+.speed .topic {
+  padding: 0px 200px;
+}
+.speed .topic h1 {
+  text-transform: uppercase;
+  background: linear-gradient(to right, #00FFD1, #00F1E3, #00D8FA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 64px;
+  font-weight: 700;
+}
+.speed .topic .decription {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+.speed .topic .decription span {
+  font-weight: 400;
+}
+.speed .topic h3 {
+  font-size: 28;
+  font-weight: 600;
+}
+.speed button {
+  background-color: white;
+  border-radius: 0px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 9px 19px 9px 19px;
+  margin: auto;
+  border: none;
+  border-radius: 30px;
+}
+.speed button p {
+  color: black;
+}
+.speed button .signup-arrow {
+  background-color: #42E26F;
+  border-radius: 50%;
+}
+
+.smart {
+  background: url("../images/speed.png"), linear-gradient(to top, rgb(12, 12, 13), rgb(12, 12, 13), rgb(12, 12, 13));
+  color: white;
+}
+.smart .topic {
+  padding: 0px 200px;
+}
+.smart .topic h1 {
+  text-transform: uppercase;
+  background: linear-gradient(to right, #00FFD1, #00F1E3, #00D8FA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 64px;
+  font-weight: 700;
+}
+.smart .topic .decription {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+.smart .topic button {
+  background-color: white;
+  border-radius: 0px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 9px 19px 9px 19px;
+  margin: auto;
+  border: none;
+  border-radius: 30px;
+}
+.smart .topic button p {
+  color: black;
+}
+.smart .topic button .signup-arrow {
+  background-color: #42E26F;
+  border-radius: 50%;
+}
+.smart .topic button .signup-arrow i {
+  font-size: 15px;
+}
+.smart .nav-link {
+  color: white;
+}
+.smart .nav-pills .nav-link.active, .smart .nav-pills .show > .nav-link {
+  color: black;
+  background-color: #42E26F;
+}
+.smart .nav {
+  background-color: rgba(12, 12, 13, 0.5019607843);
+}
+.smart .bars .tabs-bg {
+  margin: 30px 100px 0px 100px;
+  background-color: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  border: 1px solid #B9B9B9;
+  border-radius: 10px;
+}
+.smart .bars .tabs-bg .tab-data {
+  padding-left: 50px;
+}
+.smart .bars .tabs-bg .tab-data h4 {
+  font-size: 24px;
+  font-weight: 600;
+  background: linear-gradient(to right, #00FFD1, #00F1E3, #00D8FA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.smart .bars .tabs-bg .tab-data button {
+  background-color: white;
+  border-radius: 0px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 9px 19px 9px 19px;
+  border: none;
+  border-radius: 25px;
+}
+.smart .bars .tabs-bg .tab-data button p {
+  color: black;
+}
+.smart .bars .tabs-bg .tab-data button .signup-arrow {
+  background-color: #42E26F;
+  border-radius: 50%;
+}
+.smart .tabs-top {
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  border: 1px solid #B9B9B9;
+  border-radius: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.smart .tabs-top h3 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
 .recognized {
   background: url("../images/intelligence.png"), linear-gradient(to top, rgb(12, 12, 13), rgb(12, 12, 13), rgb(12, 12, 13));
 }
@@ -376,6 +532,166 @@
   font-weight: 400;
 }
 
+.tools {
+  background: url("../images/intelligence.png"), linear-gradient(to top, rgb(12, 12, 13), rgb(12, 12, 13), rgb(12, 12, 13));
+}
+.tools .top h1 {
+  text-transform: uppercase;
+  background: linear-gradient(to right, #00FFD1, #00F1E3, #00D8FA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 64px;
+  font-weight: 700;
+}
+.tools .top p {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0 250px;
+}
+.tools .top .cube {
+  margin-top: -100px;
+}
+.tools .top button {
+  background-color: white;
+  border-radius: 0px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 9px 19px 9px 19px;
+  margin: auto;
+  border: none;
+  border-radius: 30px;
+}
+.tools .top button p {
+  color: black;
+}
+.tools .top button .signup-arrow {
+  background-color: #42E26F;
+  border-radius: 50%;
+}
+.tools .tools-container {
+  padding: 0px 150px;
+  color: white;
+}
+.tools .tools-container .box {
+  background-color: rgba(12, 12, 13, 0.5);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  border: 1px solid #B9B9B9;
+  border-radius: 10px;
+  padding: 20px;
+}
+.tools .tools-container .box .title {
+  font-size: 24px;
+  font-weight: 600;
+}
+.tools .tools-container .box .description {
+  font-size: 16px;
+  font-weight: 400;
+}
+.tools .tools-container .box .tool-button {
+  opacity: 0;
+  height: 0px;
+  background-color: white;
+  border-radius: 30px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 9px 19px;
+  margin: 20px auto 0;
+  border: none;
+  gap: 10px;
+  display: flex;
+  transition: all 0.3s linear;
+}
+.tools .tools-container .box .tool-button p {
+  color: black;
+  margin: 0;
+}
+.tools .tools-container .box .tool-button .signup-arrow {
+  background-color: #42E26F;
+  border-radius: 50%;
+}
+.tools .tools-container .box .tool-button .signup-arrow i {
+  font-size: 15px;
+}
+.tools .tools-container .box:hover {
+  background: linear-gradient(to bottom, #10151b, #245d75);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.tools .tools-container .box:hover .tool-button {
+  opacity: 1;
+  height: 50px;
+}
+
+.difference {
+  background: url("../images/difference.png"), linear-gradient(to top, rgb(12, 12, 13), rgb(12, 12, 13), rgb(12, 12, 13));
+}
+.difference .content {
+  padding: 200px;
+}
+.difference .content .topic {
+  font-family: "Roboto";
+  text-transform: uppercase;
+  color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 64px;
+  font-weight: 700;
+}
+.difference .content span {
+  background: linear-gradient(to right, #00FFD1, #00F1E3, #00D8FA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.difference .content p {
+  color: white;
+}
+.difference .content .description {
+  font-family: "Roboto";
+  color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+footer {
+  background-color: #0C0C0D;
+  color: white;
+}
+footer .footer-content {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 400;
+}
+footer i {
+  color: white;
+  font-size: 20px;
+}
+footer a:hover i {
+  color: #42E26F;
+}
+footer a:hover .first path {
+  stroke-width: #42E26F;
+}
+footer a:hover svg path {
+  fill: #42E26F;
+}
+footer h5 {
+  font-size: 20px;
+  font-weight: 600;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  color: rgba(245, 245, 245, 0.8);
+}
+
 @font-face {
   font-family: "Roboto";
   src: url("../font/roboto/static/Roboto-Regular.ttf") format("truetype");
@@ -389,6 +705,12 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 }
 body p {
   font-family: "Nunito Sans";
+}
+body .line {
+  height: 4px;
+  width: 100%;
+  background-color: #42E26F;
+  margin: 0px 0;
 }
 
 .top-container {

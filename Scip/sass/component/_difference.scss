@@ -1,0 +1,30 @@
+.difference{
+    background: url('../images/difference.png'),linear-gradient(to top, rgba(12, 12, 13, 1),rgba(12, 12, 13, 2),rgba(12, 12, 13, 1));
+    .content{
+        padding:200px;
+        .topic{
+            font-family: "Roboto";
+            text-transform: uppercase;
+            color:white;
+            width:fit-content;
+            font-size: 64px;
+            font-weight: 700;
+        }
+        span{
+            background: linear-gradient(to right, #00FFD1, #00F1E3,#00D8FA);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        p{
+            color:white;
+        }
+        .description{
+            font-family: "Roboto";
+            color:white;
+            width:fit-content;
+            font-size: 28px;
+            font-weight: 600;
+        }
+    }
+}

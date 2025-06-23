@@ -25,8 +25,24 @@
 //css for scip affiliates
 @import './component/affiliates';
 
+//css for speed
+@import './component/speed';
+
+//css for smart
+@import './component/smart';
+
+
 //css for recognized
 @import './component/recognized';
+
+//css for recognized
+@import './component/tools';
+
+//css for difference
+@import './component/difference';
+
+//css for footer
+@import './component/footer';
 
 //for font roboto
 @font-face {
@@ -48,10 +64,15 @@ body{
     p{
         font-family: "Nunito Sans";
     }
+    .line{
+        height: 4px;
+        width: 100%; 
+        background-color:#42E26F;
+        margin: 0px 0;
+    }
 }
-
-
 .top-container{
     background-image: url('../images/background1.png');
     background-size: cover;
 }
+
