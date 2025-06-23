@@ -90,10 +90,12 @@
   width: -moz-fit-content;
   width: fit-content;
   font-size: 64px;
+  font-weight: 700;
 }
 .home .home-content p {
   color: white;
   font-size: 20px;
+  font-weight: 400;
 }
 .home .scroll-down {
   font-size: 20px;
@@ -113,10 +115,12 @@
   width: -moz-fit-content;
   width: fit-content;
   font-size: 64px;
+  font-weight: 700;
 }
 .intelligence p {
   color: white;
   font-size: 20px;
+  font-weight: 400;
 }
 .intelligence button {
   background-color: white;
@@ -151,7 +155,7 @@
 }
 
 .proposition {
-  background: url("../images/bg3.png"), url("../images/bg4.png");
+  background: url("../images/bg4.png"), url("../images/bg3.png");
 }
 .proposition h1 {
   text-transform: uppercase;
@@ -162,10 +166,229 @@
   width: -moz-fit-content;
   width: fit-content;
   font-size: 64px;
+  font-weight: 700;
 }
 .proposition p {
   color: white;
   font-size: 20px;
+  font-weight: 400;
+}
+.proposition .proposition-container {
+  padding: 0px 150px;
+}
+.proposition .proposition-container .box {
+  background-color: rgba(12, 12, 13, 0.5);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  border: 1px solid #B9B9B9;
+  border-radius: 10px;
+  padding: 20px;
+}
+.proposition .proposition-container .box .title {
+  font-size: 28px;
+  font-weight: 600;
+}
+.proposition .proposition-container .box .decription {
+  font-size: 18px;
+  font-weight: 400;
+}
+.proposition .proposition-container .box:hover {
+  background: linear-gradient(to bottom, #10151b, #245d75);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.events {
+  background: url("../images/intelligence.png"), linear-gradient(to top, rgb(12, 12, 13), rgb(12, 12, 13), rgb(12, 12, 13));
+}
+.events h1, .events h2, .events h3 {
+  text-transform: uppercase;
+  background: linear-gradient(to right, #00FFD1, #00F1E3, #00D8FA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 64px;
+  font-weight: 700;
+}
+.events h2 {
+  font-size: 44px;
+}
+.events h3 {
+  font-size: 28px;
+}
+.events .top {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0px 300px;
+}
+.events p {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+.events img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.events .date {
+  color: white;
+}
+.events button {
+  background-color: white;
+  border-radius: 0px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 9px 19px 9px 19px;
+  margin: auto;
+  border: none;
+  border-radius: 30px;
+}
+.events button p {
+  color: black;
+}
+.events button .signup-arrow {
+  background-color: #42E26F;
+  border-radius: 50%;
+}
+.icoe {
+  background: url("../images/intelligence.png"), linear-gradient(to top, rgb(12, 12, 13), rgb(12, 12, 13), rgb(12, 12, 13));
+}
+.icoe h2 {
+  text-transform: uppercase;
+  background: linear-gradient(to right, #00FFD1, #00F1E3, #00D8FA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 44px;
+  font-weight: 700;
+}
+.icoe p {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+.icoe button {
+  background-color: white;
+  border-radius: 0px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 9px 19px 9px 19px;
+  margin: auto;
+  border: none;
+  border-radius: 30px;
+}
+.icoe button p {
+  color: black;
+}
+.icoe button .signup-arrow {
+  background-color: #42E26F;
+  border-radius: 50%;
+}
+.icoe .icoe-img img {
+  max-width: 2020px;
+  max-height: 400px;
+}
+
+.affiliates {
+  background: url("../images/intelligence.png"), linear-gradient(to top, rgb(12, 12, 13), rgb(12, 12, 13), rgb(12, 12, 13));
+}
+.affiliates .topic h1 {
+  text-transform: uppercase;
+  background: linear-gradient(to right, #00FFD1, #00F1E3, #00D8FA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 64px;
+  font-weight: 700;
+}
+.affiliates .topic p {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+.affiliates .affiliates-container {
+  padding: 0px 150px;
+}
+.affiliates .hover-column {
+  position: relative;
+  width: 250px;
+  height: 100px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.affiliates .hover-column img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: opacity 0.5s ease-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 85%;
+}
+.affiliates .hover-column .title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  font-size: 14px;
+  opacity: 0;
+  z-index: 2;
+  transition: opacity 0.5s ease-in;
+}
+.affiliates .hover-column:hover img {
+  opacity: 0;
+}
+.affiliates .hover-column:hover .title {
+  opacity: 1;
+}
+
+.recognized {
+  background: url("../images/intelligence.png"), linear-gradient(to top, rgb(12, 12, 13), rgb(12, 12, 13), rgb(12, 12, 13));
+}
+.recognized h2 {
+  background: linear-gradient(to right, #00FFD1, #00F1E3, #00D8FA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 44px;
+  font-weight: 700;
+}
+.recognized p {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../font/roboto/static/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../font/nunito/NunitoSans-VariableFont_YTLC,opsz,wdth,wghtNunitoSans-Regular.ttf") format("truetype");
+}
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: "Roboto";
+}
+body p {
+  font-family: "Nunito Sans";
 }
 
 .top-container {

@@ -16,6 +16,40 @@
 //css for scrolller
 @import './component/proposition';
 
+//css for events
+@import './component/events';
+
+//css for icoe
+@import './component/icoe';
+
+//css for scip affiliates
+@import './component/affiliates';
+
+//css for recognized
+@import './component/recognized';
+
+//for font roboto
+@font-face {
+    font-family: "Roboto";
+    src: url("../font/roboto/static/Roboto-Regular.ttf") format('truetype');
+}
+
+
+//for font nunito sans
+@font-face {
+    font-family: "Nunito Sans";
+    src: url("../font/nunito/NunitoSans-VariableFont_YTLC,opsz,wdth,wghtNunitoSans-Regular.ttf") format('truetype');
+}
+
+body{
+    h1,h2,h3,h4,h5,h6{
+        font-family: "Roboto";
+    }
+    p{
+        font-family: "Nunito Sans";
+    }
+}
+
 
 .top-container{
     background-image: url('../images/background1.png');
