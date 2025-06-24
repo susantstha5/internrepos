@@ -27,31 +27,132 @@
         font-size:20px;
         font-weight: 400;
     }
-    img{
-        width: 100%;
-        object-fit: cover;
-        transition: all 0.3s linear;
-        &:hover{
-            scale: 1.05;
+    .top-content{
+        img{
+            width: 100%;
+            object-fit: cover;
+            transition: all 0.3s linear;
+            &:hover{
+                scale: 1.05;
+            }
         }
-    }
-    .date{
-        color:white;
-    }
-    button{
-        background-color: white;
-        border-radius: 0px;
-        width: fit-content;
-        padding:9px 19px 9px 19px;
-        margin:auto;
-        border:none;
-        border-radius: 30px;
-        p{
+        .date{
+            color:white;
+        }
+        button {
+            position: relative;
+            background-color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 30px;
+            overflow: hidden;
+            // z-index: 1;
+            transition: all 0.8s linear;
             color:black;
+            margin:auto;
+            p {
+                margin: 0;
+                position: relative;
+                // z-index: 2;
+                color: black;
+                transition: all 0.5s linear;
+            }
+            .signup-arrow {
+                position: relative;
+                // z-index: 2;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.5s linear;
+            }
         }
-        .signup-arrow{
-            background-color: #42E26F;
+        button::before {
+            content: '';
+            position: absolute;
+            right: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            background-color:  #42E26F;
             border-radius: 50%;
+            // z-index: 1;
+            transition: all 0.5s linear;
+        }
+        /* On hover: grow background to cover button */
+        button:hover::before {
+            width: 200%;
+            height: 200%;
+            right: -20%;
+    }
+    }
+    .upcoming{
+        .hover-column{
+            position: relative;
+            // transition: all 0.1s linear;
+            max-width:450px;
+            max-height:250px;
+            overflow:hidden;
+            img{
+                transition: all 0.5s linear;
+            }
+            &::before{
+                content:"";
+                position: absolute;
+                // background: linear-gradient(to top, rgba(0, 15, 36, 0.6),rgba(0, 0, 0, 0));
+                background: rgba(0, 15, 36, 0.4);
+                opacity:0;
+                z-index: 1;
+                transition: all 0.5s linear;
+                inset:0;
+            }
+            &:hover::before{
+                opacity:1;
+                height: auto;
+            }
+        }
+        .hover-content{
+            position: absolute;
+            width:100%;
+            bottom:0;
+            scale: 1px;
+            transition: all 0.5s linear;
+            .title{
+                transition: all 0.5s linear;
+                justify-content: end;
+                font-size: 20px;
+                font-weight:600;
+            }
+            .date{
+                opacity:0;
+                height:0px;
+                transition: all 0.2s linear;
+                p,i{
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+                i{
+                    color:white;
+                }
+            }
+        }
+        .hover-column:hover img{
+            scale: 1.2;
+        }
+        .hover-column:hover .hover-content .date{
+            opacity: 1;
+            height:auto;
+        }
+        .hover-column:hover .hover-content{
+            .title{
+                font-size: 22px !important;
+            }
+            z-index: 3;
+            scale: 1.1;
+            transform: scale(1) translate(5%,-110%);
         }
     }
 }

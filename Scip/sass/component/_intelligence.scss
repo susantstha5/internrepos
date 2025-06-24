@@ -16,20 +16,53 @@
         font-size:20px;
         font-weight: 400;
     }
-    button{
+    button {
+        position: relative;
         background-color: white;
-        border-radius: 0px;
-        width: fit-content;
-        padding:9px 19px 9px 19px;
-        margin:auto;
-        border:none;
+        padding: 12px 24px;
+        border: none;
         border-radius: 30px;
-        p{
-            color:black;
+        overflow: hidden;
+        // z-index: 1;
+        transition: all 0.8s linear;
+        color:black;
+        margin:auto;
+        p {
+            margin: 0;
+            position: relative;
+            // z-index: 2;
+            color: black;
+            transition: all 0.5s linear;
         }
-        .signup-arrow{
-            background-color: #42E26F;
+        .signup-arrow {
+            position: relative;
+            // z-index: 2;
             border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.5s linear;
         }
+    }
+     button::before {
+        content: '';
+        position: absolute;
+        right: 18px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        background-color:  #42E26F;
+        border-radius: 50%;
+        // z-index: 1;
+        transition: all 0.5s linear;
+    }
+    /* On hover: grow background to cover button */
+    button:hover::before {
+        width: 200%;
+        height: 200%;
+        right: -20%;
     }
 }

@@ -1,5 +1,6 @@
 .tools{
-    background: url('../images/intelligence.png'),linear-gradient(to top, rgba(12, 12, 13, 1),rgba(12, 12, 13, 2),rgba(12, 12, 13, 1));
+    // background: url('../images/intelligence.png'),linear-gradient(to top, rgba(12, 12, 13, 1),rgba(12, 12, 13, 2),rgba(12, 12, 13, 1));
+    background-color:#0C0C0D ;
     .top{
         h1{
             text-transform: uppercase;
@@ -20,21 +21,54 @@
         .cube{
             margin-top: -100px;
         }
-        button{
+        button {
+            position: relative;
             background-color: white;
-            border-radius: 0px;
-            width: fit-content;
-            padding:9px 19px 9px 19px;
-            margin:auto;
-            border:none;
+            padding: 12px 24px;
+            border: none;
             border-radius: 30px;
-            p{
-                color:black;
+            overflow: hidden;
+            // z-index: 1;
+            transition: all 0.8s linear;
+            color:black;
+            margin: auto;
+            p {
+                margin: 0;
+                position: relative;
+                // z-index: 2;
+                color: black;
+                transition: all 0.5s linear;
             }
-            .signup-arrow{
-                background-color: #42E26F;
+            .signup-arrow {
+                position: relative;
+                // z-index: 2;
                 border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.5s linear;
             }
+        }
+        button::before {
+            content: '';
+            position: absolute;
+            right: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            background-color:  #42E26F;
+            border-radius: 50%;
+            // z-index: 1;
+            transition: all 0.5s linear;
+        }
+        /* On hover: grow background to cover button */
+        button:hover::before {
+            width: 200%;
+            height: 200%;
+            right: -20%;
         }
     }
     .tools-container {
@@ -45,41 +79,68 @@
             backdrop-filter: blur(50px);
             border: 1px solid #B9B9B9;
             border-radius: 10px;
-            padding: 20px;
+            padding: 20px 20px 5px 20px;
+            min-height: 270px;
             .title {
-            font-size: 24px;
-            font-weight: 600;
+                font-family: "Roboto";
+                font-size: 20px;
+                font-weight: 600;
             }
             .description {
-            font-size: 16px;
-            font-weight: 400;
+                font-family: "Nunito Sans";
+                font-size: 14px;
+                font-weight: 400;
             }
-            .tool-button {
-                opacity:0;
-                height:0px;
+            button {
+                position: relative;
                 background-color: white;
-                border-radius: 30px;
-                width: fit-content;
-                padding: 9px 19px;
-                margin: 20px auto 0;
+                padding: 12px 24px;
                 border: none;
-                gap: 10px;
-                display: flex;
-                transition: all 0.3s linear;
-
+                border-radius: 30px;
+                overflow: hidden;
+                height:0px;
+                // z-index: 1;
+                transition: all 0.2s linear;
+                color:black;
+                opacity:0;
+                margin:auto;
                 p {
-                    color: black;
                     margin: 0;
+                    position: relative;
+                    // z-index: 2;
+                    color: black;
+                    transition: all 0.5s linear;
                 }
-
                 .signup-arrow {
-                    background-color: #42E26F;
+                    position: relative;
+                    // z-index: 2;
                     border-radius: 50%;
-
-                    i {
-                    font-size: 15px;
-                    }
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 0.5s linear;
                 }
+            }
+            button::before {
+                content: '';
+                position: absolute;
+                right: 18px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 40px;
+                height: 40px;
+                background-color:  #42E26F;
+                border-radius: 50%;
+                // z-index: 1;
+                transition: all 0.5s linear;
+            }
+            /* On hover: grow background to cover button */
+            button:hover::before {
+                width: 200%;
+                height: 200%;
+                right: -20%;
             }
             &:hover {
                 background: linear-gradient(to bottom, #10151b, #245d75);
