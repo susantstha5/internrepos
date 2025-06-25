@@ -37,4 +37,21 @@ footer{
             color:#F5F5F5CC;
         }
     }
+    @media screen and (max-width: 430px) {
+        padding:10px 20px !important;
+        text-align: center;
+        .footer-content{
+            font-size: 12px;
+        }
+        .icon{
+            justify-content: center !important;
+            padding-bottom: 45px !important;
+        }
+        i{
+            font-size: 18px;
+        }
+        h5{
+            font-size: 20px;
+        } 
+    }
 }

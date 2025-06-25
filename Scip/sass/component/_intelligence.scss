@@ -65,4 +65,26 @@
         height: 200%;
         right: -20%;
     }
+    @media screen and (max-width: 430px) {
+        .container{
+            padding:30px 20px 0px 20px !important;
+        }
+        h1{
+            padding:0px 0px 20px 0px !important;
+            font-size: 34px;
+        }
+        p{
+            padding:0px 0px 20px 0px !important;
+            font-size: 14px;
+        }
+        button {
+            padding: 5px 15px;
+            p{
+                padding:3px 0px 0px 0px !important;
+            }
+            i{
+                padding: 0px 2px 0px 0px!important;
+            }
+        }
+    }
 }

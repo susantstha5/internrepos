@@ -71,4 +71,34 @@
             object-fit: cover;
         }
     }
+    @media screen and (max-width: 430px) {
+        padding:30px 20px !important;
+        .row{
+            padding: 0px !important;
+            margin: auto !important;
+        }
+        img{
+            padding-bottom: 20px !important;
+        }
+        h2{
+            font-size: 34px;
+        }
+        p{
+            font-size:14px;
+        }
+        .col-data{
+            justify-items: center;
+            padding-bottom: 30px;
+        }
+        button {
+            padding: 8px 20px;
+        } 
+        .icoe-img{
+            img{
+                width: 320px;
+                height:250px;
+                object-fit: cover;
+            }
+        } 
+    }
 }

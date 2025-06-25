@@ -33,9 +33,6 @@
             object-fit: cover;
             transition: all 0.8s linear;
             opacity:1;
-            position: absolute;
-            top: 0;
-            left: 0;
         }
         .title {
             position: absolute;
@@ -62,5 +59,24 @@
         opacity: 1;
         transform-origin: center;
         scale:1;
+    }
+    @media screen and (max-width: 430px) {
+        padding:0px 20px !important;
+        .topic{
+            h1{
+                font-size: 34px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+        .affiliates-container{
+            padding:20px !important;
+            .row{
+                padding: 0px !important;
+                margin: auto !important;
+            }
+        }
+        
     }
 }

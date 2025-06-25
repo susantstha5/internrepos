@@ -9,6 +9,7 @@
         background: linear-gradient(to right, #00FFD1, #00F1E3,#00D8FA);
     }
     p{
+        font-size: 20px;
         color: white;
     }
     .linear{
@@ -17,5 +18,56 @@
         -webkit-background-clip: text;
         color: transparent;
         width:fit-content;
+    }
+   /* Slider container */
+    .slider {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    }
+
+    /* Slides container: 4 slides (2 original + 2 duplicates) */
+    .slides {
+    display: flex;
+    width: 100vw; /* 4 slides * 100vw */
+    animation: scroll 28s linear infinite;
+    }
+
+    /* Individual slides */
+    .slide {
+    width: 100vw;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    }
+    /* Continuous sliding animation */
+    @keyframes scroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-200vw); } /* move 2 slides (200vw) to the left */
+    }
+    @media screen and (max-width: 430px) {
+        height: fit-content;
+        padding:10px 20px;
+        .spotlight{
+            padding:5px !important;
+            border-radius: 20px;
+        }
+        p{
+            font-size: 12px;
+        }
+        .slide{
+            padding:0px !important;
+            height:20px;
+            svg{
+                width:12px;
+                height:12px;
+                padding:0px !important
+            }
+        }
+        .scoller-content{
+            gap:0 !important;
+        }
     }
 }

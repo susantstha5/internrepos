@@ -1,5 +1,5 @@
 .difference{
-    background: url('../images/difference.png'),linear-gradient(to top, rgba(12, 12, 13, 1),rgba(12, 12, 13, 2),rgba(12, 12, 13, 1));
+    background: url('../images/difference.png'),linear-gradient(to top, rgba(12, 12, 13, 1),rgba(12, 12, 13, 2),rgba(12, 12, 13, 1)) no-repeat;
     .content{
         padding:200px;
         .topic{
@@ -26,5 +26,19 @@
             font-size: 28px;
             font-weight: 600;
         }
+    }
+    @media screen and (max-width: 430px){
+        .content{
+            padding:100px 20px !important;
+            .topic{
+                font-size: 34px;
+            }
+            p{
+                font-size: 14px;
+            }
+            .description{
+                font-size: 18px;
+            }
+        } 
     }
 }
