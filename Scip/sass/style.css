@@ -961,6 +961,9 @@
   .speed .content h3 {
     font-size: 18px;
   }
+  .speed .awareness {
+    flex-wrap: wrap !important;
+  }
   .speed .awareness:hover img {
     width: 100%;
   }

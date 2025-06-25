@@ -173,6 +173,7 @@
             }
         }
         .awareness{
+            flex-wrap: wrap !important;
             &:hover{
                 img{
                    width: 100%;
