@@ -1,0 +1,103 @@
+.scipValue {
+  background: radial-gradient(
+      circle,
+      rgba(12, 12, 13, 0),
+      rgba(12, 12, 13, 1) calc(100% - 150px)
+    ),
+    url("/image/Value\ Proposition\ Bg.png") no-repeat,
+    url("/image/Value\ Propostition\ Video.png") no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  // z-index: 1;
+  .cardList {
+    .card {
+      min-height: 265px;
+      background: rgba(12, 12, 13, 0.5);
+      backdrop-filter: blur(50px);
+      border: 1px solid rgba(185, 185, 185, 1);
+      border-radius: 10px;
+      transition: transform 0.8s ease;
+      position: relative;
+      overflow: hidden;
+      .card-body {
+        .card-title {
+          font-size: 24px;
+        }
+        .card-text {
+          font-size: 18px;
+          font-size: 400;
+          color: rgba(245, 245, 245, 0.8) !important;
+        }
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        // top: 50%;
+        inset: 0;
+        background: linear-gradient(
+          to bottom,
+          rgba(19, 34, 40, 1),
+          rgba(47, 79, 101, 1),
+          rgba(83, 152, 191, 1)
+        );
+        backdrop-filter: blur(50px);
+        // transform: translateY(50%);
+        transition: all 0.7s linear;
+        z-index: -1;
+        opacity: 0;
+        border-radius: 10px;
+      }
+      &:hover::before {
+        // transform: translateY(0%);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .scipValue {
+    .content {
+      font-size: 16px !important;
+      padding: 10px !important;
+    }
+    .cardList {
+      padding-block: 10px !important;
+      .card {
+        min-height: 280px;
+        width: 100%;
+        .card-body {
+          .card-title {
+            font-size: 18px;
+          }
+          .card-text {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .scipValue {
+    .content {
+      font-size: 12px !important;
+      padding: 5px !important;
+    }
+    .cardList {
+      padding-block: 10px !important;
+      .card {
+        min-height: 200px;
+        .card-body {
+          .card-title {
+            font-size: 20px;
+          }
+          .card-text {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

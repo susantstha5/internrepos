@@ -1,0 +1,140 @@
+.scipSmart {
+  background: linear-gradient(
+      to bottom,
+      rgba(12, 13, 15, 1),
+      rgba(12, 13, 15, 0)
+    ),
+    linear-gradient(to top, rgba(12, 13, 15, 1), rgba(12, 13, 15, 0)),
+    url("/image/Minimal\ glow\ of\ the\ globe\ in\ dark\ wallpaper.png");
+  // rgba(12, 12, 13, 1);
+  overflow: hidden;
+}
+.tabMenu {
+  border: 1px solid rgba(185, 185, 185, 1);
+  border-radius: 10px;
+  padding: 2px;
+  position: relative;
+  // overflow: hidden;
+  .nav-item {
+    position: relative;
+    overflow: hidden;
+    .nav-link {
+      color: $grey-white;
+    }
+    .nav-link.active,
+    .show > .nav-link {
+      color: $black;
+      background-color: $action-color;
+      transition: all 0.5s ease;
+      // overflow: hidden;
+    }
+  }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 2px;
+  //   right: -20px;
+  //   width: 70%;
+  //   height: 93%;
+  //   border-radius: 10px;
+  //   background-color: $action-color;
+  //   z-index: 0;
+  //   transition: all 0.5s linear;
+  // }
+}
+.tabList {
+  border: 1px solid rgba(185, 185, 185, 1);
+  background: rgba(12, 12, 13, 0.5);
+  border-radius: 10px;
+  backdrop-filter: blur(50px);
+}
+.resourceMenu {
+  background: rgba(12, 12, 13, 0.5);
+  border-radius: 10px;
+  padding: 30px 20px;
+  .nav-link {
+    padding: 20px 30px;
+    color: $grey-white;
+  }
+  .nav-link.active,
+  .show > .nav-link {
+    color: $black;
+    background-color: $action-color;
+    padding: 20px 30px;
+    font-weight: 600;
+    transition: all 0.5s ease;
+  }
+}
+.resourceTopic {
+  font-size: 18px;
+}
+#pills-resource,
+#pills-training-tab {
+  font-weight: 600;
+  font-size: 24px;
+  padding-inline: 40px;
+  border-radius: 10px;
+  min-width: 205px;
+  text-align: center;
+}
+.tabDetailList {
+  .tabDetail {
+    .tabTitle {
+      font-size: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .scipSmart {
+    .content {
+      font-size: 16px !important;
+    }
+    #pills-resource,
+    #pills-training-tab {
+      font-size: 18px;
+      padding-inline: 20px;
+    }
+    .resourceMenu {
+      margin: 0px !important;
+      padding: 20px 20px;
+    }
+    .resourceTopic {
+      font-size: 18px;
+    }
+    .resourceMenu .nav-link.active,
+    .resourceMenu .show > .nav-link {
+      padding: 10px 20px;
+    }
+    .tabDetailList .tabDetail .tabTitle {
+      font-size: 20px;
+    }
+    .tabDescription {
+      font-size: 14px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .scipSmart {
+    .title {
+      padding-top: 0px;
+    }
+    .content {
+      font-size: 12px !important;
+    }
+    #pills-resource,
+    #pills-training-tab {
+      font-size: 18px;
+      padding-inline: 20px;
+      min-width: 115px;
+    }
+    .resourceMenu {
+      margin: 0px !important;
+      padding: 20px 20px;
+    }
+    .resourceTopic {
+      font-size: 16px;
+    }
+  }
+}
