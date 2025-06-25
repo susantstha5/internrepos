@@ -136,7 +136,7 @@
 }
 .cardContent hr {
   width: 64px;
-  border-color: #684FFF;
+  border-color: #684fff;
   opacity: 30%;
 }
 .cardContent .card-link {
@@ -162,16 +162,16 @@
     max-width: -moz-fit-content;
     max-width: fit-content;
     transition: none;
-    color: #0A1931 !important;
+    color: #0a1931 !important;
   }
   .card-link svg path {
-    stroke: #0A1931 !important;
+    stroke: #0a1931 !important;
   }
   .card:hover .discuss {
-    color: #684FFF !important;
+    color: #684fff !important;
   }
   .card:hover svg path {
-    stroke: #684FFF !important;
+    stroke: #684fff !important;
   }
 }
 .work {
@@ -220,16 +220,16 @@
     max-width: -moz-fit-content;
     max-width: fit-content;
     transition: none;
-    color: #0A1931 !important;
+    color: #0a1931 !important;
   }
   .card-link svg path {
-    stroke: #0A1931 !important;
+    stroke: #0a1931 !important;
   }
   .card:hover .viewLink {
-    color: #684FFF !important;
+    color: #684fff !important;
   }
   .card:hover svg path {
-    stroke: #684FFF !important;
+    stroke: #684fff !important;
   }
 }
 .company .compay-description {
@@ -237,7 +237,7 @@
   font-size: 28px;
 }
 .company .compay-description .highlight {
-  color: #684FFF;
+  color: #684fff;
   background: linear-gradient(to bottom, white 60%, rgba(104, 79, 255, 0.15) 40%);
 }
 .company .companyLogo .logo {
@@ -267,7 +267,7 @@
 .banner {
   background: url("/images/Shapes.png") no-repeat;
   background-size: cover;
-  background-color: #0A1931;
+  background-color: #0a1931;
   width: 100%;
   border-radius: 8px;
 }
@@ -465,16 +465,16 @@
     max-width: -moz-fit-content;
     max-width: fit-content;
     transition: none;
-    color: #0A1931 !important;
+    color: #0a1931 !important;
   }
   .card-link svg path {
-    stroke: #0A1931 !important;
+    stroke: #0a1931 !important;
   }
   .card:hover .readLink {
-    color: #684FFF !important;
+    color: #684fff !important;
   }
   .card:hover svg path {
-    stroke: #684FFF !important;
+    stroke: #684fff !important;
   }
 }
 .contact {
@@ -510,7 +510,7 @@
   padding: 20px;
 }
 .contactLinks a:hover {
-  background-color: #684FFF;
+  background-color: #684fff;
   color: white;
 }
 
@@ -567,7 +567,7 @@
   }
 }
 .text-primary {
-  color: #684FFF !important;
+  color: #684fff !important;
 }
 
 .text-secondary {
@@ -583,14 +583,14 @@
 }
 
 .btn-primary {
-  background-color: #684FFF !important;
+  background-color: #684fff !important;
   color: white;
   border-radius: 5px;
   border: none;
 }
 
 .btn-primary:hover {
-  background: #5033FF !important;
+  background: #5033ff !important;
 }
 
 .btn-outline-primary {
@@ -632,7 +632,7 @@ h2::after {
   transform: translateX(-50%);
   width: 70px;
   height: 3px;
-  background-color: #684FFF;
+  background-color: #684fff;
 }
 
 nav .menuBar {
@@ -653,12 +653,12 @@ nav .menuBar .navIcon {
 }
 
 .link-list li a {
-  color: #0A1931;
+  color: #0a1931;
 }
 
 .link-list .nav-link:focus,
 .link-list .nav-link:hover {
-  color: #684FFF;
+  color: #684fff;
 }
 
 .home {
@@ -690,7 +690,7 @@ nav .menuBar .navIcon {
   min-width: 30px;
 }
 .home .viewBtn:hover {
-  background-color: #5033FF;
+  background-color: #5033ff;
   color: white;
 }
 
@@ -699,7 +699,7 @@ nav .menuBar .navIcon {
   height: 48px;
 }
 .followLinks a:hover {
-  background-color: #684FFF;
+  background-color: #684fff;
 }
 .followLinks a:hover i {
   color: white;
@@ -749,7 +749,7 @@ nav .menuBar .navIcon {
   }
   .menuBar ul li a:active {
     background-color: #dfe3eb;
-    color: #0A1931;
+    color: #0a1931;
   }
   .home {
     min-height: 500px;
