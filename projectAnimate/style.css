@@ -363,10 +363,10 @@ html {
   min-width: 35%;
 }
 .event_details h3 {
-  font-size: clamp(30px, 5vw, 44px);
+  font-size: clamp(24px, 5vw, 44px);
 }
 .event_details p {
-  font-size: clamp(14px, 5vw, 20px);
+  font-size: clamp(14px, 2vw, 20px);
   color: rgba(245, 245, 245, 0.8);
 }
 .upcoming_events {
@@ -450,8 +450,8 @@ html {
   object-fit: cover;
   object-position: center;
 }
-.scip_wrapper h2 {
-  font-size: clamp(30px, 5vw, 44px);
+.scip_wrapper h2 {  
+  font-size: clamp(24px, 5vw, 44px);
   min-width: 40%;
   padding-left: 20px;
 }
@@ -487,7 +487,9 @@ html {
 .affiliateLogo_container {
   display: flex;
   justify-content: space-around;
-  overflow-x: auto;
+  /* overflow-x: auto;
+   */
+   flex-wrap: wrap;
   gap: 30px;
 
   /* grid-template-columns: repeat(4,minmax(200px,260px)); */
@@ -781,6 +783,11 @@ footer {
   }
 }
 @media screen and (max-width: 992px) {
+  .affiliateLogo_container{
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    padding: 10px 0px;
+  }
   .event_wrapper {
     flex-direction: column !important;
   }
