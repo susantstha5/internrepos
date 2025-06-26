@@ -5,7 +5,7 @@
     .spotlight{
         width:fit-content;
         text-transform: uppercase;
-        border-radius: 20px;
+        border-radius: 30px;
         background: linear-gradient(to right, #00FFD1, #00F1E3,#00D8FA);
     }
     p{
@@ -36,6 +36,7 @@
     /* Individual slides */
     .slide {
     width: 100vw;
+    height: 45px;
     flex-shrink: 0;
     display: flex;
     justify-content: center;
@@ -47,7 +48,7 @@
     0%   { transform: translateX(0); }
     100% { transform: translateX(-200vw); } /* move 2 slides (200vw) to the left */
     }
-    @media screen and (max-width: 430px) {
+    @media screen and (max-width: 500px) {
         height: fit-content;
         padding:10px 20px;
         .spotlight{
@@ -58,12 +59,12 @@
             font-size: 12px;
         }
         .slide{
-            padding:0px !important;
-            height:20px;
+            padding:5px !important;
+            height:10px;
             svg{
                 width:12px;
                 height:12px;
-                padding:0px !important
+                padding:1px !important
             }
         }
         .scoller-content{

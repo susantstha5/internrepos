@@ -93,12 +93,63 @@
   color: black;
   transform: scale(1.1);
 }
-@media screen and (max-width: 430px) {
+.navbar .mobile-nav {
+  display: none;
+}
+@media screen and (max-width: 500px) {
   .navbar {
     padding: 10px 20px;
   }
   .navbar .nav-option {
     display: none;
+  }
+  .navbar .mobile-nav {
+    display: block;
+  }
+  .navbar .mobile-nav .menubar {
+    padding: 5px;
+  }
+  .navbar .mobile-nav .menubar i {
+    color: white;
+    font-size: 30px;
+  }
+  .navbar .mobile-nav .offcanvas {
+    width: 100vh;
+    background: url("../images/intelligence.png"), linear-gradient(to top, rgb(12, 12, 13), rgba(12, 12, 13, 0), rgb(12, 12, 13));
+    -webkit-backdrop-filter: blur(50px);
+            backdrop-filter: blur(50px);
+    color: white;
+  }
+  .navbar .mobile-nav .offcanvas-header button {
+    color: white !important;
+  }
+  .navbar .mobile-nav .btn-close {
+    filter: invert(1);
+  }
+  .navbar .mobile-nav .nav {
+    --bs-nav-link-color:grey !important;
+    --bs-nav-link-hover-color: grey !important;
+  }
+  .navbar .mobile-nav .top-navbar {
+    border-block-end: 5px double white;
+  }
+  .navbar .mobile-nav .top-navbar button {
+    color: white !important;
+    border: 1px solid white !important;
+  }
+  .navbar .mobile-nav .bottom-navbar i {
+    padding-top: 5px !important;
+    font: 15px !important;
+  }
+  .navbar .mobile-nav .bottom-navbar .dropdown-menu {
+    background-color: rgba(185, 185, 185, 0.8);
+    -webkit-backdrop-filter: blur(50px);
+            backdrop-filter: blur(50px);
+    --bs-dropdown-link-active-bg: white !important;
+    --bs-dropdown-link-active-color:black !important;
+  }
+  .navbar .mobile-nav .bottom-navbar .dropdown-menu li {
+    padding-right: 10px !important;
   }
 }
 
@@ -116,7 +167,7 @@
   width: -moz-fit-content;
   width: fit-content;
   text-transform: uppercase;
-  border-radius: 20px;
+  border-radius: 30px;
   background: linear-gradient(to right, #00FFD1, #00F1E3, #00D8FA);
 }
 .scroller p {
@@ -143,6 +194,7 @@
 }
 .scroller .slide {
   width: 100vw;
+  height: 45px;
   flex-shrink: 0;
   display: flex;
   justify-content: center;
@@ -157,7 +209,7 @@
     transform: translateX(-200vw);
   } /* move 2 slides (200vw) to the left */
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 500px) {
   .scroller {
     height: -moz-fit-content;
     height: fit-content;
@@ -171,13 +223,13 @@
     font-size: 12px;
   }
   .scroller .slide {
-    padding: 0px !important;
-    height: 20px;
+    padding: 5px !important;
+    height: 10px;
   }
   .scroller .slide svg {
     width: 12px;
     height: 12px;
-    padding: 0px !important;
+    padding: 1px !important;
   }
   .scroller .scoller-content {
     gap: 0 !important;
@@ -204,7 +256,7 @@
   font-size: 20px;
   color: white;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 500px) {
   .home .home-content h1 {
     padding: 30px 0px 20px 0px !important;
     font-size: 34px;
@@ -280,7 +332,7 @@
   height: 200%;
   right: -20%;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 500px) {
   .intelligence .container {
     padding: 30px 20px 0px 20px !important;
   }
@@ -316,7 +368,7 @@
   color: white;
   max-width: 700px;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 500px) {
   .youtube {
     padding: 0px 20px !important;
   }
@@ -389,7 +441,7 @@
 .proposition .proposition-container .box:hover::before {
   opacity: 1;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 500px) {
   .proposition .top h1 {
     font-size: 34px;
   }
@@ -556,7 +608,7 @@
 .events .upcoming .hover-column:hover .hover-content .title {
   font-size: 22px !important;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 500px) {
   .events h1 {
     padding: 30px 20px 20px 20px !important;
     font-size: 34px;
@@ -678,7 +730,7 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 500px) {
   .icoe {
     padding: 30px 20px !important;
   }
@@ -773,7 +825,7 @@
   transform-origin: center;
   scale: 1;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 500px) {
   .affiliates {
     padding: 0px 20px !important;
   }
@@ -1129,7 +1181,7 @@
   font-size: 28px;
   font-weight: 600;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 500px) {
   .smart {
     padding: 0px 20px !important;
   }
@@ -1198,7 +1250,7 @@
   font-size: 20px;
   font-weight: 400;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 500px) {
   .recognized {
     padding: 90px 20px 80px 20px;
   }
@@ -1363,7 +1415,7 @@
   opacity: 1;
   min-height: 50px;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 500px) {
   .tools {
     padding: 20px 20px !important;
   }
@@ -1445,7 +1497,7 @@
   font-size: 28px;
   font-weight: 600;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 500px) {
   .difference .content {
     padding: 100px 20px !important;
   }
@@ -1492,7 +1544,7 @@ footer ul {
 footer ul li {
   color: rgba(245, 245, 245, 0.8);
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 500px) {
   footer {
     padding: 10px 20px !important;
     text-align: center;
@@ -1528,6 +1580,9 @@ footer ul li {
   font-family: "Nunito Sans";
 }
 
+body {
+  overflow-x: hidden;
+}
 body .line {
   height: 4px;
   width: 100%;
@@ -1539,9 +1594,11 @@ body .line {
   background-image: url("../images/background1.png");
   background-size: cover;
   overflow: hidden;
+}
+.top-container .become-member {
   /* On hover:background grows to cover button */
 }
-.top-container button {
+.top-container .become-member button {
   position: fixed;
   background-color: white;
   padding: 12px 24px;
@@ -1553,13 +1610,13 @@ body .line {
   margin: 33% 0px 0px 82%;
   z-index: 999;
 }
-.top-container button p {
+.top-container .become-member button p {
   margin: 0;
   position: relative;
   color: black;
   transition: all 0.5s linear;
 }
-.top-container button .member {
+.top-container .become-member button .member {
   position: relative;
   border-radius: 50%;
   width: 40px;
@@ -1569,7 +1626,7 @@ body .line {
   justify-content: center;
   transition: all 0.5s linear;
 }
-.top-container button::before {
+.top-container .become-member button::before {
   content: "";
   position: absolute;
   right: 18px;
@@ -1581,13 +1638,13 @@ body .line {
   border-radius: 50%;
   transition: all 0.5s linear;
 }
-.top-container button:hover::before {
+.top-container .become-member button:hover::before {
   width: 200%;
   height: 200%;
   right: -20%;
 }
-@media screen and (max-width: 430px) {
-  .top-container button {
-    display: none;
+@media screen and (max-width: 500px) {
+  .top-container .become-member button {
+    opacity: 0;
   }
 }/*# sourceMappingURL=style.css.map */

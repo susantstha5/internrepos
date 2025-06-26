@@ -71,62 +71,66 @@ body{
         background-color:#42E26F;
         margin: 0px 0;
     }
+    overflow-x: hidden;
 }
 .top-container{
     background-image: url('../images/background1.png');
     background-size: cover;
     overflow:hidden;
-    button {
-        position: fixed;
-        background-color: white;
-        padding: 12px 24px;
-        border: none;
-        border-radius: 30px;
-        overflow: hidden;
-        transition: all 0.8s linear;
-        color:black;
-        margin: 33% 0px 0px 82%;
-        z-index:999;
-        p {
-            margin: 0;
-            position: relative;
-            color: black;
-            transition: all 0.5s linear;
+    .become-member{
+        button {
+            position: fixed;
+            background-color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 30px;
+            overflow: hidden;
+            transition: all 0.8s linear;
+            color:black;
+            margin: 33% 0px 0px 82%;
+            z-index:999;
+            p {
+                margin: 0;
+                position: relative;
+                color: black;
+                transition: all 0.5s linear;
+            }
+            .member{
+                position: relative;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.5s linear;
+            }
         }
-        .member{
-            position: relative;
-            border-radius: 50%;
+        button::before {
+            content: '';
+            position: absolute;
+            right: 18px;
+            top: 50%;
+            transform: translateY(-50%);
             width: 40px;
             height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            background-color:  #42E26F;
+            border-radius: 50%;
             transition: all 0.5s linear;
         }
-    }
-     button::before {
-        content: '';
-        position: absolute;
-        right: 18px;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 40px;
-        height: 40px;
-        background-color:  #42E26F;
-        border-radius: 50%;
-        transition: all 0.5s linear;
-    }
-    /* On hover:background grows to cover button */
-    button:hover::before {
-        width: 200%;
-        height: 200%;
-        right: -20%;
-    }
-    @media screen and (max-width: 430px) {
-        button{
-           display: none;
+        /* On hover:background grows to cover button */
+        button:hover::before {
+            width: 200%;
+            height: 200%;
+            right: -20%;
         }
-        
+    }
+    @media screen and (max-width: 500px) {
+        .become-member{
+            button{
+               opacity: 0;
+            }
+        }
     }
 }
 

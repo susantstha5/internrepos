@@ -121,6 +121,113 @@
                         </ul>
                     </div>
                 </div>
+                <div class="mobile-nav">
+                    <button class="btn menubar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fa-solid fa-bars"></i></button>
+                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                        <div class="offcanvas-header">
+                             <div class="col-md-2">
+                                <img src="../images/sciplogo.png" alt="">
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="top-navbar pb-3">
+                                <div class="container-fluid">
+                                    <form class="d-flex pb-2" role="search">
+                                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                        <button class="btn" type="submit">Search</button>
+                                    </form>
+                                </div>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-success" href="#">Sign In</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bottom-navbar pt-4">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="#">Affiliates</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <div class="dropdown">
+                                            <button class="btn w-100 text-white d-flex flex-row justify-content-between" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Intelligence<i class="fa-solid fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu w-100">
+                                                <li><button class="dropdown-item" type="button">Foundational Resources (CI Basics)</button></li>
+                                                <li><button class="dropdown-item" type="button">CI Technology & Tools</button></li>
+                                                <li><button class="dropdown-item" type="button">Communications & Stakeholder Management <br>Resources</button></li>
+                                                <li><button class="dropdown-item" type="button">Future, Impact, Metrics & ROI</button></li>
+                                                <li><button class="dropdown-item" type="button">Strategy & Analytics</button></li>
+                                                <li><button class="dropdown-item" type="button">Collection & Research</button></li>
+                                                <li><button class="dropdown-item" type="button">Advanced Resources</button></li>
+                                                <li><button class="dropdown-item" type="button">Benchmarks</button></li>
+                                                <li><button class="dropdown-item" type="button">Ethics & Integrity</button></li>
+                                                <li><button class="dropdown-item" type="button">Competitive Enablement</button></li>
+                                                <li><button class="dropdown-item" type="button">Leadership & Careers Development Resources</button></li>
+                                                <li><button class="dropdown-item" type="button">Templates</button></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">ICoE</a>
+                                    </li>
+                                     <li class="nav-item">
+                                        <div class="dropdown">
+                                            <button class="btn w-100 text-white d-flex flex-row justify-content-between" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Intellicons<i class="fa-solid fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu w-100">
+                                                <li><button class="dropdown-item" type="button">Intellicon Barcelona 2024</button></li>
+                                                <li><button class="dropdown-item" type="button">Intellicon Singapore 2025</button></li>
+                                                <li><button class="dropdown-item" type="button">Intellicon New Orleans 2025</button></li>
+                                                <li><button class="dropdown-item" type="button">SCIP Awards</button></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <div class="dropdown">
+                                            <button class="btn w-100 text-white d-flex flex-row justify-content-between" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Mambership<i class="fa-solid fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu w-100">
+                                                <li><button class="dropdown-item" type="button">Get Involved</button></li>
+                                                <li><button class="dropdown-item" type="button">Team Membership</button></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <div class="dropdown">
+                                            <button class="btn w-100 text-white d-flex flex-row justify-content-between" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Smart Center<i class="fa-solid fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu w-100">
+                                                <li><button class="dropdown-item" type="button">Resources</button></li>
+                                                <li><button class="dropdown-item" type="button">Training</button></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Speed</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Job Board</a>
+                                    </li>
+                                </ul>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
             </nav>
 
             <!-- scroller section -->
@@ -167,12 +274,14 @@
             </div>
 
             <!-- become a member button -->
-            <!-- <button class="roboto d-flex gap-3 align-items-center">
-                <p class="m-0">Become a Member</p>
-                <div class="member">
-                    <i class="fa-solid fa-arrow-right p-3 ps-4"></i>
-                </div>
-            </button> -->
+            <!-- <div class="become-member">
+                <button class="roboto d-flex gap-3 align-items-center">
+                    <p class="m-0">Become a Member</p>
+                    <div class="member">
+                        <i class="fa-solid fa-arrow-right p-3 ps-4"></i>
+                    </div>
+                </button>
+            </div> -->
 
             <!-- Strategic Consortium of Intelligence Professionals (SCIP) section -->
             <section class="home">
