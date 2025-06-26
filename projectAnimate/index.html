@@ -32,11 +32,12 @@
   <body>
     <!-- navbar -->
     <nav
+      id="navBar"
       class="navbar navbar-expand-lg position-fixed w-100 bg-transparent p-0"
     >
-      <div class="blur w-100 h-100 position-absolute"></div>
-      <div class="container collapse nav_container m-0" id="#navbarNav">
-        <div class="nav-brand px-3">
+      <div class="blur w-100 start-0 h-100 position-absolute"></div>
+      <div class="container nav_container m-0">
+        <div class="nav-brand px-1">
           <img
             src="./navImg/SCIP logo - White 1.png"
             class="img-fluid"
@@ -44,211 +45,337 @@
           />
         </div>
 
+        <!-- Mobile Toggler -->
         <button
-          class="navbar-toggler"
+          class="navbar-toggler d-lg-none border-none"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#mobileSidebar"
+          aria-controls="mobileSidebar"
         >
-          <span class="navbar-toggler-icon"></span>
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <i class="fs-4 ri-menu-line"></i>
         </button>
-        <div class="container">
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav first_nav ms-auto fw-400 gap-4">
-              <li class="nav-item text">
-                <a href="#about" class="nav-link text-white">About</a>
-              </li>
-              <li class="nav-item">
-                <a href="#contact" class="nav-link text-white">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a href="#joinNow" class="nav-link text-white">Join Now</a>
-              </li>
-              <li class="nav-item">
-                <a href="#signIn" class="nav-link text-success fw-bold"
-                  >Sign In</a
-                >
-              </li>
-              <li class="nav-item">
-                <button class="nav-link text-white">
-                  <i class="ri-search-line"></i>
-                </button>
-              </li>
-            </ul>
-          </div>
-          <div class="container p-0">
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto fw-400 gap-3 d-flex">
-                <li class="nav-item">
-                  <a href="#affiliates" class="nav-link text-white"
-                    >Affiliates</a
-                  >
-                </li>
-                <div class="dropdown dropdown-hover position-relative">
-                  <button class="btn btn-secondary border-0">
-                    <span class="dropdown-name">Intelligence Tools </span>
-                    <span class="arrow"
-                      ><i class="ri-arrow-down-s-line"></i
-                    ></span>
-                  </button>
 
-                  <ul
-                    class="dropdown-menu dropdown-one p-3"
-                    style="min-width: 500px"
-                  >
-                    <div class="row">
-                      <div class="col-6 gap-1 d-flex flex-column">
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Foundational Resources (CI Basics)</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >CI Technology & Tools</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Communicationa & Stakeholder Management
-                            Resources</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Future, Impact, Metrics & ROI</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Strategy & Analytics</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Collection & Resources</a
-                          >
-                        </li>
-                      </div>
-                      <div class="col-6 h-100 d-flex flex-column gap-2">
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Advanced Resources</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">Benchmarks</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Ethics & Integrity</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Competitive Enablement</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Leadership & Careers Development Resources</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">Templates</a>
-                        </li>
-                      </div>
-                    </div>
-                  </ul>
-                </div>
-
-                <li class="nav-item">
-                  <a href="#icoe" class="nav-link text-white">ICoE</a>
-                </li>
-
-                <div class="dropdown dropdown-hover d-inline position-relative">
-                  <button class="btn btn-secondary border-0">
-                    <span class="dropdown-name">IntelliCons</span>
-                    <span class="arrow"
-                      ><i class="ri-arrow-down-s-line"></i
-                    ></span>
-                  </button>
-
-                  <ul class="dropdown-menu p-2" style="min-width: 250px">
+        <!-- Desktop Navbar -->
+        <div
+          class="collapse navbar-collapse d-none d-lg-flex flex-column"
+          id="navbarNav"
+        >
+          <ul
+            class="navbar-nav first_nav justify-content-lg-end w-100 fw-400 gap-5"
+          >
+            <li class="nav-item text">
+              <a href="#about" class="nav-link text-white">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link text-white">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="#joinNow" class="nav-link text-white">Join Now</a>
+            </li>
+            <li class="nav-item">
+              <a href="#signIn" class="nav-link text-success fw-bold"
+                >Sign In</a
+              >
+            </li>
+            <li class="nav-item">
+              <button class="nav-link text-white bg-transparent border-0">
+                <i class="ri-search-line"></i>
+              </button>
+            </li>
+          </ul>
+          <ul
+            class="navbar-nav justify-content-end w-100 fw-400 gap-xl-4 gap-lg-3 gap-md-2 d-flex"
+          >
+            <li class="nav-item">
+              <a href="#affiliates" class="nav-link text-white">Affiliates</a>
+            </li>
+            <div class="dropdown dropdown-hover position-relative">
+              <button class="btn btn-secondary border-0">
+                <span class="dropdown-name">Intelligence Tools </span>
+                <span class="arrow"><i class="ri-arrow-down-s-line"></i></span>
+              </button>
+              <ul
+                class="dropdown-menu dropdown-one p-3"
+                style="min-width: 500px"
+              >
+                <div class="row">
+                  <div class="col-6 gap-1 d-flex flex-column">
                     <li>
                       <a class="dropdown-item" href="#"
-                        >IntelliCon Barcelona 2024</a
+                        >Foundational Resources (CI Basics)</a
                       >
                     </li>
                     <li>
                       <a class="dropdown-item" href="#"
-                        >IntelliCon Singapore 2025</a
+                        >CI Technology & Tools</a
                       >
                     </li>
                     <li>
                       <a class="dropdown-item" href="#"
-                        >IntelliCon New Orleans 2025</a
+                        >Communicationa & Stakeholder Management Resources</a
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">SCIP Awards</a>
+                      <a class="dropdown-item" href="#"
+                        >Future, Impact, Metrics & ROI</a
+                      >
                     </li>
-                  </ul>
+                    <li>
+                      <a class="dropdown-item" href="#">Strategy & Analytics</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Collection & Resources</a
+                      >
+                    </li>
+                  </div>
+                  <div class="col-6 d-flex flex-column gap-2">
+                    <li>
+                      <a class="dropdown-item" href="#">Advanced Resources</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Benchmarks</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Ethics & Integrity</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Competitive Enablement</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Leadership & Careers Development Resources</a
+                      >
+                    </li>
+                    <li><a class="dropdown-item" href="#">Templates</a></li>
+                  </div>
                 </div>
-                <div class="dropdown dropdown-hover d-inline position-relative">
-                  <button class="btn btn-secondary border-0">
-                    <span class="dropdown-name">Membership</span>
-                    <span class="arrow"
-                      ><i class="ri-arrow-down-s-line"></i
-                    ></span>
-                  </button>
-
-                  <ul class="dropdown-menu p-2" style="min-width: 250px">
-                    <li>
-                      <a class="dropdown-item" href="#">Get Involved</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Team Membership</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="dropdown dropdown-hover d-inline position-relative">
-                  <button class="btn btn-secondary border-0">
-                    <span class="dropdown-name">SMART Center</span>
-                    <span class="arrow"
-                      ><i class="ri-arrow-down-s-line"></i
-                    ></span>
-                  </button>
-
-                  <ul class="dropdown-menu p-2" style="min-width: 250px">
-                    <li>
-                      <a class="dropdown-item" href="#">Resources</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Training</a>
-                    </li>
-                  </ul>
-                </div>
-                <li class="nav-item">
-                  <a href="#speed" class="nav-link text-white">SPEED</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#jobboard" class="nav-link text-white">Job Board</a>
-                </li>
               </ul>
             </div>
+            <li class="nav-item">
+              <a href="#icoe" class="nav-link text-white">ICoE</a>
+            </li>
+            <div class="dropdown dropdown-hover position-relative">
+              <button class="btn btn-secondary border-0">
+                <span class="dropdown-name">IntelliCons</span>
+                <span class="arrow"><i class="ri-arrow-down-s-line"></i></span>
+              </button>
+              <ul class="dropdown-menu p-2" style="min-width: 250px">
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >IntelliCon Barcelona 2024</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >IntelliCon Singapore 2025</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >IntelliCon New Orleans 2025</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">SCIP Awards</a></li>
+              </ul>
+            </div>
+            <div class="dropdown dropdown-hover position-relative">
+              <button class="btn btn-secondary border-0">
+                <span class="dropdown-name">Membership</span>
+                <span class="arrow"><i class="ri-arrow-down-s-line"></i></span>
+              </button>
+              <ul class="dropdown-menu p-2" style="min-width: 250px">
+                <li><a class="dropdown-item" href="#">Get Involved</a></li>
+                <li><a class="dropdown-item" href="#">Team Membership</a></li>
+              </ul>
+            </div>
+            <div class="dropdown dropdown-hover position-relative">
+              <button class="btn btn-secondary border-0">
+                <span class="dropdown-name text-nowrap">SMART Center</span>
+                <span class="arrow"><i class="ri-arrow-down-s-line"></i></span>
+              </button>
+              <ul class="dropdown-menu p-2" style="min-width: 250px">
+                <li><a class="dropdown-item" href="#">Resources</a></li>
+                <li><a class="dropdown-item" href="#">Training</a></li>
+              </ul>
+            </div>
+            <li class="nav-item">
+              <a href="#speed" class="nav-link text-white">SPEED</a>
+            </li>
+            <li class="nav-item">
+              <a href="#jobboard" class="nav-link text-white text-center"
+                >Job Board</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Mobile Offcanvas Sidebar -->
+      <div
+        class="offcanvas w-100 offcanvas-start text-white d-lg-none"
+        tabindex="-1"
+        id="mobileSidebar"
+        aria-labelledby="mobileSidebarLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="mobileSidebarLabel">Menu</h5>
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column gap-4">
+          <!-- First group container -->
+          <div
+            class="container d-flex flex-row justify-content-between flex-wrap gap-3"
+          >
+            <a href="#about" class="nav-link text-white">About</a>
+            <a href="#contact" class="nav-link text-white">Contact</a>
+            <a href="#joinNow" class="nav-link text-white">Join Now</a>
+            <a href="#signIn" class="nav-link text-success fw-bold">Sign In</a>
+            <div class="d-flex bg-white search rounded overflow-hidden justify-content-between ">
+              <input type="text" placeholder="Search..." class="border-0 rounded p-2">
+              <button
+                class="nav-link searchBtn  text-white border-0 p-2 bg-black text-start"
+              >
+                <i class="text-white ri-search-line"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Second group container -->
+          <div class="container d-flex flex-column gap-3">
+            <a href="#affiliates" class="nav-link text-white">Affiliates</a>
+
+            <button
+              class="btn text-white p-0 border-0 text-start"
+              data-bs-toggle="collapse"
+              data-bs-target="#intelligenceMobile"
+            >
+             <span class="btn_text">
+               Intelligence Tools
+             </span> <i class="ri-arrow-down-s-line float-end"></i>
+            </button>
+            <div class="collapse" id="intelligenceMobile">
+              <ul class="list-unstyled p-2" id="list-sidebar">
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Foundational Resources (CI Basics)</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">CI Technology & Tools</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Communicationa & Stakeholder Management Resources</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Future, Impact, Metrics & ROI</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Strategy & Analytics</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Collection & Resources</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Advanced Resources</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Benchmarks</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Ethics & Integrity</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Competitive Enablement</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Leadership & Careers Development Resources</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">Templates</a></li>
+              </ul>
+            </div>
+
+            <a href="#icoe" class="nav-link text-white">ICoE</a>
+
+            <button
+              class="btn text-white p-0 border-0 text-start"
+              data-bs-toggle="collapse"
+              data-bs-target="#intelliMobile"
+            >
+              <span class="btn_text">IntelliCons </span><i class="ri-arrow-down-s-line float-end"></i>
+            </button>
+            <div class="collapse" id="intelliMobile">
+              <ul class="list-unstyled p-2" id="list-sidebar">
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >IntelliCon Barcelona 2024</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >IntelliCon Singapore 2025</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >IntelliCon New Orleans 2025</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">SCIP Awards</a></li>
+              </ul>
+            </div>
+
+            <button
+              class="btn text-white p-0 border-0  text-start"
+              data-bs-toggle="collapse"
+              data-bs-target="#memberMobile"
+            >
+             <span class="btn_text"> Membership</span> <i class="ri-arrow-down-s-line float-end"></i>
+            </button>
+            <div class="collapse" id="memberMobile">
+              <ul class="list-unstyled p-2" id="list-sidebar">
+                <li><a class="dropdown-item" href="#">Get Involved</a></li>
+                <li><a class="dropdown-item" href="#">Team Membership</a></li>
+              </ul>
+            </div>
+
+            <button
+              class="btn text-white p-0 border-0 text-start"
+              data-bs-toggle="collapse"
+              data-bs-target="#smartMobile"
+            >
+             <span class="btn_text"> SMART Center</span> <i class="ri-arrow-down-s-line float-end"></i>
+            </button>
+            <div class="collapse" id="smartMobile">
+              <ul class="list-unstyled p-2" id="list-sidebar">
+                <li><a class="dropdown-item" href="#">Resources</a></li>
+                <li><a class="dropdown-item" href="#">Training</a></li>
+              </ul>
+            </div>
+
+            <a href="#speed" class="nav-link text-white">SPEED</a>
+            <a href="#jobboard" class="nav-link text-white">Job Board</a>
           </div>
         </div>
       </div>
     </nav>
+
     <!-- hero section -->
     <section
       class="hero_container d-flex flex-column pb-4 gap-2 align-items-center overflow-hidden"
     >
-      <div class="scroll_banner d-flex align-items-center gap-5">
+      <div class="scroll_banner d-flex align-items-center">
         <button class="text-black rounded-5 border-0 px-3 py-1">
           SPOTLIGHT
         </button>
