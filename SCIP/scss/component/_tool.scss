@@ -17,8 +17,6 @@
       z-index: 3;
       position: relative;
     }
-    .toolDetail {
-    }
     img {
       max-width: 100%;
     }
@@ -33,9 +31,10 @@
       // top: 0;
       // left: 0;
       width: 100%;
-      min-height: 100vh;
+      // min-height: 100vh;
       z-index: 0;
       position: relative;
+      padding: 10px;
       &::after {
         content: "";
         position: absolute;
@@ -162,7 +161,20 @@
         font-size: 14px !important;
       }
       .content {
-        font-size: 14px !important;
+        font-size: 12px !important;
+      }
+    }
+    .cardList {
+      .card {
+        min-height: 250px;
+        .card-body {
+          .card-title {
+            font-size: 20px !important;
+          }
+          .card-text {
+            font-size: 12px !important;
+          }
+        }
       }
     }
   }

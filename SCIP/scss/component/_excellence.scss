@@ -11,6 +11,10 @@
     .excellenceContent {
       justify-content: center;
       flex-wrap: wrap;
+      .excellenceImg {
+        object-fit: cover;
+        max-width: 100%;
+      }
       .excellenceDetail {
         display: flex;
         flex-direction: column;

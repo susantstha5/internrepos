@@ -2,7 +2,7 @@
   background: rgba(12, 12, 13, 0.1);
   backdrop-filter: blur(15px);
   position: absolute;
-  min-height: 120px;
+  min-height: 115px;
   width: 100%;
   z-index: -1;
   padding: 10px;
@@ -19,11 +19,7 @@
 }
 .navHeader {
   padding-inline: 80px;
-  // padding-block: 10px;
-  .mobileMenu {
-    display: none;
-    color: $grey-white;
-  }
+  padding-block: 8px;
 }
 .nav-1 {
   ul li .nav-link:hover {
@@ -120,10 +116,69 @@
   display: block;
 }
 
+.mobileMenu {
+  display: none;
+  color: $grey-white;
+  .offcanvas {
+    background: rgba(12, 12, 13, 0.5);
+    backdrop-filter: blur(20px);
+    .btn-close {
+      // color: $grey-white !important;
+      // --bs-btn-close-color: #f5f5f5;
+      filter: invert(1);
+      z-index: 3;
+    }
+    .mobileNav {
+      border-top: 3px solid $action-color;
+      padding: 10px;
+      .toolHovermb,
+      .intelliHovermb,
+      .memberHovermb,
+      .smartHovermb {
+        display: none;
+      }
+      .hoverListmb a:hover,
+      .intelliHovermb a:hover,
+      .memberHovermb a:hover,
+      .smartHovermb a:hover {
+        background: $grey-white;
+        color: $black !important;
+        transition: all 0.5s linear;
+      }
+      .hoverListmb a,
+      .intelliHovermb a,
+      .memberHovermb a,
+      .smartHovermb a {
+        border-radius: 10px;
+      }
+      .hoverListmb a:hover .listTitle,
+      .intelliHovermb a:hover .listTitle,
+      .memberHovermb a:hover .listTitle,
+      .smartHovermb a:hover .listTitle {
+        transform: translateX(10px) scaleX(1.1);
+        transition: all 0.5s linear;
+      }
+      ul li:hover .smartHovermb,
+      ul li:hover .memberHovermb,
+      ul li:hover .intelliHovermb,
+      ul li:hover .toolHovermb {
+        display: block;
+        z-index: 999;
+      }
+      .intelliHovermb .barcaHovermb {
+        display: none;
+        &:hover .intelliHovermb .barcamb {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
 // tab scss
 @media screen and (max-width: 900px) {
   .blur {
-    min-height: 80px;
+    min-height: 70px;
   }
   .navBar {
     min-height: 60px;
@@ -146,15 +201,15 @@
 
 // mobile scss
 @media screen and (max-width: 500px) {
-  .blur {
-    min-height: 80px;
-  }
+  // .blur {
+  //   min-height: 80px;
+  // }
   .navBar {
     min-height: 60px;
     // padding: 10px;
   }
   .navHeader {
-    // padding: 10px;
+    padding: 15px;
     .logo a img {
       height: 50px;
       width: auto;

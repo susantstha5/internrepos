@@ -14,9 +14,9 @@
 
 <body>
     <!-- global nav -->
-    <nav class="navBar d-flex align-items-center ">
+    <nav class="navBar ">
         <div class="blur"></div>
-        <div class="navHeader ">
+        <div class="navHeader">
             <div class="d-flex align-items-center justify-content-between">
                 <div class="logo">
                     <a class="navbar-brand p-0" href="#">
@@ -24,7 +24,223 @@
                     </a>
                 </div>
                 <div class="mobileMenu">
-                    <i class="fa-solid fa-bars"></i>
+                    <a class="" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                        aria-controls="offcanvasExample">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasExampleLabel"><a class="navbar-brand p-0" href="#">
+                                    <img src="./image/SCIP logo - White 1.png" alt="SCIP-Logo">
+                                </a></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div>
+                                <div class="form-floating ">
+                                    <input type="password" class="form-control" id="floatingPassword"
+                                        placeholder="Password">
+                                    <label for="floatingPassword "
+                                        class="text-terinary w-100 d-flex gap-5 justify-content-between">
+                                        <div>Search</div>
+                                        <div><i class="fa-solid fa-magnifying-glass text-terinary"></i></div>
+                                    </label>
+                                </div>
+                                <div>
+                                    <div class="nav-1 py-4">
+                                        <ul class="nav d-flex flex-column  ">
+                                            <li class="nav-item ">
+                                                <a class="nav-link text-secondary" href="#">About</a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a class="nav-link text-secondary" href="#">Contact Us</a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a class="nav-link text-secondary" href="#">Join Now</a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a class="nav-link text-success" href="#">Sign In</a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="mobileNav">
+                                    <ul class="nav d-flex flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link  text-secondary" href="#">Affliliates</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link toolmb d-flex align-items-center gap-2  text-secondary"
+                                                href="#">Intelligence Tools
+                                                <i class="fa-solid fa-angle-down arrowDown"></i>
+                                            </a>
+                                            <div>
+                                                <div class="toolHovermb bg-secondary p-2">
+                                                    <div class="row g-2">
+                                                        <div class="col-md-6">
+                                                            <div
+                                                                class="hoverListmb  d-flex flex-column justify-content-center">
+                                                                <a href="#" class="text-secondary p-3">
+                                                                    <div class="listTitle"> Foundational Resources (CI
+                                                                        Basics)
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#" class="text-secondary p-3">
+                                                                    <div class="listTitle">CI Technology & Tools</div>
+                                                                </a>
+                                                                <a href="#" class="text-secondary p-3">
+                                                                    <div class="listTitle">Communications & Stakeholder
+                                                                        Management Resources</div>
+                                                                </a>
+                                                                <a href="#" class="text-secondary p-3">
+                                                                    <div class="listTitle">Future, Impact, Metrics & ROI
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#" class="text-secondary p-3">
+                                                                    <div class="listTitle">
+                                                                        Strategy & Analytics</div>
+                                                                </a>
+                                                                <a href="#" class="text-secondary p-3">
+                                                                    <div class="listTitle">Collection & Research</div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div
+                                                                class="hoverList d-flex flex-column justify-content-center">
+                                                                <a href="#" class="text-secondary p-3">
+                                                                    <div class="listTitle">Advanced Resources</div>
+                                                                </a>
+                                                                <a href="#" class="text-secondary p-3">
+                                                                    <div class="listTitle">Benchmarks</div>
+                                                                </a>
+                                                                <a href="#" class="text-secondary p-3">
+                                                                    <div class="listTitle"> Ethics & Integrity</div>
+                                                                </a>
+                                                                <a href="#" class="text-secondary p-3">
+                                                                    <div class="listTitle">Competitive Enablement</div>
+                                                                </a>
+                                                                <a href="#" class="text-secondary p-3">
+                                                                    <div class="listTitle">Leadership & Careers
+                                                                        Development
+                                                                        Resources</div>
+                                                                </a>
+                                                                <a href="#" class="text-secondary p-3">
+                                                                    <div class="listTitle">Templates</div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link  text-secondary" href="#">ICoE</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link  intellimb  text-secondary d-flex align-items-center gap-2"
+                                                href="#">IntelliCons
+                                                <i class="fa-solid fa-angle-down arrowDown"></i>
+                                                <!-- <i class="fa-solid fa-angle-up arrowUp"></i> -->
+                                            </a>
+                                            <div class="intelliHovermb bg-secondary p-2 ">
+                                                <a href="#"
+                                                    class="barcamb d-flex gap-5 align-items-center justify-content-between text-secondary p-3">
+                                                    <div class="listTitle ">IntelliCon Barcelona 2024</div>
+                                                    <i class="fa-solid fa-angle-right"></i>
+                                                </a>
+                                                <div class="barcaHovermb bg-secondary p-2">
+                                                    <a href="#">
+                                                        <div>Call for Proposals</div>
+                                                    </a>
+                                                    <a href="#">
+                                                        <div>Conference Home</div>
+                                                    </a>
+                                                    <a href="#">
+                                                        <div>Registration</div>
+                                                    </a>
+                                                    <a href="#">
+                                                        <div>Program</div>
+                                                    </a>
+                                                    <a href="#">
+                                                        <div>Speakers</div>
+                                                    </a>
+                                                    <a href="#">
+                                                        <div>Sponsorship Opportunities</div>
+                                                    </a>
+                                                    <a href="#">
+                                                        <div>Hotel and Travel</div>
+                                                    </a>
+                                                </div>
+                                                <a href="#"
+                                                    class="d-flex gap-5 align-items-center justify-content-between text-secondary p-3">
+                                                    <div class="listTitle">IntelliCon Singapore 2025</div>
+                                                    <i class="fa-solid fa-angle-right"></i>
+                                                </a>
+                                                <a href="#"
+                                                    class=" d-flex gap-5 align-items-center justify-content-between text-secondary p-3">
+                                                    <div class="listTitle">IntelliCon New Orleans 2025</div>
+                                                    <i class="fa-solid fa-angle-right"></i>
+                                                </a>
+                                                <a href="#" class="d-flex text-secondary p-3">
+                                                    <div class="listTitle">SCIP Awards</div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link membermb text-secondary d-flex align-items-center gap-2"
+                                                href="#">Membership
+                                                <i class="fa-solid fa-angle-down arrowDown"></i>
+                                                <!-- <i class="fa-solid fa-angle-up arrowUp"></i> -->
+                                            </a>
+                                            <div class="memberHovermb  bg-secondary p-2">
+                                                <div class="hoverList d-flex flex-column">
+                                                    <a href="#" class=" text-secondary p-3">
+                                                        <div class="listTitle">Get Involved</div>
+                                                    </a>
+                                                    <a href="#" div class=" text-secondary p-3">
+                                                        <div class="listTitle">Team Membership</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link smartmb text-secondary d-flex align-items-center gap-2"
+                                                href="#">SMART
+                                                Center
+                                                <i class="fa-solid fa-angle-down arrowDown"></i>
+                                                <!-- <i class="fa-solid fa-angle-up arrowUp"></i> -->
+                                            </a>
+                                            <div class="smartHovermb bg-secondary p-2">
+                                                <a href="#"
+                                                    class="resourcemb d-flex gap-5 align-items-center justify-content-between text-secondary p-3">
+                                                    <div class="listTitle">Resources</div>
+                                                    <i class="fa-solid fa-angle-right"></i>
+                                                </a>
+                                                <a href="#"
+                                                    class="training d-flex gap-5 align-items-center justify-content-between text-secondary p-3">
+                                                    <div class="listTitle">Training</div>
+                                                    <i class="fa-solid fa-angle-right"></i>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link  text-secondary" href="#">SPEED</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-secondary" href="#">Job Board</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="navList">
                     <div class="nav-1 d-flex align-items-center justify-content-end">
@@ -286,12 +502,12 @@
                 </div>
             </div>
             <!-- member Button -->
-            <!-- <div class="memberButton btn-primary">
-                <button type="button" class="border-0 d-flex gap-3 align-items-center justify-content-center ">
+            <div class="memberButton btn-primary">
+                <button type="button" class="border-0 d-flex gap-2 align-items-center justify-content-center ">
                     <div class="btnName text-terinary">Become a Member</div>
                     <i class="fa-solid fa-arrow-right text-terinary arrow p-2"></i>
                 </button>
-            </div> -->
+            </div>
         </section>
     </div>
 
@@ -706,7 +922,7 @@
             <div class="affiliateCard">
                 <div class="d-flex justify-content-center">
                     <div class="row m-0 p-0 g-4 justify-content-center ">
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                             <div class="card cardDetail d-flex align-items-center justify-content-center">
                                 <img src="./image/Affliates1.png" class="cardImg" alt=" affiliates card picture">
                                 <div class="cardTitle text-center ">Association Internationale
@@ -715,7 +931,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                             <div class=" card cardDetail d-flex align-items-center justify-content-center">
                                 <img src="./image/Affliates2.png" class="cardImg" alt=" affiliates card picture">
                                 <div class="cardTitle text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -723,7 +939,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                             <div class=" card cardDetail d-flex align-items-center justify-content-center">
                                 <img src="./image/Affliates3.png" class="cardImg" alt=" affiliates card picture">
                                 <div class="cardTitle text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -731,7 +947,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                             <div class=" card cardDetail d-flex align-items-center justify-content-center">
                                 <img src="./image/affilate4.png" class="cardImg" alt=" affiliates card picture">
                                 <div class="cardTitle text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -739,7 +955,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                             <div class=" card cardDetail d-flex align-items-center justify-content-center">
                                 <img src="./image/afifliate5.png" class="cardImg" alt=" affiliates card picture">
                                 <div class="cardTitle text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -747,7 +963,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                             <div class=" card cardDetail d-flex align-items-center justify-content-center">
                                 <img src="./image/afifliate6.png" class="cardImg" alt=" affiliates card picture">
                                 <div class="cardTitle text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -755,7 +971,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                             <div class=" card cardDetail d-flex align-items-center justify-content-center">
                                 <img src="./image/afifliate7.png" class="cardImg" alt=" affiliates card picture">
                                 <div class="cardTitle text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -763,7 +979,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                             <div class=" card cardDetail d-flex align-items-center justify-content-center">
                                 <img src="./image/afifliate8.png" class="cardImg" alt=" affiliates card picture">
                                 <div class="cardTitle text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -771,7 +987,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                             <div class=" card cardDetail d-flex align-items-center justify-content-center">
                                 <img src="./image/afifliate9.png" class="cardImg" alt=" affiliates card picture">
                                 <div class="cardTitle text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -779,7 +995,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                             <div class=" card cardDetail d-flex align-items-center justify-content-center">
                                 <img src="./image/afifliate10.png" class="cardImg" alt=" affiliates card picture">
                                 <div class="cardTitle text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -787,7 +1003,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                             <div class=" card cardDetail d-flex align-items-center justify-content-center">
                                 <img src="./image/afifliate11.png" class="cardImg" alt=" affiliates card picture">
                                 <div class="cardTitle text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -795,7 +1011,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                             <div class=" card cardDetail d-flex align-items-center justify-content-center">
                                 <img src="./image/afifliate12.png" class="cardImg" alt=" affiliates card picture">
                                 <div class="cardTitle text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -803,7 +1019,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                             <div class=" card cardDetail d-flex align-items-center justify-content-center">
                                 <img src="./image/Affliates13.png" class="cardImg" alt=" affiliates card picture">
                                 <div class="cardTitle ">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -1377,7 +1593,7 @@
     <section class="excellence py-5">
         <div class="container">
             <div class="excellenceContent d-flex gap-5 align-items-center ">
-                <img src="./image/IACET.png" alt="iacet img">
+                <img src="./image/IACET.png" alt="iacet img" class="excellenceImg">
                 <div class="excellenceDetail">
                     <h2 class="title text-primary  text-uppercase">Recognized for Excellence</h2>
                     <p class="content text-secondary fs-5 fw-normal">SCIP has been awarded the prestigious

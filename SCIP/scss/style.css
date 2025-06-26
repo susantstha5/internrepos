@@ -3,7 +3,7 @@
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
   position: absolute;
-  min-height: 120px;
+  min-height: 115px;
   width: 100%;
   z-index: -1;
   padding: 10px;
@@ -19,10 +19,7 @@
 
 .navHeader {
   padding-inline: 80px;
-}
-.navHeader .mobileMenu {
-  display: none;
-  color: #f5f5f5;
+  padding-block: 8px;
 }
 
 .nav-1 ul li .nav-link:hover {
@@ -125,9 +122,67 @@
   display: block;
 }
 
+.mobileMenu {
+  display: none;
+  color: #f5f5f5;
+}
+.mobileMenu .offcanvas {
+  background: rgba(12, 12, 13, 0.5);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+.mobileMenu .offcanvas .btn-close {
+  filter: invert(1);
+  z-index: 3;
+}
+.mobileMenu .offcanvas .mobileNav {
+  border-top: 3px solid #42e26f;
+  padding: 10px;
+}
+.mobileMenu .offcanvas .mobileNav .toolHovermb,
+.mobileMenu .offcanvas .mobileNav .intelliHovermb,
+.mobileMenu .offcanvas .mobileNav .memberHovermb,
+.mobileMenu .offcanvas .mobileNav .smartHovermb {
+  display: none;
+}
+.mobileMenu .offcanvas .mobileNav .hoverListmb a:hover,
+.mobileMenu .offcanvas .mobileNav .intelliHovermb a:hover,
+.mobileMenu .offcanvas .mobileNav .memberHovermb a:hover,
+.mobileMenu .offcanvas .mobileNav .smartHovermb a:hover {
+  background: #f5f5f5;
+  color: #0c0c0d !important;
+  transition: all 0.5s linear;
+}
+.mobileMenu .offcanvas .mobileNav .hoverListmb a,
+.mobileMenu .offcanvas .mobileNav .intelliHovermb a,
+.mobileMenu .offcanvas .mobileNav .memberHovermb a,
+.mobileMenu .offcanvas .mobileNav .smartHovermb a {
+  border-radius: 10px;
+}
+.mobileMenu .offcanvas .mobileNav .hoverListmb a:hover .listTitle,
+.mobileMenu .offcanvas .mobileNav .intelliHovermb a:hover .listTitle,
+.mobileMenu .offcanvas .mobileNav .memberHovermb a:hover .listTitle,
+.mobileMenu .offcanvas .mobileNav .smartHovermb a:hover .listTitle {
+  transform: translateX(10px) scaleX(1.1);
+  transition: all 0.5s linear;
+}
+.mobileMenu .offcanvas .mobileNav ul li:hover .smartHovermb,
+.mobileMenu .offcanvas .mobileNav ul li:hover .memberHovermb,
+.mobileMenu .offcanvas .mobileNav ul li:hover .intelliHovermb,
+.mobileMenu .offcanvas .mobileNav ul li:hover .toolHovermb {
+  display: block;
+  z-index: 999;
+}
+.mobileMenu .offcanvas .mobileNav .intelliHovermb .barcaHovermb {
+  display: none;
+}
+.mobileMenu .offcanvas .mobileNav .intelliHovermb .barcaHovermb:hover .intelliHovermb .barcamb {
+  display: block;
+}
+
 @media screen and (max-width: 900px) {
   .blur {
-    min-height: 80px;
+    min-height: 70px;
   }
   .navBar {
     min-height: 60px;
@@ -144,11 +199,11 @@
   }
 }
 @media screen and (max-width: 500px) {
-  .blur {
-    min-height: 80px;
-  }
   .navBar {
     min-height: 60px;
+  }
+  .navHeader {
+    padding: 15px;
   }
   .navHeader .logo a img {
     height: 50px;
@@ -739,7 +794,17 @@
     font-size: 12px !important;
   }
   .affiliate .cardTitle {
-    font-size: 12px;
+    font-size: 10px;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .affiliate .content {
+    font-size: 12px !important;
+  }
+  .affiliate .cardTitle {
+    font-size: 10px;
+    padding: 5px;
   }
 }
 .speed {
@@ -998,6 +1063,11 @@
     justify-content: center;
     flex-wrap: wrap;
   }
+  .excellence .excellenceContent .excellenceImg {
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-width: 100%;
+  }
   .excellence .excellenceContent .excellenceDetail {
     display: flex;
     flex-direction: column;
@@ -1050,9 +1120,9 @@
 }
 .scipTool .headerContent .bgVideo {
   width: 100%;
-  min-height: 100vh;
   z-index: 0;
   position: relative;
+  padding: 10px;
 }
 .scipTool .headerContent .bgVideo::after {
   content: "";
@@ -1147,7 +1217,16 @@
     font-size: 14px !important;
   }
   .scipTool .headerContent .content {
-    font-size: 14px !important;
+    font-size: 12px !important;
+  }
+  .scipTool .cardList .card {
+    min-height: 250px;
+  }
+  .scipTool .cardList .card .card-body .card-title {
+    font-size: 20px !important;
+  }
+  .scipTool .cardList .card .card-body .card-text {
+    font-size: 12px !important;
   }
 }
 .signUp {
@@ -1168,6 +1247,9 @@
   }
 }
 @media screen and (max-width: 500px) {
+  .signUp {
+    padding-top: 80px !important;
+  }
   .signUp .content {
     font-size: 14px !important;
   }
@@ -1177,6 +1259,7 @@
 }
 .footer {
   background: rgb(12, 12, 13);
+  border-top: 3px solid rgb(66, 226, 111);
 }
 
 .scipDetail {
