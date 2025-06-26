@@ -1,0 +1,59 @@
+.affiliate {
+  background: rgba(12, 12, 13, 1);
+}
+.affiliateCard {
+  .cardDetail {
+    max-width: 100%;
+    min-height: 100px;
+    background: $grey-white;
+    border-radius: 10px;
+    position: relative;
+    // display: flex;
+    // align-items: center;
+  }
+}
+.cardImg {
+  transform: scale(1);
+  transition: all 0.5s linear;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.cardTitle {
+  font-size: 14px;
+  font-weight: 400;
+  position: absolute;
+  padding: 10px;
+  // top: 50%;
+  // left: 50%;
+  transform: scale(0);
+  transition: all 0.8s linear;
+  color: rgba(12, 12, 13, 0.6);
+  opacity: 0;
+  width: 176px;
+}
+.cardDetail:hover {
+  background: $grey-white;
+}
+.cardDetail:hover .cardImg {
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.8s linear;
+  transform-origin: center;
+}
+.cardDetail:hover .cardTitle {
+  opacity: 1;
+  height: auto;
+  transform: scale(1);
+}
+
+@media screen and (max-width: 900px) {
+  .affiliate {
+    .content {
+      font-size: 12px !important;
+    }
+    .cardTitle {
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.signUp {
+  background: url("/image//1118394_4k_Mystery_3840x2160\ 2.png"),
+    rgba(12, 12, 13, 1);
+  padding-top: 150px;
+  min-height: 736px;
+}
+
+@media screen and (max-width: 900px) {
+  .signUp {
+    min-height: 636px;
+    .content {
+      font-size: 18px !important;
+    }
+    .moto {
+      font-size: 22px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .signUp {
+    .content {
+      font-size: 14px !important;
+    }
+    .moto {
+      font-size: 16px !important;
+    }
+  }
+}

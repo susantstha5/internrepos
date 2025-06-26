@@ -1,0 +1,144 @@
+.speed {
+  background: linear-gradient(
+      to bottom,
+      rgba(12, 12, 13, 1),
+      rgba(0, 0, 0, 0.4)
+    ),
+    linear-gradient(to top, rgba(12, 12, 13, 1), rgba(0, 0, 0, 0.4)),
+    url("/image/SPEED\ Video\ bg.png");
+  .area {
+    font-size: 24px;
+  }
+}
+.speedList {
+  font-size: 24px;
+  padding-block: 24px;
+  border-block: 1px solid rgba(245, 245, 245, 0.8);
+  margin-left: 0;
+  // position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  // min-height: 86px;
+  .speedImg {
+    opacity: 0;
+    height: 0;
+    transform: scale(0);
+    overflow: hidden;
+    white-space: nowrap;
+    // transform: translate(-50%, -50%);
+    transition: all 0.8s linear;
+    transform-origin: left center;
+    object-fit: cover;
+  }
+
+  .speedDescription {
+    transform: translateX(10px);
+    transition: all 0.5s ease;
+    .topic {
+      transform: scale(1);
+      transition: all 0.7s linear 0.7s;
+    }
+    .speedContent {
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+      transition: all 0.6s linear 0.5s;
+      font-size: 16px;
+      color: $grey !important;
+    }
+  }
+}
+
+.speedList:hover {
+  padding-block: 0px !important;
+  min-height: 150px;
+  display: flex;
+  .num {
+    opacity: 0;
+    height: 0;
+    transform: translateX(-20px);
+  }
+  .speedImg {
+    opacity: 1;
+    height: 203px;
+    transform: scale(1);
+    transition: all 0.8s linear;
+    transform-origin: left center;
+  }
+  .speedDescription {
+    transform: translateX(10px);
+    // padding-block: 34px;
+
+    .topic {
+      transform: scale(1);
+      transition: all 0.3s ease;
+    }
+    .speedContent {
+      opacity: 1;
+      height: auto;
+    }
+  }
+  .arrow {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    i {
+      opacity: 0;
+      height: 0;
+
+      white-space: nowrap;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .speed {
+    .speedDetail p {
+      font-size: 16px !important;
+    }
+    .speedDescription {
+      .topic {
+        font-size: 20px !important;
+      }
+      .speedContent {
+        font-size: 16px !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .speed {
+    .speedDetail p {
+      font-size: 12px !important;
+    }
+    .area {
+      font-size: 14px !important;
+    }
+    .speedList {
+      padding: 10px;
+      justify-content: center !important;
+      .speedCard {
+        flex-direction: column;
+        align-items: center !important;
+      }
+      .descriptionContainer {
+        gap: 5px !important;
+        .num {
+          font-size: 20px !important;
+          padding: 10px;
+        }
+        .speedDescription {
+          .topic {
+            font-size: 20px !important;
+            padding: 10px;
+          }
+          .speedContent {
+            font-size: 14px !important;
+          }
+        }
+      }
+    }
+  }
+}
