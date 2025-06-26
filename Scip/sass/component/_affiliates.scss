@@ -71,12 +71,22 @@
             }
         }
         .affiliates-container{
-            padding:20px !important;
+            padding:0px !important;
             .row{
                 padding: 0px !important;
                 margin: auto !important;
             }
         }
-        
+        .hover-column{
+            height: 100px;
+            img{
+                height: 100%;
+                object-fit: contain;
+            }
+            .title {
+                padding: 15px;
+                font-size: 10px;
+            }
+        }
     }
 }

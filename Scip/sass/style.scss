@@ -71,7 +71,7 @@ body{
         background-color:#42E26F;
         margin: 0px 0;
     }
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 .top-container{
     background-image: url('../images/background1.png');
@@ -129,6 +129,8 @@ body{
         .become-member{
             button{
                opacity: 0;
+               width: 0px !important;
+               height:0px !important;
             }
         }
     }

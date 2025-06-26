@@ -1,6 +1,6 @@
 .recognized{
-    background-color:#0C0C0D ;
-    padding:100px 140px 150px 140px;
+    background-color:hsl(240, 4%, 5%) ;
+    padding:100px 140px 120px 140px;
     h2{
         background: linear-gradient(to right, #00FFD1, #00F1E3,#00D8FA);
         background-clip: text;
@@ -15,10 +15,16 @@
         font-size:20px;
         font-weight: 400;
     }
+    // .row{
+    //     gap:10px;
+    // }
     @media screen and (max-width: 500px) {
-        padding:90px 20px 80px 20px;
+        padding:50px 20px !important;
+        .row{
+            gap:0px !important;
+        }
         h2{
-            padding:0px !important;
+            padding:20px 0px !important;
             text-align: center;
             font-size: 34px;
         }

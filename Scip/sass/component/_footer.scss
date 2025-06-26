@@ -50,8 +50,21 @@ footer{
         i{
             font-size: 18px;
         }
-        h5{
-            font-size: 20px;
+        .row{
+            padding:0px !important;
+            margin-bottom: 20px !important;
+        }
+        .col{
+            padding: 0px !important;
+        }
+         h5{
+            font-size: 14px;
+        }
+        ul{
+            font-size: 10px;
         } 
+        .member{
+            font-size: 12px;
+        }
     }
 }

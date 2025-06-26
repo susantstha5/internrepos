@@ -158,6 +158,7 @@
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
   background-color: rgba(245, 245, 245, 0.1);
+  overflow: hidden;
   /* Slider container */
   /* Slides container: 4 slides (2 original + 2 duplicates) */
   /* Individual slides */
@@ -189,8 +190,8 @@
 }
 .scroller .slides {
   display: flex;
-  width: 100vw; /* 4 slides * 100vw */
-  animation: scroll 28s linear infinite;
+  width: 200vw; /* 4 slides * 100vw */
+  animation: scroll 18s linear infinite;
 }
 .scroller .slide {
   width: 100vw;
@@ -206,33 +207,29 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-200vw);
+    transform: translateX(-100vw);
   } /* move 2 slides (200vw) to the left */
 }
 @media screen and (max-width: 500px) {
   .scroller {
-    height: -moz-fit-content;
-    height: fit-content;
-    padding: 10px 20px;
+    padding: 0px 10px !important;
+    height: 55px !important;
   }
   .scroller .spotlight {
-    padding: 5px !important;
+    padding: 8px !important;
     border-radius: 20px;
+    margin: 13px 0px;
   }
   .scroller p {
-    font-size: 12px;
+    font-size: 10px;
   }
   .scroller .slide {
-    padding: 5px !important;
-    height: 10px;
+    padding-top: 11px !important;
   }
   .scroller .slide svg {
     width: 12px;
     height: 12px;
     padding: 1px !important;
-  }
-  .scroller .scoller-content {
-    gap: 0 !important;
   }
 }
 
@@ -626,19 +623,23 @@
   .events p {
     font-size: 14px;
   }
-  .events .top-content button {
-    width: 50%;
-    padding: 5px 10px !important;
-  }
-  .events .top-content button i {
-    padding: 10px 0px 10px 2px !important;
-  }
   .events .date i {
     padding: 0px !important;
   }
   .events .content {
-    padding: 10px 30px 10px 30px !important;
-    width: 400px !important;
+    padding: 10px 10px 10px 10px !important;
+    max-width: 300px !important;
+    width: 100%;
+  }
+  .events .content button {
+    width: 50%;
+    padding: 0px 8px !important;
+  }
+  .events .content button i {
+    padding: 10px 23px 0px 0px !important;
+  }
+  .events .content button p {
+    padding: 5px !important;
   }
   .events .upcoming {
     margin: 0px !important;
@@ -836,11 +837,23 @@
     font-size: 14px;
   }
   .affiliates .affiliates-container {
-    padding: 20px !important;
+    padding: 0px !important;
   }
   .affiliates .affiliates-container .row {
     padding: 0px !important;
     margin: auto !important;
+  }
+  .affiliates .hover-column {
+    height: 100px;
+  }
+  .affiliates .hover-column img {
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .affiliates .hover-column .title {
+    padding: 15px;
+    font-size: 10px;
   }
 }
 
@@ -986,7 +999,7 @@
 .speed .content .awareness:hover i {
   opacity: 0;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 500px) {
   .speed {
     padding: 20px !important;
   }
@@ -1218,7 +1231,7 @@
   }
   .smart .bars .tabs-bg .tab-data {
     max-width: 500px !important;
-    padding: 10px 10px 30px 15px !important;
+    padding: 10px !important;
   }
   .smart .bars .tabs-bg .tab-data h4 {
     font-size: 20px;
@@ -1232,8 +1245,8 @@
 }
 
 .recognized {
-  background-color: #0C0C0D;
-  padding: 100px 140px 150px 140px;
+  background-color: hsl(240, 4%, 5%);
+  padding: 100px 140px 120px 140px;
 }
 .recognized h2 {
   background: linear-gradient(to right, #00FFD1, #00F1E3, #00D8FA);
@@ -1252,10 +1265,13 @@
 }
 @media screen and (max-width: 500px) {
   .recognized {
-    padding: 90px 20px 80px 20px;
+    padding: 50px 20px !important;
+  }
+  .recognized .row {
+    gap: 0px !important;
   }
   .recognized h2 {
-    padding: 0px !important;
+    padding: 20px 0px !important;
     text-align: center;
     font-size: 34px;
   }
@@ -1336,6 +1352,30 @@
   width: 200%;
   height: 200%;
   right: -20%;
+}
+.tools .video-container {
+  position: relative;
+}
+.tools .video-container video {
+  max-width: 80%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.tools .video-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(rgba(12, 12, 13, 0), rgb(12, 12, 13));
+  inset: 0;
+}
+.tools .video-container p {
+  position: absolute;
+  z-index: 2;
+  margin-bottom: 30px;
 }
 .tools .tools-container {
   padding: 0px 150px;
@@ -1463,6 +1503,9 @@
   .tools .tools-container .box:hover .tool-button {
     min-height: 50px;
   }
+  .tools .video-container {
+    margin-bottom: 50px;
+  }
 }
 
 .difference {
@@ -1559,8 +1602,21 @@ footer ul li {
   footer i {
     font-size: 18px;
   }
+  footer .row {
+    padding: 0px !important;
+    margin-bottom: 20px !important;
+  }
+  footer .col {
+    padding: 0px !important;
+  }
   footer h5 {
-    font-size: 20px;
+    font-size: 14px;
+  }
+  footer ul {
+    font-size: 10px;
+  }
+  footer .member {
+    font-size: 12px;
   }
 }
 
@@ -1581,7 +1637,7 @@ footer ul li {
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 body .line {
   height: 4px;
@@ -1646,5 +1702,7 @@ body .line {
 @media screen and (max-width: 500px) {
   .top-container .become-member button {
     opacity: 0;
+    width: 0px !important;
+    height: 0px !important;
   }
 }/*# sourceMappingURL=style.css.map */

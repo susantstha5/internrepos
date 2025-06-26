@@ -173,21 +173,33 @@
         p{
             font-size:14px;
         }
-        .top-content{
-            button {
-                width:50%;
-                padding: 5px 10px !important;
-                i{
-                    padding:10px 0px 10px 2px !important;
-                }
-            }
-        }
+        // .top-content{
+        //     button {
+        //         width:50%;
+        //         padding: 5px 10px !important;
+        //         i{
+        //             padding:10px 0px 10px 2px !important;
+        //         }
+               
+        //     }
+        // }
         .date i{
             padding: 0px !important;
         }
         .content{
-            padding:10px 30px 10px 30px !important;
-            width: 400px !important;
+            padding:10px 10px 10px 10px !important;
+            max-width: 300px !important;
+            width: 100%;
+            button {
+                width:50%;
+                padding: 0px 8px !important;
+                i{
+                    padding:10px 23px 0px 0px !important;
+                }
+                 p{
+                    padding: 5px !important;
+                }
+            }
         }
         .upcoming{
             margin: 0px !important;
