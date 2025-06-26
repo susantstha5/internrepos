@@ -111,12 +111,6 @@ html {
   backdrop-filter: blur(10px);
   background-color: rgba(0, 0, 0, 0.5);
 }
-.offcanvas-body .container .btn {
-  width: fit-content;
-  display: flex;
-  gap: 6px;
-  z-index: 1049 !important;
-}
 .search input {
   outline: none;
 }
@@ -183,10 +177,10 @@ html {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   width: fit-content;
-  font-size: clamp(46px, 5vw, 60px);
+  font-size: clamp(24px, 5vw, 60px);
 }
 .hero_content p {
-  font-size: clamp(14px, 5vw, 18px);
+  font-size: clamp(14px, 2vw, 20px);
 }
 #scrollBtn:hover {
   background-color: rgba(58, 56, 56, 0.1) !important;
@@ -237,7 +231,7 @@ html {
 .cta_btn i {
   position: relative;
   z-index: 2;
-  font-size: clamp(14px, 5vw, 16 px);
+  font-size: clamp(14px, 5vw, 16px);
 }
 .cta_btn .button i {
   align-self: center;
@@ -492,8 +486,8 @@ html {
 }
 .affiliateLogo_container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
+  overflow-x: auto;
   gap: 30px;
 
   /* grid-template-columns: repeat(4,minmax(200px,260px)); */
@@ -501,7 +495,6 @@ html {
 .affiliate_logo {
   background-color: white;
   padding: 8px;
-  height: 100px;
   min-width: 265px;
   border-radius: 8px;
   display: flex;
@@ -684,10 +677,11 @@ html {
 .recognition_container {
   padding: 100px;
   gap: 50px;
+  grid-template-columns: 35% 1fr;
 }
-.recognition-img {
+/* .recognition-img {
   min-width: 35%;
-}
+} */
 .recognition_content {
   display: flex;
   align-items: start;
@@ -822,6 +816,7 @@ footer {
     padding: 60px 40px;
   }
   .recognition_container {
+    display: flex !important;
     flex-direction: column !important;
     align-items: center;
   }
