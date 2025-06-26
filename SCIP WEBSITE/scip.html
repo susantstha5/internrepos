@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strategic Consortium of Intelligence Professionals (SCIP) </title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- js link from here -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- bootstrap link from here -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <!-- css link from here -->
+    <link rel="stylesheet" href="./scip.css" />
+    <!-- remix icon from here -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- AOS link from here -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-transparent w-100 p-0 position-fixed">
+  <div class="overlay-blur h-100 w-100 position-absolute"></div>
+
+  <div class="container collapse" id="#navbarNab">
+    <div class="nav-brand px-3">
+      <img src="./logo/c8a6da2240ecbd0151474a845788f7f088b6b1c8.png" alt="logo" class="img-fluid" />
+    </div>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNav" aria-expanded="false" aria-controls="navbarNav" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="container">
+      <div class="custom-collapse collapse navbar-collapse" id="navbarNav">
+        <ul class="menu navbar-nav gap-4 ms-auto fw-400">
+          <li class="menu-item">
+            <a class="nav-link text-white" href="#about">About</a>
+          </li>
+          <li class="menu-item">
+            <a class="nav-link text-white" href="#contact">Contact</a>
+          </li>
+          <li class="menu-item">
+            <a class="nav-link text-white" href="#joinNow">Join Now</a>
+          </li>
+          <li class="menu-item">
+            <a class="nav-link text-success fw-bold" href="#signIn">Sign In</a>
+          </li>
+          <li class="menu-item">
+            <button class="nav-link text-white"><i class="ri-search-line"></i></button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="container p-0">
+        <div class="custom-collapse collapse navbar-collapse" id="navbarNav">
+          <ul class="secondary-menu navbar-nav d-flex ms-auto gap-3 fw-400">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#affiliates">Affiliates</a>
+            </li>
+
+            <div class="menu-dropdown dropdown-hover position-relative dropdown">
+              <button class="btn border-0 btn-secondary">
+                <span class="menu-label">Intelligence Tools</span>
+                <span class="menu-arrow"><i class="ri-arrow-down-s-line"></i></span>
+              </button>
+              <ul class="dropdown-one dropdown-menu p-3" style="min-width: 500px">
+                <div class="row">
+                  <div class="col-6 d-flex flex-column gap-1">
+                    <li><a href="#" class="dropdown-item">Foundational Resources (CI Basics)</a></li>
+                    <li><a href="#" class="dropdown-item">CI Technology & Tools</a></li>
+                    <li><a href="#" class="dropdown-item">Communicationa & Stakeholder Management Resources</a></li>
+                    <li><a href="#" class="dropdown-item">Future, Impact, Metrics & ROI</a></li>
+                    <li><a href="#" class="dropdown-item">Strategy & Analytics</a></li>
+                    <li><a href="#" class="dropdown-item">Collection & Resources</a></li>
+                  </div>
+                  <div class="col-6 gap-2 d-flex h-100 flex-column">
+                    <li><a href="#" class="dropdown-item">Advanced Resources</a></li>
+                    <li><a href="#" class="dropdown-item">Benchmarks</a></li>
+                    <li><a href="#" class="dropdown-item">Ethics & Integrity</a></li>
+                    <li><a href="#" class="dropdown-item">Competitive Enablement</a></li>
+                    <li><a href="#" class="dropdown-item">Leadership & Careers Development Resources</a></li>
+                    <li><a href="#" class="dropdown-item">Templates</a></li>
+                  </div>
+                </div>
+              </ul>
+            </div>
+
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#icoe">ICoE</a>
+            </li>
+
+            <div class="menu-dropdown d-inline dropdown-hover dropdown position-relative">
+              <button class="btn border-0 btn-secondary">
+                <span class="menu-label">IntelliCons</span>
+                <span class="menu-arrow"><i class="ri-arrow-down-s-line"></i></span>
+              </button>
+              <ul class="dropdown-menu p-2" style="min-width: 250px">
+                <li><a class="dropdown-item" href="#">IntelliCon Barcelona 2024</a>
+                
+                </li>
+                <li><a class="dropdown-item" href="#">IntelliCon Singapore 2025</a></li>
+                <li><a class="dropdown-item" href="#">IntelliCon New Orleans 2025</a></li>
+                <li><a class="dropdown-item" href="#">SCIP Awards</a></li>
+              </ul>
+            </div>
+
+            <div class="dropdown-hover d-inline dropdown position-relative menu-dropdown">
+              <button class="btn btn-secondary border-0">
+                <span class="menu-label">Membership</span>
+                <span class="menu-arrow"><i class="ri-arrow-down-s-line"></i></span>
+              </button>
+              <ul class="dropdown-menu p-2" style="min-width: 250px">
+                <li><a class="dropdown-item" href="#">Get Involved</a></li>
+                <li><a class="dropdown-item" href="#">Team Membership</a></li>
+              </ul>
+            </div>
+
+            <div class="dropdown menu-dropdown dropdown-hover d-inline position-relative">
+              <button class="btn btn-secondary border-0">
+                <span class="menu-label">SMART Center</span>
+                <span class="menu-arrow"><i class="ri-arrow-down-s-line"></i></span>
+              </button>
+              <ul class="dropdown-menu p-2" style="min-width: 250px">
+                <li><a class="dropdown-item" href="#">Resources</a></li>
+                <li><a class="dropdown-item" href="#">Training</a></li>
+              </ul>
+            </div>
+
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#speed">SPEED</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#jobboard">Job Board</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+    </nav>
+
+    <section class="intro_container d-flex flex-column gap-2 align-items-center overflow-hidden ">
+      <div class="scroll_banner container-fluid d-flex align-items-center gap-5 ">
+        <button class="text-black rounded-5 border-0 px-3 py-1">
+          SPOTLIGHT
+        </button>
+        
+          <div class="scrolling_banner h-100 overflow-scroll-container overflow-left-hidden">
+            <div class="banner_text overflow-x-auto overflow-y-hidden py-3 d-flex gap-5 h-100">
+              <div class=""><i class="ri-gemini-fill text-white"></i></div>
+              <div class="d-flex text-nowrap align-items-center gap-2 flex-shrink-0">
+                <span class="banner_head fw-bold text-nowrap">IntelliCon Barcelona 2024</span>
+                <p class="m-0 fw-light letter-spacing-md text-white">
+                  Register now or elevate your brand with exclusive sponsorship
+                  opportunities!
+                </p>
+              </div>
+              <div><i class="ri-gemini-fill text-white"></i></div>
+              <div class="d-flex text-nowrap align-items-center gap-2">
+                <span class="banner_head fw-bold">Save The Date</span>
+                <p class="m-0 fw-light letter-spacing-md text-white">
+                  IntelliCon New Orleans 2025 - April 28-30
+                </p>
+              </div>
+            </div>
+         
+        </div>
+      </div>
+       
+      <div class="intro_content mt-5 w-100 d-flex flex-column align-items-center">
+        <div class="scip_image d-flex justify-content-center">
+          <img
+            src="./logo/SCIP_log_white-removebg-preview 3.png"
+            class="img-fluid"
+            alt="photos"
+          />
+        </div>
+        <h1 class="head text-center">
+          Strategic Consortium of <br />
+          Intelligence Professionals (SCIP)
+        </h1>
+        <p class="text-white text-center fw-light">
+          SCIP is the world’s largest Global Intelligence Association, a
+          non-profit community comprised of over 15,000 individuals in 102
+          countries, who actively contribute to our mission of promoting,
+          developing, and sharing knowledge and tools around data-driven
+          Competitive, Market, and Human Intelligence in Enterprise, Academia,
+          and Government applications. Our vast pool of accredited educational
+          and training resources, and extensive community engagement and
+          collaboration with Intelligence Thought Leadership, allows us to help
+          achieve positive behaviors and outcomes from driving intelligence as a
+          growth enabler for individuals and organizations alike.
+        </p>
+        <button class="scroll_down border-0 bg-transparent text-white d-flex flex-column align-items-center pt-4 fw-light">
+          <span class="">Scroll</span>
+          <i class="ri-arrow-down-s-line"></i>
+        </button>
+      </div>
+      <button class="member-button d-flex gap-3 position-fixed end-0 bottom-0 align-items-center m-3 z-3">
+        <p class="m-0 p-0 text-black">Become a Member</p>
+                    <div class="signup-arrow">
+                        <i class="ri-arrow-right-line ms-2"></i>
+                    </div>   
+                    </button>
+    </section>
+    <section class="description_container position-relative d-flex align-items-start justify-content-center">
+       <div class="blur-div position-absolute h-100 w-100"></div>
+      <div class="text_wrapper pt-4 mt-4 flex-column flex align-items-center z-2">
+        <h2 class="head text-center">
+          Intelligence for the Betterment of People and Planet
+        </h2>
+        <p class="text-white text-center fw-light">
+          SCIP expands our global leadership in driving Intelligence towards
+          Sustainability and Social Responsibility causes, partnering with
+          organizations around the world to promote data-driven intelligence in
+          tackling major social and economic challenges. <br /><br />These
+          include the preservation of Earth’s fragile land/water ecosystems,
+          addressing social causes around education, health care, homelessness,
+          and promoting economic and social development by leveraging advanced
+          analytics, artificial intelligence, and collaborative innovation in
+          using Intelligence as growth enablers for public and private sector
+          advancement.
+        </p>
+        <div class="d-flex w-100 justify-content-center pt-2">
+          <button class="roboto d-flex gap-3 align-items-center">
+                    <p class="m-0 p-0 text-black">Learn More</p>
+                    <div class="signup-arrow">
+                        <i class="ri-arrow-right-line ms-2"></i>
+                    </div>  
+                    </button>
+        </div>
+      </div>
+       
+    </section>
+    <section class="container-video position-relative d-flex justify-content-center flex-wrap align-items-center z-2">
+      <div class="youtube-video position-absolute">
+        <iframe
+          width="600"
+          height="350"
+          src="https://www.youtube.com/embed/An9D7hBq9fU"
+          title="SCIP: EVOLUTION OF THE INTELLIGENCE ECOSYSTEM"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="video_text pt-5 w-100 d-flex justify-content-center">
+        <p class="text-white fw-normal text-center pt-4">
+          Learn more about this
+          <span class="fw-bold">"Intellignce EcoSystem" </span> environment here
+          and be a <br />part of our growing consortium
+        </p>
+      </div>
+    </section>
+    <section class="card_container position-relative w-100 d-flex flex-column gap-5">
+       
+      <div class="heading_content d-flex pb-3 flex-column align-items-center">
+        <h2 class="head text-center">SCIP’s Value Propositions</h2>
+        <p class="text-white text-center">
+          SCIP is focusing on global applications around of these core pillars
+          of value for our global community:
+        </p>
+      </div>
+      <div class="cards bg-transparent">
+        <div
+          class="card bg-transparent border-1 border-white px-4 py-5 d-flex flex-column align-items-center justify-content-center"
+        >
+          <h3 class="text-white fw-semibold">
+            Intelligence Code of Ethics Pioneer
+          </h3>
+          <p class="fw-light">
+            Establishment of behavioral set of rules around Intelligence
+            governance and usage
+          </p>
+        </div>
+        <div
+          class="card bg-transparent border-1 border-white px-4 py-5 d-flex flex-column align-items-center justify-content-center"
+        >
+          <h3 class="text-white fw-semibold">
+            Intelligence-driven Sustainability and Social Responsibility
+          </h3>
+          <p class="fw-light">
+            Spearheading Intelligence-driven initiatives towards betterment of
+            People and Planet
+          </p>
+        </div>
+        <div
+          class="card bg-transparent border-1 border-white px-4 py-5 d-flex flex-column align-items-center justify-content-center"
+        >
+          <h3 class="text-white fw-semibold">
+            Intelligence Partnerships and Alliance Hub
+          </h3>
+          <p class="fw-light">
+            Network of Intelligence partner organization spanning and knowledge
+          </p>
+        </div>
+        <div
+          class="card bg-transparent border-1 border-white px-4 py-5 d-flex flex-column align-items-center justify-content-center"
+        >
+          <h3 class="text-white fw-semibold">
+            Global Forums of Intelligence Operational Centers of Excellence
+          </h3>
+          <p class="fw-light">
+            Geographic areas of intelligence Communities that address global and
+            regional issues
+          </p>
+        </div>
+        <div
+          class="card bg-transparent border-1 border-white px-4 py-5 d-flex flex-column align-items-center justify-content-center"
+        >
+          <h3 class="text-white fw-semibold">
+            Community of Intelligence Through Leadership
+          </h3>
+          <p class="fw-light">
+            Prominent subject matter expert leaders form Enterprise, Academia
+            and Government institutions.
+          </p>
+        </div>
+        <div
+          class="card bg-transparent border-1 border-white px-4 py-5 d-flex flex-column align-items-center justify-content-center"
+        >
+          <h3 class="text-white fw-semibold">
+            World-class Training and Certification Programs
+          </h3>
+          <p class="fw-light">
+            Proven and award winning instruction from industry-best Solution
+            Proviiders
+          </p>
+        </div>
+        <div
+          class="card bg-transparent border-1 border-white px-4 py-5 d-flex flex-column align-items-center justify-content-center"
+        >
+          <h3 class="text-white fw-semibold">
+            Digital Transformation and Data-First Thought Leadership
+          </h3>
+          <p class="fw-light">
+            Strategic insight and expertise in digital data modernization
+            techniques for Strategy Development
+          </p>
+        </div>
+        <div
+          class="card bg-transparent border-1 border-white px-4 py-5 d-flex flex-column align-items-center justify-content-center"
+        >
+          <h3 class="text-white fw-semibold">
+            Global Repository of Intelligence Body-of-Knowledge
+          </h3>
+          <p class="fw-light">
+            Researched Library of best practices, methodologies, tools and
+            resource requirements
+          </p>
+        </div>
+        <div
+          class="card bg-transparent border-1 border-white px-4 py-5 d-flex flex-column align-items-center justify-content-center"
+        >
+          <h3 class="text-white fw-semibold">
+            Competitive Intelligence Leadership
+          </h3>
+          <p class="fw-light">
+            Understanding and utilizing those proven processes that yield best
+            ROI
+          </p>
+        </div>
+      </div>
+       
+    </section>
+    <section class="place_container w-100 d-flex flex-column align-items-center gap-5">
+      <div class="place_heading w-100 d-flex align-items-center flex-column">
+        <h2 class="head text-center">SCIP IntelliCon Events</h2>
+        <p class="text-white text-center">
+          Global venues where Intelligence Subject Matter Experts and Thought
+          Leaders come together to share <br />
+          experiences, promote education and training, and network with
+          individuals passionate about the role of data <br />
+          and intelligence in driving strategies towards growth and prosperity.
+        </p>
+      </div>
+      <div class="place_wrapper d-flex justify-content-between w-100 gap-5 p2">
+        <div class="place_image">
+          <img
+            src="./logo/Intellicon Main OnHover.png"
+            class="img-fluid"
+            alt="img"
+          />
+        </div>
+        <div
+          class="place_details d-flex flex-column text-white justify-content-center gap-2"
+        >
+          <div class="place_date d-flex gap-2">
+            <i class="ri-calendar-2-line"></i>
+            <span>Dec 3-5, 2024</span>
+          </div>
+          <h3>
+            SCIP INTELLICON <br />
+            BARCELONA 2024
+          </h3>
+          <p>
+            “Data-Driven Intelligence in CI and the <br />
+            Intelligence EcoSystem”
+          </p>
+          <button class="roboto d-flex gap-3 align-items-center">
+                    <p class="m-0 p-0 text-black">Learn More</p>
+                    <div class="signup-arrow">
+                        <i class="ri-arrow-right-line ms-2"></i>
+                    </div>  
+                    </button>
+        </div>
+      </div>
+      <div class="upcomingplace_wrap w-100 position-relative">
+        <img
+          src="./logo/Union.pn"
+          class="union-image position-absolute img-fluid"
+          alt=""
+        />
+        <h3 class="banner_head pb-2">Upcoming Intellicons</h3>
+        <div class="upcoming_place">
+          <div class="place position-relative">
+            <img
+              src="./logo/image 70.png"
+              class="position-absolute w-100 h-100 start-0 top-0"
+              alt="img"
+            />
+            <div class="place_content position-absolute">
+              <h5 class="text-white z-3">Intellicon New Orleans 2025</h5>
+              <div class="upcomingplace_date">
+                <div class="event_date d-flex gap-2">
+                  <i class="ri-calendar-2-line"></i>
+                  <span>Dec 3-5, 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div class="place position-relative">
+            <img
+              src="./logo/00c45e46f280d860ceaa4553b1ea7964ef67f6ee (1).png"
+              class="position-absolute w-100 h-100 start-0 top-0"
+              alt="img"
+            />
+            <div class="place_content position-absolute">
+              <h5 class="text-white z-3">Intellicon New Orleans 2025</h5>
+              <div class="upcomingplace_date">
+                <div class="event_date d-flex gap-2">
+                  <i class="ri-calendar-2-line"></i>
+                  <span>Dec 3-5, 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div class="place position-relative">
+            <img
+              src="./logo/3a66e84a50b804e20d2e5b472110b67c08ada6ea.png"
+              class="position-absolute w-100 h-100 start-0 top-0"
+              alt="img"
+            />
+            <div class="place_content position-absolute">
+              <h5 class="text-white z-3">Intellicon New Orleans 2025</h5>
+              <div class="upcomingplace_date">
+                <div class="event_date d-flex gap-2">
+                  <i class="ri-calendar-2-line"></i>
+                  <span>Dec 3-5, 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+           
+        </div>
+      </div>
+    </section>
+    <section class="icoecenter_container">
+      <div class="scip_wrap d-flex flex-row">
+        <div class="scip_logo z-4 d-flex align-items-start">
+          <img src="./logo/image 53.png" class="w-100 img-fluid" alt="icoe" />
+        </div>
+        <h2 class="head z-4">SCIP INTELLEGENCE CENTERS OF EXCELLENCE(ICoE)</h2>
+        <div class="icoe_text z-4">
+          <p class="text-white fw-light">
+            We are a collective Intelligence force dedicated to advancing
+            REGIONAL prosperity through the power of data, Intelligence, and
+            collaboration. Our ICoEs serve as an extension of the SCIP
+            community, focusing on tools, best practices, use cases, challenges
+            and opportunities within the Regional Intelligence landscape.
+          </p>
+          <button class="roboto d-flex gap-3 align-items-center">
+                    <p class="m-0 p-0 text-black">Learn More</p>
+                    <div class="signup-arrow">
+                        <i class="ri-arrow-right-line ms-2"></i>
+                    </div>  
+                    </button>
+        </div>
+      </div>
+      <div class="map_wrap">
+      </div>
+    </section>
+     <section class="affiliates position-relative d-flex flex-column gap-4">
+      <img class="position-absolute img-fluid top-0 z-0 h-100 z-1"  src="./Vector 6.png" alt="">
+      <div class="affiliate_heading w-100 text-center z-2">
+        <h2 class="head w-100">SCIP Affiliates</h2>
+        <p class="text-white">SCIP Affiliates are Intelligence Partners who share the same passion around utilizing and promotion of data <br> and Intelligence throughout the globe.</p>
+      </div>
+      <div class="affiliatesLogo_container z-2">
+        <div class="affiliates_logo  position-relative">
+          <img src="./logo/image 131.png" class="img-fluid" alt="logo1">
+          <p class="position-absolute">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet</p>
+        </div>
+         <div class="affiliates_logo position-relative">
+          <img src="./logo/image 132.png" class="img-fluid" alt="logo1">
+          <p class="position-absolute">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet</p>
+        </div>
+         <div class="affiliates_logo position-relative">
+          <img src="./logo/image 134.png" class="img-fluid" alt="logo1">
+          <p class="position-absolute">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet</p>
+        </div>
+         <div class="affiliates_logo position-relative">
+          <img src="./logo/image 141.png" class="img-fluid" alt="logo1">
+          <p class="position-absolute">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet</p>
+        </div>
+          <div class="affiliates_logo position-relative">
+          <img src="./logo/image 143.png" class="img-fluid" alt="logo1">
+          <p class="position-absolute">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet</p>
+        </div>
+          <div class="affiliates_logo position-relative">
+          <img src="./logo/image 136.png" class="img-fluid" alt="logo1">
+          <p class="position-absolute">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet</p>
+        </div>
+          <div class="affiliates_logo position-relative">
+          <img src="./logo/image 138.png" class="img-fluid" alt="logo1">
+          <p class="position-absolute">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet</p>
+        </div>
+          <div class="affiliates_logo position-relative">
+          <img src="./logo/image 155.png" class="img-fluid" alt="logo1">
+          <p class="position-absolute">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet</p>
+        </div>
+          <div class="affiliates_logo position-relative">
+          <img src="./logo/image 145.png" class="img-fluid" alt="logo1">
+          <p class="position-absolute">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet</p>
+        </div>
+            <div class="affiliates_logo position-relative">
+          <img src="./logo/image 153.png" class="img-fluid" alt="logo1">
+          <p class="position-absolute">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet</p>
+        </div>
+            <div class="affiliates_logo position-relative">
+          <img src="./logo/image 154.png" class="img-fluid" alt="logo1">
+          <p class="position-absolute">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet</p>
+        </div>
+            <div class="affiliates_logo position-relative">
+          <img src="./logo/image 152.png" class="img-fluid" alt="logo1">
+          <p class="position-absolute">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet</p>
+        </div>
+            <div class="affiliates_logo position-relative">
+          <img src="./logo/image 156.png" class="img-fluid" alt="logo1">
+          <p class="position-absolute">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet</p>
+        </div>
+      </div>
+    </section>
+    <section class="speed-section p-5">
+            <div class="first-part">
+                <h1 class="roboto w-100 text-center pb-2">Solution Provider Engagement, Enrichment & Development (SPEED)</h1>
+                <p class="nunito description w-100 text-center p-0">SCIP’s Solution Provider Engagement, Enrichment & Development (SPEED) <span>are ways in which <br>SCIP helps promote YOUR organization and create demand generation and leads for your <br> business development and growth. </span></p>
+                <h3 class="roboto w-100 text-center">We do this through 5 main areas:</h3>
+            </div>
+            <div class="content pt-5">
+                 <div class="awareness d-flex flex-row align-items-center">
+                    <div class="awareness-img-wrapper">
+                        <img src="./logo/ae77e18fba019ae52401bdb537ff2ce169c2141d.png" alt="awareness" class="awareness-img">
+                    </div>
+                    <div class="d-flex justify-content-between p-5 w-100 awareness-content">
+                        <div class="before d-flex gap-5 align-items-center">
+                            <h3 class="num">01</h3>
+                            <div class="speed-contents">
+                                <h3 class="awareness-text">Awareness</h3>
+                                <p class="m-0">Make your brand front and center through outreach in SCIP’s 300,000+ Global community</p>
+                            </div>
+                        </div>
+                        <div><i class="ri-arrow-down-s-line"></i></div>
+                    </div>
+                </div>
+                 <div class="awareness d-flex flex-row align-items-center">
+                    <div class="awareness-img-wrapper">
+                        <img src="./logo/ae77e18fba019ae52401bdb537ff2ce169c2141d.png" alt="awareness" class="awareness-img">
+                    </div>
+                    <div class="d-flex justify-content-between p-5 w-100 awareness-content">
+                        <div class="before d-flex gap-5 align-items-center">
+                            <h3 class="num">01</h3>
+                            <div class="speed-contents">
+                                <h3 class="awareness-text">Awareness</h3>
+                                <p class="m-0">Make your brand front and center through outreach in SCIP’s 300,000+ Global community</p>
+                            </div>
+                        </div>
+                        <div><i class="ri-arrow-down-s-line"></i></div>
+                    </div>
+                </div>
+                 <div class="awareness d-flex flex-row align-items-center">
+                    <div class="awareness-img-wrapper">
+                        <img src="./logo/ae77e18fba019ae52401bdb537ff2ce169c2141d.png" alt="awareness" class="awareness-img">
+                    </div>
+                    <div class="d-flex justify-content-between p-5 w-100 awareness-content">
+                        <div class="before d-flex gap-5 align-items-center">
+                            <h3 class="num">01</h3>
+                            <div class="speed-contents">
+                                <h3 class="awareness-text">Awareness</h3>
+                                <p class="m-0">Make your brand front and center through outreach in SCIP’s 300,000+ Global community</p>
+                            </div>
+                        </div>
+                        <div><i class="ri-arrow-down-s-line"></i></div>
+                    </div>
+                </div>
+                 <div class="awareness d-flex flex-row align-items-center">
+                    <div class="awareness-img-wrapper">
+                        <img src="./logo/ae77e18fba019ae52401bdb537ff2ce169c2141d.png" alt="awareness" class="awareness-img">
+                    </div>
+                    <div class="d-flex justify-content-between p-5 w-100 awareness-content">
+                        <div class="before d-flex gap-5 align-items-center">
+                            <h3 class="num">01</h3>
+                            <div class="speed-contents">
+                                <h3 class="awareness-text">Awareness</h3>
+                                <p class="m-0">Make your brand front and center through outreach in SCIP’s 300,000+ Global community</p>
+                            </div>
+                        </div>
+                        <div><i class="ri-arrow-down-s-line"></i></div>
+                    </div>
+                </div>
+                 <div class="awareness d-flex flex-row align-items-center">
+                    <div class="awareness-img-wrapper">
+                        <img src="./logo/ae77e18fba019ae52401bdb537ff2ce169c2141d.png" alt="awareness" class="awareness-img">
+                    </div>
+                    <div class="d-flex justify-content-between p-5 w-100 awareness-content">
+                        <div class="before d-flex gap-5 align-items-center">
+                            <h3 class="num">01</h3>
+                            <div class="speed-contents">
+                                <h3 class="awareness-text">Awareness</h3>
+                                <p class="m-0">Make your brand front and center through outreach in SCIP’s 300,000+ Global community</p>
+                            </div>
+                        </div>
+                        <div><i class="ri-arrow-down-s-line"></i></div>
+                    </div>
+                </div>
+                 
+            </div>
+            <div class="w-100 text-center p-4">
+                <p>Take advantage of this valuable resource:</p>
+                <button class="roboto d-flex gap-3 align-items-center">
+                    <p class="m-0">Learn More</p>
+                    <div class="signup-arrow">
+                       <i class="ri-arrow-right-line ms-2"></i>
+                    </div>
+                </button>
+            </div>
+        
+        </section>
+     <section class="smart-section">
+            <div class="topic">
+                <h1 class="roboto w-100 text-center pb-5">SCIP Member Advanced Resources & Training (SMART) Center</h1>
+                <p class="nunito decription w-100 text-center p-4">The SMART platform is a comprehensive set of Training and Educational curriculum that provides Knowledge and Best Practices towards accredited certification in Competitive Intelligence (CI), Artificial Intelligence (AI), and other  processes, tools, and methods within the Intelligence EcoSystem of applications.</p>
+                <button class="roboto d-flex gap-3 align-items-center">
+                    <p class="m-0">Learn More</p>
+                    <div class="signup-arrow">
+                        <i class="ri-arrow-right-line ms-2"></i>
+                    </div>
+                </button>
+            </div>
+           <div class="bars p-5">
+                <div class="panel-top">
+                    <ul class="roboto nav nav-pills p-1 " id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><h3 class="m-0">Resources</h3></button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><h3 class="m-0">Training</h3></button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="panel-bg">
+                            <div class="row g-3 align-items-start h-100">
+                                <div class="col-md-4 h-100 p-0">
+                                    <div class="left-tab p-3">
+                                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                            <button class="nav-link active text-start p-3" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">STREAM</button>
+                                            <button class="nav-link text-start p-3" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">SCIP Insights</button>
+                                            <button class="nav-link text-start p-3" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">SCIP Newsletter</button>
+                                            <button class="nav-link text-start p-3" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">MAG</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="tab-content" id="v-pills-tabContent">
+                                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                                            <div class="tab-text pt-4 mt-4">
+                                                <h4 class="roboto">STREAM</h4>
+                                                <p class="nunito mt-4">Similar to traditional podcasts, these are informative videos of individuals or teams showcasing their particular knowledge, processes or best practices in a specific Intelligence area. They vary in length and cover a host of different application areas. These are accessed on-demand from our I_STREAM portal</p>
+                                                <button class="d-flex justify-content-between align-items-center mt-4">
+                                                    <div>
+                                                        <p class="m-0">Learn More</p>
+                                                    </div>
+                                                    <div class="signup-arrow">
+                                                        <i class="ri-arrow-right-line ms-2"></i>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                                            <div class="tab-text pt-4 mt-4">
+                                                <h4 class="roboto">SCIP Insights</h4>
+                                                <p class="nunito mt-4">SCIP Insights is our revolutionary world-class Blog platform, providing valuable insights from SCIP and our expanding Intelligence Community of guest Thought Leaders, Instructors, Practitioners and anyone who wants to share their knowledge and learnings on Intelligence EcoSystem applications to the global community.</p>
+                                                <button class="d-flex gap-3 align-items-center mt-4">
+                                                    <p class="m-0">Learn More</p>
+                                                    <div class="signup-arrow">
+                                                        <i class="ri-arrow-right-line ms-2"></i>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
+                                            <div class="tab-text pt-4 mt-4">
+                                                <h4 class="roboto">SCIP Newsletter</h4>
+                                                <p class="nunito mt-4">SCIP Newsletters are weekly communication share with the greater SCIP community to keep you informed of exciting Intelligence-related content around upcoming Event, Training and Educational opportunities, Member resources, Promotions, Industry News and more!</p>
+                                                <button class="d-flex gap-3 align-items-center mt-4">
+                                                    <p class="m-0">Learn More</p>
+                                                    <div class="signup-arrow">
+                                                        <i class="ri-arrow-right-line ms-2"></i>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
+                                            <div class="tab-text pt-4 mt-4">
+                                                <h4 class="roboto">I_MAG</h4>
+                                                <p class="nunito mt-4">SCIP’s I_MAG empowers organizations with latest news from the Intelligence EcoSystem, offering use cases, perspectives and ideas from the spectrum of Intelligence Thought-Leadership within the SCIP Consortium Global community</p>
+                                                <button class="d-flex gap-3 align-items-center mt-4">
+                                                    <p class="m-0">Learn More</p>
+                                                    <div class="signup-arrow">
+                                                        <i class="ri-arrow-right-line ms-2"></i>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                        <div class="panel-bg">
+                            <div class="row align-items-start m-0">
+                                <div class="col-md-4 h-100 p-0">
+                                    <div class="left-tab p-3">
+                                        <div class="roboto nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                            <button class="nav-link active text-start p-3" id="v-pills-workshop-tab" data-bs-toggle="pill" data-bs-target="#v-pills-workshop" type="button" role="tab" aria-controls="v-pills-workshop" aria-selected="true">Workshop</button>
+                                            <button class="nav-link text-start p-3" id="v-pills-webinar-tab" data-bs-toggle="pill" data-bs-target="#v-pills-webinar" type="button" role="tab" aria-controls="v-pills-webinar" aria-selected="false">Webinar</button>
+                                            <button class="nav-link text-start p-3" id="v-pills-certification-tab" data-bs-toggle="pill" data-bs-target="#v-pills-certification" type="button" role="tab" aria-controls="v-pills-certification" aria-selected="false">SIC Certification</button>
+                                            <button class="nav-link text-start p-3" id="v-pills-ai-tab" data-bs-toggle="pill" data-bs-target="#v-pills-ai" type="button" role="tab" aria-controls="v-pills-ai" aria-selected="false">AI/Intelligence Certification</button>
+                                            <button class="nav-link text-start p-3" id="v-pills-executive-tab" data-bs-toggle="pill" data-bs-target="#v-pills-executive" type="button" role="tab" aria-controls="v-pills-executive" aria-selected="false">SCIP Executive Intelligence</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="tab-content" id="v-pills-tabContent">
+                                        <div class="tab-pane fade show active" id="v-pills-workshop" role="tabpanel" aria-labelledby="v-pills-workshop-tab" tabindex="0">
+                                            <div class="tab-text pt-4 mt-4">
+                                                <h4 class="roboto">Workshop</h4>
+                                                <p class="nunito mt-4">SCIP Workshops are learning venues given by some of the top Intelligence Instructors in the world. They cover training and certification of many topics, ranging form Competitive Intelligence tools to Artificial Intelligence (AI) applications, as well as many data and knowledge management modeling exercises. These workshops are guaranteed to provide you the knowledge and expertise to improve your Intelligence skillsets in your organization.</p>
+                                                <button class="roboto d-flex gap-3 align-items-center mt-4">
+                                                    <p class="m-0">Learn More</p>
+                                                    <div class="signup-arrow">
+                                                        <i class="ri-arrow-right-line ms-2"></i>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills-webinar" role="tabpanel" aria-labelledby="v-pills-webinar-tab" tabindex="0">
+                                            <div class="tab-text pt-4 mt-4">
+                                                <h4 class="roboto">Webinar</h4>
+                                                <p class="nunito mt-4">SCIP Webinars help you connect with peers, learn best practices and get you the recognition and knowledge from SCIP’s extensive team of world-class instructors and thought leaders in the Intelligence discipline. Our comprehensive portfolio of content covers a wide range of Intelligence application areas along with tools, methods and processes around Competitive Intelligence and the latest AI technology applications</p>
+                                                <button class="d-flex gap-3 align-items-center mt-4">
+                                                    <p class="m-0">Learn More</p>
+                                                    <div class="signup-arrow">
+                                                        <i class="ri-arrow-right-line ms-2"></i>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills-certification" role="tabpanel" aria-labelledby="v-pills-certification-tab" tabindex="0">
+                                            <div class="tab-text pt-4 mt-4">
+                                                <h4 class="roboto">SIC Certification</h4>
+                                                <p class="nunito mt-4">A formalized set of Curriculum based on 3 Levels of Instruction from Professors at Mercyhurst University – one of the highest regarded Intelligence Training institutions in the world. These 3 levels (of 13 courses in each level) cover everything from the basics of Competitive Intelligence to complex understandings of AI, Human Intelligence, and related intelligence behaviors, understanding, practices and tools, that expand into applications in various Enterprise and Government areas.</p>
+                                                <button class="d-flex gap-3 align-items-center mt-4">
+                                                    <p class="m-0">Learn More</p>
+                                                    <div class="signup-arrow">
+                                                        <i class="ri-arrow-right-line ms-2"></i>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills-ai" role="tabpanel" aria-labelledby="v-pills-ai-tab" tabindex="0">
+                                            <div class="tab-text pt-4 mt-4">
+                                                <h4 class="roboto">AI/Intelligence Certification </h4>
+                                                <p class="nunito mt-4">This program consists of a series of courses aimed at understanding how AI can impact and improve the intelligence development in various business and social applications by utilizing AI as a means to jumpstart the Competitive Intelligence modeling within your organization.</p>
+                                                <button class="d-flex gap-3 align-items-center mt-4">
+                                                    <p class="m-0">Learn More</p>
+                                                    <div class="signup-arrow">
+                                                        <i class="ri-arrow-right-line ms-2"></i>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills-executive" role="tabpanel" aria-labelledby="v-pills-executive-tab" tabindex="0">
+                                            <div class="tab-text pt-4 mt-4">
+                                                <h4 class="roboto">SCIP Executive Intelligence</h4>
+                                                <p class="nunito mt-4">This program consists of a series of courses aimed at understanding how AI can impact and improve the intelligence development in various business and social applications by utilizing AI as a means to jumpstart the Competitive Intelligence modeling within your organization.</p>
+                                                <button class="d-flex gap-3 align-items-center mt-4">
+                                                    <p class="m-0">Learn More</p>
+                                                    <div class="signup-arrow">
+                                                        <i class="ri-arrow-right-line ms-2"></i>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </section>
+        <section class="recognized-section">
+            <div class="row g-5">
+                <div class="col-md-4">
+                    <img src="./logo/IACET.png" alt="photo">
+                </div>
+                <div class="col-md-8">
+                    <h2 class="roboto">Recognized for Excellence</h2>
+                    <p class="nunito pt-3">SCIP has been awarded the prestigious Accredited Provider designation by<strong>IACET(International Accreditors for Continuing Education Training)</strong>.The ANSI/IACET Standard is recognized internationally as the gold standard for continued education and training. As an Accredited Provider, SCIP offers continuing education credits for its learning events that comply with the Standard.​</p>
+                </div>
+            </div>
+        </section>
+          <section class="tools-section p-5">
+            <div class="first-part">
+                <h1 class="roboto w-100 text-center">SCIP INTELLIGENCE Tools</h1>
+                <p class="nunito w-100 text-center">SCIP continues to offer a boundless repository of tools and resources to help burgeoning Intelligence Professionals with the skills they need in their everyday role. </p>
+                <button class="roboto d-flex gap-3 align-items-center">
+                    <p class="m-0 p-0">Learn More</p>
+                    <div class="signup-arrow">
+                        <i class="ri-arrow-right-line ps-2"></i>
+                    </div>
+                </button>
+                <img class= "w-100 text-center" src="./logo/Render 1920x1080_2 3.png" alt="tools">
+                <p class="nunito cube w-100 text-center">We are the world’s largest Intelligence repository for methods, templates, tools, processes and other learning assets contributed by global leaders in this Intelligence space.</p>
+            </div>
+            <div class="bottom">
+                <div class="tools-container">
+                    <div class="row flex-wrap g-4 py-5">
+                        <div class="col-md-4">
+                            <div class="box d-flex flex-column justify-content-end h-100 w-100 pb-4">
+                                <h4 class="title">Foundational Resources (CI Basics)</h4>
+                                <p class="description">Discover Competitive Intelligence (CI) basics, including data collection, analysis, tools, and models, to drive team and organizational growth.</p>
+                                <div>
+                                    <button class="tool-button d-flex gap-2 m-0">
+                                        <p class="m-0 pb-4">Learn More</p>
+                                        <div class="signup-arrow">
+                                        <i class="ri-arrow-right-line pb-3 ps-2"></i>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box d-flex flex-column justify-content-end h-100 w-100 pb-4">
+                                <h4 class="title">Advanced Resources</h4>
+                                <p class="description">Explore advanced tools and AI to elevate CI, navigate disruption, and adopt World-Class behaviors, driving innovation and strategic growth.</p>
+                                <div>
+                                    <button class="tool-button d-flex gap-2 m-0">
+                                        <p class="m-0 pb-4">Learn More</p>
+                                        <div class="signup-arrow">
+                                        <i class="ri-arrow-right-line pb-3 ps-2"></i>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box d-flex flex-column justify-content-end h-100 w-100 pb-4">
+                                <h4 class="title">CI technology & Tools</h4>
+                                <p class="description">Discover content on leveraging cutting-edge CI tools, including AI, machine learning, chatbots, predictive analytics, and data-driven intelligence to boost productivity and growth.</p>
+                                <div>
+                                    <button class="tool-button d-flex gap-2 m-0">
+                                        <p class="m-0 pb-4">Learn More</p>
+                                        <div class="signup-arrow">
+                                        <i class="ri-arrow-right-line pb-3 ps-2"></i>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box d-flex flex-column justify-content-end h-100 w-100 pb-4">
+                                <h4 class="title">Leadership & Careers Development Resources</h4>
+                                <p class="description">SCIP offers career tips to position your CI role as key to growth, plus access to a partner Job Board to advance your career.</p>
+                                <div>
+                                    <button class="tool-button d-flex gap-2 m-0">
+                                        <p class="m-0 pb-4">Learn More</p>
+                                        <div class="signup-arrow">
+                                        <i class="ri-arrow-right-line pb-3 ps-2"></i>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box d-flex flex-column justify-content-end h-100 w-100 pb-4">
+                                <h4 class="title">Communications & Stakeholder Management Resources</h4>
+                                <p class="description">Effective communication is key to CI modeling. Learn how to present your insights to influence decision-makers and maximize ROI.</p>
+                                <div>
+                                    <button class="tool-button d-flex gap-2 m-0">
+                                        <p class="m-0 pb-4">Learn More</p>
+                                        <div class="signup-arrow">
+                                        <i class="ri-arrow-right-line pb-3 ps-2"></i>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box d-flex flex-column justify-content-end h-100 w-100 pb-4">
+                                <h4 class="title">Ethics & Integrity</h4>
+                                <p class="description">Ethics and integrity are vital to SCIP’s value, ensuring credibility, safety, fairness, and value to your organization and yourself.</p>
+                                <div>
+                                    <button class="tool-button d-flex m-0">
+                                        <p class="m-0 pb-4">Learn More</p>
+                                        <div class="signup-arrow">
+                                        <i class="ri-arrow-right-line pb-3 ps-2"></i>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box d-flex flex-column justify-content-end h-100 w-100 pb-4 pt-0">
+                                <h4 class="title">Future, Impact, Metrics & ROI</h4>
+                                <p class="description">Establishment of behavioral set of rules around Intelligence governance and usage</p>
+                                <div>
+                                    <button class="tool-button d-flex gap-2 m-0">
+                                        <p class="m-0 pb-4">Learn More</p>
+                                        <div class="signup-arrow">
+                                        <i class="ri-arrow-right-line pb-3 ps-2"></i>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box d-flex flex-column justify-content-end h-100 w-100 pb-4">
+                                <h4 class="title">Competitive Enablement</h4>
+                                <p class="description">Using CI modeling across functions expands influence and drives effectiveness, securing its value as a key part of the organization’s infrastructure.</p>
+                                <div>
+                                    <button class="tool-button d-flex gap-2 m-0">
+                                        <p class="m-0 pb-1">Learn More</p>
+                                        <div class="signup-arrow">
+                                        <i class="ri-arrow-right-line pb-3 ps-2"></i>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box d-flex flex-column justify-content-end h-100 w-100 pb-4">
+                                <h4 class="title">Benchmarks</h4>
+                                <p class="description">A section on Best Practices in CI development, helping you compare models, learn from industry leaders, and fast-track your progress to world-class standards.</p>
+                                <div>
+                                    <button class="tool-button d-flex gap-2 m-0">
+                                        <p class="m-0 pb-4">Learn More</p>
+                                        <div class="signup-arrow">
+                                        <i class="ri-arrow-right-line pb-3 ps-2"></i>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box d-flex flex-column justify-content-end h-100 w-100 pb-4">
+                                <h4 class="title">Strategy & Analystics</h4>
+                                <p class="description">A strong CI model drives strategy. This section covers tips on Design Thinking, Qualitative Data, and Analytical Thinking to enhance growth-oriented strategies.</p>
+                                <div>
+                                    <button class="tool-button d-flex gap-2 m-0">
+                                        <p class="m-0 pb-4">Learn More</p>
+                                        <div class="signup-arrow">
+                                        <i class="ri-arrow-right-line pb-3 ps-2"></i>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box d-flex flex-column justify-content-end h-100 w-100 pb-4">
+                                <h4 class="title">Collection & Research</h4>
+                                <p class="description">Learn best practices in Primary and Secondary research, including data management and tools to extract valuable insights for CI modeling growth.</p>
+                                <div>
+                                    <button class="tool-button d-flex gap-2 m-0">
+                                        <p class="m-0 pb-4">Learn More</p>
+                                        <div class="signup-arrow">
+                                        <i class="ri-arrow-right-line pb-3 ps-2"></i>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box d-flex flex-column justify-content-end h-100 w-100 pb-4">
+                                <h4 class="title">Template</h4>
+                                <p class="description">A selection of recommended templates to enhance your CI modeling, accelerating analytics and clarifying outcomes and actions.</p>
+                                <div>
+                                    <button class="tool-button d-flex gap-2 m-0">
+                                        <p class="m-0 pb-4">Learn More</p>
+                                        <div class="signup-arrow">
+                                        <i class="ri-arrow-right-line pb-3 ps-2"></i>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </section>
+        <section class="difference-section">
+            <div class="content">
+                <p class="roboto topic w-100 text-center">Ready to make a <span> difference?</span></p>
+                <p class="nunito w-100 text-center">Become a part of our SCIP Global Community and contribute to the </p>
+                <p class="roboto description w-100 text-center">“Intelligence Consortium for the Betterment of People and Planet”</p>
+                <button class="roboto d-flex gap-3 align-items-center">
+                    <p class="m-0 p-0 text-black">Learn More</p>
+                    <div class="signup-arrow">
+                        <i class="ri-arrow-right-line ms-2"></i>
+                    </div>  
+                    </button>
+              </div>
+               
+        </section>
+      </body>
+      <section class="footer m-0">
+        <div class="footer-line"></div>
+         <div class="row m-0 p-5 pb-3">
+                <div class="col-md-5">
+                  <div>
+                    <img src="./logo/SCIP_Logo_Primary 2.png" alt="logo" class="footer-logo-1">
+                    <img src="./logo/SCIP_Logo_Primary 3.png" alt="logo" class="footer-logo-2">
+                  </div>
+                  <div class="footer-company-info">
+                     <p class="mb-0">Strategic Consortium of Intelligence Professionals (SCIP)</p>
+                     <p class="mb-0">"Intelligence for the Betterment of People and Planet"</p>
+                     <p class="mb-0">7550 IH 10 West, Suite 400 - San Antonio, TX 78229 USA</p>
+                     <p class="mb-0">© 2024 SCIP</p>
+                  </div>
+                  <div class="d-flex gap-4 mt-4 media-icon">
+                     <a href=""><i class="ri-instagram-line"></i></a>
+                     <a href=""><i class="ri-facebook-circle-fill"></i></a>
+                     <a href=""><i class="ri-twitter-x-fill"></i></a>
+                     <a href=""><i class="ri-youtube-fill"></i></a>
+                     <a href=""><i class="ri-linkedin-fill"></i></a>
+                  </div>
+                </div>
+
+                 
+                <div class="col-md-7">
+                  <div class="d-flex footer-info gap-4">
+                    <div class="d-flex gap-2 flex-column">
+                      <h3>Resources</h3>
+                      <div>
+                        <a href="">I_Stream</a>
+                      </div>
+                      <div>
+                        <a href="">Blogs</a>
+                       </div>
+                      <div>
+                        <a href="">Newsletter </a>
+                      </div>
+                      <div>
+                        <a href="">Magazine</a>
+                      </div>
+                      <div>
+                        <a href="">On Demand Video</a>
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 flex-column">
+                       
+                      <h3>Resources</h3>
+                      <div>
+                        <a href="">I_Stream</a>
+                      </div>
+                      <div>
+                        <a href="">Blogs</a>
+                       </div>
+                      <div>
+                        <a href="">Newsletter </a>
+                      </div>
+                      <div>
+                        <a href="">Magazine</a>
+                      </div>
+                      <div>
+                        <a href="">On Demand Video</a>
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 flex-column">
+                       
+                      <h3>Resources</h3>
+                      <div>
+                        <a href="">I_Stream</a>
+                      </div>
+                      <div>
+                        <a href="">Blogs</a>
+                       </div>
+                      <div>
+                        <a href="">Newsletter </a>
+                      </div>
+                      <div>
+                        <a href="">Magazine</a>
+                      </div>
+                       
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="designed-by">
+              Membership Software Powered by YourMembership  ::  Legal
+              </div>
+      </section>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"
+  ></script>
+</html>

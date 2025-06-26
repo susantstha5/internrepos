@@ -1,0 +1,1240 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+.text-success {
+  color: #42e26f !important;
+}
+
+.letter-spacing-md {
+  letter-spacing: 1px;
+}
+/* #background-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -10;
+    } */
+/* navbar and intro container css from here */
+.navbar {
+  height: 80px;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.1) !important;
+   
+}
+.nav-brand img {
+  width: 183px;
+  height: 80px;
+}
+.overlay-blur {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  backdrop-filter: blur(4px);
+  z-index: -1;
+}
+
+.intro_container {
+  background: url("./logo/Scip\ video\ trimmed\ 1.png");
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 80px;
+}
+.intro_container .member-button{
+  
+  background-color: white;
+  padding: 8px 24px;
+  border: none;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: all 0.8s linear;
+  color: black;
+  margin: auto;
+}
+.intro_container .member-button p {
+  margin: 0;
+  position: relative;
+  color: black;
+  transition: all 0.5s linear;
+  font-weight: 500;
+}
+.intro_container .member-button .signup-arrow {
+  position: relative;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s linear;
+}
+.intro_container .member-button::before {
+  content: "";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: #42E26F;
+  border-radius: 50%;
+  transition: all 0.5s linear;
+}
+.intro_container .member-button:hover::before {
+  width: 200%;
+  height: 200%;
+  right: -20%;
+}
+ 
+.menu-dropdown .btn {
+  background: transparent;
+}
+
+.menu-dropdown:hover .btn {
+  background-color: rgba(245, 245, 245, 0.2);
+}
+
+ 
+.btn .menu-arrow i {
+  transition: transform 1s ease, color 0.3s ease;
+  display: inline-block;
+}
+
+.menu-dropdown:hover > .btn .menu-arrow i,
+.btn:hover > .menu-arrow i {
+  transform: rotate(180deg);
+  color: #00d8fa;
+}
+
+ 
+.menu-dropdown:hover > button .menu-label,
+.menu-dropdown .btn:hover > .menu-label,
+.nav-item:hover > .nav-link,
+.banner_head {
+  background: linear-gradient(to right, #00ffd1, #00f1e3, #00d8fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  width: 100%;
+  height: 100%;
+}
+
+ 
+.dropdown-menu {
+  background-color: rgba(185, 185, 185, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+.menu-dropdown:hover > .dropdown-menu {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.menu-dropdown .dropdown-menu {
+  display: none;
+  top: 80%;
+  left: 0%;
+  gap: 5px;
+  font-size: 14px;
+  color: white;
+}
+
+.menu-dropdown .dropdown-one {
+  left: -50%;
+}
+
+ 
+.dropdown-item {
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  border-radius: 8px;
+  padding: 10px;
+  color: white;
+}
+
+.dropdown-item:hover {
+  color: black;
+}
+
+.scroll-banner {
+  background: linear-gradient(
+    to right,
+    rgba(185, 185, 185, 0.2),
+    rgba(83, 83, 83, 0.2)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: white;
+  width: 100%;
+  padding-left: 30px;
+}
+.scrolling_banner {
+  white-space: nowrap;
+  width: calc(100%-160px);
+  overflow: hidden;
+   position: relative;
+}
+
+.banner_text {
+  display: inline-flex;  
+  animation: scroll-left 20s linear infinite;
+}
+
+/* Keyframes for scrolling left infinitely */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.banner_text::-webkit-scrollbar {
+  display: none;
+}
+.banner_text div {
+  height: fit-content;
+}
+.scroll_banner button {
+  background: linear-gradient(to right, #00ffd1, #00f1e3, #00d8fa);
+  height: fit-content;
+  width: 160px;
+  gap:0px
+}
+.intro_content {
+  max-width: 80%;
+}
+.head {
+  background: linear-gradient(to right, #00ffd1, #00f1e3, #00d8fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  width: fit-content;
+  font-size: clamp(46px, 5vw, 64px);
+}
+.intro_content p {
+  font-size: clamp(14px, 5vw, 18px);
+}
+/* description container css from here */
+.description_container button {
+  position: relative;
+  background-color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: all 0.8s linear;
+  color: black;
+  margin: auto;
+}
+.description_container button p {
+  margin: 0;
+  position: relative;
+  color: black;
+  transition: all 0.5s linear;
+  font-weight: 500;
+}
+.description_container button .signup-arrow {
+  position: relative;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s linear;
+}
+.description_container button::before {
+  content: "";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: #42E26F;
+  border-radius: 50%;
+  transition: all 0.5s linear;
+}
+.description_container button:hover::before {
+  width: 200%;
+  height: 200%;
+  right: -20%;
+}
+.description_container {
+  width: 100%;
+  background-image:linear-gradient(0deg, rgba(1, 8, 23, 0.3), rgba(1, 8, 23, 0.3)),
+ 
+    url("./logo/1118394_4k_Mystery_3840x2160\ 2.png");
+  background-size: contain;
+  min-height: 90vh;
+  background-color: black;
+  padding: 0px 100px;
+}
+.blur-div {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
+.text_wrapper {
+  max-width: 80%;
+}
+.container-video {
+  min-height: 350px;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 1)
+    ),
+    url("./logo/3d\ rendering\ of\ dark\ earth\ in\ space133\ 1.png");
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+}
+.youtube-video {
+  width: 40%;
+  bottom: 50%;
+}
+.card_container {
+  min-height: 80vh;
+  background-image:  
+         url("./logo/Value\ Propostition\ Video.png");
+  
+   background-blend-mode: darken;
+  background-size: cover;
+  padding: 50px 100px;
+  z-index: 1;
+}
+.cards {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+}
+.card h3 {
+  font-size: 28px;
+  z-index: 1;
+}
+.card {
+  position: relative;
+}
+.card p {
+  color: rgba(245, 245, 245, 0.8);
+  font-size: 18px;
+  margin: 0px;
+  z-index: 1;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(19, 34, 40, 0.5) 0%,
+    rgba(47, 79, 101, 0.7) 50%,
+    rgba(83, 152, 191, 0.9) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  z-index: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.card:hover::after {
+  opacity: 1;
+}
+/* place_container css from here */
+.place_container {
+  min-height: 600px;
+  background-color: black;
+  background-image: url("./logo/Image\ [hidden].png");
+  background-size: cover;
+}
+.place_heading {
+  max-width: 80%;
+}
+.place_image {
+  transition: all 0.3s ease-in-out;
+}
+.place_image:hover {
+  transform: scale(1.02);
+}
+.place_details {
+  min-width: 35%;
+}
+.place_details h3 {
+  font-size: clamp(30px, 5vw, 44px);
+}
+.place_details p {
+  font-size: clamp(14px, 5vw, 20px);
+  color: rgba(245, 245, 245, 0.8);
+}
+.upcoming_place {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+}
+.place {
+  
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  padding: 15px;
+}
+.upcomingplace_date {
+  display: none;
+  color: white;
+}
+.upcomingplace_wrap .union-image{
+  top: -50%;
+}
+.place::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  background: linear-gradient(rgba(0, 15, 36, 0.5), rgba(0, 15, 36, 0.5));
+  transition: all 0.6s ease;
+  z-index: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.place h5 {
+  font-size: clamp(14px, 5vw, 20px);
+}
+.place .place_content {
+  bottom: 10px;
+  transition: all 0.3s ease;
+  padding: 10px;
+}
+.place:hover .place_content {
+  bottom: 50%;
+  z-index: 3;
+}
+.place:hover::after {
+  opacity: 1;
+}
+.union-image{
+  z-index: 1;
+  
+}
+.place:hover .upcomingplace_date {
+  display: block;
+}
+.place:hover h5 {
+  font-size: clamp(20px, 5vw, 26px);
+}
+.place_container button {
+  position: relative;
+  background-color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: all 0.8s linear;
+  color: black;
+  margin-top:0px;
+  margin-left: 0px;
+  width: 206px;
+}
+.place_container button p {
+  margin: 0;
+  position: relative;
+  color: black;
+  transition: all 0.5s linear;
+  font-weight: 500;
+}
+.place_container button .signup-arrow {
+  position: relative;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s linear;
+}
+.place_container button::before {
+  content: "";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: #42E26F;
+  border-radius: 50%;
+  transition: all 0.5s linear;
+}
+.place_container button:hover::before {
+  width: 200%;
+  height: 200%;
+  right: -20%;
+}
+/* icoecenter css from here */
+.icoecenter_container{
+  background-color: black;
+  min-height: 60vh;
+  z-index: 3;
+   
+}
+.scip_wrap{
+  padding: 100px 100px 60px 100px;
+  gap: 50px;
+}
+.scip_logo{
+  min-width: 13%;
+}
+.scip_logo img{
+  object-fit: cover;
+  object-position: center;
+}
+.scip_wrap h2{
+  font-size: clamp(30px,5vw,44px);
+  min-width: 40%;
+  padding-left: 20px;
+}
+.icoe_text p{
+  font-size: clamp(14px,5vw,18px);
+}
+.icoecenter_container button {
+  position: relative;
+  background-color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: all 0.8s linear;
+  color: black;
+  margin-left:0px;
+
+}
+.icoecenter_container button p {
+  margin: 0;
+  position: relative;
+  color: black;
+  transition: all 0.5s linear;
+  font-weight: 500;
+}
+.icoecenter_container button .signup-arrow {
+  position: relative;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s linear;
+}
+.icoecenter_container button::before {
+  content: "";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: #42E26F;
+  border-radius: 50%;
+  transition: all 0.5s linear;
+}
+.icoecenter_container button:hover::before {
+  width: 200%;
+  height: 200%;
+  right: -20%;
+}
+.map_wrap{
+   background-image: linear-gradient(
+      rgba(0, 0, 0, 1),
+      rgba(0,0,0,0.1),
+      rgba(0, 0, 0, 0.1),
+      rgba(0,0,0,0.1),
+      rgba(0, 0, 0, 1)
+    ),
+    url("./logo/Group\ 1000001820.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  min-height: 80vh; 
+  width: 100%;
+}
+.map_wrap img{
+   object-fit: contain;
+}
+/* affilitaes part css from here */
+.affiliates{
+  background-color: black;
+  background-image: url(./logo/Vector\ 5.png ); 
+  padding: 100px;
+}
+.affiliatesLogo_container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+  
+   
+}
+.affiliates_logo{
+  background-color: white;
+  padding: 8px;
+  height: 100px;
+  min-width: 265px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.affiliates_logo img{
+  object-fit: contain;
+  object-position: center;
+  max-width: 100%;
+  transition: opacity 0.3s ease-in;
+}
+.affiliates_logo p{
+  color: gray;
+  text-align: center;
+  margin: 0;
+  padding: 0px 12px;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+.affiliates_logo:hover p{
+  opacity: 1;
+  max-width: 100%;
+}
+.affiliates_logo:Hover img{
+  opacity: 0;
+  transform: scale(0.9);
+}
+  /*speed section from here  */
+.speed-section {
+  background: url("./logo/SPEED\ Video\ bg.png"), linear-gradient(to top, rgb(12, 12, 13), rgb(12, 12, 13), rgb(12, 12, 13));
+  color: white;
+   }
+.speed-section .first-part {
+  padding: 0px 70px;
+}
+.speed-section .first-part h1 {
+  text-transform: uppercase;
+  background: linear-gradient(to right, #00FFD1, #00F1E3, #00D8FA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 64px;
+  font-weight: 700;
+}
+  .speed-section .description {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  width: 880px;
+  align-items: center;
+}
+ .speed-section .description span {
+  font-weight: 400;
+}
+.speed-section .first-part h3 {
+  font-size: 28;
+  font-weight: 600;
+}
+.speed-section button {
+  position: relative;
+  background-color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: all 0.8s linear;
+  color: black;
+  margin: auto;
+}
+.speed-section button p {
+  margin: 0;
+  position: relative;
+  color: black;
+  transition: all 0.5s linear;
+}
+.speed-section button .signup-arrow {
+  position: relative;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s linear;
+}
+.speed-section button::before {
+  content: "";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: #42E26F;
+  border-radius: 50%;
+  transition: all 0.5s linear;
+}
+.speed-section button:hover::before {
+  width: 200%;
+  height: 200%;
+  right: -20%;
+}
+.speed-section .content {
+  padding: 0px 100px;
+}
+.speed-section .content h3 {
+  font-size: 28px;
+  font-weight: 600;
+}
+  .awareness {
+  font-family: "Roboto";
+  border-block: 1px solid rgba(245, 245, 245, 0.8);
+  transition: all 0.8s linear;
+}
+ .awareness .num {
+  transform: scale(1);
+}
+ .awareness .after h3 {
+  opacity: 0;
+}
+  .awareness .speed-contents p {
+  opacity: 0;
+  height: 0px;
+}
+ .awareness img {
+  opacity: 0;
+  height: 0px;
+  transform: scale(0);
+}
+  .awareness:hover .before {
+  gap: 0px !important;
+}
+  .awareness:hover .num {
+  opacity: 0;
+  height: 0px;
+  transform: scale(0);
+}
+ .awareness:hover i {
+  opacity: 0;
+  height: 0px;
+}
+  .awareness:hover .speed-contents p {
+  opacity: 1;
+  height: auto;
+}
+ .awareness:hover img {
+  opacity: 1;
+  height: 200px;
+  transform: scale(1);
+  transition: all 0.8s linear;
+  transform-origin: top;
+}
+/* smart tranning section from here */
+  .smart-section {
+  background: url("./logo/Minimal\ glow\ of\ the\ globe\ in\ dark\ wallpaper.png"), linear-gradient(to bottom, rgb(12, 13, 15));
+  color: white;
+}
+.smart-section .topic {
+  padding: 0px 80px;
+   
+}
+.smart-section .topic h1 {
+  text-transform: uppercase;
+  background: linear-gradient(to right, #00FFD1, #00F1E3, #00D8FA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 64px;
+  font-weight: 700;
+}
+.smart-section .topic .decription {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+.smart-section .topic button {
+  position: relative;
+  background-color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: all 0.8s linear;
+  color: black;
+  margin: auto;
+}
+.smart-section .topic button p {
+  margin: 0;
+  position: relative;
+  color: black;
+  transition: all 0.5s linear;
+}
+.smart-section .topic button .signup-arrow {
+  position: relative;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s linear;
+}
+.smart-section .topic button::before {
+  content: "";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: #42E26F;
+  border-radius: 50%;
+  transition: all 0.5s linear;
+}
+.smart-section .topic button:hover::before {
+  width: 200%;
+  height: 200%;
+  right: -20%;
+}
+.smart-section .nav-link {
+  color: white;
+  transition: all 0.7s linear;
+}
+.smart-section .nav-pills .nav-link.active, .smart-section .nav-pills .show > .nav-link {
+  color: black;
+  background-color: #42E26F;
+  transition: all 0.7s linear;
+}
+  .panel-bg {
+  margin: 30px 100px 0px 100px;
+  background-color: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  border: 1px solid #B9B9B9;
+  border-radius: 10px;
+  min-height: 438px;
+  min-width: 1200px;
+   
+}
+ .left-tab {
+  background-color: rgba(12, 12, 13, 0.5019607843);
+  min-height: 438px;
+  min-width: 300px;
+  transition: all 0.7s linear;
+}
+ .tab-text {
+  padding-left: 50px;
+  transition: all 0.7s linear;
+   
+}
+  .tab-text h4 {
+  font-size: 24px;
+  font-weight: 600;
+  background: linear-gradient(to right, #00FFD1, #00F1E3, #00D8FA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+   
+   
+}
+ .tab-text button {
+  position: relative;
+  background-color: white;
+  padding: 5px 24px;
+  border: none;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: all 0.6s linear;
+  color: black;
+}
+ .tab-text button p {
+  margin: 0;
+  position: relative;
+  color: black;
+  transition: all 0.5s linear;
+}
+  .tab-text button .signup-arrow {
+  position: relative;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s linear;
+}
+ .tab-text button::before {
+  content: "";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: #42E26F;
+  border-radius: 50%;
+  transition: all 0.5s linear;
+}
+ .tab-text button:hover::before {
+  width: 200%;
+  height: 200%;
+  right: -20%;
+}
+ .panel-top {
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  border: 1px solid #B9B9B9;
+  border-radius: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+ .panel-top h3 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+ 
+/* recognized section css */
+.recognized-section {
+  background-color: #0C0C0D;
+  padding: 100px 140px 150px 140px;
+}
+.recognized-section h2 {
+  background: linear-gradient(to right, #00FFD1, #00F1E3, #00D8FA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 44px;
+  font-weight: 700;
+}
+.recognized-section p {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* tools section css  */
+.tools-section {
+  background-color: #0C0C0D;
+}
+ 
+.tools-section .first-part h1 {
+  text-transform: uppercase;
+  background: linear-gradient(to right, #00FFD1, #00F1E3, #00D8FA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 64px;
+  font-weight: 700;
+}
+.tools-section .first-part p {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0 250px;
+}
+.tools-section .first-part .cube {
+  margin-top: -100px;
+}
+.tools-section .first-part button {
+  position: relative;
+  background-color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: all 0.8s linear;
+  color: black;
+  margin: auto;
+}
+.tools-section .first-part button p {
+  margin: 0;
+  position: relative;
+  color: black;
+  transition: all 0.5s linear;
+}
+.tools-section .first-part button .signup-arrow {
+  position: relative;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s linear;
+}
+.tools-section .first-part button::before {
+  content: "";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: #42E26F;
+  border-radius: 50%;
+  transition: all 0.5s linear;
+}
+.tools-section .first-part button:hover::before {
+  width: 200%;
+  height: 200%;
+  right: -20%;
+}
+.tools-section .tools-container {
+  padding: 0px 150px;
+  color: white;
+}
+ .tools-container .box {
+  background-color: rgba(12, 12, 13, 0.5);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  border: 1px solid #B9B9B9;
+  border-radius: 10px;
+  padding: 20px 20px 5px 20px;
+  min-height: 270px;
+  
+}
+ .tools-container .box .title {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 600;
+}
+ .tools-container .box .description {
+  font-family: "Nunito Sans";
+  font-size: 14px;
+  font-weight: 400;
+}
+ .tools-container .box button {
+  position: relative;
+  background-color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  overflow: hidden;
+  height: 0px;
+  transition: all 0.2s linear;
+  color: black;
+  opacity: 0;
+  margin: auto;
+}
+ .tools-container .box button p {
+  margin: 0;
+  position: relative;
+  color: black;
+  transition: all 0.5s linear;
+}
+ .tools-container .box button .signup-arrow {
+  position: relative;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s linear;
+}
+ .tools-container .box button::before {
+  content: "";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: #42E26F;
+  border-radius: 50%;
+  transition: all 0.5s linear;
+}
+.tools-container .box button:hover::before {
+  width: 200%;
+  height: 200%;
+  right: -20%;
+}
+ .tools-container .box:hover {
+  background: linear-gradient(to bottom, #10151b, #245d75);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+ .tools-container .box:hover .tool-button {
+  opacity: 1;
+  height: 50px;
+}
+
+/* make a difference section css */
+.difference-section {
+  background: url("./logo/1118394_4k_Mystery_3840x2160\ 2.png"), linear-gradient(to top, rgb(12, 12, 13), rgb(12, 12, 13), rgb(12, 12, 13));
+}
+ .difference-section .content {
+  padding: 200px;
+}
+ .difference-section .content .topic {
+  font-family: "Roboto";
+  text-transform: uppercase;
+  color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 64px;
+  font-weight: 700;
+}
+ .difference-section .content span {
+  background: linear-gradient(to right, #00FFD1, #00F1E3, #00D8FA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+ .difference-section .content p {
+  color: white;
+}
+ .content .description {
+  font-family: "Roboto";
+  color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+ .difference-section button {
+  position: relative;
+  background-color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: all 0.8s linear;
+  color: black;
+  margin: auto;
+}
+.difference-section button p {
+  margin: 0;
+  position: relative;
+  color: black;
+  transition: all 0.5s linear;
+  font-weight: 500;
+}
+.difference-section button .signup-arrow {
+  position: relative;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s linear;
+}
+.difference-section button::before {
+  content: "";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: #42E26F;
+  border-radius: 50%;
+  transition: all 0.5s linear;
+}
+.difference-section button:hover::before {
+  width: 200%;
+  height: 200%;
+  right: -20%;
+}
+/* footer css  */
+.footer{
+  background-color: black;
+  color: white;
+  height: 355px;
+  width:auto;
+  position: relative;
+  display:flex;
+  flex-direction:column;
+  padding-top: 10px;
+}
+.footer-line{
+  border: 2px solid #42E26F;
+  margin-top:-10px;
+}
+.footer-logo-1{
+   width: 50px;
+  height: 77px;
+  top: 40px;
+  left: 29px;
+
+}
+.footer-logo-2{
+  width: 109px;
+  height: 77px;
+  top: 40px;
+  left: 83px;
+}
+.footer-company-info{
+  color: #F5F5F5CC;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 100%;
+   
+}
+.footer .media-icon a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  
+}
+.footer .footer-info{
+  justify-content: space-evenly;
+}
+.footer .footer-info h3{
+font-family: roboto;
+font-weight: 600;
+font-size: 20px;
+line-height: 110%;
+}
+.footer-info a{
+  text-decoration: none;
+  color: #F5F5F5CC;
+  font-family: Nunito Sans;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+.footer .designed-by{
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 60px;
+}
