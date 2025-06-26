@@ -94,6 +94,10 @@
 .smartHover a {
   border-radius: 10px;
 }
+.intelliHover .barca:hover .barcaHover {
+  display: block;
+}
+
 .hoverList a:hover,
 .intelliHover a:hover,
 .memberHover a:hover,
@@ -112,13 +116,18 @@
 .barcaHover {
   display: none;
 }
-.intelliHover .barca:hover .barcaHover {
-  display: block;
-}
+
+// .intelliHover .barca:hover .barcaHover {
+//   display: block;
+// }
 
 .mobileMenu {
   display: none;
   color: $grey-white;
+  a {
+    color: $grey-white;
+    // text-decoration: underline;
+  }
   .offcanvas {
     background: rgba(12, 12, 13, 0.5);
     backdrop-filter: blur(20px);
@@ -127,6 +136,11 @@
       // --bs-btn-close-color: #f5f5f5;
       filter: invert(1);
       z-index: 3;
+    }
+    .btn:hover {
+      color: $grey-white;
+      background-color: $action-color;
+      border-color: none;
     }
     .mobileNav {
       border-top: 3px solid $action-color;

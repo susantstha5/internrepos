@@ -119,9 +119,14 @@
     .speedList {
       padding: 10px;
       justify-content: center !important;
+      transition: none !important;
       .speedCard {
         flex-direction: column;
         align-items: center !important;
+        .speedImg {
+          transform: none !important;
+          transition: none !important;
+        }
       }
       .descriptionContainer {
         gap: 5px !important;
@@ -130,12 +135,18 @@
           padding: 10px;
         }
         .speedDescription {
+          transition: none !important;
+          transform: none !important;
           .topic {
             font-size: 20px !important;
             padding: 10px;
+            transition: none !important;
+            transform: none !important;
           }
           .speedContent {
             font-size: 14px !important;
+            transition: none !important;
+            transform: none !important;
           }
         }
       }

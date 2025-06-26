@@ -23,7 +23,7 @@
   font-size: 14px;
   font-weight: 400;
   position: absolute;
-  padding: 10px;
+  // padding: 10px;/
   // top: 50%;
   // left: 50%;
   transform: scale(0);
@@ -46,9 +46,18 @@
   height: auto;
   transform: scale(1);
 }
+.cardrow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 @media screen and (max-width: 900px) {
   .affiliate {
+    .affiliateCard .cardrow {
+      flex-wrap: nowrap;
+      overflow: auto;
+    }
     .content {
       font-size: 12px !important;
     }

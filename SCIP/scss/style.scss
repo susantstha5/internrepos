@@ -102,6 +102,32 @@ body {
   // width: 100%;
   padding-top: 110px;
 }
+.homebgVideo {
+  padding-top: 110px;
+  width: 100%;
+  z-index: 0;
+  position: absolute;
+  padding: 10px;
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(12, 12, 13, 1),
+        rgba(12, 12, 13, 0)
+      ),
+      rgba(12, 12, 13, 0.6);
+
+    z-index: 1;
+  }
+  .homebg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+}
 
 .title {
   font-size: 54px;

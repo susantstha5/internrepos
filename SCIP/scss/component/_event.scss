@@ -140,7 +140,7 @@
       font-size: 16px !important;
       margin: 0px;
       padding-block: 10px !important;
-      padding-inline: 20px !important;
+      // padding-inline: 20px !important;
     }
   }
   .eventContent {
@@ -214,19 +214,44 @@
       min-width: 200px;
       .cardItem {
         .cardDetail {
+          transition: none !important;
+          transform: none !important;
           padding: 20px;
           .cardTopic {
             font-size: 18px !important;
+            transform: none !important;
           }
+          .dateDetail {
+            opacity: 1;
+            height: auto;
+          }
+        }
+        &:hover::after {
+          opacity: 0;
         }
       }
     }
   }
   .eventCard .cardList .cardItem:hover {
+    .imgBg img {
+      transform: none !important;
+    }
     .cardDetail {
+      background: none;
+      padding: none !important;
+      transform: none !important;
       .cardTopic {
-        font-size: 20px !important;
+        transition: none !important;
+        transform: none !important;
+        padding-bottom: none !important;
+      }
+      .dateDetail {
+        opacity: 1;
+        height: auto;
       }
     }
+  }
+  .eventImg :hover {
+    transform: none !important;
   }
 }

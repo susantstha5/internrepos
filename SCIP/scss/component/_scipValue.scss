@@ -1,7 +1,7 @@
 .scipValue {
   background: radial-gradient(
       circle,
-      rgba(12, 12, 13, 0),
+      rgba(49, 49, 131, 0),
       rgba(12, 12, 13, 1) calc(100% - 150px)
     ),
     url("/image/Value\ Proposition\ Bg.png") no-repeat,
@@ -11,7 +11,8 @@
   // z-index: 1;
   .cardList {
     .card {
-      min-height: 265px;
+      min-height: auto;
+      // min-height: 265px;
       background: rgba(12, 12, 13, 0.5);
       backdrop-filter: blur(50px);
       border: 1px solid rgba(185, 185, 185, 1);
@@ -19,7 +20,11 @@
       transition: transform 0.8s ease;
       position: relative;
       overflow: hidden;
+      // display: flex;
+      // flex-direction: column;
+      // flex: 1;
       .card-body {
+        // flex: 1;
         .card-title {
           font-size: 24px;
         }
@@ -64,7 +69,7 @@
     .cardList {
       padding-block: 10px !important;
       .card {
-        min-height: 280px;
+        // min-height: 280px;
         width: 100%;
         .card-body {
           .card-title {
@@ -88,7 +93,7 @@
     .cardList {
       padding-block: 10px !important;
       .card {
-        min-height: 200px;
+        min-height: auto;
         .card-body {
           .card-title {
             font-size: 20px;

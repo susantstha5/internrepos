@@ -42,7 +42,8 @@
 @media screen and (max-width: 500px) {
   .footer {
     .footerDetail {
-      display: none !important;
+      // display: none !important;
+      flex-direction: column;
     }
   }
   .scipDetail {

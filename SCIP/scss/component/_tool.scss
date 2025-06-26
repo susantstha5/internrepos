@@ -57,7 +57,7 @@
   }
   .cardList {
     .card {
-      min-height: 330px;
+      min-height: auto;
       background: rgba(12, 12, 13, 0.5);
       backdrop-filter: blur(50px);
       border: 1px solid rgba(185, 185, 185, 1);
@@ -148,7 +148,7 @@
     .cardList {
       padding-block: 10px !important;
       .card {
-        min-height: 300px;
+        // min-height: 300px;
       }
     }
   }
@@ -166,13 +166,20 @@
     }
     .cardList {
       .card {
-        min-height: 250px;
+        // min-height: 250px;
         .card-body {
           .card-title {
             font-size: 20px !important;
           }
           .card-text {
             font-size: 12px !important;
+          }
+          .learnMore {
+            opacity: 1;
+            height: auto;
+            transition: none;
+            transform: none;
+            transform-origin: none;
           }
         }
       }

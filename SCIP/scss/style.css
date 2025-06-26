@@ -97,6 +97,10 @@
   border-radius: 10px;
 }
 
+.intelliHover .barca:hover .barcaHover {
+  display: block;
+}
+
 .hoverList a:hover,
 .intelliHover a:hover,
 .memberHover a:hover,
@@ -118,12 +122,11 @@
   display: none;
 }
 
-.intelliHover .barca:hover .barcaHover {
-  display: block;
-}
-
 .mobileMenu {
   display: none;
+  color: #f5f5f5;
+}
+.mobileMenu a {
   color: #f5f5f5;
 }
 .mobileMenu .offcanvas {
@@ -134,6 +137,11 @@
 .mobileMenu .offcanvas .btn-close {
   filter: invert(1);
   z-index: 3;
+}
+.mobileMenu .offcanvas .btn:hover {
+  color: #f5f5f5;
+  background-color: #42e26f;
+  border-color: none;
 }
 .mobileMenu .offcanvas .mobileNav {
   border-top: 3px solid #42e26f;
@@ -294,6 +302,10 @@
     font-size: 12px !important;
   }
 }
+.home .homeContent {
+  position: relative;
+  z-index: 2;
+}
 .home .homeContent .title {
   font-size: 56px;
   font-weight: 700;
@@ -340,14 +352,41 @@
   }
 }
 .intelligence {
-  background: linear-gradient(to top, rgb(12, 12, 13), rgba(12, 12, 13, 0), rgb(12, 12, 13)), url("/image/1118394_4k_Mystery_3840x2160 1.png") no-repeat, rgba(1, 8, 23, 0.3);
+  background: linear-gradient(to top, rgb(12, 12, 13) 80%, rgba(12, 12, 13, 0), rgb(12, 12, 13) 40%), rgb(1, 8, 23);
   padding-top: 80px;
-  padding-bottom: 100px;
+  position: relative;
+}
+.intelligence .intellcontent {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 90px;
 }
 .intelligence .title {
   font-size: 58px;
   font-weight: 700;
   line-height: 120%;
+}
+.intelligence .intellbgVideo {
+  width: 100%;
+  z-index: 0;
+  position: absolute;
+  top: 10px;
+}
+.intelligence .intellbgVideo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgb(12, 12, 13) 20%, rgba(12, 12, 13, 0), rgb(12, 12, 13)), rgba(1, 8, 23, 0.5);
+  z-index: 1;
+}
+.intelligence .intellbgVideo .intellbg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 
 .signIn {
@@ -370,6 +409,9 @@
   .intelligence .content {
     font-size: 16px !important;
   }
+  .intelligence .intellbgVideo {
+    display: none;
+  }
 }
 @media screen and (max-width: 500px) {
   .intelligence .content {
@@ -377,10 +419,12 @@
   }
 }
 .youtube {
-  background: url("/image/3d rendering of dark earth in space133 1.png") no-repeat, linear-gradient(to top, rgb(12, 12, 13), rgba(12, 12, 13, 0)), rgb(12, 12, 13);
+  background: url("/image/3d rendering of dark earth in space133 1.png") no-repeat center center;
+  z-index: 2;
+  position: relative;
 }
 .youtube .link {
-  margin-top: -60px;
+  margin-top: -70px;
   overflow: hidden;
 }
 .youtube .link img {
@@ -412,12 +456,12 @@
   }
 }
 .scipValue {
-  background: radial-gradient(circle, rgba(12, 12, 13, 0), rgb(12, 12, 13) calc(100% - 150px)), url("/image/Value Proposition Bg.png") no-repeat, url("/image/Value Propostition Video.png") no-repeat;
+  background: radial-gradient(circle, rgba(49, 49, 131, 0), rgb(12, 12, 13) calc(100% - 150px)), url("/image/Value Proposition Bg.png") no-repeat, url("/image/Value Propostition Video.png") no-repeat;
   background-size: cover;
   background-position: bottom;
 }
 .scipValue .cardList .card {
-  min-height: 265px;
+  min-height: auto;
   background: rgba(12, 12, 13, 0.5);
   -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);
@@ -460,7 +504,6 @@
     padding-block: 10px !important;
   }
   .scipValue .cardList .card {
-    min-height: 280px;
     width: 100%;
   }
   .scipValue .cardList .card .card-body .card-title {
@@ -479,7 +522,7 @@
     padding-block: 10px !important;
   }
   .scipValue .cardList .card {
-    min-height: 200px;
+    min-height: auto;
   }
   .scipValue .cardList .card .card-body .card-title {
     font-size: 20px;
@@ -621,7 +664,6 @@
     font-size: 16px !important;
     margin: 0px;
     padding-block: 10px !important;
-    padding-inline: 20px !important;
   }
   .eventContent {
     padding-block: 0px !important;
@@ -681,13 +723,40 @@
     min-width: 200px;
   }
   .eventCard .cardList .cardItem .cardDetail {
+    transition: none !important;
+    transform: none !important;
     padding: 20px;
   }
   .eventCard .cardList .cardItem .cardDetail .cardTopic {
     font-size: 18px !important;
+    transform: none !important;
+  }
+  .eventCard .cardList .cardItem .cardDetail .dateDetail {
+    opacity: 1;
+    height: auto;
+  }
+  .eventCard .cardList .cardItem:hover::after {
+    opacity: 0;
+  }
+  .eventCard .cardList .cardItem:hover .imgBg img {
+    transform: none !important;
+  }
+  .eventCard .cardList .cardItem:hover .cardDetail {
+    background: none;
+    padding: none !important;
+    transform: none !important;
   }
   .eventCard .cardList .cardItem:hover .cardDetail .cardTopic {
-    font-size: 20px !important;
+    transition: none !important;
+    transform: none !important;
+    padding-bottom: none !important;
+  }
+  .eventCard .cardList .cardItem:hover .cardDetail .dateDetail {
+    opacity: 1;
+    height: auto;
+  }
+  .eventImg :hover {
+    transform: none !important;
   }
 }
 .icoe {
@@ -764,7 +833,6 @@
   font-size: 14px;
   font-weight: 400;
   position: absolute;
-  padding: 10px;
   transform: scale(0);
   transition: all 0.8s linear;
   color: rgba(12, 12, 13, 0.6);
@@ -789,7 +857,17 @@
   transform: scale(1);
 }
 
+.cardrow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 @media screen and (max-width: 900px) {
+  .affiliate .affiliateCard .cardrow {
+    flex-wrap: nowrap;
+    overflow: auto;
+  }
   .affiliate .content {
     font-size: 12px !important;
   }
@@ -911,10 +989,15 @@
   .speed .speedList {
     padding: 10px;
     justify-content: center !important;
+    transition: none !important;
   }
   .speed .speedList .speedCard {
     flex-direction: column;
     align-items: center !important;
+  }
+  .speed .speedList .speedCard .speedImg {
+    transform: none !important;
+    transition: none !important;
   }
   .speed .speedList .descriptionContainer {
     gap: 5px !important;
@@ -923,12 +1006,20 @@
     font-size: 20px !important;
     padding: 10px;
   }
+  .speed .speedList .descriptionContainer .speedDescription {
+    transition: none !important;
+    transform: none !important;
+  }
   .speed .speedList .descriptionContainer .speedDescription .topic {
     font-size: 20px !important;
     padding: 10px;
+    transition: none !important;
+    transform: none !important;
   }
   .speed .speedList .descriptionContainer .speedDescription .speedContent {
     font-size: 14px !important;
+    transition: none !important;
+    transform: none !important;
   }
 }
 .scipSmart {
@@ -1139,7 +1230,7 @@
   z-index: 0;
 }
 .scipTool .cardList .card {
-  min-height: 330px;
+  min-height: auto;
   background: rgba(12, 12, 13, 0.5);
   -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);
@@ -1208,9 +1299,6 @@
   .scipTool .cardList {
     padding-block: 10px !important;
   }
-  .scipTool .cardList .card {
-    min-height: 300px;
-  }
 }
 @media screen and (max-width: 500px) {
   .scipTool .headerContent .toolDetail {
@@ -1219,14 +1307,18 @@
   .scipTool .headerContent .content {
     font-size: 12px !important;
   }
-  .scipTool .cardList .card {
-    min-height: 250px;
-  }
   .scipTool .cardList .card .card-body .card-title {
     font-size: 20px !important;
   }
   .scipTool .cardList .card .card-body .card-text {
     font-size: 12px !important;
+  }
+  .scipTool .cardList .card .card-body .learnMore {
+    opacity: 1;
+    height: auto;
+    transition: none;
+    transform: none;
+    transform-origin: none;
   }
 }
 .signUp {
@@ -1299,7 +1391,7 @@
 }
 @media screen and (max-width: 500px) {
   .footer .footerDetail {
-    display: none !important;
+    flex-direction: column;
   }
   .scipDetail {
     font-size: 10px;
@@ -1399,6 +1491,28 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   padding-top: 110px;
+}
+
+.homebgVideo {
+  padding-top: 110px;
+  width: 100%;
+  z-index: 0;
+  position: absolute;
+  padding: 10px;
+}
+.homebgVideo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgb(12, 12, 13), rgba(12, 12, 13, 0)), rgba(12, 12, 13, 0.6);
+  z-index: 1;
+}
+.homebgVideo .homebg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
 }
 
 .title {

@@ -1,10 +1,11 @@
 .youtube {
   background: url("/image/3d\ rendering\ of\ dark\ earth\ in\ space133\ 1.png")
-      no-repeat,
-    linear-gradient(to top, rgba(12, 12, 13, 1), rgba(12, 12, 13, 0)),
-    rgba(12, 12, 13, 1);
+    no-repeat center center;
+
+  z-index: 2;
+  position: relative;
   .link {
-    margin-top: -60px;
+    margin-top: -70px;
     overflow: hidden;
     img {
       max-width: 100%;

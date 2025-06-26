@@ -39,15 +39,12 @@
                         </div>
                         <div class="offcanvas-body">
                             <div>
-                                <div class="form-floating ">
-                                    <input type="password" class="form-control" id="floatingPassword"
-                                        placeholder="Password">
-                                    <label for="floatingPassword "
-                                        class="text-terinary w-100 d-flex gap-5 justify-content-between">
-                                        <div>Search</div>
-                                        <div><i class="fa-solid fa-magnifying-glass text-terinary"></i></div>
-                                    </label>
-                                </div>
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Search"
+                                        aria-label="Search" />
+                                    <button class="btn" type="submit"><i
+                                            class="fa-solid fa-magnifying-glass text-light"></i></button>
+                                </form>
                                 <div>
                                     <div class="nav-1 py-4">
                                         <ul class="nav d-flex flex-column  ">
@@ -55,7 +52,7 @@
                                                 <a class="nav-link text-secondary" href="#">About</a>
                                             </li>
                                             <li class="nav-item ">
-                                                <a class="nav-link text-secondary" href="#">Contact Us</a>
+                                                <a class="nav-link text-secondary" href="#footer">Contact Us</a>
                                             </li>
                                             <li class="nav-item ">
                                                 <a class="nav-link text-secondary" href="#">Join Now</a>
@@ -70,11 +67,11 @@
                                 <div class="mobileNav">
                                     <ul class="nav d-flex flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link  text-secondary" href="#">Affliliates</a>
+                                            <a class="nav-link  text-secondary" href="#affiliate">Affliliates</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link toolmb d-flex align-items-center gap-2  text-secondary"
-                                                href="#">Intelligence Tools
+                                                href="#tool">Intelligence Tools
                                                 <i class="fa-solid fa-angle-down arrowDown"></i>
                                             </a>
                                             <div>
@@ -138,7 +135,7 @@
                                             </div>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link  text-secondary" href="#">ICoE</a>
+                                            <a class="nav-link  text-secondary" href="#icoe">ICoE</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link  intellimb  text-secondary d-flex align-items-center gap-2"
@@ -210,7 +207,7 @@
 
                                         <li class="nav-item">
                                             <a class="nav-link smartmb text-secondary d-flex align-items-center gap-2"
-                                                href="#">SMART
+                                                href="#smart">SMART
                                                 Center
                                                 <i class="fa-solid fa-angle-down arrowDown"></i>
                                                 <!-- <i class="fa-solid fa-angle-up arrowUp"></i> -->
@@ -229,7 +226,7 @@
                                             </div>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link  text-secondary" href="#">SPEED</a>
+                                            <a class="nav-link  text-secondary" href="#speed">SPEED</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link text-secondary" href="#">Job Board</a>
@@ -249,7 +246,7 @@
                                 <a class="nav-link text-secondary" href="#">About</a>
                             </li>
                             <li class="nav-item me-4">
-                                <a class="nav-link text-secondary" href="#">Contact Us</a>
+                                <a class="nav-link text-secondary" href="#footer">Contact Us</a>
                             </li>
                             <li class="nav-item me-4">
                                 <a class="nav-link text-secondary" href="#">Join Now</a>
@@ -263,11 +260,11 @@
                     <div class="nav-2">
                         <ul class="nav">
                             <li class="nav-item">
-                                <a class="nav-link  text-secondary" href="#">Affliliates</a>
+                                <a class="nav-link  text-secondary" href="#affiliate">Affliliates</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link tool d-flex align-items-center gap-2  text-secondary"
-                                    href="#">Intelligence Tools
+                                    href="#tool">Intelligence Tools
                                     <i class="fa-solid fa-angle-down arrowDown"></i>
                                 </a>
                                 <div>
@@ -326,7 +323,7 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link  text-secondary" href="#">ICoE</a>
+                                <a class="nav-link  text-secondary" href="#icoe">ICoE</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link  intelli  text-secondary d-flex align-items-center gap-2"
@@ -341,19 +338,27 @@
                                         <i class="fa-solid fa-angle-right"></i>
                                     </a>
                                     <div class="barcaHover bg-secondary p-2">
-                                        <a href="#">
-                                            <div>Call for Proposals</div>
-                                        </a>
-                                        <a href="#">
-                                            <div>Conference Home</div>
-                                        </a>
-                                        <a href="#">
-                                            <div>Registration</div>
-                                        </a>
-                                        <a href="#">
-                                            <div>Program</div>
-                                        </a>
-                                        <a href="#">
+                                        <ul>
+                                            <li> <a href="#">
+                                                    Call for Proposals
+                                                </a></li>
+                                            <li> <a href="#">
+                                                    Conference Home
+                                                </a></li>
+                                            <li><a href="#">
+                                                    Registration
+                                                </a></li>
+                                            <li><a href="#">
+                                                    Program
+                                                </a></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+
+
+
+
+                                        <!-- <a href="#">
                                             <div>Speakers</div>
                                         </a>
                                         <a href="#">
@@ -361,7 +366,7 @@
                                         </a>
                                         <a href="#">
                                             <div>Hotel and Travel</div>
-                                        </a>
+                                        </a> -->
                                     </div>
                                     <a href="#"
                                         class="d-flex gap-5 align-items-center justify-content-between text-secondary p-3">
@@ -380,7 +385,7 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link member text-secondary d-flex align-items-center gap-2"
-                                    href="#">Membership
+                                    href="#signup">Membership
                                     <i class="fa-solid fa-angle-down arrowDown"></i>
                                     <!-- <i class="fa-solid fa-angle-up arrowUp"></i> -->
                                 </a>
@@ -396,7 +401,8 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link smart text-secondary d-flex align-items-center gap-2" href="#">SMART
+                                <a class="nav-link smart text-secondary d-flex align-items-center gap-2"
+                                    href="#smart">SMART
                                     Center
                                     <i class="fa-solid fa-angle-down arrowDown"></i>
                                     <!-- <i class="fa-solid fa-angle-up arrowUp"></i> -->
@@ -415,7 +421,7 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link  text-secondary" href="#">SPEED</a>
+                                <a class="nav-link  text-secondary" href="#speed">SPEED</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-secondary" href="#">Job Board</a>
@@ -429,6 +435,9 @@
     </nav>
 
     <div class="bg">
+        <div class="homebgVideo">
+            <video autoplay loop muted src="./video/SCIP homepage Edited-2 1.mp4" class="homebg"></video>
+        </div>
         <!-- scroll banner -->
         <div class="scrollBanner ">
             <div class="d-flex bannerContent gap-5 align-items-center ">
@@ -493,12 +502,12 @@
                             </p>
                         </div>
                     </div>
-                    <div class="scroll">
+                    <a href="#intelligence" class="scroll">
                         <span class="fs-5 text-secondary p-3">Scroll</span>
                         <div class="text-secondary text-center p-3">
                             <i class="fa-solid fa-angle-down"></i>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
             <!-- member Button -->
@@ -512,9 +521,12 @@
     </div>
 
     <!-- intelligence section -->
-    <section class="intelligence">
+    <section class="intelligence" id="intelligence">
+        <div class="intellbgVideo">
+            <video autoplay muted loop src="./video/1118394_4k_Mystery_3840x2160.mp4" class="intellbg"></video>
+        </div>
         <div class="container">
-            <div class="d-flex flex-column align-items-center ">
+            <div class="intellcontent d-flex flex-column align-items-center ">
                 <h2 class="title text-primary text-center text-uppercase">
                     Intelligence for the Betterment of People and Planet
                 </h2>
@@ -537,20 +549,21 @@
                 </a>
             </div>
         </div>
+
+        <!-- youtube link -->
+        <section class="youtube p-5">
+            <div class="d-flex  flex-column align-items-center">
+                <div class="link">
+                    <img src="/image/image 114.png" alt="youtube link img" />
+                </div>
+                <div class="content text-center text-secondary fs-5 p-3">
+                    <p>Learn more about this "Intellignce EcoSystem" environment here and be a part of our growing
+                        consortium
+                    </p>
+                </div>
+        </section>
     </section>
 
-    <!-- youtube link -->
-    <section class="youtube p-5">
-        <div class="d-flex  flex-column align-items-center">
-            <div class="link">
-                <img src="/image/image 114.png" alt="youtube link img" />
-            </div>
-            <div class="content text-center text-secondary fs-5 p-3">
-                <p>Learn more about this "Intellignce EcoSystem" environment here and be a part of our growing
-                    consortium
-                </p>
-            </div>
-    </section>
 
     <!-- SCIP’s Value Propositions section -->
     <section class="scipValue py-5">
@@ -668,7 +681,7 @@
     </section>
 
     <!-- SCIP IntelliCon Events section -->
-    <section class="event py-5">
+    <section class="event py-5" id="event">
         <div>
             <div class="d-flex flex-column align-items-center flex-wrap">
                 <h2 class="title text-primary text-center text-uppercase">SCIP IntelliCon Events</h2>
@@ -870,7 +883,7 @@
     </section>
 
     <!-- icoe section -->
-    <section class="icoe py-5">
+    <section class="icoe py-5" id="icoe">
         <div class="container ">
             <div class="row g-2">
                 <div class="col-lg-2 col-12 ">
@@ -908,7 +921,7 @@
     </section>
 
     <!-- scip affiliate section -->
-    <section class="affiliate py-5">
+    <section class="affiliate py-5" id="affiliate">
         <div class="container">
             <div class=" d-flex flex-column align-items-center">
                 <h2 class="title text-primary text-uppercase">SCIP Affiliates</h2>
@@ -921,8 +934,8 @@
             </div>
             <div class="affiliateCard">
                 <div class="d-flex justify-content-center">
-                    <div class="row m-0 p-0 g-4 justify-content-center ">
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="row cardrow m-0 p-0 g-4 justify-content-center ">
+                        <div class="col-lg-3 col-md-4 col-6 ">
                             <div class="card cardDetail d-flex align-items-center justify-content-center">
                                 <img src="./image/Affliates1.png" class="cardImg" alt=" affiliates card picture">
                                 <div class="cardTitle text-center ">Association Internationale
@@ -931,7 +944,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="col-lg-3 col-md-4 col-6 ">
                             <div class=" card cardDetail d-flex align-items-center justify-content-center">
                                 <img src="./image/Affliates2.png" class="cardImg" alt=" affiliates card picture">
                                 <div class="cardTitle text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -939,7 +952,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="col-lg-3 col-md-4 col-6 ">
                             <div class=" card cardDetail d-flex align-items-center justify-content-center">
                                 <img src="./image/Affliates3.png" class="cardImg" alt=" affiliates card picture">
                                 <div class="cardTitle text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -947,7 +960,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="col-lg-3 col-md-4 col-6 ">
                             <div class=" card cardDetail d-flex align-items-center justify-content-center">
                                 <img src="./image/affilate4.png" class="cardImg" alt=" affiliates card picture">
                                 <div class="cardTitle text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -955,7 +968,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="col-lg-3 col-md-4 col-6 ">
                             <div class=" card cardDetail d-flex align-items-center justify-content-center">
                                 <img src="./image/afifliate5.png" class="cardImg" alt=" affiliates card picture">
                                 <div class="cardTitle text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -963,7 +976,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="col-lg-3 col-md-4 col-6 ">
                             <div class=" card cardDetail d-flex align-items-center justify-content-center">
                                 <img src="./image/afifliate6.png" class="cardImg" alt=" affiliates card picture">
                                 <div class="cardTitle text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -971,7 +984,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="col-lg-3 col-md-4 col-6 ">
                             <div class=" card cardDetail d-flex align-items-center justify-content-center">
                                 <img src="./image/afifliate7.png" class="cardImg" alt=" affiliates card picture">
                                 <div class="cardTitle text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -979,7 +992,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="col-lg-3 col-md-4 col-6 ">
                             <div class=" card cardDetail d-flex align-items-center justify-content-center">
                                 <img src="./image/afifliate8.png" class="cardImg" alt=" affiliates card picture">
                                 <div class="cardTitle text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -987,7 +1000,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="col-lg-3 col-md-4 col-6 ">
                             <div class=" card cardDetail d-flex align-items-center justify-content-center">
                                 <img src="./image/afifliate9.png" class="cardImg" alt=" affiliates card picture">
                                 <div class="cardTitle text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -995,7 +1008,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="col-lg-3 col-md-4 col-6 ">
                             <div class=" card cardDetail d-flex align-items-center justify-content-center">
                                 <img src="./image/afifliate10.png" class="cardImg" alt=" affiliates card picture">
                                 <div class="cardTitle text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -1003,7 +1016,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="col-lg-3 col-md-4 col-6 ">
                             <div class=" card cardDetail d-flex align-items-center justify-content-center">
                                 <img src="./image/afifliate11.png" class="cardImg" alt=" affiliates card picture">
                                 <div class="cardTitle text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -1011,7 +1024,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="col-lg-3 col-md-4 col-6 ">
                             <div class=" card cardDetail d-flex align-items-center justify-content-center">
                                 <img src="./image/afifliate12.png" class="cardImg" alt=" affiliates card picture">
                                 <div class="cardTitle text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -1019,7 +1032,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="col-lg-3 col-md-4 col-6 ">
                             <div class=" card cardDetail d-flex align-items-center justify-content-center">
                                 <img src="./image/Affliates13.png" class="cardImg" alt=" affiliates card picture">
                                 <div class="cardTitle ">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -1034,7 +1047,7 @@
     </section>
 
     <!-- speed section -->
-    <section class="speed py-5">
+    <section class="speed py-5" id="speed">
         <div class="container">
             <div class="pt-5">
                 <h2 class="title text-primary text-center text-uppercase">Solution Provider Engagement, Enrichment &
@@ -1178,7 +1191,7 @@
     </section>
 
     <!-- smart section -->
-    <section class="scipSmart py-5">
+    <section class="scipSmart py-5" id="smart">
         <div class="container">
             <h2 class="title text-primary text-center text- pt-5">SCIP Member Advanced Resources & Training
                 (SMART) Center
@@ -1454,10 +1467,10 @@
                                                                 organization.
                                                             </div>
                                                         </div>
-                                                        <div class="learnMore  ">
+                                                        <div class="learnMore btn-primary ">
                                                             <button type="button"
                                                                 class="border-0 d-flex gap-3 align-items-center justify-content-center ">
-                                                                <div class="btnName text-terinary fs-5">Sign Up</div>
+                                                                <div class="btnName text-terinary fs-5">Learn More</div>
                                                                 <i
                                                                     class="fa-solid fa-arrow-right text-terinary arrow p-2"></i>
                                                             </button>
@@ -1609,7 +1622,7 @@
     </section>
 
     <!-- SCIP INTELLIGENCE Tools section -->
-    <section class="scipTool ">
+    <section class="scipTool " id="tool">
         <!-- <video autoplay loop muted class="bgVideo" src="./video/Render 1920x1080_2.mp4"></video> -->
         <div class="container">
             <div class="headerContent d-flex flex-column align-items-center mt-5 ">
@@ -1854,7 +1867,10 @@
     </section> -->
 
     <!-- sign up  section -->
-    <section class="signUp">
+    <section class="signUp" id="signup">
+        <!-- <div class="signbgVideo">
+            <video autoplay muted loop src="./video/1118394_4k_Mystery_3840x2160.mp4" class="sbg"></video>
+        </div> -->
         <div class="container">
             <div class="d-flex flex-column align-items-center">
                 <div class="title text-center py-5">
@@ -1882,7 +1898,7 @@
     </section>
 
     <!-- footer section -->
-    <section class="footer px-5 pt-5">
+    <section class="footer px-5 pt-5" id="footer">
         <div class="">
             <div class="d-flex justify-content-between flex-wrap">
                 <div class="pe-5">

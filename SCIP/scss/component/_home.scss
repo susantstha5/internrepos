@@ -1,5 +1,7 @@
 .home {
   .homeContent {
+    position: relative;
+    z-index: 2;
     .title {
       font-size: 56px;
       font-weight: 700;
