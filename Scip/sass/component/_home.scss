@@ -7,18 +7,23 @@
             -webkit-background-clip: text;
             color: transparent;
             width:fit-content;
-            font-size: 64px;
+            font-size: 54px;
             font-weight: 700;
         }
         p{
             color: white;
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 400;
         }
     }
     .scroll-down{
         font-size: 20px;
         color:white;
+        button{
+            background-color: transparent;
+            border: none;
+            color:white;
+        }
     }
     @media screen and (max-width: 500px) {
         .home-content{

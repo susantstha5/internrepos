@@ -1,5 +1,5 @@
 .navbar{
-    padding:15px 80px;
+    padding:10px 80px;
     // backdrop-filter: blur(20px);
     background-color: rgba(61, 37, 37, 0.2);
     position: sticky;
@@ -17,7 +17,11 @@
         i{
             transition:all .2s linear;
         }
-     }
+    }
+    img{
+        max-width: 130px;
+        max-height:150px;
+    }
     .nav-option{
         .sign-in{
             font-weight: 600;
@@ -62,12 +66,6 @@
         }
     }
     li.hover-1:hover {
-        a{
-            // background: linear-gradient(to right, #00FFD1, #00F1E3,#00D8FA);
-            // background-clip: text;
-            // -webkit-background-clip: text;
-            // color: transparent;
-        }
         i{
             transform: rotate(180deg);
         }
@@ -160,8 +158,7 @@
                     li{
                         padding-right:10px !important; ;
                     }
-                }
-                
+                }  
             }
         }
     }

@@ -8,13 +8,14 @@
             -webkit-background-clip: text;
             color: transparent;
             width:fit-content;
-            font-size: 64px;
+            font-size: 54px;
             font-weight: 700;
         }
         p{
             color: white;
-            font-size:20px;
+            font-size:18px;
             font-weight: 400;
+            padding: 0px 300px;
         }
     }   
     .affiliates-container{
@@ -62,19 +63,24 @@
     }
     @media screen and (max-width: 500px) {
         padding:0px 20px !important;
+         padding-top: 30px !important;
         .topic{
             h1{
                 font-size: 34px;
             }
             p{
                 font-size: 14px;
+                padding:0px !important;
             }
         }
         .affiliates-container{
             padding:0px !important;
+            padding-bottom:30px !important ;
             .row{
                 padding: 0px !important;
                 margin: auto !important;
+                flex-wrap: nowrap !important;
+                overflow: auto !important;
             }
         }
         .hover-column{

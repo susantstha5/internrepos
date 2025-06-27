@@ -1,5 +1,5 @@
 .navbar {
-  padding: 15px 80px;
+  padding: 10px 80px;
   background-color: rgba(61, 37, 37, 0.2);
   position: sticky;
   z-index: 999;
@@ -17,6 +17,10 @@
 }
 .navbar a i {
   transition: all 0.2s linear;
+}
+.navbar img {
+  max-width: 130px;
+  max-height: 150px;
 }
 .navbar .nav-option .sign-in {
   font-weight: 600;
@@ -154,7 +158,7 @@
 }
 
 .scroller {
-  padding: 10px 60px;
+  padding: 5px 60px;
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
   background-color: rgba(245, 245, 245, 0.1);
@@ -184,18 +188,17 @@
   width: fit-content;
 }
 .scroller .slider {
-  width: 100vw;
   overflow: hidden;
   position: relative;
+  white-space: nowrap;
 }
 .scroller .slides {
   display: flex;
-  width: 200vw; /* 4 slides * 100vw */
+  width: 200vw; /* 2 slides * 100vw */
   animation: scroll 18s linear infinite;
 }
 .scroller .slide {
-  width: 100vw;
-  height: 45px;
+  height: 20px;
   flex-shrink: 0;
   display: flex;
   justify-content: center;
@@ -218,18 +221,18 @@
   .scroller .spotlight {
     padding: 8px !important;
     border-radius: 20px;
-    margin: 13px 0px;
+    margin: 10px 0px;
   }
   .scroller p {
-    font-size: 10px;
-  }
-  .scroller .slide {
-    padding-top: 11px !important;
+    font-size: 12px;
   }
   .scroller .slide svg {
     width: 12px;
     height: 12px;
     padding: 1px !important;
+  }
+  .scroller .slides {
+    animation: scroll 10s linear infinite;
   }
 }
 
@@ -241,16 +244,21 @@
   color: transparent;
   width: -moz-fit-content;
   width: fit-content;
-  font-size: 64px;
+  font-size: 54px;
   font-weight: 700;
 }
 .home .home-content p {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
 }
 .home .scroll-down {
   font-size: 20px;
+  color: white;
+}
+.home .scroll-down button {
+  background-color: transparent;
+  border: none;
   color: white;
 }
 @media screen and (max-width: 500px) {
@@ -277,12 +285,12 @@
   color: transparent;
   width: -moz-fit-content;
   width: fit-content;
-  font-size: 64px;
+  font-size: 54px;
   font-weight: 700;
 }
 .intelligence p {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
 }
 .intelligence button {
@@ -360,7 +368,7 @@
   margin-top: -150px;
 }
 .youtube p {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   color: white;
   max-width: 700px;
@@ -392,12 +400,12 @@
   color: transparent;
   width: -moz-fit-content;
   width: fit-content;
-  font-size: 64px;
+  font-size: 54px;
   font-weight: 700;
 }
 .proposition .top p {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
 }
 .proposition .proposition-container {
@@ -417,7 +425,7 @@
 }
 .proposition .proposition-container .box .title {
   font-family: "Roboto";
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 600;
 }
 .proposition .proposition-container .box .decription {
@@ -431,7 +439,7 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 10px;
   opacity: 0;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
   inset: 0;
   z-index: -1;
 }
@@ -450,6 +458,7 @@
   }
   .proposition .proposition-container .box {
     padding: 15px;
+    min-height: auto;
   }
 }
 
@@ -464,24 +473,24 @@
   color: transparent;
   width: -moz-fit-content;
   width: fit-content;
-  font-size: 64px;
+  font-size: 54px;
   font-weight: 700;
 }
 .events h2 {
-  font-size: 44px;
+  font-size: 40px;
 }
 .events h3 {
   font-size: 28px;
 }
 .events .top {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   padding: 0px 300px;
 }
 .events p {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
 }
 .events .top-content {
@@ -662,7 +671,7 @@
 }
 
 .icoe {
-  background: url("../images/intelligence.png"), linear-gradient(to top, rgb(12, 12, 13), rgb(12, 12, 13), rgb(12, 12, 13));
+  background: linear-gradient(to bottom, rgb(12, 12, 13), rgb(12, 12, 13), rgb(12, 12, 13));
   /* On hover: grow background to cover button */
 }
 .icoe h2 {
@@ -673,7 +682,7 @@
   color: transparent;
   width: -moz-fit-content;
   width: fit-content;
-  font-size: 44px;
+  font-size: 40px;
   font-weight: 700;
 }
 .icoe p {
@@ -725,11 +734,25 @@
   height: 200%;
   right: -20%;
 }
-.icoe .icoe-img img {
-  width: 1000px;
+.icoe .icoe-img {
+  position: relative;
+  width: 100%;
   height: 400px;
-  -o-object-fit: cover;
-     object-fit: cover;
+}
+.icoe .icoe-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.icoe .icoe-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgb(12, 12, 13), rgba(12, 12, 13, 0), rgb(12, 12, 13));
 }
 @media screen and (max-width: 500px) {
   .icoe {
@@ -738,6 +761,7 @@
   .icoe .row {
     padding: 0px !important;
     margin: auto !important;
+    text-align: center;
   }
   .icoe img {
     padding-bottom: 20px !important;
@@ -755,11 +779,12 @@
   .icoe button {
     padding: 8px 20px;
   }
+  .icoe .icoe-img {
+    height: 200px;
+  }
   .icoe .icoe-img img {
-    width: 320px;
-    height: 250px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -774,13 +799,14 @@
   color: transparent;
   width: -moz-fit-content;
   width: fit-content;
-  font-size: 64px;
+  font-size: 54px;
   font-weight: 700;
 }
 .affiliates .topic p {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
+  padding: 0px 300px;
 }
 .affiliates .affiliates-container {
   padding: 0px 150px;
@@ -829,19 +855,24 @@
 @media screen and (max-width: 500px) {
   .affiliates {
     padding: 0px 20px !important;
+    padding-top: 30px !important;
   }
   .affiliates .topic h1 {
     font-size: 34px;
   }
   .affiliates .topic p {
     font-size: 14px;
+    padding: 0px !important;
   }
   .affiliates .affiliates-container {
     padding: 0px !important;
+    padding-bottom: 30px !important;
   }
   .affiliates .affiliates-container .row {
     padding: 0px !important;
     margin: auto !important;
+    flex-wrap: nowrap !important;
+    overflow: auto !important;
   }
   .affiliates .hover-column {
     height: 100px;
@@ -873,12 +904,12 @@
   color: transparent;
   width: -moz-fit-content;
   width: fit-content;
-  font-size: 64px;
+  font-size: 54px;
   font-weight: 700;
 }
 .speed .topic .decription {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
 }
 .speed .topic .decription span {
@@ -887,6 +918,9 @@
 .speed .topic h3 {
   font-size: 28;
   font-weight: 600;
+}
+.speed .bottom-text {
+  font-size: 18px;
 }
 .speed button {
   position: relative;
@@ -937,7 +971,7 @@
   padding: 0px 100px;
 }
 .speed .content h3 {
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 600;
 }
 .speed .content .awareness {
@@ -1053,12 +1087,12 @@
   color: transparent;
   width: -moz-fit-content;
   width: fit-content;
-  font-size: 64px;
+  font-size: 54px;
   font-weight: 700;
 }
 .smart .topic .decription {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
 }
 .smart .topic button {
@@ -1124,6 +1158,10 @@
 .smart .bars .tabs-bg .tab-top {
   background-color: rgba(12, 12, 13, 0.5019607843);
   min-height: 320px;
+}
+.smart .bars .tabs-bg .tab-top h3 {
+  font-size: 28px;
+  font-weight: 600;
 }
 .smart .bars .tabs-bg .tab-data {
   padding-left: 50px;
@@ -1246,7 +1284,7 @@
 
 .recognized {
   background-color: hsl(240, 4%, 5%);
-  padding: 100px 140px 120px 140px;
+  padding: 80px 140px 100px 140px;
 }
 .recognized h2 {
   background: linear-gradient(to right, #00FFD1, #00F1E3, #00D8FA);
@@ -1255,27 +1293,39 @@
   color: transparent;
   width: -moz-fit-content;
   width: fit-content;
-  font-size: 44px;
+  font-size: 40px;
   font-weight: 700;
 }
 .recognized p {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
+}
+.recognized .image-section {
+  max-width: 400px;
+  min-height: 200px;
+}
+.recognized .image-section img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media screen and (max-width: 500px) {
   .recognized {
-    padding: 50px 20px !important;
+    padding: 30px 20px !important;
   }
   .recognized .row {
     gap: 0px !important;
   }
   .recognized h2 {
-    padding: 20px 0px !important;
+    padding: 10px 0px !important;
+    margin: 0px !important;
     text-align: center;
     font-size: 34px;
   }
   .recognized p {
+    text-align: center;
     font-size: 14px;
   }
   .recognized img {
@@ -1297,17 +1347,17 @@
   color: transparent;
   width: -moz-fit-content;
   width: fit-content;
-  font-size: 64px;
+  font-size: 54px;
   font-weight: 700;
 }
 .tools .top p {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   padding: 0 250px;
 }
 .tools .top .cube {
-  margin-top: -100px;
+  margin-top: -90px;
 }
 .tools .top button {
   position: relative;
@@ -1393,7 +1443,7 @@
 }
 .tools .tools-container .box .title {
   font-family: "Roboto";
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
 }
 .tools .tools-container .box .description {
@@ -1457,14 +1507,14 @@
 }
 @media screen and (max-width: 500px) {
   .tools {
-    padding: 20px 20px !important;
+    padding: 30px 20px !important;
   }
   .tools .top h1 {
     font-size: 34px;
   }
   .tools .top p {
     font-size: 14px;
-    padding: 0px !important;
+    padding: 5px !important;
   }
   .tools .top .cube {
     margin-top: -10px;
@@ -1483,7 +1533,7 @@
     border: 1px solid #B9B9B9;
     border-radius: 10px;
     padding: 20px 20px 5px 20px;
-    min-height: 270px;
+    min-height: auto;
   }
   .tools .tools-container .box .title {
     font-size: 18px;
@@ -1492,6 +1542,8 @@
     font-size: 14px;
   }
   .tools .tools-container .box button {
+    opacity: 1;
+    min-height: 50px;
     padding: 5px 24px !important;
   }
   .tools .tools-container .box button p {
@@ -1500,9 +1552,6 @@
   .tools .tools-container .box button .signup-arrow {
     padding: 12px 0px 0px 3px !important;
   }
-  .tools .tools-container .box:hover .tool-button {
-    min-height: 50px;
-  }
   .tools .video-container {
     margin-bottom: 50px;
   }
@@ -1510,9 +1559,27 @@
 
 .difference {
   background: url("../images/difference.png"), linear-gradient(to top, rgb(12, 12, 13), rgb(12, 12, 13), rgb(12, 12, 13)) no-repeat;
+  position: relative;
+}
+.difference .video-container {
+  width: 100%;
+}
+.difference .video-container video {
+  width: 100%;
+}
+.difference .video-container::after {
+  content: "";
+  position: absolute;
+  background: rgba(12, 12, 13, 0.2);
+  inset: 0;
+  z-index: 1;
 }
 .difference .content {
-  padding: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
 }
 .difference .content .topic {
   font-family: "Roboto";
@@ -1520,7 +1587,7 @@
   color: white;
   width: -moz-fit-content;
   width: fit-content;
-  font-size: 64px;
+  font-size: 54px;
   font-weight: 700;
 }
 .difference .content span {
@@ -1531,27 +1598,32 @@
 }
 .difference .content p {
   color: white;
+  font-size: 18px;
 }
 .difference .content .description {
   font-family: "Roboto";
   color: white;
   width: -moz-fit-content;
   width: fit-content;
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 600;
 }
 @media screen and (max-width: 500px) {
   .difference .content {
-    padding: 100px 20px !important;
+    padding: 0px !important;
   }
   .difference .content .topic {
-    font-size: 34px;
+    font-size: 22px;
   }
   .difference .content p {
-    font-size: 14px;
+    font-size: 12px;
   }
   .difference .content .description {
-    font-size: 18px;
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  .difference .video-container {
+    width: 100%;
   }
 }
 
@@ -1597,7 +1669,7 @@ footer ul li {
   }
   footer .icon {
     justify-content: center !important;
-    padding-bottom: 45px !important;
+    padding-bottom: 0px !important;
   }
   footer i {
     font-size: 18px;
@@ -1608,6 +1680,11 @@ footer ul li {
   }
   footer .col {
     padding: 0px !important;
+  }
+  footer .company {
+    opacity: 0 !important;
+    width: 0px !important;
+    height: 0px !important;
   }
   footer h5 {
     font-size: 14px;
@@ -1647,9 +1724,29 @@ body .line {
 }
 
 .top-container {
-  background-image: url("../images/background1.png");
-  background-size: cover;
   overflow: hidden;
+  position: relative;
+}
+.top-container .video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.top-container .video-container video {
+  width: 100%;
+}
+.top-container .video-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgb(12, 12, 13), rgb(12, 12, 13), rgba(12, 12, 13, 0.2), rgb(12, 12, 13), rgb(12, 12, 13));
+  inset: 0;
 }
 .top-container .become-member {
   /* On hover:background grows to cover button */
@@ -1663,7 +1760,7 @@ body .line {
   overflow: hidden;
   transition: all 0.8s linear;
   color: black;
-  margin: 33% 0px 0px 82%;
+  margin: 35% 0px 0px 82%;
   z-index: 999;
 }
 .top-container .become-member button p {
@@ -1700,6 +1797,13 @@ body .line {
   right: -20%;
 }
 @media screen and (max-width: 500px) {
+  .top-container {
+    background: url("../images/background1.png");
+    background-size: cover;
+  }
+  .top-container .video-container {
+    display: none;
+  }
   .top-container .become-member button {
     opacity: 0;
     width: 0px !important;

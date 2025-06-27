@@ -1,13 +1,31 @@
 .difference{
     background: url('../images/difference.png'),linear-gradient(to top, rgba(12, 12, 13, 1),rgba(12, 12, 13, 2),rgba(12, 12, 13, 1)) no-repeat;
+    position: relative;
+    .video-container{
+        width: 100%;
+        video{
+            width: 100%;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            background: rgba(12, 12, 13, 0.2);
+            inset:0;
+            z-index:1;
+        }
+    }
     .content{
-        padding:200px;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        z-index:2;
         .topic{
             font-family: "Roboto";
             text-transform: uppercase;
             color:white;
             width:fit-content;
-            font-size: 64px;
+            font-size: 54px;
             font-weight: 700;
         }
         span{
@@ -18,27 +36,32 @@
         }
         p{
             color:white;
+            font-size: 18px;
         }
         .description{
             font-family: "Roboto";
             color:white;
             width:fit-content;
-            font-size: 28px;
+            font-size: 25px;
             font-weight: 600;
         }
     }
     @media screen and (max-width: 500px){
         .content{
-            padding:100px 20px !important;
+            padding:0px !important;
             .topic{
-                font-size: 34px;
+                font-size: 22px;
             }
             p{
-                font-size: 14px;
+                font-size: 12px;
             }
             .description{
-                font-size: 18px;
+                font-size: 14px;
+                padding-bottom: 20px;
             }
         } 
+        .video-container{
+            width: 100%;
+        }
     }
 }

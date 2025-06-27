@@ -1,5 +1,5 @@
 .icoe{
-    background: url('../images/intelligence.png'),linear-gradient(to top, rgba(12, 12, 13, 1),rgba(12, 12, 13, 2),rgba(12, 12, 13, 1));
+    background:linear-gradient(to bottom, rgba(12, 12, 13, 1),rgba(12, 12, 13, 2),rgba(12, 12, 13, 1));
     h2{
         text-transform: uppercase;
         background: linear-gradient(to right, #00FFD1, #00F1E3,#00D8FA);
@@ -7,7 +7,7 @@
         -webkit-background-clip: text;
         color: transparent;
         width:fit-content;
-        font-size: 44px;
+        font-size: 40px;
         font-weight: 700;
     }
     p{
@@ -65,10 +65,22 @@
         right: -20%;
     }
     .icoe-img{
+        position: relative;
+        width: 100%;
+        height:400px;
         img{
-            width: 1000px;
-            height:400px;
-            object-fit: cover;
+            width: 100%;
+            height:100%;
+            object-fit: contain;  
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom,rgba(12, 12, 13, 1), rgba(12, 12, 13, 0), rgba(12, 12, 13, 1));
         }
     }
     @media screen and (max-width: 500px) {
@@ -76,6 +88,7 @@
         .row{
             padding: 0px !important;
             margin: auto !important;
+            text-align: center;
         }
         img{
             padding-bottom: 20px !important;
@@ -94,10 +107,10 @@
             padding: 8px 20px;
         } 
         .icoe-img{
+            height:200px;
             img{
-                width: 320px;
-                height:250px;
-                object-fit: cover;
+                width: 100%;
+                height:100%;
             }
         } 
     }

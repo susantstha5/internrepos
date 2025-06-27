@@ -10,12 +10,12 @@
             -webkit-background-clip: text;
             color: transparent;
             width:fit-content;
-            font-size: 64px;
+            font-size: 54px;
             font-weight: 700;
         }
         .decription{
             color: white;
-            font-size:20px;
+            font-size:18px;
             font-weight: 700;
             span{
                 font-weight: 400;
@@ -25,6 +25,9 @@
             font-size: 28;
             font-weight: 600;
         }
+    }
+    .bottom-text{
+        font-size: 18px;
     }
     button {
         position: relative;
@@ -79,7 +82,7 @@
         font-family: "Roboto";
         padding:0px 100px;
         h3{
-            font-size: 28px;
+            font-size: 25px;
             font-weight: 600;
         }
         .awareness{

@@ -10,12 +10,12 @@
             -webkit-background-clip: text;
             color: transparent;
             width:fit-content;
-            font-size: 64px;
+            font-size: 54px;
             font-weight: 700;
         }
         .decription{
             color: white;
-            font-size:20px;
+            font-size:18px;
             font-weight: 400;
         }
         button {
@@ -84,8 +84,12 @@
             border-radius: 10px;
             min-height: 320px;
             .tab-top{
-               background-color: #0C0C0D80;
+                background-color: #0C0C0D80;
                 min-height: 320px;
+                h3{
+                    font-size: 28px;
+                    font-weight: 600;
+                }
             }
             .tab-data{
                 padding-left:50px;

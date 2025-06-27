@@ -1,4 +1,6 @@
 footer{
+    // position: relative;
+    // z-index: 99;
     background-color: #0C0C0D;
     color:white;
     .footer-content{
@@ -45,7 +47,7 @@ footer{
         }
         .icon{
             justify-content: center !important;
-            padding-bottom: 45px !important;
+            padding-bottom: 0px !important;
         }
         i{
             font-size: 18px;
@@ -56,6 +58,11 @@ footer{
         }
         .col{
             padding: 0px !important;
+        }
+        .company{
+            opacity:0 !important;
+            width: 0px !important;
+            height: 0px !important;
         }
          h5{
             font-size: 14px;
