@@ -233,7 +233,7 @@
               <input
                 type="text"
                 placeholder="Search..."
-                class="border-0 rounded p-2 w-75"
+                class="border-0 rounded p-2 w-auto"
               />
               <button
                 class="text-success border-2 rounded border-success py-2 px-3 bg-transparent"
@@ -483,16 +483,9 @@
     </section>
     <!-- video section -->
     <section
-      class="video_container position-relative d-flex justify-content-center align-items-end"
+      class="video_container w-100 position-relative d-flex justify-content-center flex-column align-items-end"
     >
-      <!-- <img
-        src="./contentImg/3d rendering of dark earth in space133 1.png"
-        class="position-absolute start-0 top-0 w-100 h-100"
-        alt=""
-      /> -->
-      <div
-        class="video_youtube position-absolute w-100 justify-content-center d-flex"
-      >
+      <div class="video_youtube w-100 justify-content-center d-flex">
         <iframe
           class="iframe"
           src="https://www.youtube.com/embed/An9D7hBq9fU"
@@ -1573,7 +1566,7 @@
         </button>
       </div>
       <div
-        class="video_content w-100 position-relative d-flex align-items-center justify-content-center"
+        class="video_content w-100 position-relative d-flex flex-column align-items-center justify-content-center"
       >
         <video class="h-100 w-75 video" autoplay loop muted>
           <source
@@ -1832,121 +1825,152 @@
       >
         <div class="container w-100 m-0 p-0 text-center text-md-start">
           <!-- Grid row -->
-          <div class="row w-100 mt-3 d-flex justify-content-between gap-5">
+          <div class="row w-100 mt-3">
             <!-- Grid column -->
-            <div class="col-md-3 footer_logo col-lg-4 col-xl-3 mx-auto mb-4">
+            <div class="col-md-3 w-100 col-lg-4 col-xl-3 mx-auto mb-4">
               <!-- Content -->
-              <div class="footer_img">
-                <img
-                  src="./assets/footerLogos/SCIP_Logo_Primary 2.png"
-                  class="img-fluid img1"
-                  alt="scip1"
-                />
-                <img
-                  src="./assets/footerLogos/SCIP_Logo_Primary 3.png"
-                  alt="scip2"
-                />
+              <div class="footer_content">
+                <div class="footer_img">
+                  <img
+                    src="./assets/footerLogos/SCIP_Logo_Primary 2.png"
+                    class="img-fluid img1"
+                    alt="scip1"
+                  />
+                  <img
+                    src="./assets/footerLogos/SCIP_Logo_Primary 3.png"
+                    alt="scip2"
+                  />
+                </div>
+                <p class="text-white footer-text">
+                  Strategic Consortium of Intelligence Professionals (SCIP)
+                  <br />
+                  "Intelligence for the Betterment of People and Planet" <br />
+                  7550 IH 10 West, Suite 400 - San Antonio, TX 78229 USA <br />
+                  © 2024 SCIP
+                </p>
+                <div class="logos d-flex text-white w-100 gap-3 fs-4 px-1 py-3">
+                  <span><i class="ri-signal-tower-fill"></i></span>
+                  <span><i class="ri-twitter-x-line"></i></span>
+                  <span><i class="ri-linkedin-fill"></i></span>
+                  <span><i class="ri-youtube-fill"></i></span>
+                  <span><i class="ri-facebook-fill"></i></span>
+                </div>
               </div>
-              <p class="text-white">
-                Strategic Consortium of Intelligence Professionals (SCIP) <br />
-                "Intelligence for the Betterment of People and Planet" <br />
-                7550 IH 10 West, Suite 400 - San Antonio, TX 78229 USA <br />
-                © 2024 SCIP
-              </p>
-              <div class="logos d-flex text-white w-100 gap-3 fs-4 px-1 py-3">
-                <span><i class="ri-signal-tower-fill"></i></span>
-                <span><i class="ri-twitter-x-line"></i></span>
-                <span><i class="ri-linkedin-fill"></i></span>
-                <span><i class="ri-youtube-fill"></i></span>
-                <span><i class="ri-facebook-fill"></i></span>
+            </div>
+            <div class="footer-link d-flex flex-row">
+              <!-- Grid column -->
+              <div class="col-2 mx-auto my-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Resorces</h6>
+                <p>
+                  <a
+                    href="#!"
+                    class="text-reset text-decoration-none opacity-75"
+                    >I_Stream</a
+                  >
+                </p>
+                <p>
+                  <a
+                    href="#!"
+                    class="text-reset text-decoration-none opacity-75"
+                    >Blogs</a
+                  >
+                </p>
+                <p>
+                  <a
+                    href="#!"
+                    class="text-reset text-decoration-none opacity-75"
+                    >Newsletter</a
+                  >
+                </p>
+                <p>
+                  <a
+                    href="#!"
+                    class="text-reset text-decoration-none opacity-75"
+                    >Magazine</a
+                  >
+                </p>
+                <p>
+                  <a
+                    href="#!"
+                    class="text-reset text-decoration-none opacity-75"
+                    >On Demand Videos</a
+                  >
+                </p>
               </div>
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto my-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Resorces</h6>
-              <p>
-                <a href="#!" class="text-reset text-decoration-none opacity-75"
-                  >I_Stream</a
-                >
-              </p>
-              <p>
-                <a href="#!" class="text-reset text-decoration-none opacity-75"
-                  >Blogs</a
-                >
-              </p>
-              <p>
-                <a href="#!" class="text-reset text-decoration-none opacity-75"
-                  >Newsletter</a
-                >
-              </p>
-              <p>
-                <a href="#!" class="text-reset text-decoration-none opacity-75"
-                  >Magazine</a
-                >
-              </p>
-              <p>
-                <a href="#!" class="text-reset text-decoration-none opacity-75"
-                  >On Demand Videos</a
-                >
-              </p>
-            </div>
-            <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto my-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Speed Resources</h6>
-              <p>
-                <a href="#!" class="text-reset text-decoration-none opacity-75"
-                  >Awareness</a
-                >
-              </p>
-              <p>
-                <a href="#!" class="text-reset text-decoration-none opacity-75"
-                  >Marketing Campaigns</a
-                >
-              </p>
-              <p>
-                <a href="#!" class="text-reset text-decoration-none opacity-75"
-                  >Business Development</a
-                >
-              </p>
-              <p>
-                <a href="#!" class="text-reset text-decoration-none opacity-75"
-                  >Lead Generation</a
-                >
-              </p>
-              <p>
-                <a href="#!" class="text-reset text-decoration-none opacity-75"
-                  >Advertising</a
-                >
-              </p>
-            </div>
-            <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 col-xl-2 my-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Company</h6>
-              <p>
-                <a href="#!" class="text-reset text-decoration-none opacity-75"
-                  >Careers</a
-                >
-              </p>
-              <p>
-                <a href="#!" class="text-reset text-decoration-none opacity-75"
-                  >Get Involved</a
-                >
-              </p>
-              <p>
-                <a href="#!" class="text-reset text-decoration-none opacity-75"
-                  >About Us</a
-                >
-              </p>
-              <p>
-                <a href="#!" class="text-reset text-decoration-none opacity-75"
-                  >Contact Us</a
-                >
-              </p>
+              <!-- Grid column -->
+              <div class="col-2 mx-auto my-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Speed Resources</h6>
+                <p>
+                  <a
+                    href="#!"
+                    class="text-reset text-decoration-none opacity-75"
+                    >Awareness</a
+                  >
+                </p>
+                <p>
+                  <a
+                    href="#!"
+                    class="text-reset text-decoration-none opacity-75"
+                    >Marketing Campaigns</a
+                  >
+                </p>
+                <p>
+                  <a
+                    href="#!"
+                    class="text-reset text-decoration-none opacity-75"
+                    >Business Development</a
+                  >
+                </p>
+                <p>
+                  <a
+                    href="#!"
+                    class="text-reset text-decoration-none opacity-75"
+                    >Lead Generation</a
+                  >
+                </p>
+                <p>
+                  <a
+                    href="#!"
+                    class="text-reset text-decoration-none opacity-75"
+                    >Advertising</a
+                  >
+                </p>
+              </div>
+              <!-- Grid column -->
+              <div class="col-2 mx-auto my-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Company</h6>  
+                <p>
+                  <a
+                    href="#!"
+                    class="text-reset text-decoration-none opacity-75"
+                    >Careers</a
+                  >
+                </p>
+                <p>
+                  <a
+                    href="#!"
+                    class="text-reset text-decoration-none opacity-75"
+                    >Get Involved</a
+                  >
+                </p>
+                <p>
+                  <a
+                    href="#!"
+                    class="text-reset text-decoration-none opacity-75"
+                    >About Us</a
+                  >
+                </p>
+                <p>
+                  <a
+                    href="#!"
+                    class="text-reset text-decoration-none opacity-75"
+                    >Contact Us</a
+                  >
+                </p>
+              </div>
             </div>
             <!-- Grid column -->
           </div>

@@ -111,9 +111,8 @@ html {
   backdrop-filter: blur(10px);
   background-color: rgba(0, 0, 0, 0.5);
 }
-.search input {
-  outline: none;
-  min-width: 80%;
+.search input{
+  min-width: 75%;
 }
 .hero_container {
   background-image: url("./assets/heroContainerImg/Scip\ video\ trimmed\ 1.png");
@@ -147,7 +146,10 @@ html {
   display: inline-flex; /* or just flex works too */
   animation: scroll-left 20s linear infinite;
 }
-
+.scrollable_banner:hover .banner_content,
+.scrollable_banner:focus-within .banner_content {
+  animation-play-state: paused;
+}
 /* Keyframes for scrolling left infinitely */
 @keyframes scroll-left {
   0% {
@@ -198,7 +200,6 @@ html {
   overflow: hidden;
   border: none;
   width: fit-content;
-  font-size: clamp(14px, 5vw, 18px);
   z-index: 1; /* keep layering correct */
   display: inline-flex;
   align-items: center;
@@ -233,7 +234,7 @@ html {
 .cta_btn i {
   position: relative;
   z-index: 2;
-  font-size: clamp(14px, 5vw, 16px);
+  /* font-size: clamp(14px, 5vw, 16px); */
 }
 .cta_btn .button i {
   align-self: center;
@@ -266,7 +267,7 @@ html {
     ),
     url("./assets/contentImg/1118394_4k_Mystery_3840x2160\ 1.png");
   background-size: contain;
-  min-height: 70vh;
+  min-height: 40vh;
   background-color: rgba(0, 0, 0, 0.8);
   padding: 0px 100px;
 }
@@ -290,10 +291,6 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-}
-.video_youtube {
-  /* width: 40%; */
-  bottom: 25%;
 }
 .iframe {
   min-height: 350px;
@@ -761,9 +758,7 @@ footer {
   border-top: 4px solid rgba(66, 226, 111, 1);
   padding: 20px 20px 10px 20px;
 }
-.footer_logo {
-  min-width: 35%;
-}
+
 .footer_logo p {
   font-size: clamp(8px, 5vw, 12px);
   line-height: 1.8;
@@ -776,11 +771,19 @@ footer {
 .footer_container {
   padding-top: 20px;
 }
+.footer_container .container .row {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+}
+/* .footer_container .footer-text{
+    font-size: clamp(10px,1.vw ,16px);
+  } */
+
 @media screen and (max-width: 1200px) {
   .navbar {
     padding: 0px 15px !important;
   }
-  .accordion{
+  .accordion {
     overflow: hidden;
   }
   .accordion:hover .accordion_content {
@@ -828,7 +831,7 @@ footer {
     max-width: 50%;
     align-self: center;
   }
-  .accordion:hover .accordion_content{
+  .accordion:hover .accordion_content {
     transform: translateX(45%);
   }
   .hero_content,
@@ -857,18 +860,52 @@ footer {
     align-items: center;
     padding: 0px;
   }
+
   .footer_container .container .row {
     gap: 10px !important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
-
+  .footer-link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .logos {
+    width: fit-content !important ;
+  }
 }
 @media screen and (max-width: 768px) {
+  .cta_btn{
+    padding: 6px 12px;
+    gap: 5px;
+  }
+  .cta_btn::before{
+    right: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  .cta_btn span{
+    font-size: 12px;
+  }
+  .cta_btn .button{
+    width: 20px;
+    height: 20px;
+  }
   .scroll_banner {
     padding-left: 10px;
     gap: 10px;
   }
   .iframe {
-    min-width: 75%;
+    min-width: 80%;
+    min-height: 220px;
   }
   .video_content {
     padding-bottom: 0px !important;
@@ -877,6 +914,9 @@ footer {
   .upcomingEvent_wrapper .union-image {
     left: 0;
     top: 0;
+  }
+  .upcomingEvent_date{
+    display: block;
   }
 
   .accordion_heading {
@@ -930,6 +970,10 @@ footer {
   .nav-items .nav-link {
     padding: 0px 20px;
   }
+  .video_container{
+    background-position: center;
+    background-size: cover;
+  }
   .video_content .video {
     width: 90% !important;
   }
@@ -942,7 +986,7 @@ footer {
     align-items: center;
     justify-content: center;
   }
- 
+
   .accordion:hover {
     min-height: 100px;
     gap: 10px;
@@ -953,7 +997,7 @@ footer {
   }
   .accordion_content h5 {
     font-size: 20px !important;
-     width: 100%;
+    width: 100%;
     text-align: center;
   }
   .accordion_content p {
@@ -963,31 +1007,33 @@ footer {
     display: none;
     text-align: center;
   }
-    .accordion .image_wrapper img ,.accordion_content ,.accordion_content p{
-   transform: none;
-   transition: none;
+  .accordion .image_wrapper img,
+  .accordion_content,
+  .accordion_content p {
+    transform: none;
+    transition: none;
   }
 
-  .accordion:hover .image_wrapper img{
-    position:relative  !important;
+  .accordion:hover .image_wrapper img {
+    position: relative !important;
   }
-  .accordion:hover{
+  .accordion:hover {
     flex-direction: column !important;
     align-items: center;
   }
-  .accordion:hover .accordion_content{
+  .accordion:hover .accordion_content {
     transform: none;
     padding: 0px;
   }
-  .accordion:hover .accordion_content p{
+  .accordion:hover .accordion_content p {
     display: inline-block;
   }
-  .card_button{
+  .card_button {
     visibility: visible;
-    opacity: 1 ;
+    opacity: 1;
     margin-top: 8px;
   }
-  .tools_card:hover .card_text{
+  .tools_card:hover .card_text {
     transform: none;
   }
 }
