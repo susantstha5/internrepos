@@ -105,6 +105,22 @@ p {
   -webkit-backdrop-filter: blur(10px);
   z-index: -1;
 }
+.navbar .search-bar span {
+  width: 30px;
+  width: 30px;
+  color: white;
+}
+.navbar .search-bar span .icon {
+  background-color: rgb(66, 226, 111);
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+@media screen and (min-width: 600px) {
+  .navbar .search-bar {
+    display: none;
+  }
+}
 .navbar .nav-item {
   padding: 0.5rem 1rem;
   transition: all 0.2 linear;
@@ -118,15 +134,17 @@ p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.navbar .nav-item:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  transition: all 0.1s linear;
-}
-.navbar .nav-item:hover .nav-link {
-  background: linear-gradient(to right, rgb(0, 255, 209), rgb(0, 241, 227), rgb(0, 216, 250));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+@media screen and (min-width: 750px) {
+  .navbar .nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    transition: all 0.1s linear;
+  }
+  .navbar .nav-item:hover .nav-link {
+    background: linear-gradient(to right, rgb(0, 255, 209), rgb(0, 241, 227), rgb(0, 216, 250));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 .navbar .navbar-nav > li {
   position: relative;
@@ -142,6 +160,11 @@ p {
   padding: 1rem;
   display: none;
   z-index: 999;
+}
+@media screen and (min-width: 600px) {
+  .navbar .dropdown-menu .row {
+    width: 600px;
+  }
 }
 .navbar .dropdown-menu::before {
   content: "";
@@ -315,13 +338,6 @@ p {
   overflow: hidden;
   max-height: 250px;
 }
-@media screen and (max-width: 450px) {
-  #scip-event .card .event-details {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-}
 #scip-event .card::before {
   content: "";
   position: absolute;
@@ -338,8 +354,8 @@ p {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
+  -o-object-position: bottom;
+     object-position: bottom;
   overflow: hidden;
   transition: all 0.3s linear;
 }
@@ -380,6 +396,16 @@ p {
 }
 #scip-event .card:hover .card-body p {
   opacity: 1;
+}
+@media screen and (max-width: 450px) {
+  #scip-event .card .card-body {
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    transform: translateY(150%);
+  }
+  #scip-event .card .card-body p {
+    opacity: 1;
+  }
 }
 
 #scip-intillegence {
@@ -431,19 +457,33 @@ p {
   opacity: 1;
   transform: scale(1);
 }
+@media screen and (max-width: 450px) {
+  #scip-affiliates .affiliates {
+    padding: 0;
+    margin: 3rem auto;
+    max-width: 450px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  #scip-affiliates .affiliates::-webkit-scrollbar {
+    display: none;
+  }
+}
 
 #solution-provider .accordion {
   width: 100%;
   overflow: hidden;
 }
 #solution-provider .accordion .accordion-head {
-  max-height: 200px;
+  max-height: 500px;
   min-height: 95px;
 }
 #solution-provider .accordion figure {
   margin: 0;
   max-width: 300px;
-  height: 200px;
+  height: auto;
+  aspect-ratio: 4/3;
   opacity: 0;
   max-height: 1px;
   transform: translateX(-500px);
@@ -457,7 +497,7 @@ p {
      object-fit: cover;
 }
 #solution-provider .accordion .accordion-body {
-  gap: 3rem;
+  gap: clamp(1rem, 5vw, 3rem);
 }
 #solution-provider .accordion .accordion-body .body-text {
   max-height: 40px;
@@ -473,6 +513,9 @@ p {
 }
 #solution-provider .accordion .accordion-head:hover .accordion-body {
   transform: translateY(-50px);
+  max-height: 600px;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 #solution-provider .accordion .accordion-head:hover figure {
   opacity: 1;
@@ -495,6 +538,12 @@ p {
 }
 #solution-provider .accordion .accordion-head:hover p {
   opacity: 1;
+}
+@media screen and (max-width: 450px) {
+  #solution-provider .accordion .accordion-head {
+    flex-direction: column;
+    gap: 3rem;
+  }
 }
 
 #resource-training .tabs {
@@ -583,7 +632,6 @@ p {
   }
 }
 #intelligence-tool .card {
-  height: 280px;
   background-color: rgba(12, 12, 13, 0.5);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -592,11 +640,13 @@ p {
   position: relative;
   overflow: hidden;
 }
-#intelligence-tool .card .card-body {
-  max-height: 150px;
-}
 #intelligence-tool .card .icon-group {
   opacity: 0;
+}
+@media screen and (max-width: 450px) {
+  #intelligence-tool .card .icon-group {
+    opacity: 1;
+  }
 }
 #intelligence-tool .card::after {
   content: "";
@@ -686,7 +736,8 @@ p {
   p {
     padding: 0 !important;
   }
-  .col-6 {
-    margin-top: 2rem;
+  .footer-content {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 }/*# sourceMappingURL=style.css.map */
