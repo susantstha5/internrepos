@@ -31,10 +31,10 @@
       class="navbar navbar-expand-lg position-fixed w-100 bg-transparent p-0"
     >
       <div class="blur w-100 start-0 h-100 position-absolute"></div>
-      <div class="container w-100 nav_container m-0">
+      <div class="container w-100 nav_container m-auto">
         <div class="nav-brand px-1">
           <img
-            src="./navImg/SCIP logo - White 1.png"
+            src="./assets/navImg/SCIP logo - White 1.png"
             class="img-fluid"
             alt="logo"
           />
@@ -227,20 +227,18 @@
         <div class="offcanvas-body d-flex flex-column gap-4">
           <!-- First group container -->
           <div
-            class="container d-flex flex-column  justify-content-between gap-3"
+            class="container d-flex flex-column justify-content-between gap-3"
           >
-            <div
-              class="d-flex bg-white search rounded overflow-hidden justify-content-between"
-            >
+            <div class="d-flex search rounded justify-content-between">
               <input
                 type="text"
                 placeholder="Search..."
-                class="border-0 rounded p-2"
+                class="border-0 rounded p-2 w-75"
               />
               <button
-                class="nav-link searchBtn text-white border-0 p-2 bg-black text-start"
+                class="text-success border-2 rounded border-success py-2 px-3 bg-transparent"
               >
-                <i class="text-white ri-search-line"></i>
+                Search
               </button>
             </div>
             <a href="#about" class="nav-link text-white">About</a>
@@ -248,7 +246,7 @@
             <a href="#joinNow" class="nav-link text-white">Join Now</a>
             <a href="#signIn" class="nav-link text-success fw-bold">Sign In</a>
           </div>
-
+          <hr class="border-2 w-75 align-self-center" />
           <!-- Second group container -->
           <div class="container d-flex flex-column gap-3">
             <a href="#affiliates" class="nav-link text-white">Affiliates</a>
@@ -415,7 +413,7 @@
       <div class="hero_content w-100 d-flex flex-column align-items-center">
         <div class="scip_image d-flex justify-content-center">
           <img
-            src="./heroContainerImg/SCIP_log_white-removebg-preview 3.png"
+            src="./assets/heroContainerImg/SCIP_log_white-removebg-preview 3.png"
             class="img-fluid"
             alt="photos"
           />
@@ -424,7 +422,7 @@
           Strategic Consortium of <br />
           Intelligence Professionals (SCIP)
         </h1>
-        <p class="text-white text-center fw-light">
+        <p class="paragraph-text text-white text-center fw-light">
           SCIP is the world’s largest Global Intelligence Association, a
           non-profit community comprised of over 15,000 individuals in 102
           countries, who actively contribute to our mission of promoting,
@@ -437,7 +435,8 @@
           growth enabler for individuals and organizations alike.
         </p>
         <a
-          class="scroll_down border-0 text-decoration-none bg-transparent text-white d-flex flex-column justify-content-center align-items-center mt-4 px-4 py-3 fw-light" href="#contentBox"
+          class="scroll_down border-0 text-decoration-none bg-transparent text-white d-flex flex-column justify-content-center align-items-center mt-4 px-4 py-3 fw-light"
+          href="#contentBox"
           id="scrollBtn"
         >
           <span class="">Scroll</span>
@@ -450,7 +449,8 @@
       </button>
     </section>
     <!-- content section -->
-    <section id="contentBox"
+    <section
+      id="contentBox"
       class="content_container position-relative d-flex align-items-start justify-content-center"
     >
       <!-- <img src="./1118394_4k_Mystery_3840x2160 1.png" class="bg-image position-absolute w-100 h-100  start-0 top-0 img-fluid" alt="image"> -->
@@ -461,7 +461,7 @@
         <h2 class="heading text-center">
           Intelligence for the Betterment of People and Planet
         </h2>
-        <p class="text-white text-center fw-light">
+        <p class="paragraph-text text-white text-center fw-light">
           SCIP expands our global leadership in driving Intelligence towards
           Sustainability and Social Responsibility causes, partnering with
           organizations around the world to promote data-driven intelligence in
@@ -485,11 +485,11 @@
     <section
       class="video_container position-relative d-flex justify-content-center align-items-end"
     >
-      <img
+      <!-- <img
         src="./contentImg/3d rendering of dark earth in space133 1.png"
         class="position-absolute start-0 top-0 w-100 h-100"
         alt=""
-      />
+      /> -->
       <div
         class="video_youtube position-absolute w-100 justify-content-center d-flex"
       >
@@ -504,10 +504,10 @@
         ></iframe>
       </div>
       <div class="video_content z-2 w-100 d-flex justify-content-center pb-5">
-        <p class="text-white fw-normal text-center pt-4">
+        <p class="paragraph-text text-white fw-normal text-center pt-4">
           Learn more about this
           <span class="fw-bold">"Intellignce EcoSystem" </span> environment here
-          and be a <br />part of our growing consortium
+          and be apart of our growing consortium
         </p>
       </div>
     </section>
@@ -516,13 +516,13 @@
       class="card_container position-relative w-100 d-flex flex-column gap-5"
     >
       <img
-        src="./proportionImg/Value Proposition Bg.png"
+        src="./assets/proportionImg/Value Proposition Bg.png"
         class="card-bg position-absolute w-100 h-100 start-0 top-0"
         alt="image"
       />
       <div class="heading_content d-flex pb-3 flex-column align-items-center">
         <h2 class="heading text-center">SCIP’s Value Propositions</h2>
-        <p class="text-white text-center">
+        <p class="paragraph-text text-white text-center">
           SCIP is focusing on global applications around of these core pillars
           of value for our global community:
         </p>
@@ -634,7 +634,7 @@
     >
       <div class="event_heading w-100 d-flex align-items-center flex-column">
         <h2 class="heading text-center">SCIP IntelliCon Events</h2>
-        <p class="text-white text-center">
+        <p class="paragraph-text text-white text-center">
           Global venues where Intelligence Subject Matter Experts and Thought
           Leaders come together to share experiences, promote education and
           training, and network with individuals passionate about the role of
@@ -645,7 +645,7 @@
       <div class="event_wrapper d-flex justify-content-between w-100 gap-5 p2">
         <div class="event_image">
           <img
-            src="./eventImg/Intellicon Main OnHover.png"
+            src="./assets/eventImg/Intellicon Main OnHover.png"
             class="img-fluid"
             alt="img"
           />
@@ -661,7 +661,7 @@
             SCIP INTELLICON <br />
             BARCELONA 2024
           </h3>
-          <p>
+          <p class="paragraph-text">
             “Data-Driven Intelligence in CI and the <br />
             Intelligence EcoSystem”
           </p>
@@ -673,15 +673,15 @@
       </div>
       <div class="upcomingEvent_wrapper w-100 position-relative">
         <img
-          src="./eventImg/Union.png"
+          src="./assets/eventImg/Union.png"
           class="union-image position-absolute img-fluid z-0"
           alt=""
         />
-        <h3 class="banner_heading pb-2">Upcoming Intellicons</h3>
+        <h3 class="banner_heading eventBanner pb-2">Upcoming Intellicons</h3>
         <div class="upcoming_events overflow-hidden py-1">
           <div class="event position-relative">
             <img
-              src="./eventImg/eventimg1.png"
+              src="./assets/eventImg/eventimg1.png"
               class="position-absolute w-100 h-100 start-0 top-0"
               alt="img"
             />
@@ -697,7 +697,7 @@
           </div>
           <div class="event position-relative">
             <img
-              src="./eventImg/imgevent2.png"
+              src="./assets/eventImg/imgevent2.png"
               class="position-absolute w-100 h-100 start-0 top-0"
               alt="img"
             />
@@ -713,7 +713,7 @@
           </div>
           <div class="event position-relative">
             <img
-              src="./eventImg/imgevent3.png"
+              src="./assets/eventImg/imgevent3.png"
               class="position-absolute w-100 h-100 start-0 top-0"
               alt="img"
             />
@@ -731,16 +731,20 @@
       </div>
     </section>
     <!-- icoeMap section -->
-    <section class="icoeMap_container">
+    <section id="icoe" class="icoeMap_container">
       <div class="scip_wrapper d-flex flex-row">
         <div class="scip_logo z-2 d-flex align-items-start">
-          <img src="./mapImg/image 53.png" class="w-100 img-fluid" alt="icoe" />
+          <img
+            src="./assets/mapImg/image 53.png"
+            class="w-100 img-fluid"
+            alt="icoe"
+          />
         </div>
         <h2 class="heading z-2">
-          SCIP INTELLEGENCE CENTERS OF EXCELLENCE(ICoE)
+          SCIP INTELLEGENCE CENTERS OF EXCELLENCE (ICoE)
         </h2>
         <div class="icoe_content z-2">
-          <p class="text-white fw-light">
+          <p class="paragraph-text text-white fw-light">
             We are a collective Intelligence force dedicated to advancing
             REGIONAL prosperity through the power of data, Intelligence, and
             collaboration. Our ICoEs serve as an extension of the SCIP
@@ -756,15 +760,18 @@
       <div class="map_wrapper"></div>
     </section>
     <!-- affiliates section -->
-    <section class="affiliates position-relative d-flex flex-column gap-4">
+    <section
+      id="affiliates"
+      class="affiliates position-relative d-flex flex-column gap-4"
+    >
       <img
         class="position-absolute start-0 end-0 w-100 img-fluid top-0 z-0 h-100 z-1"
-        src="./affiliatesImg/Vector 6.png"
+        src="./assets/affiliatesImg/Vector 6.png"
         alt=""
       />
       <div class="affiliate_heading w-100 text-center z-2">
         <h2 class="heading w-100">SCIP Affiliates</h2>
-        <p class="text-white">
+        <p class="paragraph-text text-white">
           SCIP Affiliates are Intelligence Partners who share the same passion
           around utilizing and promotion of data <br />
           and Intelligence throughout the globe.
@@ -773,7 +780,7 @@
       <div class="affiliateLogo_container z-2">
         <div class="affiliate_logo position-relative">
           <img
-            src="./affiliatesImg/affiliate1.png"
+            src="./assets/affiliatesImg/affiliate1.png"
             class="img-fluid"
             alt="logo1"
           />
@@ -784,7 +791,7 @@
         </div>
         <div class="affiliate_logo position-relative">
           <img
-            src="./affiliatesImg/affiliate2.png"
+            src="./assets/affiliatesImg/affiliate2.png"
             class="img-fluid"
             alt="logo1"
           />
@@ -795,7 +802,7 @@
         </div>
         <div class="affiliate_logo position-relative">
           <img
-            src="./affiliatesImg/affiliate3.png"
+            src="./assets/affiliatesImg/affiliate3.png"
             class="img-fluid"
             alt="logo1"
           />
@@ -806,7 +813,7 @@
         </div>
         <div class="affiliate_logo position-relative">
           <img
-            src="./affiliatesImg/affiliate4.png"
+            src="./assets/affiliatesImg/affiliate4.png"
             class="img-fluid"
             alt="logo1"
           />
@@ -817,7 +824,7 @@
         </div>
         <div class="affiliate_logo position-relative">
           <img
-            src="./affiliatesImg/affiliate5.png"
+            src="./assets/affiliatesImg/affiliate5.png"
             class="img-fluid"
             alt="logo1"
           />
@@ -828,7 +835,7 @@
         </div>
         <div class="affiliate_logo position-relative">
           <img
-            src="./affiliatesImg/affiliate6.png"
+            src="./assets/affiliatesImg/affiliate6.png"
             class="img-fluid"
             alt="logo1"
           />
@@ -839,7 +846,7 @@
         </div>
         <div class="affiliate_logo position-relative">
           <img
-            src="./affiliatesImg/affiliate7.png"
+            src="./assets/affiliatesImg/affiliate7.png"
             class="img-fluid"
             alt="logo1"
           />
@@ -850,7 +857,7 @@
         </div>
         <div class="affiliate_logo position-relative">
           <img
-            src="./affiliatesImg/affiliate8.png"
+            src="./assets/affiliatesImg/affiliate8.png"
             class="img-fluid"
             alt="logo1"
           />
@@ -861,7 +868,7 @@
         </div>
         <div class="affiliate_logo position-relative">
           <img
-            src="./affiliatesImg/affiliate9.png"
+            src="./assets/affiliatesImg/affiliate9.png"
             class="img-fluid"
             alt="logo1"
           />
@@ -872,7 +879,7 @@
         </div>
         <div class="affiliate_logo position-relative">
           <img
-            src="./affiliatesImg/affiliate10.png"
+            src="./assets/affiliatesImg/affiliate10.png"
             class="img-fluid"
             alt="logo1"
           />
@@ -883,7 +890,7 @@
         </div>
         <div class="affiliate_logo position-relative">
           <img
-            src="./affiliatesImg/affiliate11.png"
+            src="./assets/affiliatesImg/affiliate11.png"
             class="img-fluid"
             alt="logo1"
           />
@@ -894,7 +901,7 @@
         </div>
         <div class="affiliate_logo position-relative">
           <img
-            src="./affiliatesImg/affiliate12.png"
+            src="./assets/affiliatesImg/affiliate12.png"
             class="img-fluid"
             alt="logo1"
           />
@@ -905,7 +912,7 @@
         </div>
         <div class="affiliate_logo position-relative">
           <img
-            src="./affiliatesImg/affiliate13.png"
+            src="./assets/affiliatesImg/affiliate13.png"
             class="img-fluid"
             alt="logo1"
           />
@@ -919,7 +926,7 @@
     <!-- accoridion section -->
     <section class="accordion_container position-relative d-flex flex-column">
       <img
-        src="./accordianImg/accordian_bg.png"
+        src="./assets/accordianImg/accordian_bg.png"
         class="position-absolute start-0 top-0 z-0 img-fluid w-100 h-100"
         alt="accordion"
       />
@@ -928,7 +935,7 @@
           Solution Provider Engagement, <br />
           Enrichment & Development (SPEED)
         </h2>
-        <p class="text-center w-75 text-white">
+        <p class="paragraph-text text-center w-75 text-white">
           <span class="fw-bold"
             >SCIP’s Solution Provider Engagement, Enrichment & Development
             (SPEED)</span
@@ -950,7 +957,7 @@
               >01</span
             >
             <img
-              src="./accordianImg/accordian_img1.png"
+              src="./assets/accordianImg/accordian_img1.png"
               class="img-fluid position-absolute"
               alt="img"
             />
@@ -977,7 +984,7 @@
               >02</span
             >
             <img
-              src="./accordianImg/market.png"
+              src="./assets/accordianImg/market.png"
               class="img-fluid position-absolute"
               alt="img"
             />
@@ -1004,7 +1011,7 @@
               >03</span
             >
             <img
-              src="./accordianImg/image 157.png"
+              src="./assets/accordianImg/image 157.png"
               class="img-fluid position-absolute"
               alt="img"
             />
@@ -1031,7 +1038,7 @@
               >04</span
             >
             <img
-              src="./accordianImg/image 158.png"
+              src="./assets/accordianImg/image 158.png"
               class="img-fluid position-absolute"
               alt="img"
             />
@@ -1058,7 +1065,7 @@
               >05</span
             >
             <img
-              src="./accordianImg/image 159.png"
+              src="./assets/accordianImg/image 159.png"
               class="img-fluid position-absolute"
               alt="img"
             />
@@ -1095,7 +1102,7 @@
       class="tabs_container bg-black d-flex flex-column position-relative"
     >
       <img
-        src="./tabsImg/Minimal glow of the globe in dark wallpaper.png"
+        src="./assets/tabsImg/Minimal glow of the globe in dark wallpaper.png"
         class="tab-image position-absolute img-fluid"
         alt="globe"
       />
@@ -1106,7 +1113,7 @@
           SCIP Member Advanced Resources <br />
           & Training (SMART) Center
         </h2>
-        <p class="text-center text-white">
+        <p class="paragraph-text text-center text-white">
           The SMART platform is a comprehensive set of Training and Educational
           curriculum that provides <br />
           Knowledge and Best Practices towards accredited certification in
@@ -1530,7 +1537,7 @@
     <section class="recognition_container bg-black d-grid">
       <div class="recognition-img">
         <img
-          src="./recognitionImg/IACET.png"
+          src="./assets/recognitionImg/IACET.png"
           class="img-fluid w-100"
           alt="iacet"
         />
@@ -1554,7 +1561,7 @@
     <section class="tools_container d-flex flex-column gap-5">
       <div class="tool_heading w-100 d-flex flex-column align-items-center">
         <h2 class="heading text-center">SCIP INTELLIGENCE Tools</h2>
-        <p class="text-white text-center">
+        <p class="paragraph-text text-white text-center">
           SCIP continues to offer a boundless repository of tools and resources
           to help burgeoning <br />
           Intelligence Professionals with the skills they need in their everyday
@@ -1569,14 +1576,17 @@
         class="video_content w-100 position-relative d-flex align-items-center justify-content-center"
       >
         <video class="h-100 w-75 video" autoplay loop muted>
-          <source src="./toolsImg/Render 1920x1080_2.mp4" type="video/mp4" />
+          <source
+            src="./assets/toolsImg/Render 1920x1080_2.mp4"
+            type="video/mp4"
+          />
         </video>
         <div class="video_overlay w-100 h-100 position-absolute"></div>
-        <span class="video_text position-absolute text-white text-center"
+        <span
+          class="paragraph-text video_text position-absolute text-white text-center"
           >We are the world’s largest Intelligence repository for methods,
-          templates, tools, processes <br />
-          and other learning assets contributed by global leaders in this
-          Intelligence space.</span
+          templates, tools, processes and other learning assets contributed by
+          global leaders in this Intelligence space.</span
         >
       </div>
       <div class="cards bg-transparent">
@@ -1790,7 +1800,7 @@
       <div class="cta_overlay position-absolute w-100 h-100"></div>
       <video class="w-100 h-100" autoplay loop muted>
         <source
-          src="./ctaImg/1118394_4k_Mystery_3840x2160.mp4"
+          src="./assets/ctaImg/1118394_4k_Mystery_3840x2160.mp4"
           type="video/mp4"
         />
       </video>
@@ -1800,10 +1810,10 @@
         <h3 class="text-uppercase text-white text-center">
           Ready to make a <span class="heading">difference?</span>
         </h3>
-        <small class="text-white text-center"
+        <small class="paragraph-text text-white text-center"
           >Become a part of our SCIP Global Community and contribute to the
         </small>
-        <span class="fw-bold text-white text-center"
+        <span class="paragraph-text fw-bold text-white text-center"
           >“Intelligence Consortium for the Betterment of People and
           Planet”</span
         >
@@ -1828,11 +1838,14 @@
               <!-- Content -->
               <div class="footer_img">
                 <img
-                  src="./footerLogos/SCIP_Logo_Primary 2.png"
+                  src="./assets/footerLogos/SCIP_Logo_Primary 2.png"
                   class="img-fluid img1"
                   alt="scip1"
                 />
-                <img src="./footerLogos/SCIP_Logo_Primary 3.png" alt="scip2" />
+                <img
+                  src="./assets/footerLogos/SCIP_Logo_Primary 3.png"
+                  alt="scip2"
+                />
               </div>
               <p class="text-white">
                 Strategic Consortium of Intelligence Professionals (SCIP) <br />
