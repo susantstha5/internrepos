@@ -894,6 +894,7 @@ footer {
   }
   .cta_btn span{
     font-size: 12px;
+    font-weight: normal !important;
   }
   .cta_btn .button{
     width: 20px;
