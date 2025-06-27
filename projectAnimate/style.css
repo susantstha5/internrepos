@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   box-sizing: border-box;
+    outline: 1px solid red;
 }
 body {
   margin: 0px;
   padding: 0px;
   font-family: "Roboto", sans-serif;
+
 }
 html {
   scroll-behavior: smooth;
@@ -759,15 +761,12 @@ footer {
   padding: 20px 20px 10px 20px;
 }
 
-.footer_logo p {
+.footer_content p {
   font-size: clamp(8px, 5vw, 12px);
   line-height: 1.8;
   padding-left: 10px;
 }
-.footer_logo .footer_img .img1 {
-  object-fit: contain;
-  object-position: left;
-}
+
 .footer_container {
   padding-top: 20px;
 }
@@ -775,10 +774,6 @@ footer {
   display: grid;
   grid-template-columns: 40% 1fr;
 }
-/* .footer_container .footer-text{
-    font-size: clamp(10px,1.vw ,16px);
-  } */
-
 @media screen and (max-width: 1200px) {
   .navbar {
     padding: 0px 15px !important;
@@ -868,9 +863,9 @@ footer {
     flex-direction: column;
   }
   .footer-link {
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
   }
   .footer_content {
     display: flex;
@@ -933,6 +928,7 @@ footer {
   .content_container,
   .card_container,
   .video_container,
+  .cta_content,
   .scip_wrapper {
     padding: 40px 20px;
   }
@@ -1036,5 +1032,8 @@ footer {
   }
   .tools_card:hover .card_text {
     transform: none;
+  }
+  .footer-link .link{
+    min-width: 40%;
   }
 }
