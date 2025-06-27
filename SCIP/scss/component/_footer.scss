@@ -14,6 +14,19 @@
 .powerBy {
   font-size: 14px;
 }
+.footerIcon {
+  .icon1:hover svg path {
+    stroke: $action-color;
+    // fill: $action-color;
+  }
+  .icon1:hover svg .icon1Circle {
+    fill: $action-color;
+  }
+  .iconList:hover svg path {
+    // stroke: $action-color;
+    fill: $action-color;
+  }
+}
 
 @media screen and (max-width: 900px) {
   .footer {
@@ -41,9 +54,17 @@
 
 @media screen and (max-width: 500px) {
   .footer {
+    .footerContent {
+      justify-content: center !important;
+    }
     .footerDetail {
       // display: none !important;
-      flex-direction: column;
+      // flex-direction: column;
+      padding-inline: 10px !important;
+      padding-top: 20px !important;
+      flex-wrap: wrap;
+      gap: 10px !important;
+      // justify-content: center;
     }
   }
   .scipDetail {

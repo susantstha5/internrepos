@@ -84,6 +84,9 @@
   }
 }
 
+* {
+  outline: 1px solid red;
+}
 a {
   text-decoration: none;
 }
@@ -180,16 +183,21 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+  .container {
+    padding-inline: 20px !important;
+  }
   .title {
     font-size: 26px !important;
   }
   .btn-primary {
+    padding-block: 5px !important;
+    padding-inline: 5px !important;
     button {
       .btnName {
-        font-size: 14px !important;
+        font-size: 12px !important;
       }
       i {
-        font-size: 14px;
+        font-size: 12px;
       }
     }
   }

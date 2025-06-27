@@ -5,7 +5,9 @@
       rgba(0, 0, 0, 0.4)
     ),
     linear-gradient(to top, rgba(12, 12, 13, 1), rgba(0, 0, 0, 0.4)),
-    url("/image/SPEED\ Video\ bg.png");
+    url("/image/SPEED\ Video\ bg.png") no-repeat;
+  background-size: cover;
+  object-fit: cover;
   .area {
     font-size: 24px;
   }
@@ -129,17 +131,18 @@
         }
       }
       .descriptionContainer {
-        gap: 5px !important;
+        gap: 0px !important;
         .num {
           font-size: 20px !important;
           padding: 10px;
+          opacity: 1;
         }
         .speedDescription {
           transition: none !important;
           transform: none !important;
           .topic {
             font-size: 20px !important;
-            padding: 10px;
+            padding: 10px 0px;
             transition: none !important;
             transform: none !important;
           }

@@ -1,6 +1,8 @@
 .signUp {
-  background: url("/image//1118394_4k_Mystery_3840x2160\ 2.png"),
+  background: url("/image//1118394_4k_Mystery_3840x2160\ 2.png") no-repeat,
     rgba(12, 12, 13, 1);
+  background-size: cover;
+  object-fit: cover;
   padding-top: 150px;
   min-height: 736px;
 }

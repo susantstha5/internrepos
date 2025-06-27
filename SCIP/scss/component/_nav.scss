@@ -2,13 +2,15 @@
   background: rgba(12, 12, 13, 0.1);
   backdrop-filter: blur(15px);
   position: absolute;
-  min-height: 115px;
+  // min-height: 115px;
   width: 100%;
   z-index: -1;
-  padding: 10px;
+  height: 100% !important;
+  top: 0;
+  left: 0;
 }
 .navBar {
-  min-height: 96px;
+  // min-height: 96px;
   position: fixed;
   width: 100%;
   background: rgba(12, 12, 13, 0.1);
@@ -32,9 +34,11 @@
   }
 }
 .nav-2 {
+  // position: relative;
+  // z-index: 999;
   ul li {
     position: relative;
-    z-index: 999;
+    // z-index: 1;
   }
   ul li .nav-link:hover {
     background: $primary-gradient !important;
@@ -43,6 +47,7 @@
     color: transparent !important;
     width: fit-content !important;
     // color: #00d8fa !important;
+    cursor: pointer;
   }
   ul li:hover .smartHover,
   ul li:hover .memberHover,
@@ -124,6 +129,24 @@
 .mobileMenu {
   display: none;
   color: $grey-white;
+  .dropdown-toggle {
+    padding: 8px 16px;
+  }
+  .dropdown-toggle::after {
+    display: none !important;
+  }
+  .dropdown-menu {
+    // border-radius: 10px;
+    // // min-width: 250px;
+    // // display: none;
+    // position: absolute;
+    // z-index: 999;
+    // padding-inline: 10px !important;
+    background-color: rgba(185, 185, 185, 0.8);
+    backdrop-filter: blur(60px);
+    // position: relative !important;
+    // width: 100%;
+  }
   a {
     color: $grey-white;
     // text-decoration: underline;
@@ -194,10 +217,7 @@
   .blur {
     min-height: 70px;
   }
-  .navBar {
-    min-height: 60px;
-    // padding: 10px;
-  }
+
   .navHeader {
     // padding: 10px;
     .logo a img {
@@ -215,13 +235,6 @@
 
 // mobile scss
 @media screen and (max-width: 500px) {
-  // .blur {
-  //   min-height: 80px;
-  // }
-  .navBar {
-    min-height: 60px;
-    // padding: 10px;
-  }
   .navHeader {
     padding: 15px;
     .logo a img {

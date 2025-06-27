@@ -1,12 +1,15 @@
 .scipSmart {
-  background: linear-gradient(
+  background: url("/image/Minimal\ glow\ of\ the\ globe\ in\ dark\ wallpaper.png")
+      no-repeat,
+    linear-gradient(
       to bottom,
-      rgba(12, 13, 15, 1),
-      rgba(12, 13, 15, 0)
+      rgba(12, 12, 13, 1) 20%,
+      rgba(12, 13, 15, 0),
+      rgba(12, 13, 15, 1) 10%
     ),
-    linear-gradient(to top, rgba(12, 13, 15, 1), rgba(12, 13, 15, 0)),
-    url("/image/Minimal\ glow\ of\ the\ globe\ in\ dark\ wallpaper.png");
-  // rgba(12, 12, 13, 1);
+    rgba(12, 13, 15, 0.5);
+  background-size: cover;
+  object-fit: cover;
   overflow: hidden;
 }
 .tabMenu {
@@ -14,7 +17,6 @@
   border-radius: 10px;
   padding: 2px;
   position: relative;
-  // overflow: hidden;
   .nav-item {
     position: relative;
     overflow: hidden;
@@ -26,21 +28,8 @@
       color: $black;
       background-color: $action-color;
       transition: all 0.5s ease;
-      // overflow: hidden;
     }
   }
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   top: 2px;
-  //   right: -20px;
-  //   width: 70%;
-  //   height: 93%;
-  //   border-radius: 10px;
-  //   background-color: $action-color;
-  //   z-index: 0;
-  //   transition: all 0.5s linear;
-  // }
 }
 .tabList {
   border: 1px solid rgba(185, 185, 185, 1);
@@ -52,6 +41,7 @@
   background: rgba(12, 12, 13, 0.5);
   border-radius: 10px;
   padding: 30px 20px;
+
   .nav-link {
     padding: 20px 30px;
     color: $grey-white;
@@ -85,6 +75,7 @@
   }
 }
 
+// tab screen
 @media screen and (max-width: 900px) {
   .scipSmart {
     .content {
@@ -115,6 +106,7 @@
   }
 }
 
+// mobile screen
 @media screen and (max-width: 500px) {
   .scipSmart {
     .title {
@@ -126,15 +118,36 @@
     #pills-resource,
     #pills-training-tab {
       font-size: 18px;
-      padding-inline: 20px;
+      padding-inline: 10px;
       min-width: 115px;
     }
+    .menuList {
+      .nav {
+        display: flex;
+        flex-direction: row !important;
+        flex-wrap: nowrap;
+        max-width: 400px;
+        overflow-x: auto;
+      }
+    }
     .resourceMenu {
-      margin: 0px !important;
-      padding: 20px 20px;
+      gap: 10px !important;
+      width: 100%;
+      max-width: 100%;
+      .nav-link {
+        padding: 8px;
+        color: #f5f5f5;
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
+    }
+    .resourceMenu .nav-link.active,
+    .resourceMenu .show > .nav-link {
+      padding: 5px 8px;
     }
     .resourceTopic {
-      font-size: 16px;
+      font-size: 14px;
+      white-space: nowrap;
     }
   }
 }

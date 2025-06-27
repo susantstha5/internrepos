@@ -6,7 +6,9 @@
       rgba(12, 12, 13, 0) 80%
     ),
     linear-gradient(to top, rgba(12, 12, 13, 1) 8%, rgba(12, 12, 13, 0) 20%),
-    url("/image/Image\ [hidden].png"), rgba(1, 8, 23, 1);
+    url("/image/Image\ [hidden].png") no-repeat, rgba(1, 8, 23, 1);
+  background-size: cover;
+  object-fit: cover;
   .content {
     max-width: 986px;
   }

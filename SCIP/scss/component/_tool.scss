@@ -57,7 +57,7 @@
   }
   .cardList {
     .card {
-      min-height: auto;
+      min-height: 356px;
       background: rgba(12, 12, 13, 0.5);
       backdrop-filter: blur(50px);
       border: 1px solid rgba(185, 185, 185, 1);
@@ -113,10 +113,10 @@
     }
   }
 }
-.card:hover .learnMore {
-  opacity: 1;
-  height: auto;
-}
+// .card:hover .learnMore {
+//   opacity: 1;
+//   height: auto;
+// }
 
 @media screen and (max-width: 900px) {
   .scipTool {
@@ -148,7 +148,7 @@
     .cardList {
       padding-block: 10px !important;
       .card {
-        // min-height: 300px;
+        min-height: auto;
       }
     }
   }
@@ -170,9 +170,11 @@
         .card-body {
           .card-title {
             font-size: 20px !important;
+            transition: none;
           }
           .card-text {
             font-size: 12px !important;
+            transition: none;
           }
           .learnMore {
             opacity: 1;
@@ -181,6 +183,15 @@
             transform: none;
             transform-origin: none;
           }
+        }
+        &:hover::before {
+          // transform: translateY(0%);
+          opacity: 1;
+          transition: none;
+          transform: none;
+        }
+        &:hover .card-body .learnMore {
+          margin-top: 0px;
         }
       }
     }

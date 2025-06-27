@@ -11,7 +11,7 @@
   // z-index: 1;
   .cardList {
     .card {
-      min-height: auto;
+      // min-height: auto;
       // min-height: 265px;
       background: rgba(12, 12, 13, 0.5);
       backdrop-filter: blur(50px);
@@ -20,6 +20,7 @@
       transition: transform 0.8s ease;
       position: relative;
       overflow: hidden;
+      padding: 20px 10px;
       // display: flex;
       // flex-direction: column;
       // flex: 1;
@@ -27,6 +28,11 @@
         // flex: 1;
         .card-title {
           font-size: 24px;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
         .card-text {
           font-size: 18px;
@@ -69,7 +75,7 @@
     .cardList {
       padding-block: 10px !important;
       .card {
-        // min-height: 280px;
+        // min-height: 200px;
         width: 100%;
         .card-body {
           .card-title {
@@ -96,7 +102,7 @@
         min-height: auto;
         .card-body {
           .card-title {
-            font-size: 20px;
+            font-size: 18px;
           }
           .card-text {
             font-size: 12px;
