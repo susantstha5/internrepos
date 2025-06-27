@@ -18,50 +18,55 @@
     button {
         position: relative;
         background-color: white;
-        padding: 12px 24px;
+        padding: 12px 14px;
         border: none;
         border-radius: 30px;
         overflow: hidden;
-        // z-index: 1;
-        transition: all 0.8s linear;
+        transition: all 0.3s linear;
         color:black;
         margin:auto;
         p {
             margin: 0;
             position: relative;
-            // z-index: 2;
             color: black;
-            transition: all 0.5s linear;
+            transition: all 0.3s linear;
+            z-index:2;
         }
         .signup-arrow {
             position: relative;
-            // z-index: 2;
             border-radius: 50%;
             width: 40px;
             height: 40px;
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: all 0.5s linear;
+            transition: all 0.3s linear;
+            i{
+                position:absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+
+            }
         }
     }
-    button::before {
+    .signup-arrow::before {
         content: '';
         position: absolute;
         right: 18px;
         top: 50%;
-        transform: translateY(-50%);
+        left: 50%;
+        transform: translate(-50%, -50%);
         width: 40px;
         height: 40px;
         background-color:  #42E26F;
         border-radius: 50%;
-        // z-index: 1;
-        transition: all 0.5s linear;
+        transition: all 0.3s linear;
     }
     /* On hover: grow background to cover button */
-    button:hover::before {
-        width: 200%;
-        height: 200%;
+    .signup-arrow:hover::before {
+        width: 800%;
+        height: 700%;
         right: -20%;
     }
     .icoe-img{

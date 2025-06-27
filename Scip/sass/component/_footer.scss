@@ -42,36 +42,15 @@ footer{
     @media screen and (max-width: 500px) {
         padding:10px 20px !important;
         text-align: center;
-        .footer-content{
-            font-size: 12px;
-        }
         .icon{
             justify-content: center !important;
-            padding-bottom: 0px !important;
-        }
-        i{
-            font-size: 18px;
+            padding-bottom: 30px !important;
         }
         .row{
             padding:0px !important;
-            margin-bottom: 20px !important;
         }
         .col{
             padding: 0px !important;
-        }
-        .company{
-            opacity:0 !important;
-            width: 0px !important;
-            height: 0px !important;
-        }
-         h5{
-            font-size: 14px;
-        }
-        ul{
-            font-size: 10px;
-        } 
-        .member{
-            font-size: 12px;
         }
     }
 }

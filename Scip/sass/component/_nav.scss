@@ -1,7 +1,8 @@
 .navbar{
     padding:10px 80px;
     // backdrop-filter: blur(20px);
-    background-color: rgba(61, 37, 37, 0.2);
+    // background-color: rgba(61, 37, 37, 0.2);
+    background: transparent;
     position: sticky;
     z-index: 999;
     ul{
@@ -32,7 +33,7 @@
                 position: absolute;
                 top: 100%;
                 left: 0;
-                backdrop-filter: blur(100px);
+                backdrop-filter: blur(59.5px);
                 background-color:rgba(185, 185, 185, 0.4);
                 border-radius: 10px;
                 min-width:300px;
@@ -54,7 +55,7 @@
                 position: absolute;
                 top: 0%;
                 left: 100%;
-                backdrop-filter: blur(100px);
+                backdrop-filter: blur(59.5px);
                 background-color:rgba(195, 195, 195,0.8);
                 border-radius: 10px;
                 min-width:250px;
@@ -63,6 +64,17 @@
                     padding:10px;
                 }
             } 
+            .smart-section{
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: -150%;
+                backdrop-filter: blur(59.5px);
+                background-color:rgba(185, 185, 185, 0.4);
+                border-radius: 10px;
+                min-width:300px;
+                padding:10px 20px 20px 20px;
+            }
         }
     }
     li.hover-1:hover {
