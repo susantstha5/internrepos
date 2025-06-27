@@ -74,8 +74,6 @@ body{
     overflow-x: hidden !important;
 }
 .top-container{
-    // background: url('../images/background1.png');
-    // background-size: cover;
     overflow:hidden;
     position:relative;
     .video-container{
@@ -106,7 +104,7 @@ body{
         button {
             position: relative;
             background-color: white;
-            padding: 12px 14px;
+             padding: 10px 8px 10px 22px;
             border: none;
             border-radius: 30px;
             overflow: hidden;

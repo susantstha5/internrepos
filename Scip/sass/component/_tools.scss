@@ -24,7 +24,7 @@
         button {
             position: relative;
             background-color: white;
-            padding: 12px 14px;
+            padding: 10px 8px 10px 22px;
             border: none;
             border-radius: 30px;
             overflow: hidden;
@@ -107,7 +107,7 @@
             border: 1px solid #B9B9B9;
             border-radius: 10px;
             padding: 20px 20px 5px 20px;
-            min-height: 270px;
+            min-height: 290px;
             .title {
                 font-family: "Roboto";
                 font-size: 22px;
@@ -121,7 +121,7 @@
             button {
                 position: relative;
                 background-color: white;
-                padding: 5px 14px;
+                padding: 10px 8px 10px 22px;
                 border: none;
                 border-radius: 30px;
                 overflow: hidden;
@@ -183,8 +183,9 @@
         }
     }
     @media screen and (max-width: 500px) {
-        padding: 30px 20px !important;
+        padding: 30px 0px !important;
         .top{
+            padding: 0px 20px !important;
             h1{
                 font-size: 34px;
             }
@@ -196,7 +197,7 @@
                 margin-top: -10px;
             }
             button {
-                padding: 5px 24px !important;
+                 padding: 5px 8px 5px 22px !important;
             }
         }
         .tools-container {
@@ -218,7 +219,7 @@
                 button {
                     opacity:1;
                     min-height:50px;
-                    padding: 5px 24px !important;
+                     padding: 5px 8px 5px 22px !important;
                     p{
                     padding:5px 0px 0px  0px !important;
                     }

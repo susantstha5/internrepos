@@ -32,7 +32,7 @@
     button {
         position: relative;
         background-color: white;
-        padding: 12px 14px;
+        padding: 10px 8px 10px 22px;
         border: none;
         border-radius: 30px;
         overflow: hidden;
@@ -168,13 +168,16 @@
             }
         }
         button {
-            padding: 5px 24px;
+            padding: 5px 8px 5px 22px;
         }  
         .content{
             padding:0px 20px !important;
             h3{
                 font-size: 18px;
             }
+        }
+        .division{
+            padding: 20px 5px !important;
         }
         .awareness{
             flex-wrap: wrap !important;

@@ -21,7 +21,7 @@
         button {
             position: relative;
             background-color: white;
-            padding: 12px 14px;
+            padding: 10px 8px 10px 22px;
             border: none;
             border-radius: 30px;
             overflow: hidden;
@@ -109,7 +109,7 @@
                 button {
                     position: relative;
                     background-color: white;
-                    padding: 12px 14px;
+                    padding: 10px 8px 10px 22px;
                     border: none;
                     border-radius: 30px;
                     overflow: hidden;
@@ -192,7 +192,7 @@
             }
         }
         button {
-            padding: 5px 24px !important;
+            padding: 5px 8px 5px 22px !important;
         }  
         .bars{
             padding:30px 0px !important;
@@ -212,14 +212,26 @@
                         font-size: 20px;
                     }
                     button {
-                        padding: 5px 24px !important;
+                         padding: 5px 8px 5px 22px !important;
                     }
+                }
+            }
+        }
+        .tab-top{
+            .top-tab{
+                flex-direction: row !important;
+                flex-wrap:nowrap;
+                overflow: auto;
+                // overflow-x: hidden;
+                button{
+                    white-space: nowrap;
+                    padding:20px !important;
                 }
             }
         }
         .tabs-top{
             h3{
-                font-size: 18px;
+                font-size: 23px !important;
             }
         }
     }

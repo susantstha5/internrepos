@@ -42,7 +42,7 @@
         button {
             position: relative;
             background-color: white;
-            padding: 12px 14px;
+            padding: 10px 8px 10px 22px;
             border: none;
             border-radius: 30px;
             overflow: hidden;
@@ -89,7 +89,7 @@
         }
         /* On hover: grow background to cover button */
         .signup-arrow:hover::before {
-            width: 700%;
+            width: 800%;
             height: 700%;
             right: -20%;
         }
@@ -97,7 +97,6 @@
     .upcoming{
         .hover-column{
             position: relative;
-            // transition: all 0.1s linear;
             max-width:450px;
             max-height:250px;
             overflow:hidden;
@@ -107,7 +106,6 @@
             &::before{
                 content:"";
                 position: absolute;
-                // background: linear-gradient(to top, rgba(0, 15, 36, 0.6),rgba(0, 0, 0, 0));
                 background: rgba(0, 15, 36, 0.4);
                 opacity:0;
                 z-index: 1;
@@ -178,25 +176,15 @@
         p{
             font-size:14px;
         }
-        .top-content{
-            button {
-                width:50%;
-                padding: 5px 10px !important;
-                // i{
-                //     padding:10px 0px 10px 2px !important;
-                // }
-               
-            }
-        }
         .date i{
             padding: 0px !important;
         }
         .content{
             padding:10px 10px 10px 10px !important;
-            max-width: 300px !important;
             width: 100%;
             button {
-                padding: 7px 6px !important;
+                width: fit-content;
+                padding: 5px 8px 5px 22px;
             }
         }
         .upcoming{

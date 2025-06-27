@@ -19,7 +19,7 @@
     button {
         position: relative;
         background-color: white;
-        padding: 12px 14px;
+        padding: 10px 8px 10px 22px;
         border: none;
         border-radius: 30px;
         overflow: hidden;
@@ -83,12 +83,9 @@
             font-size: 14px;
         }
         button {
-            padding: 5px 15px;
+            padding: 5px 8px 5px 22px;
             p{
                 padding:3px 0px 0px 0px !important;
-            }
-            i{
-                padding: 0px 2px 0px 0px!important;
             }
         }
     }
