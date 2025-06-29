@@ -1,0 +1,26 @@
+@import "./utils/color";
+@import "./components/nav";
+@import "./components/hero";
+@import "./components/intelligence";
+@import "./components/scipvalue";
+@import "./components/event";
+@import "./components/icoedetails";
+@import "./components/resource";
+@import "./components/speed";
+@import "./components/iacet";
+@import "./components/tools";
+@import "./components/footer";
+@import "./components/difference";
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  ;
+  background-color: var(--dark-color);
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,158 @@
+.speed {
+    background: url(/images/smart.png);
+    background: black;
+
+    .topic {
+        padding: 0 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .Speedtitle {
+            text-transform: uppercase;
+            background: linear-gradient(to right, #00FFD1, #00F1E3, #00D8FA);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 50px;
+            font-weight: 700;
+            padding-top: 30px;
+        }
+
+        .decription-speed {
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.5;
+            max-width: 700px;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 20px;
+
+            span {
+                font-weight: 400;
+            }
+        }
+
+        h3 {
+            font-size: 25px;
+            font-weight: 600;
+            color: white;
+        }
+    }
+
+    .content {
+        .speed-card {
+            position: relative; // necessary for absolute children
+            border-bottom: 2px solid grey;
+
+            .awareness-img {
+                opacity: 0;
+                transition: all 1.2s ease;
+                width: 15%;
+
+            }
+
+            .speed-content {
+                position: absolute;
+                top: 10px; // corrected unit
+                left: 0;
+                right: 0;
+            }
+
+            .hover-text {
+                opacity: 0;
+                visibility: hidden;
+                transition: all 1.2s ease-out;
+                font-size: 15px;
+                overflow: hidden;
+                padding-top: 30px;
+            }
+
+            &:hover {
+                .awareness-img {
+                    opacity: 1;
+                    width: 30%;
+                }
+
+                .hover-text {
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+                .speed-contents {
+                    transform: translateX(300px);
+                }
+
+                .num {
+                    transform: translateY(-15px);
+                    opacity: 0;
+                }
+            }
+
+            .speed-contents {
+                transition: all 1.2s ease;
+            }
+
+            .num {
+                transition: all 1.2s ease;
+            }
+        }
+    }
+}
+
+
+@media (max-width:500px) {
+    .speed {
+        .topic {
+            padding: 0 !important;
+
+            .Speedtitle {
+                font-size: 30px !important;
+                padding: 10px 0 !important;
+            }
+
+            .decription-speed {
+                font-size: 18px;
+            }
+
+            h3 {
+                font-size: 20px !important;
+            }
+        }
+
+        .content {
+            padding: 1rem !important;
+
+            .speed-card {
+                .awareness-img {
+                    width: 22% !important;
+
+                }
+
+                .speed-content {
+                    .awareness-text {
+                        font-size: 16px !important;
+                    }
+
+                    .hover-text {
+                        font-size: 12px !important;
+                        padding-top: 0 !important;
+                    }
+                }
+
+                &:hover {
+                    .awareness-img {
+                        width: 26% !important;
+                    }
+
+                    .speed-contents {
+                        transform: translateX(50px);
+                    }
+                }
+            }
+        }
+    }
+}

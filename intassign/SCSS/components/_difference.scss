@@ -1,0 +1,139 @@
+.difference {
+  background-color: black;
+  padding: 3rem 0;
+}
+
+.content {
+  padding: 2rem;
+
+  .topic-d {
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+
+    .highlight {
+      background: linear-gradient(to right, #00ffd1, #00f1e3, #00d8fa);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+    }
+  }
+
+  small {
+    color: white;
+    font-size: 0.875rem;
+  }
+
+  .diff-p {
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+}
+
+  .diff-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+    
+    .diff-btn {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 60px 12px 12px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #000;
+      background: #fff;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      overflow: hidden;
+      transition: color 0.3s ease;
+      z-index: 0;
+    }
+
+    .diff-btn .text-diff {
+      position: relative;
+      z-index: 2;
+    }
+
+    .circle-diff {
+      position: absolute;
+      right: 20px;
+      width: 24px;
+      height: 24px;
+      background: #42e26f;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 0;
+      transition: transform 0.5s ease;
+      transform: scale(1);
+    }
+
+    .diff-btn:hover .circle-diff {
+      transform: scale(8.5);
+    }
+
+    .arrow-group-diff {
+      position: absolute;
+      right: 16px;
+      width: 24px;
+      height: 24px;
+      z-index: 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+    }
+
+    .arrow-out,
+    .arrow-in {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 16px;
+      transition: transform 0.6s ease, opacity 0.6s ease;
+    }
+
+    .arrow-out {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+    }
+
+    .arrow-in {
+      opacity: 0;
+      transform: translateX(-20px) scale(0.1);
+    }
+
+    .diff-btn:hover .arrow-out {
+      opacity: 0;
+      transform: translateX(20px) scale(0.1);
+    }
+
+    .diff-btn:hover .arrow-in {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+    }
+
+
+
+@media (max-width: 500px) {
+  .difference {
+    .content {
+      .topic-d {
+        font-size: 30px !important;
+      }
+
+      .diff-p {
+        font-size: 20px !important;
+      }
+    }
+  }
+}

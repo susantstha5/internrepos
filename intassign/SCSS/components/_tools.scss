@@ -1,0 +1,393 @@
+.tools {
+  // background: url('../images/intelligence.png'),linear-gradient(to top, rgba(12, 12, 13, 1),rgba(12, 12, 13, 2),rgba(12, 12, 13, 1));
+  background-color: #0C0C0D;
+
+  .top {
+    h3 {
+      background: linear-gradient(to right, #00FFD1, #00F1E3, #00D8FA);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      font-size: 50px;
+      font-weight: 700;
+    }
+
+    p {
+      color: white;
+      font-size: 20px;
+      font-weight: 400;
+      // padding: 0 250px;
+    }
+
+    .cube-box {
+      // margin-top: -100px;
+    }
+  }
+}
+
+
+// upper button 
+.toolbutton {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+
+  .box-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 60px 12px 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    background: #fff;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 0.3s ease;
+    z-index: 0;
+
+    .text-box {
+      position: relative;
+      z-index: 2;
+    }
+
+    .circle-box {
+      position: absolute;
+      right: 20px;
+      width: 24px;
+      height: 24px;
+      background: #42e26f;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 0;
+      transition: transform 0.5s ease;
+      transform: scale(1);
+    }
+
+    .arrow-group4 {
+      position: absolute;
+      right: 16px;
+      width: 24px;
+      height: 24px;
+      z-index: 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .arrow-out,
+      .arrow-in {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 16px;
+        transition: transform 0.6s ease, opacity 0.6s ease;
+
+        .arrow-out {
+          opacity: 1;
+          transform: translateX(0) scale(1);
+        }
+
+        .arrow-in {
+          opacity: 0;
+          transform: translateX(-20px) scale(0.1);
+        }
+      }
+    }
+  }
+}
+
+.box-btn:hover .circle-box {
+  transform: scale(11);
+}
+
+.box-btn:hover .arrow-out {
+  opacity: 0;
+  transform: translateX(20px) scale(0.1);
+}
+
+.box-btn:hover .arrow-in {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
+
+.box:hover .card-toolcontent {
+  opacity: 1;
+}
+
+.bgVideo-box {
+  width: 100%;
+  z-index: 0;
+  position: relative;
+  padding: 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle,
+        rgba(12, 12, 13, 0),
+        rgba(12, 12, 13, 1) 50%);
+    z-index: 1;
+  }
+
+  .toolVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+}
+
+button {
+  position: relative;
+  background-color: white;
+  padding: 10px 8px 10px 22px;
+  border: none;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: all 0.3s linear;
+  color: black;
+  margin: auto;
+
+  p {
+    margin: 0;
+    position: relative;
+    color: black;
+    transition: all 0.3s linear;
+    z-index: 2;
+  }
+
+  .signup-arrow {
+    position: relative;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s linear;
+
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.signup-arrow::before {
+  content: '';
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background-color: #42E26F;
+  border-radius: 50%;
+  transition: all 0.3s linear;
+}
+
+/* On hover: grow background to cover button */
+.signup-arrow:hover::before {
+  width: 800%;
+  height: 700%;
+  right: -20%;
+}
+
+
+.video-container {
+  position: relative;
+
+  video {
+    max-width: 80%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(rgba(12, 12, 13, 0), rgba(12, 12, 13, 1));
+    inset: 0;
+  }
+
+  p {
+    position: absolute;
+    z-index: 2;
+    margin-bottom: 30px;
+  }
+}
+
+.tools-container {
+  padding: 0px 100px;
+  color: white;
+
+  .box {
+    background-color: rgba(12, 12, 13, 0.5);
+    backdrop-filter: blur(50px);
+    border: 1px solid #B9B9B9;
+    border-radius: 10px;
+    padding: 20px 20px 5px 20px;
+    min-height: 290px;
+
+    .title {
+      font-family: "Roboto";
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .description {
+      font-family: "Nunito Sans";
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    button {
+      position: relative;
+      background-color: white;
+      padding: 10px 8px 10px 22px;
+      border: none;
+      border-radius: 30px;
+      overflow: hidden;
+      transition: all 0.3s linear;
+      opacity: 0;
+      height: 0px;
+      color: black;
+
+      p {
+        margin: 0;
+        position: relative;
+        color: black;
+        transition: all 0.3s linear;
+        z-index: 2;
+      }
+
+      .signup-arrow {
+        position: relative;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s linear;
+
+        i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+
+    .signup-arrow::before {
+      content: '';
+      position: absolute;
+      right: 18px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 40px;
+      height: 40px;
+      background-color: #42E26F;
+      border-radius: 50%;
+      transition: all 0.3s linear;
+    }
+
+    /* On hover: grow background to cover button */
+    .signup-arrow:hover::before {
+      width: 800%;
+      height: 700%;
+      right: -20%;
+    }
+
+    &:hover {
+      background: linear-gradient(to bottom, #10151b, #245d75);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+
+      .tool-button {
+        opacity: 1;
+        min-height: 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .tools {
+    .top {
+      h3 {
+        font-size: 30px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+
+      p {
+        font-size: 14px !important;
+        padding: 5px !important;
+      }
+
+
+      .cube-box {
+        margin-top: 4px;
+        color: white;
+      }
+    }
+
+  }
+
+
+  .tools-container {
+    padding: 0px 20px !important;
+    color: white;
+
+    .box {
+      background-color: rgba(12, 12, 13, 0.5);
+      backdrop-filter: blur(50px);
+      border: 1px solid #B9B9B9;
+      border-radius: 10px;
+      padding: 20px 20px 5px 20px;
+      min-height: auto;
+
+      .title {
+        font-size: 18px;
+      }
+
+      .description {
+        font-size: 14px;
+      }
+
+      button {
+        opacity: 1;
+        min-height: 50px;
+        padding: 5px 8px 5px 22px !important;
+
+        p {
+          padding: 5px 0px 0px 0px !important;
+        }
+
+        .signup-arrow {
+          padding: 12px 0px 0px 3px !important;
+        }
+      }
+    }
+  }
+
+  .video-container {
+    margin-bottom: 50px;
+  }
+}

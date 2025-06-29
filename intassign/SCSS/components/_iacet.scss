@@ -1,0 +1,57 @@
+.excellence {
+  background-color: #1a1a1a; // Example dark background
+  padding: 2rem 0;
+
+  .icitlogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .IAcet img {
+      height: 300px;
+    }
+
+    .description h4 {
+      font-size: 1.5rem;
+      background: linear-gradient(91.13deg, #00FFD1 -10.65%, #00F1E3 52.68%, #00D8FA 91.49%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      // text-fill-color: transparent;
+      font-weight: 400;
+    }
+  }
+
+  .description p {
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 500px) {
+  .excellence {
+
+    .icitlogo {
+      display: flex !important;
+      flex-direction: column !important;
+
+      .IAcet {
+        img {
+          height: 300px !important;
+          width: 100%;
+        }
+
+        .description {
+          h4 {
+            font-size: 30px !important;
+            margin-bottom: 20px;
+          }
+
+          p {
+            font-size: 18px !important;
+          }
+        }
+      }
+    }
+  }
+
+}
