@@ -175,8 +175,34 @@ html {
     scrollbar-width: none;
 }
 
+.announcement-container {
+    overflow: hidden;
+    position: relative;
+}
+
 .announcement-inner {
-    min-width: max-content;
+    display: flex;
+    width: max-content;
+    animation: marquee 30s linear infinite;
+}
+
+.announcement-container:hover .announcement-inner {
+    animation-play-state: paused;
+}
+
+.marquee-content {
+    display: flex;
+    white-space: nowrap;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .bg-cover {
@@ -470,7 +496,7 @@ html {
     width: 100%;
     padding: 25px;
     color: #fff;
-    transform: translateX(2000px);
+    transform: translateY(200px);
     opacity: 0.85;
     transition: transform 0.5s ease, opacity 0.5s ease;
 }
@@ -506,6 +532,8 @@ html {
     padding-right: 2rem;
     white-space: nowrap;
 }
+
+
 
 .regional-section {
     margin-top: -240px;
@@ -1126,4 +1154,53 @@ form {
     .tab-sub-section {
         padding: 0 !important;
     }
+
+    .image-container {
+        opacity: 1;
+        position: static;
+        pointer-events: auto;
+    }
+
+    .image-container img {
+        opacity: 1;
+        width: 100%;
+        height: auto;
+        transform: none !important;
+    }
+
+    .hover-content {
+        flex-direction: column;
+    }
+
+    .hover-reveal .span-2,
+    .hover-reveal .span-3 {
+        transform: none !important;
+        max-height: none;
+        opacity: 1;
+    }
+
+    .hover-reveal .icon {
+        transform: none !important;
+    }
+
+    .hover-reveal .span-1 {
+        display: inline-block !important;
+    }
+
+    .accordion-button {
+        font-size: 1rem;
+        padding: 0.75rem 1rem;
+    }
+
+    .accordion-button:focus {
+        box-shadow: none;
+    }
+
+    footer .row {
+        padding: 0 !important;
+    }
 }
+
+
+
+/* TRY */
