@@ -33,15 +33,17 @@
     <nav class="navbar navbar-expand-lg bg-transparent w-100 p-0 position-fixed">
   <div class="overlay-blur h-100 w-100 position-absolute"></div>
 
-  <div class="container collapse" id="#navbarNab">
+  <div class="container collapse" id="navbarNab">
     <div class="nav-brand px-3">
       <img src="./logo/c8a6da2240ecbd0151474a845788f7f088b6b1c8.png" alt="logo" class="img-fluid" />
     </div>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-      data-bs-target="#navbarNav" aria-expanded="false" aria-controls="navbarNav" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <!-- Hamburger Toggler for Mobile -->
+<button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav"
+  aria-controls="mobileNav" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
 
     <div class="container">
       <div class="custom-collapse collapse navbar-collapse" id="navbarNav">
@@ -149,9 +151,29 @@
         </div>
       </div>
     </div>
+     
+     <!-- Side Nav: Only Visible on Small Screens -->
+<div class="offcanvas offcanvas-start d-lg-none bg-dark text-white" tabindex="-1" id="mobileNav">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Menu</h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
-    </nav>
+  <div class="offcanvas-body">
+    <ul class="nav flex-column gap-2">
+      <li><a class="nav-link text-white" href="#about">About</a></li>
+      <li><a class="nav-link text-white" href="#contact">Contact</a></li>
+      <li><a class="nav-link text-white" href="#joinNow">Join Now</a></li>
+      <li><a class="nav-link text-success fw-bold" href="#signIn">Sign In</a></li>
+      <li><a class="nav-link text-white" href="#affiliates">Affiliates</a></li>
+      <li><a class="nav-link text-white" href="#icoe">ICoE</a></li>
+      <li><a class="nav-link text-white" href="#speed">SPEED</a></li>
+      <li><a class="nav-link text-white" href="#jobboard">Job Board</a></li>
+    </ul>
+  </div>
+</div>
 
+  
+    </nav>
     <section class="intro_container d-flex flex-column gap-2 align-items-center overflow-hidden ">
       <div class="scroll_banner container-fluid d-flex align-items-center gap-5 ">
         <button class="text-black rounded-5 border-0 px-3 py-1">
@@ -425,7 +447,7 @@
           class="union-image position-absolute img-fluid"
           alt=""
         />
-        <h3 class="banner_head pb-2">Upcoming Intellicons</h3>
+        <h3 class="banner_head px-4 pb-2">Upcoming Intellicons</h3>
         <div class="upcoming_place">
           <div class="place position-relative">
             <img
@@ -593,7 +615,7 @@
                     </div>
                     <div class="d-flex justify-content-between p-5 w-100 awareness-content">
                         <div class="before d-flex gap-5 align-items-center">
-                            <h3 class="num">01</h3>
+                            <h3 class="num">02</h3>
                             <div class="speed-contents">
                                 <h3 class="awareness-text">Awareness</h3>
                                 <p class="m-0">Make your brand front and center through outreach in SCIP’s 300,000+ Global community</p>
@@ -608,7 +630,7 @@
                     </div>
                     <div class="d-flex justify-content-between p-5 w-100 awareness-content">
                         <div class="before d-flex gap-5 align-items-center">
-                            <h3 class="num">01</h3>
+                            <h3 class="num">03</h3>
                             <div class="speed-contents">
                                 <h3 class="awareness-text">Awareness</h3>
                                 <p class="m-0">Make your brand front and center through outreach in SCIP’s 300,000+ Global community</p>
@@ -623,7 +645,7 @@
                     </div>
                     <div class="d-flex justify-content-between p-5 w-100 awareness-content">
                         <div class="before d-flex gap-5 align-items-center">
-                            <h3 class="num">01</h3>
+                            <h3 class="num">04</h3>
                             <div class="speed-contents">
                                 <h3 class="awareness-text">Awareness</h3>
                                 <p class="m-0">Make your brand front and center through outreach in SCIP’s 300,000+ Global community</p>
@@ -638,7 +660,7 @@
                     </div>
                     <div class="d-flex justify-content-between p-5 w-100 awareness-content">
                         <div class="before d-flex gap-5 align-items-center">
-                            <h3 class="num">01</h3>
+                            <h3 class="num">05</h3>
                             <div class="speed-contents">
                                 <h3 class="awareness-text">Awareness</h3>
                                 <p class="m-0">Make your brand front and center through outreach in SCIP’s 300,000+ Global community</p>
@@ -670,7 +692,8 @@
                         <i class="ri-arrow-right-line ms-2"></i>
                     </div>
                 </button>
-            </div>
+              </div>
+              
            <div class="bars p-5">
                 <div class="panel-top">
                     <ul class="roboto nav nav-pills p-1 " id="pills-tab" role="tablist">
@@ -682,10 +705,12 @@
                         </li>
                     </ul>
                 </div>
+                 
                 <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
                         <div class="panel-bg">
-                            <div class="row g-3 align-items-start h-100">
+                          <div class="smart-tabs-wrapper row">
+                            <div class="row align-items-start h-100">
                                 <div class="col-md-4 h-100 p-0">
                                     <div class="left-tab p-3">
                                         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -752,9 +777,12 @@
                                 </div>
                             </div>
                         </div>
+                      </div>  
+                      </div>
                     </div>
                     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
                         <div class="panel-bg">
+                          <div class="smart-tabs-wrapper row">
                             <div class="row align-items-start m-0">
                                 <div class="col-md-4 h-100 p-0">
                                     <div class="left-tab p-3">
@@ -833,22 +861,32 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                        </div>
+                      </div>
                 </div>
-           </div>
+           
+           
+           
         </section>
-        <section class="recognized-section">
-            <div class="row g-5">
-                <div class="col-md-4">
-                    <img src="./logo/IACET.png" alt="photo">
-                </div>
-                <div class="col-md-8">
-                    <h2 class="roboto">Recognized for Excellence</h2>
-                    <p class="nunito pt-3">SCIP has been awarded the prestigious Accredited Provider designation by<strong>IACET(International Accreditors for Continuing Education Training)</strong>.The ANSI/IACET Standard is recognized internationally as the gold standard for continued education and training. As an Accredited Provider, SCIP offers continuing education credits for its learning events that comply with the Standard.​</p>
-                </div>
-            </div>
-        </section>
-          <section class="tools-section p-5">
+        <section class="recognized-section container-fluid py-5 ">
+  <div class="row g-4 align-items-center">
+    <!-- Image Column -->
+    <div class="col-md-4 text-center text-md-start">
+      <img src="./logo/IACET.png" alt="photo" class="img-fluid recognized-img" />
+    </div>
+
+    <!-- Text Column -->
+    <div class="col-md-8">
+      <h2 class="roboto text-center text-md-start">Recognized for Excellence</h2>
+      <p class="nunito pt-3 text-center text-md-start">
+        SCIP has been awarded the prestigious <strong>Accredited Provider designation by IACET (International Accreditors for Continuing Education Training)</strong>.
+        The ANSI/IACET Standard is recognized internationally as the gold standard for continued education and training. As an Accredited Provider, SCIP offers continuing education credits for its learning events that comply with the Standard.
+      </p>
+    </div>
+  </div>
+      </section>
+
+          <section class="tools-section p-3">
             <div class="first-part">
                 <h1 class="roboto w-100 text-center">SCIP INTELLIGENCE Tools</h1>
                 <p class="nunito w-100 text-center">SCIP continues to offer a boundless repository of tools and resources to help burgeoning Intelligence Professionals with the skills they need in their everyday role. </p>
@@ -1077,7 +1115,7 @@
                  
                 <div class="col-md-7">
                   <div class="d-flex footer-info gap-4">
-                    <div class="d-flex gap-2 flex-column">
+                    <div class="d-flex gap-2 info">
                       <h3>Resources</h3>
                       <div>
                         <a href="">I_Stream</a>
@@ -1095,7 +1133,7 @@
                         <a href="">On Demand Video</a>
                       </div>
                     </div>
-                    <div class="d-flex gap-2 flex-column">
+                    <div class="d-flex gap-2 info">
                        
                       <h3>Resources</h3>
                       <div>
@@ -1114,7 +1152,7 @@
                         <a href="">On Demand Video</a>
                       </div>
                     </div>
-                    <div class="d-flex gap-2 flex-column">
+                    <div class="d-flex gap-2 info">
                        
                       <h3>Resources</h3>
                       <div>
