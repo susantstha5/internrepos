@@ -222,6 +222,7 @@
           .cardTopic {
             font-size: 18px !important;
             transform: none !important;
+            transition: none !important;
           }
           .dateDetail {
             opacity: 1;
@@ -242,10 +243,12 @@
       background: none;
       padding: none !important;
       transform: none !important;
+      transition: none !important;
       .cardTopic {
         transition: none !important;
         transform: none !important;
         padding-bottom: none !important;
+        font-size: 18px !important;
       }
       .dateDetail {
         opacity: 1;

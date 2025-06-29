@@ -1,6 +1,6 @@
 .scipSmart {
   background: url("/image/Minimal\ glow\ of\ the\ globe\ in\ dark\ wallpaper.png")
-      no-repeat,
+      no-repeat center center,
     linear-gradient(
       to bottom,
       rgba(12, 12, 13, 1) 20%,
@@ -45,6 +45,7 @@
   .nav-link {
     padding: 20px 30px;
     color: $grey-white;
+    // position: relative;
   }
   .nav-link.active,
   .show > .nav-link {
@@ -121,24 +122,30 @@
       padding-inline: 10px;
       min-width: 115px;
     }
+    .tabSection {
+      align-items: normal !important;
+      .tabMenu {
+        display: flex;
+        justify-content: center;
+        width: fit-content;
+      }
+    }
     .menuList {
+      .row {
+        max-width: 100%;
+      }
       .nav {
         display: flex;
         flex-direction: row !important;
         flex-wrap: nowrap;
-        max-width: 400px;
-        overflow-x: auto;
+        overflow-x: scroll;
       }
     }
     .resourceMenu {
       gap: 10px !important;
-      width: 100%;
-      max-width: 100%;
       .nav-link {
         padding: 8px;
         color: #f5f5f5;
-        white-space: nowrap;
-        flex-shrink: 0;
       }
     }
     .resourceMenu .nav-link.active,
